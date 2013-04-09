@@ -390,8 +390,12 @@ Count all of them.
 Check out for patients if it reaches to particular point. Count them with percentages. How 
 		Scenario: checkout for patients if the patient is under 40 than
 		Count all the money got from patients, find the defined percentage return the result.	return
-		Ex: there is 40 patients every patient has purchased medicine and the total of them is 90000 if a doctor takes percentages than assume he’s taking 5% of all    return
-			90000 = 100    return
+		Ex: there is 40 patients every patient has purchased medicine and the total of them is 90000 if a doctor takes percentages than assume he’s taking 5% of all    
+
+
+			90000 = 100    
+
+
 			X          = 5             x = 4500    
 
 
