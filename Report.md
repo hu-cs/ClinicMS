@@ -43,7 +43,6 @@ Table of Contents:
 
 	*	Actors and Goals.
 
-	*	Use Cases.
 
 	*	Sequence Diagram.
 
@@ -106,6 +105,10 @@ Domain Models:  List of all our System Modules.
 
 
 4.	Operation theater ( ICU ) 
+
+5.	Parturition
+
+6.	Office
  
 
 ##### All members are contributed equally. #####
@@ -374,20 +377,28 @@ Traceability Matrix: shows the mathematical calculation of the project. Such as:
 1.	When patients came, after the checking they must be pay for those.
 2.	Doctors, nurses, and workers want salary in-order to work.
 
-Salary of doctors per month =    return
-Salary of nurses per month =    return
+Salary of doctors per month =   
+
+
+Salary of nurses per month =    
+
+
 Salary of worker per month =	return
                        
 Count all of them.
 
 Check out for patients if it reaches to particular point. Count them with percentages. How 
 		Scenario: checkout for patients if the patient is under 40 than
-			Count all the money got from patients, find the defined percentage return the result.	return
+		Count all the money got from patients, find the defined percentage return the result.	return
 		Ex: there is 40 patients every patient has purchased medicine and the total of them is 90000 if a doctor takes percentages than assume he’s taking 5% of all    return
 			90000 = 100    return
 			X          = 5             x = 4500    return
-That is done.	return
+That is done.
+
+
 Check out for every person and check for the occupation: doctor, nurse, and worker. Count all the salary of them and give the output as a total amount of payment. And take notice if occupation is doctor count all the doctors, nurses, workers. Show the total amount of the salary of doctors, workers, nurses and display it. Check if a doctor has took the salary of every month. If not then add the previous salary to this salary and give the result.
+
+
 	For the medical: take every medicine’s rate, and the dose percentage check out how many of this kind has been sold, if n kind than n * rate = total amount. 	
 
 If the company want the profit. Than all amount of money the Clinic got it should be minuses from the amount of money the company has to spend.
