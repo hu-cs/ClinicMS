@@ -23,48 +23,87 @@ Team Members:
 
 Table of Contents:	 
 
-#### Part One:    ####
+#### Part One: ####
 
 
  >1. Customer statement of Requirement.
+
 	a.	*Problem statement
 
 >2. System Requirements.
 	*	Enumerated Functional Requirements.
 	*	Enumerated non-functional Requirements.
 	*	On Screen appearance requirements.
-#### Part Two:  ####     
+
+#### Part Two: ####
+     
 >1. Functional Requirements specification.
+
 	*	Stock holders.
+
 	*	Actors and Goals.
+
 	*	Use Cases.
+
 	*	Sequence Diagram.
+
 >2. User Interface Specification.
+
 	*	Preliminary Design.
+
 	*	User Effort Estimation.
+
 #### Part Three: ####
 	·	Domain Analysis.
+
 	·	Domain Model.
+
 	·	System Operation contracts.
+
 	·	Mathematical Model.
+
 1.	Plan of Work.
+
 2.	References.
 
 
 
 
-Our requirement specification is as follows:    return 
+Our requirement specification is as follows:    
+
+ 
 1.	Data reporting and analyzing
+
+
 2.	Calculating incomes and Budget reporting
+
+
 3.	Stock and expenditure report
+
+
 4.	Laboratory  testing results
+
+
 5.	Patients information report
+
+
 6.	Lack of using database and back up from information
+
+
 7.	Operation room data report
-Domain Models:  List of all our System Modules.    Return
+
+
+Domain Models:  List of all our System Modules.
+
 1.	Reception 
+
+
 2.	Laboratory
+
+
 3.	Medical Store
+
+
 4.	Operation theater ( ICU ) 
  
 
@@ -73,7 +112,11 @@ Domain Models:  List of all our System Modules.    Return
 
 
 #### Customer Statement of Requirement. ####
-	As a result of several interview that we had with our Customer. Not just one of them, we had extra interviews with other health care environments. We had interviews with these places listed as follows.	return
+
+
+	As a result of several interview that we had with our Customer. Not just one of them, we had extra interviews with other health care environments. We had interviews with these places listed as follows.
+
+
 1.	Hakim sanayee Clinic
 2.	Panjtan Al Aba
 3.	Jebraiel Governmental Hospital.
@@ -82,42 +125,86 @@ Domain Models:  List of all our System Modules.    Return
 6.	Jakan Medical Store.
 7.	Nazary Medical Store.
 8.	Al-berouni Private Hospital.
-9.	Khalid Medical Store.    return
+9.	Khalid Medical Store.    
 
-They were talking about their problems they had with the environment system.    return
+
+They were talking about their problems they had with the environment system.
+
 The system that is being used by people is mostly just papers and pen.    
 	There is several requirements that should be solved.    
 
-Such as:    return
-If a patients lost his or her description. Patients has no backup how doctors should know, which kind of drugs she has been using. And it was a lot of time consuming and also they must pay money for every paper that they were using for their patients. It was so difficult for them if they were moved from one place to another place to move all the records of their patients if they had some.    return
-And it can be easily stolen. Could be damaged soon, burned or being useless, and holds place. And also difficult to take care of.    return
-There was a man saying that for every dose that we were selling we must give a receipt for the customer. And it’s a bit time consuming work.    return
+Such as:
+
+
+If a patients lost his or her description. Patients has no backup how doctors should know, which kind of drugs she has been using. And it was a lot of time consuming and also they must pay money for every paper that they were using for their patients. It was so difficult for them if they were moved from one place to another place to move all the records of their patients if they had some.
+
+And it can be easily stolen. Could be damaged soon, burned or being useless, and holds place. And also difficult to take care of.
+
+
+There was a man saying that for every dose that we were selling we must give a receipt for the customer. And it’s a bit time consuming work.
+
+
  And more than that it was difficult for a guy to sit on cash draws and count every person’s bill, it’s a bit annoying work for some people. They don’t like too much counting.	return
-Several customers saying that, the system can help us with this problem.	return
+Several customers saying that, the system can help us with this problem.
+
+
 With counting, time serving, no more loss of records, it helps us to be more confident, more reliable, and accurate. A customer said to us, about his problem facing with his work on medical was the fake or not real doses that they had in his medical store, and had the real one, if you could build us with a system that can distinguish between this doses. We’ll be so grateful.	 
-Another customer was talking about problem with the counting of his bill, he said that we have a lot of patients and I don’t have enough time to calculate the bill for them, most of the time I make mistakes in calculating them. And this is a loss of money for me.	return
+Another customer was talking about problem with the counting of his bill, he said that we have a lot of patients and I don’t have enough time to calculate the bill for them, most of the time I make mistakes in calculating them. And this is a loss of money for me.
+
+
 Another problem was with the record of their patients, they didn’t have a record from their patients.	return
-If you survey the clinical laboratories, you wouldn’t find one record.	return
+If you survey the clinical laboratories, you wouldn’t find one record.
+
+
 Because of that they couldn’t find the real number of people affected by a disease in a country.
 Also you couldn’t’ have access the records from another place, and watch for your records and drugs that have been used by patient. If a patient wants to get to his or her records from another place to show to another doctor for his or her treatment she couldn’t if she lost his/her record that was with him/her. 
-You could access your records from another treatment site and get the information about your patients and be able to advise them some treatments or take a result.	return
-In reality it had two kind of problem first one was with the hospital or Medical stores.    return
-The second one was with the patients.    return 
-First one is quite difficult to diagnose but it’s possible to diagnose it.	return 
+You could access your records from another treatment site and get the information about your patients and be able to advise them some treatments or take a result.
+
+
+In reality it had two kind of problem first one was with the hospital or Medical stores.
+
+
+The second one was with the patients.
+
+
+First one is quite difficult to diagnose but it’s possible to diagnose it.
+
+
 For your medical store, hospitals or another health care agencies. It’s good to know about your patients everything, it helps doctors to take a better result from the treatments. Or can change the treatment process if it’s not working well. Or have access synchronously several patients’ records if needed.	
-Or if you want to know the number of affected people by a disease at some particular time. You must serve a lot of time to calculate your patients if you have the whole record of your patients if you don’t lost any if it’s usable at all.	return	
-As a patients perspective we can say that client must have a whole record of his/her self in his/her hands everywhere he/she wants to go for treatment. If he/she doesn’t lost some. If he can save for him/herself. If he/she can have their record after an accident.    return
-Customer said to us: your system can help us with all of the problem, also make the patients free of their records. And no more caution about their records and reliability of the system.	return
-Can solve most of the patient’s problem.    return 
+Or if you want to know the number of affected people by a disease at some particular time. You must serve a lot of time to calculate your patients if you have the whole record of your patients if you don’t lost any if it’s usable at all.	
+
+	
+As a patients perspective we can say that client must have a whole record of his/her self in his/her hands everywhere he/she wants to go for treatment. If he/she doesn’t lost some. If he can save for him/herself. If he/she can have their record after an accident.
+
+
+Customer said to us: your system can help us with all of the problem, also make the patients free of their records. And no more caution about their records and reliability of the system.
+
+Can solve most of the patient’s problem.    
+
+
 Our proposed management system and design is such that it will give the report of all patients, patient services, making decision and solution of your daily problem, such as better services to people, and also stock reporting link, getting information about your everyday drug sales, visited doctors, descriptions, personnel reporting, Operation treatments, patients payment, drug repository reporting in time scale of daily, monthly, yearly reporting. On the other hand also laboratory reporting give the information like result reporting and time of report. In patients information you are able to get the all information about your patients including dates and times he/she arrived. It’s also capable of securing by restricting access to the data in your database. In operation treatment, the software gives description of your Operations, available rooms, which doctor is in charge, patient’s payment and what kind of operation they had at what time.
-Qods clinic requirements:    return	
-According to our interview that we had with Mr. Saedi and visiting from Qods clinic. Khadhra team understood the requirements to be as such:	    return
+
+
+*Qods clinic requirements:* 
+
+
+According to our interview that we had with Mr. Saedi and visiting from Qods clinic. Khadhra team understood the requirements to be as such:	
+
 1.	Data reporting and analyzing
+
 2.	Calculating incomes and Budget reporting
+
+
 3.	Stock and expenditure report
+
+
 4.	Laboratory  testing results
+
+
 5.	Patients information report
+
 6.	Lack of using database and back up from information
+
 7.	Operation room data report
 
 **User story:**		 
@@ -140,33 +227,79 @@ On demand.
 Us-14	7	Above ability must be concerned on parturition room.	 
 
 __Functional Requirements:__ 
+
+
 1.	Using both Barcode reader and manual entering the names of drugs in drug store and store.    return
+
+
 2.	Can enter and save names and cost and so on of drugs in drug store and system can calculate the number and incoming form selling of drugs and decrease the numbers of drugs form thesaurus.    return
+
+
 3.	Thesaurus subsystem and this subsystem calculate that how much drug was sold and how much the clinic earn and warn of the date of drugs when they expired.    return
+
+
 4.	Using and design GUI that easily druggist can enter the name of drugs and the subsystem calculate the price and other calculation.    return
+
+
 5.	If the drug be categorized in the some groups according to their made or kind, it is easier to enter the drugs in system.    return
+
+
 6.	The system should have this ability that calculates the salaries according to contact which is in percentage or month, day, shift and both feature. Because some of personal contact in salary per month and some other contact   according to percentage of incoming.    return
+
+
 7.	Some of the doctors and nurses contact to work on other shift and in three category, their salaries are according to percentage or shift or both. So system should add these salaries to their total salary and save it.    return
+
+
 8.	Print the receipt in reception subsystem and test sheet in laboratory.    return
+
+
 9.	Ability of searching in database about incoming, personal, patient, drugs, equipment and so on.    return
+
+
 10.	Ability of updating the information of drugs in drug store.    return
+
+
 11.	Ability of updating or editing the information about personal.    return
+
+
 12.	Ability to see the list of patient, drugs, personnel and print the list if it is necessary.    return
+
+
 13.	Save, edit and delete information about patient and operation that occurs in operation room and parturition part.    return
+
+
 14.	The system calculate the price of room that patient reserve and announce how many room are reserved and how many are free and for how long.    return
+
+
+
 15.	The system should have reliable database.    return
+
+
 16.	Using open source technology and DBMS.    return
+
+
 17.	We need barcode reader to read barcode in drug store.    return
+
+
 18.	This system should be network base; run on one PC and other connect to it.    return
+
+
 19.	The system should connect to printers to print the lists and other information and receipt.    return
+
+
 20.	We need camera or scanner to enter photo of personal in to system specially doctors and nurses.    return
+
+
 21.	The system will show graph of incoming and cost and data mining graph.    
 
-22.	It is necessary to train the personal of clinic and we will train it.    return
+
+22.	It is necessary to train the personal of clinic and we will train it.
+
+
 23.	We will support the system for six month.    
 
  
-Stakeholders: Our stakeholder is Qods Clinic.	return
+Stakeholders: Our stakeholder is Qods Clinic.
 Actors and goals: Several people are involved in our system. Such as:    
 	
 Druggist, Laboratory guy, Manager, Doctors, and receptionist.    
@@ -302,14 +435,14 @@ User interface specification:
 
 1.	How user logs in:
  
-i.	First a dialog opens, to choose who is he/she if, it selects and types his/her name than the password.
+1.	First a dialog opens, to choose who is he/she if, it selects and types his/her name than the password.
 
-ii.	Than the main page will open, the places that the reception can access will be enabled to work, the other part that he/she doesn’t have access will be disabled, for example: receptionist doesn’t have access to the Operation Theater. You would see some more information around on picture. Medical(1)
+2.	Than the main page will open, the places that the reception can access will be enabled to work, the other part that he/she doesn’t have access will be disabled, for example: receptionist doesn’t have access to the Operation Theater. You would see some more information around on picture. Medical(1)
 
 
-iii.	The receptionist wants to add a new patient to the database. Fill in the blanks full description of patient. There is several choice that a patient can make reserve for timing or go to parturition, visit doctor, and Operation Theater.
+3.	The receptionist wants to add a new patient to the database. Fill in the blanks full description of patient. There is several choice that a patient can make reserve for timing or go to parturition, visit doctor, and Operation Theater.
 
-iv.	After that receipt is printed for that patient. With the description of patient.
+4.	After that receipt is printed for that patient. With the description of patient.
 
 All pictures all included with the document. You can see all of them.
 
