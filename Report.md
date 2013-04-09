@@ -1,5 +1,5 @@
 
-#	Software Engineering Project #
+# Software Engineering Project #
 	
 
 ## Clinic Management System ##
@@ -7,15 +7,24 @@
 ### Submission: 15 March 2013 ###
 
 Team Members:   
-	Ahmad Ahmadi Rad  		ID:   return
-	Ahmadullah      			ID: 20592   return
-	Mohsen Parsa			ID:    return 
-	Tahira Mohammadi			ID:    return
-	Hadisa Nowrozi			ID:   return
-	Fatima Qasemi			ID:   return
 
-Table of Contents:	   return
-#### Part One:    ####   return
+	Ahmad Ahmadi Rad  		ID:   
+
+	Ahmadullah      			ID: 20592   
+
+	Mohsen Parsa			ID:    
+
+	Tahira Mohammadi			ID:    
+
+	Hadisa Nowrozi			ID:   
+
+	Fatima Qasemi			ID:   
+
+
+Table of Contents:	 
+
+#### Part One:    ####
+
 
  >1. Customer statement of Requirement.
 	a.	*Problem statement
@@ -308,7 +317,6 @@ All pictures all included with the document. You can see all of them.
 
 
 **Part3:**
-
 
 *Domain Model:*
 
