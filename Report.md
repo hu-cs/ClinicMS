@@ -396,7 +396,9 @@ Check out for patients if it reaches to particular point. Count them with percen
 			90000 = 100    
 
 
-			X          = 5             x = 4500    
+			X  =  5             
+
+			x  = 4500    
 
 
 That is done.
@@ -411,11 +413,15 @@ If the company want the profit. Than all amount of money the Clinic got it shoul
 
 Or has given to Companies that the hospital gets medicines from.
 We normally have two kinds of Spends 
+
+
 1.	Constant
     
 2. Dynamics
 
-Constants: is constant like the bills, Cars etc.	return
+Constants: is constant like the bills, Cars etc.	
+
+
 Dynamics: are not possible to assume maybe some time a lot maybe some time very less.
   
 			
@@ -425,14 +431,20 @@ Dynamics: are not possible to assume maybe some time a lot maybe some time very 
 
 I start here with the User manual how he/she enters to the System. I’ll not cover all of them here because it’ll be so long to.
 
+
 	First of all when the application opens, a window opens than it asks for user name and password. And then click ok the user is logged in.
 
+
 After it recognize that the user is from which part he’s medical store, opt theater, or office or from the other part. That user only access on his own part not the others the other parts will be disabled for that user.
+
  
 How a reception can add new patients:
+
  
 When the come in the receptionist takes his/her full specification. The patient decides to go where. Opt, visit doctor, or parturition or laboratory. And the amount of money he/she should pay for the receipt. After the patient decide to go where the receipt will be printed. By clicking the print button.
 I have covered the two of them. There is several more. 
+
+
 System Sequence diagram: draw a system sequence diagram selected above.
     
                      Main page                                 login
