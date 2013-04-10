@@ -48,7 +48,7 @@ The period of performance for the Clinic Management System is two months and twe
 </table>
 <p/>
 <p>
-**Place of performance**
+<b>Place of performance<b/>
 <p>
 <p>
 Khadhra Team will perform a majority of the work at its own facility but will be required to meet at Qods’s facility once per week, for a weekly status meeting. Additionally, all project gate reviews will be held at Khadhra’s facility and can be attended by Qods manager or others. Qods Clinic will provide and arrange for meeting spaces within its facility for all required that we have. Once the project reaches the training phase, all training will be conducted at Qods’s facility. 
@@ -56,17 +56,15 @@ Khadhra Team will perform a majority of the work at its own facility but will be
 
 
 <p>
-**WORK REQUIREMENTS**
+<b>WORK REQUIREMENTS<b/>
 <p>
-
-
 <p>
 We use agile method in this project. So, we will follow the steps and iteration that I mentioned below. In each of iteration we divide the responsibilities between members and we will do our best and we show each of iteration to customer and take his willingness about our task and improvement. As I mentioned we will design a good database for system and we need to server for clinic (a central pc) and for each of iteration completely we need accompany of our friends in Qods Clinic about information gathering and interview and others work. 
 <p/>
 
 
 <p>
-**Schedule and milestone**
+<b>Schedule and milestone<b/>
 <p/>
 
 
