@@ -5,16 +5,16 @@
 <p/>
 
 <p>
-**Team Profile:**
+<b>Team Profile:<b/>
 <p/>
 <p>
-**proposal manager: Ahmad Ahmadi Rad**
+<b>proposal manager: Ahmad Ahmadi Rad<b/>
 <p/>
 <p>
-**Commercial manager: Mohsen Parsa**
+<b>Commercial manager: Mohsen Parsa<b/>
 <p/>
 <p>
-**URL: KhadhraTeam@gmail.com**
+<b>URL: KhadhraTeam@gmail.com<b/>
 <p/>
 
 <p>
@@ -22,17 +22,17 @@
 <p/>
 
 <p>
-**introduction and background**
+<b>introduction and background<b/>
 <p/>
 <p>
 Qods Clinic has recently approved the Management System Project in support of its strategic plan to better management and customer service. In order to provide satisfaction of clients and improved customer interaction, Qods Clinic also realizes the importance of working with technology and better management and make their activity and data reliable, manageable, saving in correct method and saving time manner. The Khadhra team wills does it best in design, testing, implementation, and training for the new management system. Khadhra Team anticipates that its new management system will move the clinic forward in market and can serve the best. 
 <p/>
-<p>**Scope of work**<p/>
+<p><b>Scope of work<b/>
 <p>
 In this project the aim is to manage and organize the performances in clinic. We need to system that provides these requirements. So, after many interview with different drugstore and clinic ( Qods Clinic, Hakim Sanai clinic, Panj Tan Al Aba Clinic, Governmental Clinic of Jebril, Al Bironi Clinic, and Hashemi Drug store, Mohammadi Drug store and Jakan Drug store ). So, we have achieved lots of information about the scope and situation and requirement of this environment. So, we divided this system to four subsystems, but now we add two extra subsystems, office subsystem and parturition subsystem. This system will use in these parts, registration of patient and printing the receipt, calculating the incoming of clinic and save all information about patient and incoming, in laboratory use to accept the patient and save information about the patient and give a result sheet as result, save the different categories of personal information in database and has ability of searching, adding, editing and deleting. Use to add new drugs in to database and calculate the incoming and statistic about the drug store and also about operation room and parturition room and their room. The aim is better management and data mining.
 <p/>
 <p>
-**Period of performance**
+<b>Period of performance<b/>
 <p/>
 The period of performance for the Clinic Management System is two months and twenty four days which start from 15 March 2013 through 22 June 2013. All work must be scheduled to complete within this time frame as you can see in below. 
 <p/>
