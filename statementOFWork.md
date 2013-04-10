@@ -1,7 +1,7 @@
 # Project Title: Clinic Management System statement of work #
 
 <p>
-**Customer: Qods Clinic
+<b>Customer: Qods Clinic<b/>
 <p/>
 
 <p>
