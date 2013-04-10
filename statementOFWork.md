@@ -18,7 +18,10 @@
 <p/>
 <p>
 
-## Statment of work ##
+## Statement of work ##
+<p>
+Statement of work for ClinicMS 
+<p/>
 ## Introduction and background  ##
 
 <p>Qods Clinic has recently approved the Management System Project in support of its strategic plan to better management and customer service. In order to provide satisfaction of clients and improved customer interaction, Qods Clinic also realizes the importance of working with technology and better management and make their activity and data reliable, manageable, saving in correct method and saving time manner. The Khadhra team wills does it best in design, testing, implementation, and training for the new management system. Khadhra Team anticipates that its new management system will move the clinic forward in market and can serve the best. <p/>
