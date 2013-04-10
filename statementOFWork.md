@@ -4,7 +4,9 @@
 **Customer: Qods Clinic**
 <p/>
 
-### Team Profile:###
+<p>
+**Team Profile:**
+<p/>
 <p>
 **proposal manager: Ahmad Ahmadi Rad**
 <p/>
@@ -14,28 +16,26 @@
 <p>
 **URL: KhadhraTeam@gmail.com**
 <p/>
+
+<p>
 ![khadraTeam](https://github.com/mohsen-parsa/images/blob/master/khadhraTeamProfile.png?raw=true)
 <p/>
+
 <p>
-
-## Introduction and background ##
-
+**introduction and background**
+<p/>
 <p>
 Qods Clinic has recently approved the Management System Project in support of its strategic plan to better management and customer service. In order to provide satisfaction of clients and improved customer interaction, Qods Clinic also realizes the importance of working with technology and better management and make their activity and data reliable, manageable, saving in correct method and saving time manner. The Khadhra team wills does it best in design, testing, implementation, and training for the new management system. Khadhra Team anticipates that its new management system will move the clinic forward in market and can serve the best. 
 <p/>
-
-## SCOPE OF WORK  ##
-
+<p>**Scope of work**<p/>
 <p>
 In this project the aim is to manage and organize the performances in clinic. We need to system that provides these requirements. So, after many interview with different drugstore and clinic ( Qods Clinic, Hakim Sanai clinic, Panj Tan Al Aba Clinic, Governmental Clinic of Jebril, Al Bironi Clinic, and Hashemi Drug store, Mohammadi Drug store and Jakan Drug store ). So, we have achieved lots of information about the scope and situation and requirement of this environment. So, we divided this system to four subsystems, but now we add two extra subsystems, office subsystem and parturition subsystem. This system will use in these parts, registration of patient and printing the receipt, calculating the incoming of clinic and save all information about patient and incoming, in laboratory use to accept the patient and save information about the patient and give a result sheet as result, save the different categories of personal information in database and has ability of searching, adding, editing and deleting. Use to add new drugs in to database and calculate the incoming and statistic about the drug store and also about operation room and parturition room and their room. The aim is better management and data mining.
 <p/>
-
-## PERIOD OF PERFORMANCE  ##
-
 <p>
+**Period of performance**
+<p/>
 The period of performance for the Clinic Management System is two months and twenty four days which start from 15 March 2013 through 22 June 2013. All work must be scheduled to complete within this time frame as you can see in below. 
 <p/>
-
 
 <p>
 <table>
@@ -47,25 +47,36 @@ The period of performance for the Clinic Management System is two months and twe
 	</tr>
 </table>
 <p/>
-
-## PLACE OF PERFORMANCE  ##
-
+<p>
+**Place of performance**
+<p>
 <p>
 Khadhra Team will perform a majority of the work at its own facility but will be required to meet at Qods’s facility once per week, for a weekly status meeting. Additionally, all project gate reviews will be held at Khadhra’s facility and can be attended by Qods manager or others. Qods Clinic will provide and arrange for meeting spaces within its facility for all required that we have. Once the project reaches the training phase, all training will be conducted at Qods’s facility. 
 <p/>
 
-## WORK REQUIREMENTS  ##
+
+<p>
+**WORK REQUIREMENTS**
+<p>
+
+
 <p>
 We use agile method in this project. So, we will follow the steps and iteration that I mentioned below. In each of iteration we divide the responsibilities between members and we will do our best and we show each of iteration to customer and take his willingness about our task and improvement. As I mentioned we will design a good database for system and we need to server for clinic (a central pc) and for each of iteration completely we need accompany of our friends in Qods Clinic about information gathering and interview and others work. 
 <p/>
 
-## SCHEDULE/MILESTONES  ##
+
+<p>
+**Schedule and milestone**
+<p/>
+
 
 <p>
 The below tables consists of the initial milestones identified for the Clinic Management System: 
 <p/>
-<p>**Iteration No.1(first subsystem: reception)**
 
+<p>
+**Iteration No.1(first subsystem: reception)**
+<p/>
 <table>
 	<tr>
 	<td><b>No</td><td><b>work must be done</b></td><td><b>delivery time
@@ -89,7 +100,7 @@ The below tables consists of the initial milestones identified for the Clinic Ma
 	</tr>
 </table>
 
-<p/>
+
 <p>
 **2. Iteration(second subsystem: drugstore and store)**
 <p/>
