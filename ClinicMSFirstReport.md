@@ -121,7 +121,7 @@ According to our interview that we had with Mr. Saedi (Casher of Qods Clinic) an
 <p/>
 
 <p>
-## 2.	User Stories ##
+<h2> 2.	User Stories <h2/>
 <p/>
 
 <p>
@@ -386,7 +386,7 @@ Requirements:
 ![subsystems](https://github.com/hu-cs/ClinicMS/blob/master/images/useCase2.png?raw=true)
 <p/>
 
-## 5.	User interface specification: ##
+<h2> 5.	User interface specification: </h2>
 <p>
 <b>a.Preliminary Design<b/>
 <p/>
@@ -394,7 +394,7 @@ Requirements:
 This part with Mock up is in other file.
 <p/>
 
-## 6. Plan of work: ##
+<h2>6. Plan of work: </h2>
 <p>
 <b>a.	Timeline:<b/>
 <p/>
@@ -604,7 +604,7 @@ The below tables consists of the initial milestones identified for the Clinic Ma
 <p/>
 
 <p>
-**c. Our methodology:**
+<b>c. Our methodology:<br/>
 <p/>
 
 <p>
@@ -632,7 +632,7 @@ Khadhra team is therefore confident and guarantees that the proposed approach wi
 Our unique ability to PHC domain problem and our successful track record in online support websites for clinics makes us an enviable partner in this project. We look forward to forming a mutually rewarding relationship with Qods clinic.
 <p/>
 <p>
-**d. Member’s Activities:**
+<b>d. Member’s Activities:<br/>
 <p/>
 
 <p>
