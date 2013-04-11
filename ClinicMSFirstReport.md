@@ -1,10 +1,10 @@
 # Software Engineering Project #
 <p>
-**Clinic Management System (Abnos)**
+<b>Clinic Management System (Abnos)<b/>
 <p/>
 
 <p>
-**Submission: April 10, 2013**
+<b>Submission: April 10, 2013<b/>
 <p/>
 
 
@@ -46,13 +46,13 @@
 <p/>
 
 <p>
-## Table of Content ##
+<h2> Table of Content</h2>
 <b>
 <p/>
 1. Customer statement of requirement<br/>a. Problem statement
 <p/>
 
-
+<p>
 ## table of content ##
 
 1. Customer statement of requirements
@@ -71,9 +71,9 @@
   * Project cost estimation
   * Our methodology
   * Members's Activities
+<p/>
 
-
-## 1. Customer Statement of Requirement: ##
+<h2> 1. Customer Statement of Requirement: </h2>
 <p>
 <b>a. Problem statement<b/>
 <p/>
