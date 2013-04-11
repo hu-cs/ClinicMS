@@ -47,30 +47,23 @@
 
 <p>
 <h2> Table of Content</h2>
-<b>
-<p/>
-1. Customer statement of requirement<br/>a. Problem statement
-<p/>
-
-<p>
-<b> table of content <b/>
 
 1. Customer statement of requirements<br/>
-  * Problem statement<br/>
+  ------ Problem statement<br/>
 2. User stories<br/>
 3. Actual numbers don't matter, just that it's a number<br/>
-  * Stockholders<br/>
-  * Actors and goals<br/>
+  ------Stockholders<br/>
+  ------ Actors and goals<br/>
 4. Use case<br/>
-  * Casual description<br/>
-  * Use case diagram<br/>  
+------ Casual description<br/>
+------ Use case diagram<br/>  
 5. User interface specification<br/>
-  * Preliminary Design<br/>
+------Preliminary Design<br/>
 6. Plan of work<br/>
-  * Time line<br/>
-  * Project cost estimation<br/>
-  * Our methodology<br/>
-  * Members's Activities<br/>
+------ Time line<br/>
+------ Project cost estimation<br/>
+------ Our methodology<br/>
+------ Members's Activities<br/>
 <p/>
 
 <h2> 1. Customer Statement of Requirement: </h2>
