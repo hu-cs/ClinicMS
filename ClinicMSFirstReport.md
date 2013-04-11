@@ -12,9 +12,9 @@
 ![khadra logo](https://github.com/hu-cs/ClinicMS/blob/master/images/logo.png?raw=true)
 <p/>
 
-
-**Team Members:**
-
+<p>
+<b>Team Members:<b>
+<p/>
 <table>
     <tr>
         <td><b>ID</td><td><b>Name</td><td><b>Job</td> 
@@ -75,7 +75,7 @@
 
 ## 1. Customer Statement of Requirement: ##
 <p>
-**a. Problem statement** 
+<b>a. Problem statement<b/>
 <p/>
 <p>
 According to our experience in public health care domain and as a result of several interviews that we had with our Customer, we had extra interviews with other health care centers. We had interviews with these ones, listed as follows.
@@ -125,7 +125,7 @@ According to our interview that we had with Mr. Saedi (Casher of Qods Clinic) an
 <p/>
 
 <p>
-**Team Members:**
+<b>Team Members:<b/>
 <p/>
 <table>
     <tr>
@@ -217,7 +217,7 @@ According to our interview that we had with Mr. Saedi (Casher of Qods Clinic) an
 <p/>
 
 <p>
-**a. Stockholders** 
+<b>a. Stockholders<b/>
 <p/>
 
 <p>
@@ -235,7 +235,7 @@ According to our interview that we had with Mr. Saedi (Casher of Qods Clinic) an
 <p/>
 
 <p>
-**b. Actors and goals** 
+<b>b. Actors and goals<b/>
 <p/>
 
 <p>
@@ -258,7 +258,7 @@ Several people are involved in our system. Such as:
 
 
 <p>
-**a. Casual description** 
+<b>a. Casual description<b/>
 <p/>
 <p>
 ![subsystems](https://github.com/mohsen-parsa/images/blob/master/subsystems.png?raw=true)
@@ -286,7 +286,7 @@ Use Case 02 (Drug store):
 <p>
 Medical or Drug Store: is responsible for adding new dosing and entering new rates to doses and can edit the rate and name of the medicines in Drug store.<br/>
 <p>
-		**Requirements**
+<b>Requirements<b/>
 <p/>
 <p>
 1.	Using both Barcode reader and manual entering the names of drugs in drug store and thesaurus.<br/>
@@ -301,8 +301,10 @@ Medical or Drug Store: is responsible for adding new dosing and entering new rat
 Use Case 03 (Operation Department):
 <b>
 <p/>
+
 <p>	
-	The receptionist registers the patient that need to operation into system and after operation if he/ she need bed reserve the bed to her/him.<br/>
+The receptionist registers the patient that need to operation into system and after operation if he/ she need bed reserve the bed to her/him.	
+<br/>
 <p/>
 <p>
 <b>
@@ -349,7 +351,9 @@ Use Case 05 (Laboratory):
 Laboratory is responsible for the testing and adding the result of the tests to the system. After it’s added to the system it can be viewed and be able to be edited, deleted and printed.
 <p/>
 <p>
-		Requirements:
+<b>
+Requirements:
+<b/>
 <p/>
 1.	Saving, editing, searching and deleting information about test.<br/>
 2.	Need printer to print the result sheet.<br/>
@@ -371,7 +375,7 @@ Requirements:
 <p/>
 
 <p>
-**b.	Use Case diagram:**
+<b>b.	Use Case diagram:<b/>
 <p/>
 
 <p>
@@ -383,14 +387,16 @@ Requirements:
 <p/>
 
 ## 5.	User interface specification: ##
-**a.	Preliminary Design**
+<p>
+<b>a.Preliminary Design<b/>
+<p/>
 <p>
 This part with Mock up is in other file.
 <p/>
 
 ## 6. Plan of work: ##
 <p>
-**a.	Timeline:**
+<b>a.	Timeline:<b/>
 <p/>
 
 <p>
@@ -410,7 +416,7 @@ The below tables consists of the initial milestones identified for the Clinic Ma
 <p/>
 
 <p>
-**Iteration No.1(first subsystem: reception)**
+<b>Iteration No.1(first subsystem: reception)<b/>
 <p/>
 <table>
 	<tr>
@@ -437,7 +443,7 @@ The below tables consists of the initial milestones identified for the Clinic Ma
 
 
 <p>
-**2. Iteration(second subsystem: drugstore and store)**
+<b>2. Iteration(second subsystem: drugstore and store)<b/>
 <p/>
 
 <table>
@@ -465,8 +471,9 @@ The below tables consists of the initial milestones identified for the Clinic Ma
 </p>
 
 
-<p>**3. Iteration (third subsystem: operation room)**
-
+<p>
+<b>3. Iteration (third subsystem: operation room)<b/>
+<p/>
 <table>
 	<tr>
 	<td><b>No</td><td><b>work must be done</b></td><td><b>delivery time
@@ -492,8 +499,9 @@ The below tables consists of the initial milestones identified for the Clinic Ma
 
 <p/>
 
-<p>**4. Iteration(fourth subsystem: parturition room )**
-
+<p>
+<b>4. Iteration(fourth subsystem: parturition room )<b/>
+<p/>
 <table>
 	<tr>
 	<td><b>No</td><td><b>work must be done</b></td><td><b>delivery time
@@ -519,8 +527,10 @@ The below tables consists of the initial milestones identified for the Clinic Ma
 
 <p/>
 
-<p>**5. Iteration (fifth subsystem: laboratory)**
-
+<p>
+<b>5. Iteration (fifth subsystem: laboratory)
+<b>
+<p/>
 <table>
 	<tr>
 	<td><b>No</td><td><b>work must be done</b></td><td><b>delivery time
@@ -546,7 +556,10 @@ The below tables consists of the initial milestones identified for the Clinic Ma
 
 <p/>
 
-<p>**6. Iteration No.1(sixth subsystem: office)**
+<p>
+<b>6. Iteration No.1(sixth subsystem: office)
+<b>
+<p/>
 
 <table>
 	<tr>
@@ -573,8 +586,8 @@ The below tables consists of the initial milestones identified for the Clinic Ma
 
 <p/>
 
-<p>**7. Iteration No.1(first subsystem: reception)**
-
+<p><b>7. Iteration No.1(first subsystem: reception)<b/>
+<p/>
 <table>
 	<tr>
 	<td><b>No</td><td><b>work must be done</b></td><td><b>delivery time
