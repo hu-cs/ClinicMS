@@ -205,10 +205,9 @@ According to our interview that we had with Mr. Saedi (Casher of Qods Clinic) an
 <p/>
 
 
-<p>
-## 3.	Functional  Requirement Specification:  ##
-<p/>
-
+<h2>
+2. Functional  Requirement Specification:
+</h2>
 <p>
 <b>a. Stockholders<b/>
 <p/>
@@ -245,9 +244,9 @@ Several people are involved in our system. Such as:
 <p/>
 
 
-<p>
-## 3.	Use case  ##
-<p/>
+<h2>
+ 3.	Use case  
+</h2>
 
 
 <p>
