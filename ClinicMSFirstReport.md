@@ -1,4 +1,4 @@
-# Software Engineering Project #
+<h> Software Engineering Project </h2>
 <p>
 <b>Clinic Management System (Abnos)<b/>
 <p/>
@@ -8,7 +8,7 @@
 <p/>
 
 
-<p/>
+<p>
 ![khadra logo](https://github.com/hu-cs/ClinicMS/blob/master/images/logo.png?raw=true)
 <p/>
 
@@ -53,24 +53,24 @@
 <p/>
 
 <p>
-## table of content ##
+<b> table of content <b/>
 
-1. Customer statement of requirements
-  * Problem statement
-2. User stories
-3. Actual numbers don't matter, just that it's a number
-  * Stockholders
-  * Actors and goals
-4. Use case
-  * Casual description
-  * Use case diagram  
-5. User interface specification
-  * Preliminary Design
-6. Plan of work
-  * Time line
-  * Project cost estimation
-  * Our methodology
-  * Members's Activities
+1. Customer statement of requirements<br/>
+  * Problem statement<br/>
+2. User stories<br/>
+3. Actual numbers don't matter, just that it's a number<br/>
+  * Stockholders<br/>
+  * Actors and goals<br/>
+4. Use case<br/>
+  * Casual description<br/>
+  * Use case diagram<br/>  
+5. User interface specification<br/>
+  * Preliminary Design<br/>
+6. Plan of work<br/>
+  * Time line<br/>
+  * Project cost estimation<br/>
+  * Our methodology<br/>
+  * Members's Activities<br/>
 <p/>
 
 <h2> 1. Customer Statement of Requirement: </h2>
