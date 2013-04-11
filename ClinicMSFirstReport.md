@@ -12,9 +12,9 @@
 ![khadra logo](https://github.com/hu-cs/ClinicMS/blob/master/images/logo.png?raw=true)
 <p/>
 
-<p>
+
 **Team Members:**
-<p/>
+
 <table>
     <tr>
         <td><b>ID</td><td><b>Name</td><td><b>Job</td> 
