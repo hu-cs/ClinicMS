@@ -1,6 +1,13 @@
 # Detailed Use Cases #
 
 
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/UseCasePhotos/No.0.png?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/UseCasePhotos/No.1.png?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/UseCasePhotos/No.2.png?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/UseCasePhotos/No.3.png?raw=true)  
 **USE CASE 0: ADMINISTRATING** 
 
    
