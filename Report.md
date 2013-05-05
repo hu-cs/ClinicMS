@@ -2,19 +2,19 @@
 # Software Engineering Project #
 	
 
-## Clinic Management System ##
+## Clinic Management System(Abnos) ##
 
-### Submission: 15 March 2013 ###
+### Submission: 10 April 2013 ###
 
 Team Members:   
 
-	Ahmad Ahmadi Rad  		ID:   
+	Ahmad Ahmadi Rad  		ID: 20498  
 
-	Ahmadullah      			ID: 20592   
+	Ahmadullah      		ID: 20592   
 
-	Mohsen Parsa			ID:    
+	Mohsen Parsa			ID: 20445   
 
-	Tahira Mohammadi			ID:    
+	Tahira Mohammadi		ID:    
 
 	Hadisa Nowrozi			ID:   
 
@@ -30,10 +30,8 @@ Table of Contents:
 
 	a.	*Problem statement
 
->2. System Requirements.
-	*	Enumerated Functional Requirements.
-	*	Enumerated non-functional Requirements.
-	*	On Screen appearance requirements.    return
+ >2.	User Stories
+	    
 
 #### Part Two: ####
      
@@ -44,71 +42,33 @@ Table of Contents:
 	*	Actors and Goals.
 
 
-	*	Sequence Diagram.
 
->2. User Interface Specification.
+>2. Use case:
 
-	*	Preliminary Design.
+	*	Casual Description.
 
-	*	User Effort Estimation.
+	*	Use case Diagram.
+
+>3. 	User Interface specification.
+
+	.	Preliminary Design.
 
 #### Part Three: ####
 
-	·	Domain Analysis.
+	
+	.	Timeline:
 
-	·	Domain Model.
+	.	Project cost estimation:
 
-	·	System Operation contracts.
+	.	Our methodology:
 
-	·	Mathematical Model.
-
-1.	Plan of Work.
-
-2.	References.
+	.	Member’s Activities:	
 
 
 
 
-Our requirement specification is as follows:    
-
- 
-1.	Data reporting and analyzing
 
 
-2.	Calculating incomes and Budget reporting
-
-
-3.	Stock and expenditure report
-
-
-4.	Laboratory  testing results
-
-
-5.	Patients information report
-
-
-6.	Lack of using database and back up from information
-
-
-7.	Operation room data report
-
-
-Domain Models:  List of all our System Modules.
-
-1.	Reception 
-
-
-2.	Laboratory
-
-
-3.	Medical Store
-
-
-4.	Operation theater ( ICU ) 
-
-5.	Parturition
-
-6.	Office
  
 
 ##### All members are contributed equally. #####
@@ -156,7 +116,9 @@ With counting, time serving, no more loss of records, it helps us to be more con
 Another customer was talking about problem with the counting of his bill, he said that we have a lot of patients and I don’t have enough time to calculate the bill for them, most of the time I make mistakes in calculating them. And this is a loss of money for me.
 
 
-Another problem was with the record of their patients, they didn’t have a record from their patients.	return
+Another problem was with the record of their patients, they didn’t have a record from their patients.
+
+
 If you survey the clinical laboratories, you wouldn’t find one record.
 
 
@@ -188,8 +150,7 @@ Can solve most of the patient’s problem.
 
 Our proposed management system and design is such that it will give the report of all patients, patient services, making decision and solution of your daily problem, such as better services to people, and also stock reporting link, getting information about your everyday drug sales, visited doctors, descriptions, personnel reporting, Operation treatments, patients payment, drug repository reporting in time scale of daily, monthly, yearly reporting. On the other hand also laboratory reporting give the information like result reporting and time of report. In patients information you are able to get the all information about your patients including dates and times he/she arrived. It’s also capable of securing by restricting access to the data in your database. In operation treatment, the software gives description of your Operations, available rooms, which doctor is in charge, patient’s payment and what kind of operation they had at what time.
 
-
-*Qods clinic requirements:* 
+ 
 
 
 According to our interview that we had with Mr. Saedi and visiting from Qods clinic. Khadhra team understood the requirements to be as such:	
@@ -214,21 +175,32 @@ According to our interview that we had with Mr. Saedi and visiting from Qods cli
 **User story:**		 
  
 User Story	Priority	Description	   
-Us-1	3	User shall use barcode reader or manual entering of dose names. Druggist can manually enter the name of medicine.	   
-Us-2	10	User shall save names and cost and so on of drugs in drug store and can calculate the number and incoming form selling of drugs.	   
-Us-3	7	User must be reported for thesaurus and calculate that how much drug was sold and how much the clinic earn and warn of the date of drugs expired.	   
-Us-4	4	User shall easily work with GUI.	   
-Us-5	5	The user has the ability to categorize the drugs.	   
-Us-6	6	The user should view the salaries according to month, day, and year and according to percentage. Because some of personal contact in salary per month and some other contact   according to percentage of incoming.	   
-Us-7	5	User also must be able view worker working double shifts.	   
-Us-8	10	User shall print the receipt and laboratory result on demand.	   
-Us-9	10	User shall search in database about incoming, personal, patient, drugs, equipment and so on.	   
-Us-10	8	User must have the Ability of updating the information of drugs in drug store.	   
-Us-11	7	User must have Ability to see the list of patient, drugs, and personnel and print the list on demand.	   
-Us-12	10	User must Save, edit and delete information about patient and operation that occurs in operation room on demand.	   
-Us-13	5	User must see the calculation of the price of room that patient reserve and announce how many room are reserved.
+Us-1		3	User shall use barcode reader or manual entering of dose names. Druggist can manually enter the name of medicine.	   
+Us-2		10	User shall save names and cost and so on of drugs in drug store and can calculate the number and incoming form selling of drugs.	   
+Us-3		7	User must be reported for thesaurus and calculate that how much drug was sold and how much the clinic earn and warn of the date of drugs expired.	   
+Us-4		4	User shall easily work with GUI.	   
+Us-5		5	The user has the ability to categorize the drugs.	   
+Us-6		6	The user should view the salaries according to month, day, and year and according to percentage. Because some of personal contact in salary per month and some other contact   according to percentage of incoming.	   
+Us-7		5	User also must be able view worker working double shifts.	   
+Us-8		10	User shall print the receipt and laboratory result on demand.	   
+Us-9		10	User shall search in database about incoming, personal, patient, drugs, equipment and so on.	   
+Us-10		8	User must have the Ability of updating the information of drugs in drug store.	   
+Us-11		7	User must have Ability to see the list of patient, drugs, and personnel and print the list on demand.	   
+Us-12		10	User must Save, edit and delete information about patient and operation that occurs in operation room on demand.	   
+Us-13		5	User must see the calculation of the price of room that patient reserve and announce how many room are reserved.
 On demand.	   
-Us-14	7	Above ability must be concerned on parturition room.	 
+Us-14		7	Above ability must be concerned on parturition room.
+US-15			As a tenant I can run the system on one PC as server and other connect to it.
+ 
+ST-16	As an authorized person I can connect printers to system to print the lists and other information and receipt.
+	6 points	   
+ST-17	As a tenant I can connect camera or scanner to system and enter photo of personals.
+	3 points	   
+ST -18	As a tenant I connect the system to reliable DBMS.
+	8 points	   
+ST-19	As a tenant I can easily use the System cause of its user friendly GUI	5 points	   
+ST-20	As a tenant I am sure about its security because of open source technologies which used.	9 points	 
+	 
 
 __Functional Requirements:__ 
 
@@ -302,27 +274,16 @@ __Functional Requirements:__
 
 23.	We will support the system for six month.    
 
- 
-Stakeholders: Our stakeholder is Qods Clinic.
-Actors and goals: Several people are involved in our system. Such as:    
-	
-Druggist, Laboratory guy, Manager, Doctors, and receptionist.    
-	
-And several devices Camera, Printer.
-	
-Druggist is responsible for adding new Medicine in System.
+ *Stockholders and Goals*
 
-Laboratory guy is responsible for entering results of test and can print the test manual.	
-
-Manager is responsible for managing all the system.
-	
-Doctors can view the results of the tests and medicine used by the patients. Can validate if necessary. For more laboratory test or advice new medicine.
- 
-Receptionist is responsible for printing the receipt for every patient who want to visit doctor. Not for guest of doctors.    
-	
-A printer has a role of printing the result of a test and a receipt. And many necessary test print or report prints.    
-
-Camera: a camera is used for taking pictures of the patients.
+Several people are involved in our system. Such as:
+1.	Manager of clinic or Admin: manager of admin can manage and supervise all subsystem and department.
+2.	Druggist: druggist just works with drug store subsystem and enters the name of sold drugs and some information about prescription.
+3.	Laboratory personal: they just work with laboratory subsystem and should enter the result of tests into system to record and printing the result sheet of test.
+4.	Receptionist: receptionist receives the patients and registers them into system and has interaction with operation room, parturition department and laboratory department.
+5.	Bar Code Reader: this device use in drug store to make easier the selling.
+6.	Scanner and Camera: these devices used in office to enter personal`s photo into system to complete their identity form. 
+7.	Printer: this device use in office to print the information of system if it necessary, in reception to print the receipts and in laboratory department to print the result sheet.
 	
 *SubSystem1:*
  
@@ -417,7 +378,7 @@ We normally have two kinds of Spends
 
 1.	Constant
     
-2. Dynamics
+2. 	Dynamics
 
 Constants: is constant like the bills, Cars etc.	
 
@@ -465,14 +426,14 @@ User interface specification:
 
 1.	How user logs in:
  
-1.	First a dialog opens, to choose who is he/she if, it selects and types his/her name than the password.
+2.	First a dialog opens, to choose who is he/she if, it selects and types his/her name than the password.
 
-2.	Than the main page will open, the places that the reception can access will be enabled to work, the other part that he/she doesn’t have access will be disabled, for example: receptionist doesn’t have access to the Operation Theater. You would see some more information around on picture. Medical(1)
+3.	Than the main page will open, the places that the reception can access will be enabled to work, the other part that he/she doesn’t have access will be disabled, for example: receptionist doesn’t have access to the Operation Theater. You would see some more information around on picture. Medical(1)
 
 
-3.	The receptionist wants to add a new patient to the database. Fill in the blanks full description of patient. There is several choice that a patient can make reserve for timing or go to parturition, visit doctor, and Operation Theater.
+4.	The receptionist wants to add a new patient to the database. Fill in the blanks full description of patient. There is several choice that a patient can make reserve for timing or go to parturition, visit doctor, and Operation Theater.
 
-4.	After that receipt is printed for that patient. With the description of patient.
+5.	After that receipt is printed for that patient. With the description of patient.
 
 All pictures all included with the document. You can see all of them.
 
@@ -502,6 +463,7 @@ Head of the Hospital is one person, after his supervisors.1 for management and o
 
 
 **Plan of work:**
+
 1.	IterationNo.1(first subsystem: reception)
 
 ·	 Functional requirement and analyzing 		March 23, 2013
@@ -580,7 +542,9 @@ Head of the Hospital is one person, after his supervisors.1 for management and o
 
 ·	run of server and training 	June 18, 2013
 
+
  __Member’s followings:__
+
 
 ![alt image2] (/image2.jpg)
  
