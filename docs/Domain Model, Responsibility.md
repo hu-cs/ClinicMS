@@ -12,7 +12,8 @@
 |Add the checked identities in the database as new user	| D	| AddUser |   
 |It specify the sample of identity and contains identity as object| K |Identity |  
 |Prepare a database query that best matches the actor’s search criteria and retrieve the records from the database | D | DBconnection |  
-
+   
+   
 |						   	**Responsibility for UC-0.2**				  |		      |      		   	 |    
 |:------------------------------------------------------------------------|:---------:|------------------|   
 |**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
@@ -23,7 +24,7 @@
 |Render the retrieved records into an HTML document for sending to actor’s Web browser for display.	| D	|PageMaker |  
 |HTML document that shows the others user in system.| K	| InterfacePage |  
 
-|						   	**Responsibility for UC-0.1**				  |		      |      		   	 |    
+|						   	**Responsibility for UC-1**			     	  |		      |      		   	 |    
 |:------------------------------------------------------------------------|:---------:|------------------|   
 |**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
 |Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts.	| D	| Controller |
@@ -32,9 +33,9 @@ HTML document that shows the others user in system.	| K	| interfacePage |
 Checks which the entry identities are valid or invalid	| K	| identityChecker |  
 According to kind of users accessibilities enables the accessible subsystem	| D	| EnableSubs   
 Render the retrieved records into an HTML document for sending to actor’s Web browser for display.	| D	| pageMaker |  
-Save the valid user in the database	D	IdentityStorage
-It specify the sample of identity and contains identity as object	| K	| identity |  
-
+|Save the valid user in the database	| D	| IdentityStorage |  
+|It specify the sample of identity and contains identity as object	| K	| identity | 
+   
 
 
 
@@ -90,18 +91,6 @@ checks for validity (from UC-1, step 1) 								  | D  |UserAuthenticator |
 
 
 
-|						   	**Responsibility for UC-2**				      |		 |		   	        |    
-|:------------------------------------------------------------------------|:----:|------------------|   
-|**Responsibility Description**                               			  | **Type** |**Concept Name** |  
-|Page make should have made the page for save                             | K | Page maker |  
-|The result should be get it from the different (UCS)                     | D | Getter  |  
-|The parameter should be added to database                                | D | Saver |  
-|The page shows the content of the page                                   | k | Interface page |  
-|The page that shows the content to be saved                              | K | Interface page |  
-|The interface page that get parameters or edits                          | K | Interface page |  
-|The saver will right to database.                                        | D | Writer to dbs  |  
-|The holder for the contents                                              | K | Holder  |   
-|Controller where to write the contents	                                  | D | controller  |
 
 
 
