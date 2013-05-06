@@ -34,7 +34,7 @@ checks for validity (from UC-1, step 1) 								  | D  |UserAuthenticator |
 |Rs13. Make receptionist able to delete receipt form database (from UC-3, step 1)	| D	| Remover|  
 
 
-|						   |	**Responsibility for UC-7**				  |				   	        |    
+|						   	**Responsibility for UC-8**				      |		 | 		   	        |    
 |:------------------------------------------------------------------------|:----:|------------------|   
 |**Responsibility Description**                               				  | **Type** |**Concept Name**      |  
 |Rs1. Coordinates actions of concepts associated with the ReceiptPatient&Receipt use case and delegate the work to other concepts.|	D |Controller|  
@@ -50,6 +50,20 @@ checks for validity (from UC-1, step 1) 								  | D  |UserAuthenticator |
 |Rs11.delete the request from database and delete tracking number (from UC-5)| D |Editor | 
 |Rs12. Make possible for users to sort the rendered list by identified field of records(from UC-6)| D | ResultSorter |  
 
+
+
+|						   	**Responsibility for UC-2**				      |		 |		   	        |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name** |  
+|Page make should have made the page for save                             | K | Page maker |  
+|The result should be get it from the different (UCS)                     | D | Getter  |  
+|The parameter should be added to database                                | D | Saver |  
+|The page shows the content of the page                                   | k | Interface page |  
+|The page that shows the content to be saved                              | K | Interface page |  
+|The interface page that get parameters or edits                          | K | Interface page |  
+|The saver will right to database.                                        | D | Writer to dbs  |  
+|The holder for the contents                                              | K | Holder  |   
+|Controller where to write the contents	                                  | D | controller  |
 
 
 
