@@ -10,8 +10,7 @@
 |Render the retrieved records into an HTML document for sending to actor’s Web browser for display.	| D | pageMaker |  
 |Add the checked identities in the database as new user	| D	| AddUser |   
 |It specify the sample of identity and contains identity as object| K |Identity |  
-|Prepare a database query that best matches the actor’s search criteria 
-and retrieve the records from the database | D |DBconnection |  
+|Prepare a database query that best matches the actor’s search criteria and retrieve the records from the database | D |DBconnection |  
    
    
 |						   	**Responsibility for UC-0.2**				  |		      |      		   	 |    
@@ -43,10 +42,8 @@ and retrieve the records from the database | D |DBconnection |
 |**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
 |Rs1. Coordinates actions of concepts associated with the searchAndSort 
 use case and delegate the work to other concepts.| D | Controller | 
-|Rs2. Authenticate user by prompting user to enter password,the system 
-checks for validity (from UC-1, step 1) | D | UserAuthenticator |  
-|Rs3. Render the retrieved records into an HTML document for sending to 
-actor’s Web browser for display. | D |Page Maker |  
+|Rs2. Authenticate user by prompting user to enter password,the system checks for validity (from UC-1, step 1) | D | UserAuthenticator |  
+|Rs3. Render the retrieved records into an HTML document for sending to actor’s Web browser for display. | D |Page Maker |  
 |Rs4. HTML document that shows the actor the current context, what 
 actions can be done, and outcomes of the previous actions | K |Interface Page| 
 |Rs5. Make a database query possible for actor’s conditional search and retrieve records from database.	| D	|DBConnector|  
