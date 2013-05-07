@@ -7,7 +7,7 @@
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
 |Controller **&#60;&#45;&#45;&#62;** NewIdentityEntry	|controller Send the new entry identity to add to system  | recieves |  
 |Controller **&#60;&#45;&#45;&#62;** interfacePage	| Controller participate in preparation of interface  | Post | 
-|pageMaker **&#60;&#45;&#45;&#62;** interfacePage	pageMaker prepares the interface Page	| Prepares |   
+|pageMaker **&#60;&#45;&#45;&#62;** interfacePage	| pageMaker prepares the interface Page	| Prepares |   
 |Controller **&#60;&#45;&#45;&#62;** pageMaker | Controller passes requests to Page Maker and receives back pages prepared for displaying |Convey request|
 |identityChecker **&#60;&#45;&#45;&#62;** AddUser | Retrieves valid identities to check the entry identity and which one is. |add valid identity |  
 |identityChecker **&#60;&#45;&#45;&#62;** identity	| Verify the kind of identity | Verify |  
