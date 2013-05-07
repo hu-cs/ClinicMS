@@ -36,7 +36,50 @@
 |Save the valid user in the database | D | IdentityStorage |  
 |It specify the sample of identity and contains identity as object | K | identity | 
    
-  
+
+|						   	**Responsibility for UC-2**			     	  |		      |      		   	 |    
+|:------------------------------------------------------------------------|:---------:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
+|Rs1. Page make should have made the page for save | K | Page maker |  
+|Rs2.The result should be get it from the different (UCS) | D | Getter |  
+|Rs3.The parameter should be added to database	| D	| Saver |  
+|Rs4.The page shows the content of the page	| K	| Interface page  |  
+|Rs5.The page that shows the content to be saved | K | Interface page |  
+|Rs6.The interface page that get parameters or edits | K | Interface page |  
+|Rs7.The saver will right to database.	| D	| Writer to dbs |  
+|Rs8.The holder for the contents | K | Holder |  
+|Rs9.Controller where to write the contents	| D	| controller |  
+
+|						   	**Responsibility for UC-3**			     	  |		      |      		   	 |    
+|:------------------------------------------------------------------------|:---------:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
+|Rs1. checker for the files to be deleted | D | Checker |  
+|Rs2. the content of the page must be made. Or updated. | D	| Updater |  
+|Rs3. Shows a confirmation page for delete | K | Int page |  
+|Rs4. Find the object and delete	| D	| deleter |  
+
+
+|						   	**Responsibility for UC-4**			     	  |		      |      		   	 |    
+|:------------------------------------------------------------------------|:---------:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
+|Rs1. Content must be known to print	| K	| Interface page |  
+|Rs2. Container to hold the data for print.	| K	| Data holder |  
+|Rs3. Make decision to print what | D | Decision maker |  
+|Rs4. Send request for print	| D	| Requester |  
+
+
+|						   	**Responsibility for UC-5**			     	  |		      |      		   	 |    
+|:------------------------------------------------------------------------|:---------:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
+|Rs1. Container for data	| K	| Data holder |  
+|Rs2. Page maker to show the content interface page	| K | Page maker |  
+|Rs3. Connector to database.	| D	| Connector |  
+|Rs4. Editor change the disable to editable. | D	| Editor |  
+|Rs5. Edits the page in database	| D	| Editor | 
+|Rs6. Checks if the data has been changed | D | checker |  
+
+
+
 |						   	**Responsibility for UC-6**				      |		      |      		   	 |    
 |:------------------------------------------------------------------------|:---------:|------------------|   
 |**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
