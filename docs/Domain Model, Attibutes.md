@@ -85,18 +85,31 @@ identity	Password	It is as an attribute of identity class to save the password o
 |**Concepts Attribute for UC-6** |	                                                |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept name**          | **Attributes**                                        | **Attributes description** |  
+|Search, sort request	user’s identity	Used to determine the actor’s credentials, which in turn specify what kind of data this actor is authorized to view.
+Result filtering	filter parameter 	Patient name, id, last name, birthdate, as user interest
+Result rendering	Search parameter	Need result filtering  to  Filter  the  retrieved  records  to  match
 
 
 
 |**Concepts Attribute for UC-7** |	                                                |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept name**          | **Attributes**                                        | **Attributes description** |  
+|Time reserving request	user’s 
+|identity	Used to determine the actor’s credentials, which in turn specify does actor is authorized to reserve time.
+Result filtering	filter parameter 	Patient name, id, last name, birthdate, as user interest for filtering the result
+Result sorting	Sort parameter	Patient name, id, last name, birthdate, field as user want
+Deleting receipt 	Delete parameter 	Need to pass the receipt tracking number for deleting from database
+TimeReserver	Date	Need to store date of reserving time temporary
 
 
 
 |**Concepts Attribute for UC-8** |	                                                |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept name**          | **Attributes**                                        | **Attributes description** |  
+|Search and sort request	|user’s identity |Used to determine the actor’s credentials, which in turn specify what kind of data this actor is authorized to view. |  
+|Result filtering	|filter parameter |Patient name, id, last name, birthdate, for user interest|  
+|search	|Search parameter	|needed  result filtering  needed  to  Filter  the  retrieved  records  to  match|   
+|Deleting and editing receipt |Delete parameter |Need to pass the receipt tracking number for deleting and editing from database|  
 
 
 
