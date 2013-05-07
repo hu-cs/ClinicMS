@@ -126,6 +126,97 @@
 |Rs11.delete the request from database and delete tracking number (from UC-5)| D |Editor | 
 |Rs12. Make possible for users to sort the rendered list by identified field of records(555from UC-6)| D | ResultSorter |  
 
+|						   	**Responsibility for UC-9**				      |		 | 		   	        |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name** |  
+|Coordinate actions of concepts associated with this use case . | D | Controller |  	
+|It should Scan our records and get photo. | D | Scanner and Camera Connection	                                                      
+Database Connection	D	
+This is specify a storage container for info and can easy retrieve records and do search, edit ,delete ...operation  .                                                      
+printer Connection	D	it responsible for printing records                                                                     
+Admin	D	To add or remove personal. Manage system about the shift and salaries of personals                                                                               .
+Investigation Request	K	
+Search Request	K	Form specifying the search parameters from database.                               
+Operation	K	                                              To add ,Sort ,remove and edit personals.
+check identity login	K	it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login                                                              .
+ Interface  	K	Shows interface or make views
+
+
+|						   	**Responsibility for UC-10**				      |		 | 		   	        |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name** |  
+|Controller	D	Coordinate actions of concepts associated with this use case .                   
+Value checker	D	
+This operation check the input value is valid or no  ,if not valid , Do not allow put invalid value                                                                                          .  
+Database Connection	D	
+This is specify a storage container for info and can easy retrieve records  ,and do search, edit ,delete ...operation.                                                          
+printer Connection	D	it responsible for printing records                                                                     
+Lab staff	D	To print the test result sheet and save information of test in           database.                                                                                                     
+patient	K	This form get information about patient .                                                       
+Search Request	K	Form specifying the search parameters from database.                               
+Delete ,edit and Sort request	K	                                              To add ,S ort ,remove and edit personals
+check identity login	K	it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login                                                              .
+
+
+
+|						   	**Responsibility for UC-11**				      |		 | 		   	        |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name** |  
+|Controller	D	Coordinate actions of concepts associated with this use case .                   
+Value checker	D	
+This operation check the input value is valid or no ,Do not allow put invalid value .                                                                                                     
+
+Database Connection	D	
+This is specify a storage container for info and can easy retrieve records  ,and do search, edit ,delete ...operation.                                                          
+printer Connection	D	it responsible for printing records                                                                     
+Receptionist	D	To Reserve an ambulance                                                                        	
+patient	K	This form get information about patient .                                                       
+Search Request	K	Form specifying the search parameters from database.                               
+Delete ,edit and Sort request	K	                                              To add ,S ort ,remove and edit personals
+check identity login	K	it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login                                                              .
+ ambulance drivers	K	
+ 
+
+
+
+|						   	**Responsibility for UC-12**				      |		 | 		   	        |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name** |  
+|Rs1. User must be authenticating with check identifier. | D | Check Identifier |  
+|Rs2. Receptionist clicks on operation list link. To see the list of operation | K | View list |  
+|Rs3. Receptionist clicks on operation list link. To see the list of operation | D | Opening  |
+|Rs4. receptionist can delete, print, edit, search and sort| D | changer |  
+|Rs5. Receptionist click on the add new operation link| D | new link |  
+|Rs6. System opens the window of form to fill it. | D | opening form |  
+|Rs7. receptionist fills the form with valid value a. (b) Press the save button. | K | checking valid value |  
+|Rs8. a) System saves the information in database. (b) shows a message (saved successfully) | D | saving|  
+
+
+|						   	**Responsibility for UC-13**				      |		 | 		   	        |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name** |  
+|Rs1.  Check the user for authenticating , user shoud enter valid id. | K |  check identify |  
+|Rs2. List the parturition for Receptionist to see the list of parturition. | D | listing |  
+|Rs3. changer can delete, print, edit, search and sort. | D | changer |  
+|Rs4. new link show new parturition link for chossing | K | show new link |  
+|Rs5. open the form for filling | D | open the form | D | open the form |  
+|Rs6. fill the form with valid value and saving the form | D | fill the form |  
+|Rs7. save the information in database and showing a massage of successful action | D | saving |  
+
+
+|						   	**Responsibility for UC-14**				      |		 | 		   	        |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name** |  
+|Rs1. Check the user for authenticating, user should enter valid id.| D | Check identity |  
+|Rs2. show the list of BedResevation and Receipt. | D | Show list |  
+|RS3. the changer can delete, print, edit, search and sort. | D | Changer |   
+|Rs4. Receptionist click on the, add reserving bed link.  | D | Adding |  
+|Rs5. open the window for view of form to fill and show massage that beds are free for reserving. | D | show form|  
+|Rs6. Check the valid value and finally save the result. | D | saving |  
+|Rs7. know that the result must be save in database.| K | database |  
+|Rs8. show a warning message if the time of reservation finishes about any bed. | K | warning massage |  
+
+
 
 |						  	**Responsibility for UC-15**				  |		 | 	                |    
 |:------------------------------------------------------------------------|:----:|------------------|   
