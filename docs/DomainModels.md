@@ -22,4 +22,11 @@
 
 ![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-13.PNG?raw=true)  
 
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-14.PNG?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-15.jpg?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-16.jpg?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-17.jpg?raw=true)  
 
