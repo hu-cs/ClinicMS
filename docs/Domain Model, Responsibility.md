@@ -1,6 +1,6 @@
 # Domain Model #
 
-|						   	**Responsibility for UC-0.1**				  ||      		   	    
+|						   	**Responsibility for UC-0.1**				  |      		   	    
 |:------------------------------------------------------------------------|:---------:|------------------|   
 |**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
 |Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts. | D | Controller |  
@@ -13,7 +13,7 @@
 |Prepare a database query that best matches the actor’s search criteria and retrieve the records from the database | D |DBconnection |  
    
    
-|						   	**Responsibility for UC-0.2**				  |		      |      		   	 |    
+|						   	**Responsibility for UC-0.2**				  |    
 |:------------------------------------------------------------------------|:---------:|------------------|   
 |**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
 |Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts. | D | Controller |  
@@ -24,7 +24,7 @@
 |HTML document that shows the others user in system.| K	| InterfacePage |  
     
    
-|						   	**Responsibility for UC-1**			     	  |		      |      		   	 |    
+|						   	**Responsibility for UC-1**			     	  |    
 |:------------------------------------------------------------------------|:---------:|------------------|   
 |**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
 |Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts. | D | Controller |
@@ -37,7 +37,7 @@
 |It specify the sample of identity and contains identity as object | K | identity | 
    
   
-|						   	**Responsibility for UC-6**				      |		      |      		   	 |    
+|						   	**Responsibility for UC-6**				      |	    
 |:------------------------------------------------------------------------|:---------:|------------------|   
 |**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
 |Rs1. Coordinates actions of concepts associated with the searchAndSort use case and delegate the work to other concepts.| D | Controller | 
@@ -49,7 +49,7 @@
 |Rs8. Make possible for users to sort the rendered list by identified field of records|	D |ResultSorter|  
    
    
-|						  	**Responsibility for UC-7**				      |		 | 	                |    
+|						  	**Responsibility for UC-7**				      |  
 |:------------------------------------------------------------------------|:----:|------------------|   
 |**Responsibility Description**                               		      | **Type** |**Concept Name** |  
 |Rs1. Coordinates actions of concepts associated with the ReservingVisitTime use case and orchestrate the work of other concepts.	| D	| Controller |   
@@ -67,7 +67,7 @@
 |Rs13. Make receptionist able to delete receipt form database (from UC-3, step 1)	| D	| Remover|  
    
    
-|						   	**Responsibility for UC-8**				      |		 | 		   	        |    
+|						   	**Responsibility for UC-8**				      |	    
 |:------------------------------------------------------------------------|:----:|------------------|   
 |**Responsibility Description**                               			  | **Type** |**Concept Name** |  
 |Rs1. Coordinates actions of concepts associated with the ReceiptPatient&Receipt use case and delegate the work to other concepts.|	D |Controller|  
@@ -84,7 +84,7 @@
 |Rs12. Make possible for users to sort the rendered list by identified field of records(555from UC-6)| D | ResultSorter |  
 
 
-|						  	**Responsibility for UC-15**				  |		 | 	                |    
+|						  	**Responsibility for UC-15**				  |   
 |:------------------------------------------------------------------------|:----:|------------------|   
 |**Responsibility Description**                               		      | **Type** |**Concept Name** |  
 |RS1.Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts.| D | Controller |  
@@ -97,7 +97,7 @@
 |RS8. Prepare a database query that best matches the actor’s search criteria and retrieve the records from the database	| D	| DB connection|  
 
 
-|						  	**Responsibility for UC-16**				  |		 | 	                |    
+|						  	**Responsibility for UC-16**				  |	   
 |:------------------------------------------------------------------------|:----:|------------------|   
 |**Responsibility Description**                               		      | **Type** |**Concept Name** |  
 |RS1.Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts.| D | Controller |   
@@ -110,7 +110,7 @@
 |RS8. Prepare a database query that best matches the actor’s search criteria and retrieve the records from the database	| D	| DB connection |  
 
 
-|						  	**Responsibility for UC-17**				  |		 | 	                |    
+|						  	**Responsibility for UC-17**				  |	    
 |:------------------------------------------------------------------------|:----:|------------------|   
 |**Responsibility Description**                               		      | **Type** |**Concept Name** |  
 |RS1.Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts. | D | Controller |  
