@@ -1,6 +1,6 @@
 # Domain Model #
 
-|						   	**Responsibility for UC-0.1**				  ||  ||   ||    
+|						   	**Responsibility for UC-0.1**				  ||      		   	    
 |:------------------------------------------------------------------------|:---------:|------------------|   
 |**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
 |Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts. | D | Controller |  
