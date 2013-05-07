@@ -2,7 +2,7 @@
 # Association for Use Cases #
 
 
-|**Association  for UC-0.1** |	                                                    |                     |    
+|**Concepts Association  for UC-0.1** |	                                                    |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
 |Controller **&#60;&#45;&#45;&#62;** NewIdentityEntry	|controller Send the new entry identity to add to system  | recieves |  
@@ -16,7 +16,7 @@
 
 
 
-|**Association  for UC-0.2** |	                                                    |                     |    
+|**Concepts Association  for UC-0.2** |	                                                    |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |
 |Controller **&#60;&#45;&#45;&#62;** RemoveIdentityEntry | Send the entry identity to remove from system to controller 	| recieves |  
@@ -29,7 +29,7 @@
 
 
 
-|**Association  for UC-1** |	                                                    |                     |    
+|**Concepts Association  for UC-1** |	                                                    |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |
 |Controller **&#60;&#45;&#45;&#62;** identityEntry	| Send the entry identity to controller | Receives |  
@@ -44,7 +44,7 @@
 |PageMaker **&#60;&#45;&#45;&#62;** EnableSubs	| Specify the accessible subsystem to pageMaker to render it. | Obtain access |  
 
 
-|**Association  for UC-2** |	                                                    |                     |    
+|**Concepts Association  for UC-2** |	                                                    |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
 |checker **&#60;&#45;&#45;&#62;** interface page	| Interface page will get the input | Preparing |  
@@ -59,7 +59,7 @@
 
 
 
-|**Association  for UC-3** |	                                                    |                     |    
+|**Concepts Association  for UC-3** |	                                                    |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
 |Actor **&#60;&#45;&#45;&#62;** interface page |Inputs data |	Get input |   
@@ -69,7 +69,7 @@ Page maker **&#60;&#45;&#45;&#62;** delete | Sends data to delete it . | Send re
 Delete **&#60;&#45;&#45;&#62;** database deleter | Send request to delete the appropriate data	| request |  
 
 
-|**Association  for UC-4** |	                                                    |                     |    
+|**Concepts Association  for UC-4** |	                                                    |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
 |Interface page **&#60;&#45;&#45;&#62;** 	checker | Sends and receives data from actor	Show data & input
@@ -81,7 +81,7 @@ Delete **&#60;&#45;&#45;&#62;** database deleter | Send request to delete the ap
 
 
 
-|**Association  for UC-5** |	                                                    |                     |    
+|**Concepts Association  for UC-5** |	                                                    |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
 |Actor **&#60;&#45;&#45;&#62;** interface page	|Gets input and show back for actor	| In and out |  
@@ -95,49 +95,87 @@ Delete **&#60;&#45;&#45;&#62;** database deleter | Send request to delete the ap
 
 
 
-|**Association  for UC-6** |	                                                    |                     |    
+|**Concepts Association  for UC-6** |	                                            |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+|Controller **&#60;&#45;&#45;&#62;** UserAuthenticator	|Controller pass the user name and password… to UserAuthenticator for authenticating the user | Authenticate |  
+|Controller **&#60;&#45;&#45;&#62;** Page Maker	| passes requests to Page Maker and receives back pages prepared for displaying	| conveys requests |  
+|Page Maker **&#60;&#45;&#45;&#62;** Interface Page	Page Maker prepares the Interface Page	prepare
+|Page Maker **&#60;&#45;&#45;&#62;** DBConnector | Page Maker passes search requests to Database Connection to list the user interested query | Dispatches Request |  
+|QueryFilter **&#60;&#45;&#45;&#62;** DBConnector | QueryFilter connect to DBConnector for filtering user interested fields	| Filtering Result |  
+|ResultSorter **&#60;&#45;&#45;&#62;** DBConnector	| ResultSorter connect to DBConnector to sort the list somehow user wants. |Sorting Result |  
+|ResultSorter **&#60;&#45;&#45;&#62;** Page Maker | ResultSorter  connect the Page Maker to render the user specified field sorted result | Rendering the Filtered Result |  
+
+
+
+|**Concepts Association  for UC-7** |	                                            |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+|Controller **&#60;&#45;&#45;&#62;** UserAuthenticator	|Controller pass the user name and password to UserAuthenticator for authenticating the user | Authenticate |   
+|Controller **&#60;&#45;&#45;&#62;** Page Maker	| Controller passes requests to Page Maker and 
+receives back pages prepared for displaying interface	| conveys requests |  
+|Page Maker **&#60;&#45;&#45;&#62;** Interface Page	| Page Maker passes predefined interface for actor actions | Prepare |  
+|Page Maker **&#60;&#45;&#45;&#62;** Form |Must render the form to an html document for sending to actor’s Web browser for display.	|Making form |  
+|TimeReserver **&#60;&#45;&#45;&#62;** DBConnector	| TimeReserver needs to request DBConnector to check whether the time is reserved before	Checking the | reserving time |  
+|Controller **&#60;&#45;&#45;&#62;** RecieptPrinter	| Need to connect with RecieptPrinter to request for printing the receipt 	request
+|RecieptPrinter **&#60;&#45;&#45;&#62;** DBConnector | RecieptPrinter needs database connection via DBConnector	Printing 
+|Controller **&#60;&#45;&#45;&#62;** QueryFilter | Controller pass new Form request to Form	Filtering Result
+|Controller **&#60;&#45;&#45;&#62;** Archiver | Need to request from Archiver to save the receipt or patient	Request 
+|Archiver **&#60;&#45;&#45;&#62;** DBConnector | Archiver requests Database Connection to store receipt into the database	Receipt, Patient  save 
+|Archiver **&#60;&#45;&#45;&#62;** Notifier	| Archiver requests Notifier to notify success of archiving 	Notifier 
+|Controller **&#60;&#45;&#45;&#62;** Remover | Controller Passes delete request to ReceiptDeleter for deleting the receptionist interested receipt 	conveys requests
+|Remover **&#60;&#45;&#45;&#62;** DBConnector | ReceiptDeleter must connect to DBConnector to delete the receipt form database	| DeletePatient |   
+|Controller **&#60;&#45;&#45;&#62;** ResultSorter | Controller needs to ask result sorter to sort the list	| Request |  
+|ResultSorter **&#60;&#45;&#45;&#62;** DBConnector	| ResultSorter connect to DBConnector to sort the list somehow user wants.	| Sorting Result |  
+|ResultSorter **&#60;&#45;&#45;&#62;** Page Maker | ResultSorter  connect the Page Maker to render the user specified field sorted result | Rendering the Filtered Result |   
+
+
+
+|**Concepts Association  for UC-8** |	                                            |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+|Controller **&#60;&#45;&#45;&#62;** UserAuthenticator	| Controller pass the user name and password to UserAuthenticator for authenticating the user |Authenticate |   
+|Controller **&#60;&#45;&#45;&#62;** Page Maker	| Controller passes requests to Page Maker and receives back pages prepared for displaying interface	| prepare |  
+|Page Maker **&#60;&#45;&#45;&#62;** Interface Page	| Page Maker passes search requests to Database Connection	Dispatches Request
+|Page Maker **&#60;&#45;&#45;&#62;** RegisterForm	| ResultRenderer request DBConnector to list the user interested query	| Rendering Result |  
+|Controller **&#60;&#45;&#45;&#62;** RegisterForm	| QueryFilter connect to DBConnector for filtering user interested fields |Filtering Result |  
+|ResultSorter **&#60;&#45;&#45;&#62;** DBConnector	| ResultSorter connect to DBConnector to sort the list somehow user wants.	Sorting Result
+|Controller **&#60;&#45;&#45;&#62;** RecieptPrinter	| Need to connect with RecieptPrinter to request for printing the receipt 	| request |  
+|RecieptPrinter **&#60;&#45;&#45;&#62;** DBConnector | RecieptPrinter needs database connection via DBConnector	| Printing |  
+|ResultRenderer **&#60;&#45;&#45;&#62;** QueryFilter | ResultRenderer to render the user specified field filtered result of QueryFilter	| Rendering the Filtered Result |   
+|Controller **&#60;&#45;&#45;&#62;** Archiver | Need to request from Archiver to save the receipt or patient | request |  
+|Archiver **&#60;&#45;&#45;&#62;** DBConnector	| Archiver requests Database Connection to store receipt into the database	| Receipt save |  
+|Archiver **&#60;&#45;&#45;&#62;** Notifier	Archiver requests Notifier to notify success of archiving 	Notify 
+|Controller **&#60;&#45;&#45;&#62;** Remover | Controller Passes delete request to ReceiptDeleter for deleting the receptionist interested receipt 	| conveys requests |  
+|Remover **&#60;&#45;&#45;&#62;** DBConnector | ReceiptDeleter must connect to DBConnector to delete the receipt from database	|Delete request |  
+
+
+
+|**Concepts Association  for UC-9** |	                                            |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
 
 
 
-|**Association  for UC-7** |	                                                    |                     |    
+|**Concepts Association  for UC-10** |	                                            |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
 
 
 
-|**Association  for UC-8** |	                                                    |                     |    
+|**Concepts Association  for UC-11** |	                                            |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
 
 
 
-|**Association  for UC-9** |	                                                    |                     |    
+|**Concepts Association  for UC-12** |	                                            |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
 
 
 
-|**Association  for UC-10** |	                                                    |                     |    
-|:-------------------------|:-------------------------------------------------------|:--------------------|   
-|**Concept pairs**         | **Association description**                            |**Association Name** |  
-
-
-
-|**Association  for UC-11** |	                                                    |                     |    
-|:-------------------------|:-------------------------------------------------------|:--------------------|   
-|**Concept pairs**         | **Association description**                            |**Association Name** |  
-
-
-
-|**Association  for UC-12** |	                                                    |                     |    
-|:-------------------------|:-------------------------------------------------------|:--------------------|   
-|**Concept pairs**         | **Association description**                            |**Association Name** |  
-
-
-
-|**Association  for UC-13** |	                                                    |                     |    
+|**Concepts Association  for UC-13** |	                                            |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
 
@@ -149,13 +187,13 @@ Delete **&#60;&#45;&#45;&#62;** database deleter | Send request to delete the ap
 
 
 
-|**Association  for UC-15** |	                                                    |                     |    
+|**Concepts Association  for UC-15** |	                                            |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
 
 
 
-|**Association  for UC-16** |	                                                    |                     |    
+|**Concepts Association  for UC-16** |	                                            |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
 

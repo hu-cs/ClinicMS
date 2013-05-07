@@ -1,15 +1,14 @@
-# Domain Model #
+#Concept Attributes#
 
-|						   |	Responsibility for UC-6				      |				   	        |    
-|:------------------------------------------------------------------------|:----:|:-----------------|     
-|Responsibility Description                               				  | Type |Concept Name      |  
-|Rs1. Coordinates actions of concepts associated with the searchAndSort use case and delegate the work to other concepts.						  | D    Controller |  
-|Rs2. Authenticate user by prompting user to enter password, the system   |  D   |                  |
-checks for validity (from UC-1, step 1) 								  |  D   |UserAuthenticator |
-Rs3. Render the retrieved records into an HTML document for sending to 
-actor’s Web browser for display.										  |  D     |Page Maker						  |
-Rs4. HTML document that shows the actor the current context, what 
-actions can be done, and outcomes of the previous actions	K	Interface Page
-Rs5. Make a database query possible for actor’s conditional search and retrieve records from database.	D	DBConnector
-Rs7. user specifies the search conditions and submits for obtaining a list of records	D	QueryFilter
-Rs8. Make possible for users to sort the rendered list by identified field of records	D	ResultSorter
+|**Concepts Attribute for UC-9** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes **                                        | **Attributes description** |  
+|/3. NewIdentityEntry |userName | Take the new user name and send to controller and identity object|   
+|                     | password|Take the new user password and send to controller and identity object |  
+|	                  |accessibilities |Take the new user accessibilities to system and send to controller and identity object|  
+|/3. AddUser	          | userName	|Use value of this attribute to save in userName attribute of  relation in databasse|  
+|                     |password	    |Use value of this attribute to save in password attribute of relation in databasse|  
+|                     |accessibilities	|Use value of this attribute to save in attribute of  relation in databasse |  
+|/3. Identity	      |userName	|It is as an attribute of identity class to save the name of user|  
+|                     |password	|It is as an attribute of identity class to save the password of user|   
+|                     |accessibilities	|It is as an attribute of identity class to save the accessibilities of user|  
