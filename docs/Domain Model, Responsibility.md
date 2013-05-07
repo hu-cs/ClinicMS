@@ -69,7 +69,7 @@
    
 |						   	**Responsibility for UC-8**				      |		 | 		   	        |    
 |:------------------------------------------------------------------------|:----:|------------------|   
-|**Responsibility Description**                               			  | **Type** |**Concept Name**      |  
+|**Responsibility Description**                               			  | **Type** |**Concept Name** |  
 |Rs1. Coordinates actions of concepts associated with the ReceiptPatient&Receipt use case and delegate the work to other concepts.|	D |Controller|  
 |Rs2. Authenticate user by prompting user to enter password, the system checks for validity (from UC-1, step 1)| D | UserAuthenticator |  
 |Rs3. Render the retrieved records into an HTML document for sending to actor’s Web browser for display.| D | Page Maker |
@@ -82,6 +82,46 @@
 |Rs10.Archive the request in the database and assign it a tracking number (from UC-2)| D| Archiver |  
 |Rs11.delete the request from database and delete tracking number (from UC-5)| D |Editor | 
 |Rs12. Make possible for users to sort the rendered list by identified field of records(555from UC-6)| D | ResultSorter |  
+
+
+|						  	**Responsibility for UC-15**				  |		 | 	                |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               		      | **Type** |**Concept Name** |  
+|RS1.Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts.| D | Controller |  
+|RS2.Container for new sale accessibilities. | K | New Identity Entry |  
+|RS3. Verify whether or not the key-code entered by the user is valid. | D |Identity Checker |  
+|RS4. HTML document that shows the register drugs in system. | K | Interface Page |  
+|RS5. Render the retrieved records into an HTML document for sending to actor’s Web browser for display. | D | Page Maker |  
+|RS6. Add the checked identities in the database as new sale. | D | new sale |  
+|RS7. It specify the sample of identity and contains identity as object | K	| Identity |   
+|RS8. Prepare a database query that best matches the actor’s search criteria and retrieve the records from the database	| D	| DB connection|  
+
+
+|						  	**Responsibility for UC-16**				  |		 | 	                |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               		      | **Type** |**Concept Name** |  
+|RS1.Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts.| D | Controller |   
+|RS2.Container for add new item accessibilities. | K | New Identity Entry |  
+|RS3. Verify whether or not the key-code entered by the user is valid. | D | Identity Checker |  
+|RS4. HTML document that shows the register drugs in system.	              K	Interface Page
+|RS5. Render the retrieved records into an HTML document for sending to actor’s Web browser for display. | D | Page Maker |  
+|RS6. Add the checked identities in the database as add new item. | D | new sale |  
+|RS7. It specify the sample of identity and contains identity as object | K	| Identity |  
+|RS8. Prepare a database query that best matches the actor’s search criteria and retrieve the records from the database	| D	| DB connection |  
+
+
+|						  	**Responsibility for UC-17**				  |		 | 	                |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               		      | **Type** |**Concept Name** |  
+|RS1.Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts. | D | Controller |  
+|RS2.Container for add new record of salary accessibilities. | K | New Identity Entry |  
+|RS3. Verify whether or not the key-code entered by the user is valid. | D	|Identity Checker |  
+|RS4. HTML document that shows the table of personals salaries | K	| Interface Page |  
+|RS5. Render the retrieved records into an HTML document for sending to actor’s Web browser for display. | D | Page Maker |  
+|RS6. Add the checked identities in the database as add new record of salary. | D | new sale |  
+|RS7. It specify the sample of identity and contains identity as object. | K | Identity |   
+|RS8. Prepare a database query that best matches the actor’s search criteria and retrieve the records from the database	| D	 | DB connection  |  
+
 
 
 
