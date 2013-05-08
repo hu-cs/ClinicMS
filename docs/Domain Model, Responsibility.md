@@ -129,45 +129,43 @@
 |						   	**Responsibility for UC-9**				      |		 | 		   	        |    
 |:------------------------------------------------------------------------|:----:|------------------|   
 |**Responsibility Description**                               			  | **Type** |**Concept Name** |  
-|Coordinate actions of concepts associated with this use case . | D | Controller |  	
-|It should Scan our records and get photo. | D | Scanner and Camera Connection |  	                                                      |This is specify a storage container for info and can easy retrieve records and do search, edit ,delete ...operation. | D | Database Connection |  
-|it responsible for printing records | D | printer Connection |  
-|To add or remove personal. Manage system about the shift and salaries of personals. | K | Admin |  
-|Form specifying the search parameters from database. | K | Search Request |   
-|To add ,Sort ,remove and edit personals | K | Operation |  
-|it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login | K | check identity login |  
-|Shows interface or make views | K | Interface |  
+|Rs1. Coordinate actions of concepts associated with this use case . | D | Controller |  	
+|Rs2. It should Scan our records and get photo. | D | Scanner and Camera Connection |  	                                                      |Rs3. This is specify a storage container for info and can easy retrieve records and do search, edit ,delete ...operation. | D | Database Connection |  
+|Rs4. it responsible for printing records | D | printer Connection |  
+|Rs5. To add or remove personal. Manage system about the shift and salaries of personals. | K | Admin |  
+|Rs6. Form specifying the search parameters from database. | K | Search Request |   
+|Rs7. To add ,Sort ,remove and edit personals | K | Operation |  
+|Rs8. it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login | K | check identity login |  
+|Rs9. Shows interface or make views | K | Interface |  
  
 
 |						   	**Responsibility for UC-10**				      |		 | 		   	        |    
 |:------------------------------------------------------------------------|:----:|------------------|   
 |**Responsibility Description**                               			  | **Type** |**Concept Name** |  
-|Coordinate actions of concepts associated with this use case . | D | Controller |  
-|This operation check the input value is valid or no  ,if not valid , Do not allow put invalid value | D | Value checker |  
-|This is specify a storage container for info and can easy retrieve records  ,and do search, edit ,delete ...operation. | D | Database Connection |  
-|it responsible for printing records | D | printer Connection |  
-|To print the test result sheet and save information of test in database. | D | Lab staff |  
-|This form get information about patient. | K | patient |  
-|Form specifying the search parameters from database. | K | Search Request |  
-|To add, Sort, remove and edit personals | K | Delete ,edit and Sort request |  
-|it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login | K | check identity login |  
+|Rs1. Coordinate actions of concepts associated with this use case . | D | Controller |  
+|Rs2. This operation check the input value is valid or no  ,if not valid , Do not allow put invalid value | D | Value checker |  
+|Rs3. This is specify a storage container for info and can easy retrieve records  ,and do search, edit ,delete ...operation. | D | Database Connection |  
+|Rs4. it responsible for printing records | D | printer Connection |  
+|Rs5.To print the test result sheet and save information of test in database. | D | Lab staff |  
+|Rs6. This form get information about patient. | K | patient |  
+|Rs7. Form specifying the search parameters from database. | K | Search Request |  
+|Rs8. To add, Sort, remove and edit personals | K | Delete ,edit and Sort request |  
+|Rs9. it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login | K | check identity login |  
  
 
 
 |						   	**Responsibility for UC-11**				      |		 | 		   	        |    
 |:------------------------------------------------------------------------|:----:|------------------|   
 |**Responsibility Description**                               			  | **Type** |**Concept Name** |  
-|Coordinate actions of concepts associated with this use case . | D | Controller |  
-|This operation check the input value is valid or no ,Do not allow put invalid value | D | Value checker |  
-|This is specify a storage container for info and can easy retrieve records  ,and do search, edit ,delete ...operation. | D | Database Connection |  
-|it responsible for printing records | D | printer Connection |  
-|To Reserve an ambulance | D | Receptionist |  
-|This form get information about patient . | K | patient |  
-|Form specifying the search parameters from database. | K | Search Request |  
-|To add ,S ort ,remove and edit personals | K | Delete ,edit and Sort request |  
-|it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login | K | 
- check identity login |  
-
+|Rs1. Coordinate actions of concepts associated with this use case . | D | Controller |  
+|Rs2. This operation check the input value is valid or no ,Do not allow put invalid value | D | Value checker |  
+|Rs3. This is specify a storage container for info and can easy retrieve records  ,and do search, edit ,delete ...operation. | D | Database Connection |  
+|Rs4. it responsible for printing records | D | printer Connection |  
+|Rs5. To Reserve an ambulance | D | Receptionist |  
+|Rs6. This form get information about patient . | K | patient |  
+|Rs7. Form specifying the search parameters from database. | K | Search Request |  
+|Rs8. To add ,S ort ,remove and edit personals | K | Delete ,edit and Sort request |  
+|Rs9. it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login | K | check identity login |  
 
 
 
@@ -229,7 +227,7 @@
 |RS1.Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts.| D | Controller |   
 |RS2.Container for add new item accessibilities. | K | New Identity Entry |  
 |RS3. Verify whether or not the key-code entered by the user is valid. | D | Identity Checker |  
-|RS4. HTML document that shows the register drugs in system.	              K	Interface Page
+|RS4. HTML document that shows the register drugs in system. | K | Interface Page |  
 |RS5. Render the retrieved records into an HTML document for sending to actor’s Web browser for display. | D | Page Maker |  
 |RS6. Add the checked identities in the database as add new item. | D | new sale |  
 |RS7. It specify the sample of identity and contains identity as object | K	| Identity |  
