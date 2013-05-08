@@ -154,25 +154,42 @@ receives back pages prepared for displaying interface	| conveys requests |
 |**Concepts Association  for UC-9** |	                                            |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
-
+|
 
 
 |**Concepts Association  for UC-10** |	                                            |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
+|Interface Page **&#60;&#45;&#45;&#62;** AddingFormOfNewPatient | Interface page load the form of new Patient for filling | New form |  
+|CheckInputValue **&#60;&#45;&#45;&#62;** Massage warning | Check input value check the input value and massage warning show when the user enter invalid value | checking |  
+|CheckInputValue **&#60;&#45;&#45;&#62;** save | After the checking the information , information send to database for saving | save |  
+|database **&#60;&#45;&#45;&#62;** list of patient | Database post the list of patient to interface page | post |  
+|InterfaceListOfPatient **&#60;&#45;&#45;&#62;** Printer Connector | Linterfacelist of patient post the information about the patient to printer device that user want print them. | connecting device |  
+|Page Maker **&#60;&#45;&#45;&#62;** Interfacepage | Page Maker prepares the Interface Page to showing for user | prepare |  
+
 
 
 
 |**Concepts Association  for UC-11** |	                                            |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
-
+|interface page **&#60;&#45;&#45;&#62;** Operation | Interface page load to see the form and doing operation(edit, print , save, and so on) | Doing operation |  
+|Operation **&#60;&#45;&#45;&#62;** registerNewCall | Operation passes the request to registerNewCall for reserving the ambulance. | ReserveNewAmbulance |  
+|Contorller **&#60;&#45;&#45;&#62;** massage | Massage show a massage that the ambulance is free | massage |  
+|registerNewCall **&#60;&#45;&#45;&#62;** CheckInputValue | The input value check by the check input value | CheckingValue |  
+|rgisterNewCall **&#60;&#45;&#45;&#62;** save | After the checking the input value the form  save in the database. | Save info |  
+|Contorller **&#60;&#45;&#45;&#62;** CheckInputValue | Controller control the CheckInputValue | Receives |  
+|Page Maker **&#60;&#45;&#45;&#62;** Interfacepage | Page Maker prepares the Interface Page to showing for user | prepare |  
 
 
 |**Concepts Association  for UC-12** |	                                            |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
-
+|registration form of doctor **&#60;&#45;&#45;&#62;** CheckInputValue | registration form of doctor post the registration form to Check Input Value for checking. | checking |  
+|CheckInputValue **&#60;&#45;&#45;&#62;** Operation | Valid data post to operation | receive |  
+|Save **&#60;&#45;&#45;&#62;** Storage Data | Storing data in the database | storing data |  
+|InterfaceListOfPersonals **&#60;&#45;&#45;&#62;** Printer Connector | The list of Personals post to printer for printing. | printer connector |  
+|Page Maker **&#60;&#45;&#45;&#62;** Interfacepage | Page Maker prepares the Interface Page to showing for user | prepare |  
 
 
 |**Concepts Association  for UC-13** |	                                            |                     |    
