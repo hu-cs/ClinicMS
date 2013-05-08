@@ -112,18 +112,17 @@ Delete **&#60;&#45;&#45;&#62;** database deleter | Send request to delete the ap
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept pairs**         | **Association description**                            |**Association Name** |  
 |Controller **&#60;&#45;&#45;&#62;** UserAuthenticator	|Controller pass the user name and password to UserAuthenticator for authenticating the user | Authenticate |   
-|Controller **&#60;&#45;&#45;&#62;** Page Maker	| Controller passes requests to Page Maker and 
-receives back pages prepared for displaying interface	| conveys requests |  
+|Controller **&#60;&#45;&#45;&#62;** Page Maker	| Controller passes requests to Page Maker and receives back pages prepared for displaying interface | conveys requests |  
 |Page Maker **&#60;&#45;&#45;&#62;** Interface Page	| Page Maker passes predefined interface for actor actions | Prepare |  
-|Page Maker **&#60;&#45;&#45;&#62;** Form |Must render the form to an html document for sending to actor’s Web browser for display.	|Making form |  
+|Page Maker **&#60;&#45;&#45;&#62;** Form |Must render the form to an html document for sending to actor’s Web browser for display. |Making form |  
 |TimeReserver **&#60;&#45;&#45;&#62;** DBConnector	| TimeReserver needs to request DBConnector to check whether the time is reserved before	Checking the | reserving time |  
-|Controller **&#60;&#45;&#45;&#62;** RecieptPrinter	| Need to connect with RecieptPrinter to request for printing the receipt 	request
-|RecieptPrinter **&#60;&#45;&#45;&#62;** DBConnector | RecieptPrinter needs database connection via DBConnector	Printing 
-|Controller **&#60;&#45;&#45;&#62;** QueryFilter | Controller pass new Form request to Form	Filtering Result
-|Controller **&#60;&#45;&#45;&#62;** Archiver | Need to request from Archiver to save the receipt or patient	Request 
-|Archiver **&#60;&#45;&#45;&#62;** DBConnector | Archiver requests Database Connection to store receipt into the database	Receipt, Patient  save 
-|Archiver **&#60;&#45;&#45;&#62;** Notifier	| Archiver requests Notifier to notify success of archiving 	Notifier 
-|Controller **&#60;&#45;&#45;&#62;** Remover | Controller Passes delete request to ReceiptDeleter for deleting the receptionist interested receipt 	conveys requests
+|Controller **&#60;&#45;&#45;&#62;** RecieptPrinter	| Need to connect with RecieptPrinter to request for printing the receipt | request |  
+|RecieptPrinter **&#60;&#45;&#45;&#62;** DBConnector | RecieptPrinter needs database connection via DBConnector	| Printing |  
+|Controller **&#60;&#45;&#45;&#62;** QueryFilter | Controller pass new Form request to Form	| Filtering Result |  
+|Controller **&#60;&#45;&#45;&#62;** Archiver | Need to request from Archiver to save the receipt or patient | Request |  
+|Archiver **&#60;&#45;&#45;&#62;** DBConnector | Archiver requests Database Connection to store receipt into the database	Receipt, Patient | save |  
+|Archiver **&#60;&#45;&#45;&#62;** Notifier	| Archiver requests Notifier to notify success of archiving | Notifier |   
+|Controller **&#60;&#45;&#45;&#62;** Remover | Controller Passes delete request to ReceiptDeleter for deleting the receptionist interested receipt | conveys requests |  
 |Remover **&#60;&#45;&#45;&#62;** DBConnector | ReceiptDeleter must connect to DBConnector to delete the receipt form database	| DeletePatient |   
 |Controller **&#60;&#45;&#45;&#62;** ResultSorter | Controller needs to ask result sorter to sort the list	| Request |  
 |ResultSorter **&#60;&#45;&#45;&#62;** DBConnector	| ResultSorter connect to DBConnector to sort the list somehow user wants.	| Sorting Result |  
@@ -139,7 +138,7 @@ receives back pages prepared for displaying interface	| conveys requests |
 |Page Maker **&#60;&#45;&#45;&#62;** Interface Page	| Page Maker passes search requests to Database Connection	Dispatches Request
 |Page Maker **&#60;&#45;&#45;&#62;** RegisterForm	| ResultRenderer request DBConnector to list the user interested query	| Rendering Result |  
 |Controller **&#60;&#45;&#45;&#62;** RegisterForm	| QueryFilter connect to DBConnector for filtering user interested fields |Filtering Result |  
-|ResultSorter **&#60;&#45;&#45;&#62;** DBConnector	| ResultSorter connect to DBConnector to sort the list somehow user wants.	Sorting Result
+|ResultSorter **&#60;&#45;&#45;&#62;** DBConnector	| ResultSorter connect to DBConnector to sort the list somehow user wants. | Sorting Result |  
 |Controller **&#60;&#45;&#45;&#62;** RecieptPrinter	| Need to connect with RecieptPrinter to request for printing the receipt 	| request |  
 |RecieptPrinter **&#60;&#45;&#45;&#62;** DBConnector | RecieptPrinter needs database connection via DBConnector	| Printing |  
 |ResultRenderer **&#60;&#45;&#45;&#62;** QueryFilter | ResultRenderer to render the user specified field filtered result of QueryFilter	| Rendering the Filtered Result |   

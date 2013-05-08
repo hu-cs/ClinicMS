@@ -152,12 +152,20 @@ TimeReserver	Date	Need to store date of reserving time temporary
 |**Concepts Attribute for UC-15** |	                                                |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept name**          | **Attributes**                                        | **Attributes description** |
+|New Identity Entry	| User Name	|Take the new user name and send to controller and identity object |  
+||password	|Take the new user password and send to controller and identity object|  
+||Add new sale | Drug name | Take the new drug name and send to controller and identity object|  
+||Drug price | Take the new drug price for new drug and send to controller and identity object |  
 
 
 
 |**Concepts Attribute for UC-16** |	                                                |                     |    
 |:-------------------------|:-------------------------------------------------------|:--------------------|   
 |**Concept name**          | **Attributes**                                        | **Attributes description** |
+|New Identity Entry| User Name |Take the new user name and send to controller and identity object|  
+||password	|Take the new user password and send to controller and identity object|  
+|| Add new item	|  	
+		
 
 
 
