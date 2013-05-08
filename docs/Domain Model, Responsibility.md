@@ -130,52 +130,44 @@
 |:------------------------------------------------------------------------|:----:|------------------|   
 |**Responsibility Description**                               			  | **Type** |**Concept Name** |  
 |Coordinate actions of concepts associated with this use case . | D | Controller |  	
-|It should Scan our records and get photo. | D | Scanner and Camera Connection	                                                      
-Database Connection	D	
-This is specify a storage container for info and can easy retrieve records and do search, edit ,delete ...operation  .                                                      
-printer Connection	D	it responsible for printing records                                                                     
-Admin	D	To add or remove personal. Manage system about the shift and salaries of personals                                                                               .
-Investigation Request	K	
-Search Request	K	Form specifying the search parameters from database.                               
-Operation	K	                                              To add ,Sort ,remove and edit personals.
-check identity login	K	it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login                                                              .
- Interface  	K	Shows interface or make views
-
+|It should Scan our records and get photo. | D | Scanner and Camera Connection |  	                                                      |This is specify a storage container for info and can easy retrieve records and do search, edit ,delete ...operation. | D | Database Connection |  
+|it responsible for printing records | D | printer Connection |  
+|To add or remove personal. Manage system about the shift and salaries of personals. | K | Admin |  
+|Form specifying the search parameters from database. | K | Search Request |   
+|To add ,Sort ,remove and edit personals | K | Operation |  
+|it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login | K | check identity login |  
+|Shows interface or make views | K | Interface |  
+ 
 
 |						   	**Responsibility for UC-10**				      |		 | 		   	        |    
 |:------------------------------------------------------------------------|:----:|------------------|   
 |**Responsibility Description**                               			  | **Type** |**Concept Name** |  
-|Controller	D	Coordinate actions of concepts associated with this use case .                   
-Value checker	D	
-This operation check the input value is valid or no  ,if not valid , Do not allow put invalid value                                                                                          .  
-Database Connection	D	
-This is specify a storage container for info and can easy retrieve records  ,and do search, edit ,delete ...operation.                                                          
-printer Connection	D	it responsible for printing records                                                                     
-Lab staff	D	To print the test result sheet and save information of test in           database.                                                                                                     
-patient	K	This form get information about patient .                                                       
-Search Request	K	Form specifying the search parameters from database.                               
-Delete ,edit and Sort request	K	                                              To add ,S ort ,remove and edit personals
-check identity login	K	it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login                                                              .
-
+|Coordinate actions of concepts associated with this use case . | D | Controller |  
+|This operation check the input value is valid or no  ,if not valid , Do not allow put invalid value | D | Value checker |  
+|This is specify a storage container for info and can easy retrieve records  ,and do search, edit ,delete ...operation. | D | Database Connection |  
+|it responsible for printing records | D | printer Connection |  
+|To print the test result sheet and save information of test in database. | D | Lab staff |  
+|This form get information about patient. | K | patient |  
+|Form specifying the search parameters from database. | K | Search Request |  
+|To add, Sort, remove and edit personals | K | Delete ,edit and Sort request |  
+|it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login | K | check identity login |  
+ 
 
 
 |						   	**Responsibility for UC-11**				      |		 | 		   	        |    
 |:------------------------------------------------------------------------|:----:|------------------|   
 |**Responsibility Description**                               			  | **Type** |**Concept Name** |  
-|Controller	D	Coordinate actions of concepts associated with this use case .                   
-Value checker	D	
-This operation check the input value is valid or no ,Do not allow put invalid value .                                                                                                     
+|Coordinate actions of concepts associated with this use case . | D | Controller |  
+|This operation check the input value is valid or no ,Do not allow put invalid value | D | Value checker |  
+|This is specify a storage container for info and can easy retrieve records  ,and do search, edit ,delete ...operation. | D | Database Connection |  
+|it responsible for printing records | D | printer Connection |  
+|To Reserve an ambulance | D | Receptionist |  
+|This form get information about patient . | K | patient |  
+|Form specifying the search parameters from database. | K | Search Request |  
+|To add ,S ort ,remove and edit personals | K | Delete ,edit and Sort request |  
+|it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login | K | 
+ check identity login |  
 
-Database Connection	D	
-This is specify a storage container for info and can easy retrieve records  ,and do search, edit ,delete ...operation.                                                          
-printer Connection	D	it responsible for printing records                                                                     
-Receptionist	D	To Reserve an ambulance                                                                        	
-patient	K	This form get information about patient .                                                       
-Search Request	K	Form specifying the search parameters from database.                               
-Delete ,edit and Sort request	K	                                              To add ,S ort ,remove and edit personals
-check identity login	K	it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login                                                              .
- ambulance drivers	K	
- 
 
 
 
