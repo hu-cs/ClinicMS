@@ -13,6 +13,17 @@
 
 ![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-5.jpg?raw=true)  
 
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-9.PNG?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-10.PNG?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-11.PNG?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-12.PNG?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-13.PNG?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-14.PNG?raw=true)
 
 ![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-15.jpg?raw=true)  
 
