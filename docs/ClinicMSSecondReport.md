@@ -1652,3 +1652,792 @@ Flow of Events for Extensions (Alternate Scenarios): </td>
 </td>
 </tr>
 </table>
+
+
+
+#Sequence Diagrams#
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram/UC-0.PNG?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram/UC-1.PNG?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram/UC-2.PNG?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram/UC-3.PNG?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram/UC-4.PNG?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram/UC-5.PNG?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram/UC-6.PNG?raw=true)  
+
+[khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram/UC-7.PNG?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram/UC-8.PNG?raw=true) 
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram2/UC-9.png?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram2/UC-10.png?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram2/UC-12.png?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram2/UC-12.png?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram2/UC-13.png?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram2/UC-14.png?raw=true)   
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram2/UC-15.png?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram2/UC-16.png?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/Sequence%20diagram2/UC-17.png?raw=true)
+
+
+#Activity Diagrams#
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/activityDiagram2/UC-01.png?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/activityDiagram2/UC-02.png?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/activityDiagram2/UC-1.png?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/activityDiagram2/UC-2.png?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/activityDiagram2/UC-3.png?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/activityDiagram2/UC-4.png?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/activityDiagram2/UC-5.png?raw=true)  
+
+[khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/activityDiagram2/UC-6.png?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/activityDiagram2/UC-7.png?raw=true) 
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/activityDiagram2/UC-8.jpg?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/activityDiagram2/UC-9.jpg?raw=true) 
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/activityDiagram2/UC-10.jpg?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/activityDiagram2/UC-11.jpg?raw=true)
+
+#Responsibilities of concept models#  
+
+
+|						   	**Responsibility for UC-0.1**				  |		      |      		   	 |    
+|:------------------------------------------------------------------------|:---------:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
+|Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts. | D | Controller |  
+|Container for new user’s authentication data, password, userName, accessibilities.| K | NewIdentityEntry |  
+|Verify whether or not the key-code entered by the user is valid.| D | IdentityChecker |  
+|HTML document that shows the others user in system. | K| interfacePage |  
+|Render the retrieved records into an HTML document for sending to actor’s Web browser for display.	| D | pageMaker |  
+|Add the checked identities in the database as new user	| D	| AddUser |   
+|It specify the sample of identity and contains identity as object| K |Identity |  
+|Prepare a database query that best matches the actor’s search criteria and retrieve the records from the database | D |DBconnection |  
+   
+   
+|						   	**Responsibility for UC-0.2**				  |		      |      		   	 |    
+|:------------------------------------------------------------------------|:---------:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
+|Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts. | D | Controller |  
+|Container for user’s authentication data, such as password,userName, and accessibilities. | K | RemoveExpiredIdentity |  
+|Remove the selected user form database | D | RemoveUser |  
+|Prepare a database query that best matches the actor’s search criteria and retrieve the records from the database| D | DB connection |
+|Render the retrieved records into an HTML document for sending to actor’s Web browser for display.	| D	|PageMaker |  
+|HTML document that shows the others user in system.| K	| InterfacePage |  
+    
+   
+|						   	**Responsibility for UC-1**			     	  |		      |      		   	 |    
+|:------------------------------------------------------------------------|:---------:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
+|Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts. | D | Controller |
+|Container for user’s authentication data, such as password, Username. | K | IdentityEntry |  
+|HTML document that shows the others user in system. | K | interfacePage |  
+|Checks which the entry identities are valid or invalid	| K	| identityChecker |  
+|According to kind of users accessibilities enables the accessible subsystem	| D	| EnableSubs |  
+|Render the retrieved records into an HTML document for sending to actor’s Web browser for display.	| D	| pageMaker |  
+|Save the valid user in the database | D | IdentityStorage |  
+|It specify the sample of identity and contains identity as object | K | identity | 
+   
+
+|						   	**Responsibility for UC-2**			     	  |		      |      		   	 |    
+|:------------------------------------------------------------------------|:---------:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
+|Rs1. Page make should have made the page for save | K | Page maker |  
+|Rs2.The result should be get it from the different (UCS) | D | Getter |  
+|Rs3.The parameter should be added to database	| D	| Saver |  
+|Rs4.The page shows the content of the page	| K	| Interface page  |  
+|Rs5.The page that shows the content to be saved | K | Interface page |  
+|Rs6.The interface page that get parameters or edits | K | Interface page |  
+|Rs7.The saver will right to database.	| D	| Writer to dbs |  
+|Rs8.The holder for the contents | K | Holder |  
+|Rs9.Controller where to write the contents	| D	| controller |  
+
+|						   	**Responsibility for UC-3**			     	  |		      |      		   	 |    
+|:------------------------------------------------------------------------|:---------:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
+|Rs1. checker for the files to be deleted | D | Checker |  
+|Rs2. the content of the page must be made. Or updated. | D	| Updater |  
+|Rs3. Shows a confirmation page for delete | K | Int page |  
+|Rs4. Find the object and delete	| D	| deleter |  
+
+
+|						   	**Responsibility for UC-4**			     	  |		      |      		   	 |    
+|:------------------------------------------------------------------------|:---------:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
+|Rs1. Content must be known to print	| K	| Interface page |  
+|Rs2. Container to hold the data for print.	| K	| Data holder |  
+|Rs3. Make decision to print what | D | Decision maker |  
+|Rs4. Send request for print	| D	| Requester |  
+
+
+|						   	**Responsibility for UC-5**			     	  |		      |      		   	 |    
+|:------------------------------------------------------------------------|:---------:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
+|Rs1. Container for data	| K	| Data holder |  
+|Rs2. Page maker to show the content interface page	| K | Page maker |  
+|Rs3. Connector to database.	| D	| Connector |  
+|Rs4. Editor change the disable to editable. | D	| Editor |  
+|Rs5. Edits the page in database	| D	| Editor | 
+|Rs6. Checks if the data has been changed | D | checker |  
+
+
+
+|						   	**Responsibility for UC-6**				      |		      |      		   	 |    
+|:------------------------------------------------------------------------|:---------:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name**   |  
+|Rs1. Coordinates actions of concepts associated with the searchAndSort use case and delegate the work to other concepts.| D | Controller | 
+|Rs2. Authenticate user by prompting user to enter password,the system checks for validity (from UC-1, step 1) | D | UserAuthenticator |  
+|Rs3. Render the retrieved records into an HTML document for sending to actor’s Web browser for display. | D |Page Maker |  
+|Rs4. HTML document that shows the actor the current context, what actions can be done, and outcomes of the previous actions | K |Interface Page| 
+|Rs5. Make a database query possible for actor’s conditional search and retrieve records from database.	| D	|DBConnector|  
+|Rs7. user specifies the search conditions and submits for obtaining a list of records|	D |QueryFilter|  
+|Rs8. Make possible for users to sort the rendered list by identified field of records|	D |ResultSorter|  
+   
+   
+|						  	**Responsibility for UC-7**				      |		 | 	                |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               		      | **Type** |**Concept Name** |  
+|Rs1. Coordinates actions of concepts associated with the ReservingVisitTime use case and orchestrate the work of other concepts.	| D	| Controller |   
+|Rs2. Rs2. Authenticate user by prompting user to enter password, the system checks for validity (from UC-1, step 1)| D | UserAuthenticator|  
+|Rs3. Render the requested page into an HTML document for sending to actor’s Web browser for display.| D |	Page Maker |
+|Rs4. HTML document that shows the actor, print and time saver, new Form, and archive button actions.| K	|Interface Page|  
+|Rs5. Give actor the possibility  to reserve a time	| D	| TimeReserver |   
+|Rs6. Print the receipt (from UC-4, step 4)	| D	| RecieptPrinter |  
+|Rs7. Give the Initiator possibility to types all requirements fields | D | Form |  
+|Rs8. Notify the Receptionist if any requirement field is blank or success of form saved if time is not reserved before	| D |	Notifier |
+|Rs9. Make a database query possible for actor’s conditional search and retrieve records from database.	| D	| DBConnector|  
+|Rs10. Archive the requested receipt in the database and assign it a tracking (id) number	| D | Archiver |  
+|Rs11. user specifies the search conditions and submits for obtaining a list of records (from UC-6, step 4)	| D | QueryFilter |  
+|Rs12. Make possible for users to sort the rendered list by identified field of records (from UC-6, step 3)|	D | ResultSorter|  
+|Rs13. Make receptionist able to delete receipt form database (from UC-3, step 1)	| D	| Remover|  
+   
+   
+|						   	**Responsibility for UC-8**				      |		 | 		   	        |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name** |  
+|Rs1. Coordinates actions of concepts associated with the ReceiptPatient&Receipt use case and delegate the work to other concepts.|	D |Controller|  
+|Rs2. Authenticate user by prompting user to enter password, the system checks for validity (from UC-1, step 1)| D | UserAuthenticator |  
+|Rs3. Render the retrieved records into an HTML document for sending to actor’s Web browser for display.| D | Page Maker |
+|Rs4. HTML document that shows the actor, like print and register, new Form, and achieve button actions.| K| InterfacePage |  
+|Rs5. Print the recipe and patient list (from UC-4)	| D| RecieptPrinter|  
+|Rs6. Make a database query possible for actor’s conditional search and retrieve records from database.| D | RegisterForm |  
+|Rs7. Responsible form deleting recipe (from UC-3)	| D |Remover |   
+|Rs8. Notify the Receptionist if any requirement field is blank or success of form saved| D |Notifier|  
+|Rs9. Make a database query possible for actor’s conditional search and retrieve records from database.| D | DBConnector|  
+|Rs10.Archive the request in the database and assign it a tracking number (from UC-2)| D| Archiver |  
+|Rs11.delete the request from database and delete tracking number (from UC-5)| D |Editor | 
+|Rs12. Make possible for users to sort the rendered list by identified field of records(555from UC-6)| D | ResultSorter |  
+
+|						   	**Responsibility for UC-9**				      |		 | 		   	        |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name** |  
+|Rs1. Coordinate actions of concepts associated with this use case . | D | Controller |  	
+|Rs2. It should Scan our records and get photo. | D | Scanner and Camera Connection |  	                                                      |Rs3. This is specify a storage container for info and can easy retrieve records and do search, edit ,delete ...operation. | D | Database Connection |  
+|Rs4. it responsible for printing records | D | printer Connection |  
+|Rs5. To add or remove personal. Manage system about the shift and salaries of personals. | K | Admin |  
+|Rs6. Form specifying the search parameters from database. | K | Search Request |   
+|Rs7. To add ,Sort ,remove and edit personals | K | Operation |  
+|Rs8. it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login | K | check identity login |  
+|Rs9. Shows interface or make views | K | Interface |  
+ 
+
+|						   	**Responsibility for UC-10**				      |		 | 		   	        |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name** |  
+|Rs1. Coordinate actions of concepts associated with this use case . | D | Controller |  
+|Rs2. This operation check the input value is valid or no  ,if not valid , Do not allow put invalid value | D | Value checker |  
+|Rs3. This is specify a storage container for info and can easy retrieve records  ,and do search, edit ,delete ...operation. | D | Database Connection |  
+|Rs4. it responsible for printing records | D | printer Connection |  
+|Rs5.To print the test result sheet and save information of test in database. | D | Lab staff |  
+|Rs6. This form get information about patient. | K | patient |  
+|Rs7. Form specifying the search parameters from database. | K | Search Request |  
+|Rs8. To add, Sort, remove and edit personals | K | Delete ,edit and Sort request |  
+|Rs9. it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login | K | check identity login |  
+ 
+
+
+|						   	**Responsibility for UC-11**				      |		 | 		   	        |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name** |  
+|Rs1. Coordinate actions of concepts associated with this use case . | D | Controller |  
+|Rs2. This operation check the input value is valid or no ,Do not allow put invalid value | D | Value checker |  
+|Rs3. This is specify a storage container for info and can easy retrieve records  ,and do search, edit ,delete ...operation. | D | Database Connection |  
+|Rs4. it responsible for printing records | D | printer Connection |  
+|Rs5. To Reserve an ambulance | D | Receptionist |  
+|Rs6. This form get information about patient . | K | patient |  
+|Rs7. Form specifying the search parameters from database. | K | Search Request |  
+|Rs8. To add ,S ort ,remove and edit personals | K | Delete ,edit and Sort request |  
+|Rs9. it responsible for checking password value that it is correct or no .if it is not correct do not allow to user login | K | check identity login |  
+
+
+
+|						   	**Responsibility for UC-12**				      |		 | 		   	        |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name** |  
+|Rs1. User must be authenticating with check identifier. | D | Check Identifier |  
+|Rs2. Receptionist clicks on operation list link. To see the list of operation | K | View list |  
+|Rs3. Receptionist clicks on operation list link. To see the list of operation | D | Opening  |
+|Rs4. receptionist can delete, print, edit, search and sort| D | changer |  
+|Rs5. Receptionist click on the add new operation link| D | new link |  
+|Rs6. System opens the window of form to fill it. | D | opening form |  
+|Rs7. receptionist fills the form with valid value a. (b) Press the save button. | K | checking valid value |  
+|Rs8. a) System saves the information in database. (b) shows a message (saved successfully) | D | saving|  
+
+
+|						   	**Responsibility for UC-13**				      |		 | 		   	        |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name** |  
+|Rs1.  Check the user for authenticating , user shoud enter valid id. | K |  check identify |  
+|Rs2. List the parturition for Receptionist to see the list of parturition. | D | listing |  
+|Rs3. changer can delete, print, edit, search and sort. | D | changer |  
+|Rs4. new link show new parturition link for chossing | K | show new link |  
+|Rs5. open the form for filling | D | open the form | D | open the form |  
+|Rs6. fill the form with valid value and saving the form | D | fill the form |  
+|Rs7. save the information in database and showing a massage of successful action | D | saving |  
+
+
+|						   	**Responsibility for UC-14**				      |		 | 		   	        |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               			  | **Type** |**Concept Name** |  
+|Rs1. Check the user for authenticating, user should enter valid id.| D | Check identity |  
+|Rs2. show the list of BedResevation and Receipt. | D | Show list |  
+|RS3. the changer can delete, print, edit, search and sort. | D | Changer |   
+|Rs4. Receptionist click on the, add reserving bed link.  | D | Adding |  
+|Rs5. open the window for view of form to fill and show massage that beds are free for reserving. | D | show form|  
+|Rs6. Check the valid value and finally save the result. | D | saving |  
+|Rs7. know that the result must be save in database.| K | database |  
+|Rs8. show a warning message if the time of reservation finishes about any bed. | K | warning massage |  
+
+
+
+|						  	**Responsibility for UC-15**				  |		 | 	                |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               		      | **Type** |**Concept Name** |  
+|RS1.Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts.| D | Controller |  
+|RS2.Container for new sale accessibilities. | K | New Identity Entry |  
+|RS3. Verify whether or not the key-code entered by the user is valid. | D |Identity Checker |  
+|RS4. HTML document that shows the register drugs in system. | K | Interface Page |  
+|RS5. Render the retrieved records into an HTML document for sending to actor’s Web browser for display. | D | Page Maker |  
+|RS6. Add the checked identities in the database as new sale. | D | new sale |  
+|RS7. It specify the sample of identity and contains identity as object | K	| Identity |   
+|RS8. Prepare a database query that best matches the actor’s search criteria and retrieve the records from the database	| D	| DB connection|  
+
+
+|						  	**Responsibility for UC-16**				  |		 | 	                |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               		      | **Type** |**Concept Name** |  
+|RS1.Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts.| D | Controller |   
+|RS2.Container for add new item accessibilities. | K | New Identity Entry |  
+|RS3. Verify whether or not the key-code entered by the user is valid. | D | Identity Checker |  
+|RS4. HTML document that shows the register drugs in system. | K | Interface Page |  
+|RS5. Render the retrieved records into an HTML document for sending to actor’s Web browser for display. | D | Page Maker |  
+|RS6. Add the checked identities in the database as add new item. | D | new sale |  
+|RS7. It specify the sample of identity and contains identity as object | K	| Identity |  
+|RS8. Prepare a database query that best matches the actor’s search criteria and retrieve the records from the database	| D	| DB connection |  
+
+
+|						  	**Responsibility for UC-17**				  |		 | 	                |    
+|:------------------------------------------------------------------------|:----:|------------------|   
+|**Responsibility Description**                               		      | **Type** |**Concept Name** |  
+|RS1.Coordinate actions of all concepts associated with a use case, a logical grouping of use cases, or the entire system and delegate the work to other concepts. | D | Controller |  
+|RS2.Container for add new record of salary accessibilities. | K | New Identity Entry |  
+|RS3. Verify whether or not the key-code entered by the user is valid. | D	|Identity Checker |  
+|RS4. HTML document that shows the table of personals salaries | K	| Interface Page |  
+|RS5. Render the retrieved records into an HTML document for sending to actor’s Web browser for display. | D | Page Maker |  
+|RS6. Add the checked identities in the database as add new record of salary. | D | new sale |  
+|RS7. It specify the sample of identity and contains identity as object. | K | Identity |   
+|RS8. Prepare a database query that best matches the actor’s search criteria and retrieve the records from the database	| D	 | DB connection  |  
+
+
+#Association of Concepts#  
+
+
+
+|**Concepts Association  for UC-0.1** |	                                                    |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+|Controller **&#60;&#45;&#45;&#62;** NewIdentityEntry	|controller Send the new entry identity to add to system  | recieves |  
+|Controller **&#60;&#45;&#45;&#62;** interfacePage	| Controller participate in preparation of interface  | Post | 
+|pageMaker **&#60;&#45;&#45;&#62;** interfacePage	| pageMaker prepares the interface Page	| Prepares |   
+|Controller **&#60;&#45;&#45;&#62;** pageMaker | Controller passes requests to Page Maker and receives back pages prepared for displaying |Convey request|
+|identityChecker **&#60;&#45;&#45;&#62;** AddUser | Retrieves valid identities to check the entry identity and which one is. |add valid identity |  
+|identityChecker **&#60;&#45;&#45;&#62;** identity	| Verify the kind of identity | Verify |  
+|Controller **&#60;&#45;&#45;&#62;** identity | Control of kind of identity and use when it is need	| Obtain |  
+|pageMaker **&#60;&#45;&#45;&#62;** DBconnection |Obtain need data from database to load on page | Provides Data |  
+
+
+
+|**Concepts Association  for UC-0.2** |	                                                    |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |
+|Controller **&#60;&#45;&#45;&#62;** RemoveIdentityEntry | Send the entry identity to remove from system to controller 	| recieves |  
+|Controller **&#60;&#45;&#45;&#62;** interfacePage |Controller participate in preparation of interface | Post |   
+|pageMaker **&#60;&#45;&#45;&#62;** interfacePage |pageMaker prepares the interface Page	| Prepares |  
+|Controller **&#60;&#45;&#45;&#62;** pageMaker |Controller passes requests to Page Maker and receives back pages prepared for displaying | Convey request |
+|Controller **&#60;&#45;&#45;&#62;** idnetityChecker	| Controller order to check the entry identity and send back the result to controller | Request | 
+|pageMaker **&#60;&#45;&#45;&#62;** DBconnection	|Obtain need data from database to load on page	| Provide data |    
+|Controller **&#60;&#45;&#45;&#62;** RemoveUser	| Post the expired identity to remove user and remove from system and database | Post expired identity |  
+
+
+
+|**Concepts Association  for UC-1** |	                                                    |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |
+|Controller **&#60;&#45;&#45;&#62;** identityEntry	| Send the entry identity to controller | Receives |  
+|Controller **&#60;&#45;&#45;&#62;** interfacePage	| Controller participate in preparation of interface | Post |  
+|pageMaker **&#60;&#45;&#45;&#62;** interfacePage | pageMaker prepares the interface Page | Prepares |  
+|Controller **&#60;&#45;&#45;&#62;** pageMaker| Controller passes requests to Page Maker and receives back pages prepared for displaying | Convey request |      
+|Controller **&#60;&#45;&#45;&#62;** idnetityChecker | Controller order to check the entry identity and send back the result to controller	| Request |  
+|identityChecker **&#60;&#45;&#45;&#62;** identityStorage | Retrieves valid identities to check the entry identity and which one is. | Retrieve valid  identity |
+|identityChecker **&#60;&#45;&#45;&#62;** identity	| Verify the kind of identity	| Verify |   
+|Controller **&#60;&#45;&#45;&#62;** identity | Control of kind of identity and use when it is need	| Obtain |  
+|Controller **&#60;&#45;&#45;&#62;** EnableSubs	| Control on specification of subsystem accessibilities  for user | Specify accessibility |  
+|PageMaker **&#60;&#45;&#45;&#62;** EnableSubs	| Specify the accessible subsystem to pageMaker to render it. | Obtain access |  
+
+
+|**Concepts Association  for UC-2** |	                                                    |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+|checker **&#60;&#45;&#45;&#62;** interface page	| Interface page will get the input | Preparing |  
+|save **&#60;&#45;&#45;&#62;** getter | The getter gets the contents. | Getter for data |  
+|Data holder **&#60;&#45;&#45;&#62;** save	| Saver will prepare the content for writing to database | Prepare |  
+|Save **&#60;&#45;&#45;&#62;** writer | The saver will give it to the writer for righting | Write |  
+|Writer **&#60;&#45;&#45;&#62;** database | Writer will write to database | writer |  
+|Interface page **&#60;&#45;&#45;&#62;** checker | Checks for valid data | checking |  
+|Interface page **&#60;&#45;&#45;&#62;** checker | Send and receives data | Send and receive  |  
+|Saver **&#60;&#45;&#45;&#62;** save | Gets data to save | Get data |  
+|Initiator **&#60;&#45;&#45;&#62;** intpage	| Dials input for system	| input |  
+
+
+
+|**Concepts Association  for UC-3** |	                                                    |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+|Actor **&#60;&#45;&#45;&#62;** interface page |Inputs data |	Get input |   
+|Interface Page **&#60;&#45;&#45;&#62;** delete |Shows the contents to be deleted	| Request |   
+Interface page **&#60;&#45;&#45;&#62;** page maker | Page maker makes the page to show in | Updates page |  
+Page maker **&#60;&#45;&#45;&#62;** delete | Sends data to delete it . | Send request |  
+Delete **&#60;&#45;&#45;&#62;** database deleter | Send request to delete the appropriate data	| request |  
+
+
+|**Concepts Association  for UC-4** |	                                                    |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+|Interface page **&#60;&#45;&#45;&#62;** 	checker | Sends and receives data from actor	Show data & input
+|Interface page **&#60;&#45;&#45;&#62;** controller |Controls the data for the specific operation	| Control |
+|Data holder **&#60;&#45;&#45;&#62;** page maker	Page maker gets data from data holder to show	| Get data |  
+|Controller **&#60;&#45;&#45;&#62;** print | send request to print the data.	|Request to print |  
+|Controller **&#60;&#45;&#45;&#62;** page maker | Controls the content of the page maker to show	| Control |  
+|Dataholder **&#60;&#45;&#45;&#62;** data base | Gets data to hold it from other parts. | holder |  
+
+
+
+|**Concepts Association  for UC-5** |	                                                    |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+|Actor **&#60;&#45;&#45;&#62;** interface page	|Gets input and show back for actor	| In and out |  
+|Page maker **&#60;&#45;&#45;&#62;** decision maker	| Decision makers decides which content to show 	| Controls |  
+|Editor **&#60;&#45;&#45;&#62;** decision maker	| Send request to take the data to check. | Checker |  
+|Interface **&#60;&#45;&#45;&#62;** page maker | Sends request to show content | request |  
+|Decision maker **&#60;&#45;&#45;&#62;** page maker	| request to check | request |   
+|Decision maker **&#60;&#45;&#45;&#62;** data holder	Send data for holding | Send and receive |  
+|Decision maker **&#60;&#45;&#45;&#62;** editor	| Send data to update	| Data update |  
+|Decision maker **&#60;&#45;&#45;&#62;** save	| Send request to hold the data for save | Send and receive |  
+
+
+
+|**Concepts Association  for UC-6** |	                                            |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+|Controller **&#60;&#45;&#45;&#62;** UserAuthenticator	|Controller pass the user name and password… to UserAuthenticator for authenticating the user | Authenticate |  
+|Controller **&#60;&#45;&#45;&#62;** Page Maker	| passes requests to Page Maker and receives back pages prepared for displaying	| conveys requests |  
+|Page Maker **&#60;&#45;&#45;&#62;** Interface Page	Page Maker prepares the Interface Page	prepare
+|Page Maker **&#60;&#45;&#45;&#62;** DBConnector | Page Maker passes search requests to Database Connection to list the user interested query | Dispatches Request |  
+|QueryFilter **&#60;&#45;&#45;&#62;** DBConnector | QueryFilter connect to DBConnector for filtering user interested fields	| Filtering Result |  
+|ResultSorter **&#60;&#45;&#45;&#62;** DBConnector	| ResultSorter connect to DBConnector to sort the list somehow user wants. |Sorting Result |  
+|ResultSorter **&#60;&#45;&#45;&#62;** Page Maker | ResultSorter  connect the Page Maker to render the user specified field sorted result | Rendering the Filtered Result |  
+
+
+
+|**Concepts Association  for UC-7** |	                                            |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+|Controller **&#60;&#45;&#45;&#62;** UserAuthenticator	|Controller pass the user name and password to UserAuthenticator for authenticating the user | Authenticate |   
+|Controller **&#60;&#45;&#45;&#62;** Page Maker	| Controller passes requests to Page Maker and receives back pages prepared for displaying interface | conveys requests |  
+|Page Maker **&#60;&#45;&#45;&#62;** Interface Page	| Page Maker passes predefined interface for actor actions | Prepare |  
+|Page Maker **&#60;&#45;&#45;&#62;** Form |Must render the form to an html document for sending to actor’s Web browser for display. |Making form |  
+|TimeReserver **&#60;&#45;&#45;&#62;** DBConnector	| TimeReserver needs to request DBConnector to check whether the time is reserved before	Checking the | reserving time |  
+|Controller **&#60;&#45;&#45;&#62;** RecieptPrinter	| Need to connect with RecieptPrinter to request for printing the receipt | request |  
+|RecieptPrinter **&#60;&#45;&#45;&#62;** DBConnector | RecieptPrinter needs database connection via DBConnector	| Printing |  
+|Controller **&#60;&#45;&#45;&#62;** QueryFilter | Controller pass new Form request to Form	| Filtering Result |  
+|Controller **&#60;&#45;&#45;&#62;** Archiver | Need to request from Archiver to save the receipt or patient | Request |  
+|Archiver **&#60;&#45;&#45;&#62;** DBConnector | Archiver requests Database Connection to store receipt into the database	Receipt, Patient | save |  
+|Archiver **&#60;&#45;&#45;&#62;** Notifier	| Archiver requests Notifier to notify success of archiving | Notifier |   
+|Controller **&#60;&#45;&#45;&#62;** Remover | Controller Passes delete request to ReceiptDeleter for deleting the receptionist interested receipt | conveys requests |  
+|Remover **&#60;&#45;&#45;&#62;** DBConnector | ReceiptDeleter must connect to DBConnector to delete the receipt form database	| DeletePatient |   
+|Controller **&#60;&#45;&#45;&#62;** ResultSorter | Controller needs to ask result sorter to sort the list	| Request |  
+|ResultSorter **&#60;&#45;&#45;&#62;** DBConnector	| ResultSorter connect to DBConnector to sort the list somehow user wants.	| Sorting Result |  
+|ResultSorter **&#60;&#45;&#45;&#62;** Page Maker | ResultSorter  connect the Page Maker to render the user specified field sorted result | Rendering the Filtered Result |   
+
+
+
+|**Concepts Association  for UC-8** |	                                            |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+|Controller **&#60;&#45;&#45;&#62;** UserAuthenticator	| Controller pass the user name and password to UserAuthenticator for authenticating the user |Authenticate |   
+|Controller **&#60;&#45;&#45;&#62;** Page Maker	| Controller passes requests to Page Maker and receives back pages prepared for displaying interface	| prepare |  
+|Page Maker **&#60;&#45;&#45;&#62;** Interface Page	| Page Maker passes search requests to Database Connection	Dispatches Request
+|Page Maker **&#60;&#45;&#45;&#62;** RegisterForm	| ResultRenderer request DBConnector to list the user interested query	| Rendering Result |  
+|Controller **&#60;&#45;&#45;&#62;** RegisterForm	| QueryFilter connect to DBConnector for filtering user interested fields |Filtering Result |  
+|ResultSorter **&#60;&#45;&#45;&#62;** DBConnector	| ResultSorter connect to DBConnector to sort the list somehow user wants. | Sorting Result |  
+|Controller **&#60;&#45;&#45;&#62;** RecieptPrinter	| Need to connect with RecieptPrinter to request for printing the receipt 	| request |  
+|RecieptPrinter **&#60;&#45;&#45;&#62;** DBConnector | RecieptPrinter needs database connection via DBConnector	| Printing |  
+|ResultRenderer **&#60;&#45;&#45;&#62;** QueryFilter | ResultRenderer to render the user specified field filtered result of QueryFilter	| Rendering the Filtered Result |   
+|Controller **&#60;&#45;&#45;&#62;** Archiver | Need to request from Archiver to save the receipt or patient | request |  
+|Archiver **&#60;&#45;&#45;&#62;** DBConnector	| Archiver requests Database Connection to store receipt into the database	| Receipt save |  
+|Archiver **&#60;&#45;&#45;&#62;** Notifier	Archiver requests Notifier to notify success of archiving 	Notify 
+|Controller **&#60;&#45;&#45;&#62;** Remover | Controller Passes delete request to ReceiptDeleter for deleting the receptionist interested receipt 	| conveys requests |  
+|Remover **&#60;&#45;&#45;&#62;** DBConnector | ReceiptDeleter must connect to DBConnector to delete the receipt from database	|Delete request |  
+
+
+
+|**Concepts Association  for UC-9** |	                                            |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+|
+
+
+|**Concepts Association  for UC-10** |	                                            |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+|Interface Page **&#60;&#45;&#45;&#62;** AddingFormOfNewPatient | Interface page load the form of new Patient for filling | New form |  
+|CheckInputValue **&#60;&#45;&#45;&#62;** Massage warning | Check input value check the input value and massage warning show when the user enter invalid value | checking |  
+|CheckInputValue **&#60;&#45;&#45;&#62;** save | After the checking the information , information send to database for saving | save |  
+|database **&#60;&#45;&#45;&#62;** list of patient | Database post the list of patient to interface page | post |  
+|InterfaceListOfPatient **&#60;&#45;&#45;&#62;** Printer Connector | Linterfacelist of patient post the information about the patient to printer device that user want print them. | connecting device |  
+|Page Maker **&#60;&#45;&#45;&#62;** Interfacepage | Page Maker prepares the Interface Page to showing for user | prepare |  
+
+
+
+
+|**Concepts Association  for UC-11** |	                                            |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+|interface page **&#60;&#45;&#45;&#62;** Operation | Interface page load to see the form and doing operation(edit, print , save, and so on) | Doing operation |  
+|Operation **&#60;&#45;&#45;&#62;** registerNewCall | Operation passes the request to registerNewCall for reserving the ambulance. | ReserveNewAmbulance |  
+|Contorller **&#60;&#45;&#45;&#62;** massage | Massage show a massage that the ambulance is free | massage |  
+|registerNewCall **&#60;&#45;&#45;&#62;** CheckInputValue | The input value check by the check input value | CheckingValue |  
+|rgisterNewCall **&#60;&#45;&#45;&#62;** save | After the checking the input value the form  save in the database. | Save info |  
+|Contorller **&#60;&#45;&#45;&#62;** CheckInputValue | Controller control the CheckInputValue | Receives |  
+|Page Maker **&#60;&#45;&#45;&#62;** Interfacepage | Page Maker prepares the Interface Page to showing for user | prepare |  
+
+
+|**Concepts Association  for UC-12** |	                                            |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+|registration form of doctor **&#60;&#45;&#45;&#62;** CheckInputValue | registration form of doctor post the registration form to Check Input Value for checking. | checking |  
+|CheckInputValue **&#60;&#45;&#45;&#62;** Operation | Valid data post to operation | receive |  
+|Save **&#60;&#45;&#45;&#62;** Storage Data | Storing data in the database | storing data |  
+|InterfaceListOfPersonals **&#60;&#45;&#45;&#62;** Printer Connector | The list of Personals post to printer for printing. | printer connector |  
+|Page Maker **&#60;&#45;&#45;&#62;** Interfacepage | Page Maker prepares the Interface Page to showing for user | prepare |  
+
+
+|**Concepts Association  for UC-13** |	                                            |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+
+
+
+|**Association  for UC-14** |	                                                    |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+
+
+
+|**Concepts Association  for UC-15** |	                                            |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+
+
+
+|**Concepts Association  for UC-16** |	                                            |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept pairs**         | **Association description**                            |**Association Name** |  
+
+
+#Attributes of Concept models#
+
+
+|**Concepts Attribute for UC-0.1** |	                                            |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |  
+|NewIdentityEntry     |userName | Take the new user name and send to controller and identity object|   
+|                     | password|Take the new user password and send to controller and identity object |  
+|	                  |accessibilities |Take the new user accessibilities to system and send to controller and identity object|  
+|AddUser	          | userName	|Use value of this attribute to save in userName attribute of  relation in databasse|  
+|                     |password	    |Use value of this attribute to save in password attribute of relation in databasse|  
+|                     |accessibilities	|Use value of this attribute to save in attribute of  relation in databasse |  
+|Identity	          |userName	|It is as an attribute of identity class to save the name of user|  
+|                     |password	|It is as an attribute of identity class to save the password of user|   
+|                     |accessibilities	|It is as an attribute of identity class to save the accessibilities of user|  
+
+
+
+
+|**Concepts Attribute for UC-0.2** |	                                            |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |  
+|RemoveExpiredIdentity	 | userName	|User name is use to show who will remove from database|  
+||Password	|Use password as a unique key to specify the user correctly|  
+||Accessibilities	|Accessibilities specified before |  
+|RemoveUser | Password | Use as primary key of relation to delete the expired user from database|  
+
+
+
+
+|**Concepts Attribute for UC-1** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                         | **Attributes description** |  
+|IdentityEntry	 | userName	 | User name is use to show it is valid and is in database|  
+||	Password | password is use to show it is valid and is in database of a valid user|  
+||	Accessibilities	accessibilities is use to show it is valid and is in database of a valid user|  
+|identity	     |Password	 |It is as an attribute of identity class to save the password of user|  
+||userName	     |It is as an attribute of identity class to save the user name of user|  
+||accessibilities |It is as an attribute of identity class to save the accessibilities of user|
+
+
+
+|**Concepts Attribute for UC-2** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |  
+|IdentityEntry	 |userName | User name is use to show it is valid and is in database|  
+||	Password |password is use to show it is valid and is in database of a valid user|  
+||	Accessibilities	|accessibilities is use to show it is valid and is in database of a valid user|  
+identity	Password	It is as an attribute of identity class to save the password of user|   
+||	userName| It is as an attribute of identity class to save the user name of user|  
+||	accessibilities	|It is as an attribute of identity class to save the accessibilities of user|  
+
+
+
+|**Concepts Attribute for UC-3** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |  
+|Search |Searcher |Search for records to be deleted.|  
+|Delete	| delete	| Takes the parameter to delete and send request to delete.|  
+|Data holder |Data 	|Holds data for deleting|  
+|Prints	|Print	|Prints the data.|  
+|Controller	|Controller	|Checks for appropriate priorities|  
+
+
+
+|**Concepts Attribute for UC-4** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |  
+|Search	|Data	|Search data for print.|  
+||	Id	It’s good for finding references|  
+|Notify	|prCtrl	|Notify that has been printed.|  
+
+
+
+|**Concepts Attribute for UC-5** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |  
+|search	|Id	|Search for data to get it.|  
+|| data |Make it modifiable or not.|  
+|Modifiable	|Ismodifiable |Checks if it’s modifiable or not|  
+|To print	|Print	|Prints the data|  
+|To save |Save	|Saves the data|  
+|To write	|Write	|Writes the data to database|  
+
+
+|**Concepts Attribute for UC-6** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |  
+|Search, sort request	user’s identity	Used to determine the actor’s credentials, which in turn specify what kind of data this actor is authorized to view.
+Result filtering	filter parameter 	Patient name, id, last name, birthdate, as user interest
+Result rendering	Search parameter	Need result filtering  to  Filter  the  retrieved  records  to  match
+
+
+
+|**Concepts Attribute for UC-7** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |  
+|Time reserving request	user’s 
+|identity	Used to determine the actor’s credentials, which in turn specify does actor is authorized to reserve time.
+Result filtering	filter parameter 	Patient name, id, last name, birthdate, as user interest for filtering the result
+Result sorting	Sort parameter	Patient name, id, last name, birthdate, field as user want
+Deleting receipt 	Delete parameter 	Need to pass the receipt tracking number for deleting from database
+TimeReserver	Date	Need to store date of reserving time temporary
+
+
+
+|**Concepts Attribute for UC-8** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |  
+|Search and sort request	|user’s identity |Used to determine the actor’s credentials, which in turn specify what kind of data this actor is authorized to view. |  
+|Result filtering	|filter parameter |Patient name, id, last name, birthdate, for user interest|  
+|search	|Search parameter	|needed  result filtering  needed  to  Filter  the  retrieved  records  to  match|   
+|Deleting and editing receipt |Delete parameter |Need to pass the receipt tracking number for deleting and editing from database|  
+
+
+
+|**Concepts Attribute for UC-9** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |  
+
+
+
+|**Concepts Attribute for UC-10** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |  
+
+
+
+|**Concepts Attribute for UC-11** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |  
+
+
+
+|**Concepts Attribute for UC-12** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |
+
+
+
+|**Concepts Attribute for UC-13** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |
+
+
+
+|**Concepts Attribute for UC-14** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |
+
+
+
+|**Concepts Attribute for UC-15** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |
+|New Identity Entry	| User Name	|Take the new user name and send to controller and identity object |  
+||password	|Take the new user password and send to controller and identity object|  
+||Add new sale | Drug name | Take the new drug name and send to controller and identity object|  
+||Drug price | Take the new drug price for new drug and send to controller and identity object |  
+
+
+
+|**Concepts Attribute for UC-16** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |
+|New Identity Entry| User Name |Take the new user name and send to controller and identity object|  
+||password	|Take the new user password and send to controller and identity object|  
+|| Add new item	|  	
+		
+
+
+
+|**Concepts Attribute for UC-17** |	                                                |                     |    
+|:-------------------------|:-------------------------------------------------------|:--------------------|   
+|**Concept name**          | **Attributes**                                        | **Attributes description** |
+
+
+
+#Domain models#  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-0.1.png?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-0.2.png?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-1.png?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-6.png?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-7.png?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-8.png?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-9.PNG?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-10.PNG?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-11.PNG?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-12.PNG?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-13.PNG?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-14.PNG?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-15.jpg?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-16.jpg?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/DomainModels/uc-17.jpg?raw=true)
+
+
+#Class Diagrams#  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/UC-0.1.JPG?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/UC-0.2.JPG?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-1.jpg?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-2.jpg?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-3.jpg?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-4.jpg?raw=true)   
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-5.jpg?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-9.PNG?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-10.PNG?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-11.PNG?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-12.PNG?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-13.PNG?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-14.PNG?raw=true)
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-15.jpg?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-16.jpg?raw=true)  
+
+![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/uc-17.jpg?raw=true)  
+
+
+
+
+
+
+
+
+

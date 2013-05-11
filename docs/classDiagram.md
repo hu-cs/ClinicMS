@@ -1,3 +1,4 @@
+#Class Diagrams#  
 
 ![khadraTeam](https://github.com/hu-cs/ClinicMS/blob/master/images/ClassDiagram/UC-0.1.JPG?raw=true)  
 
