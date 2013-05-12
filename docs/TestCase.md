@@ -1,14 +1,29 @@
-#Test Case#  
+# Test Case #  
 
 | UC-0.1: addUser          |                                                                    |  
 |:-------------------------|:--------------------------------------------------------------------------------|  
-| Test-case Identifier:      |TC-0.1                                                    |  
-|
+| Test-case Identifier:    |TC-0.1                                                    |  
+|Use Case Tested: |UC-0.1, main success scenario |  
+|Pass/fail Criteria: |The test passes if the user fill the field with correct numeric and alphabetic user name and password and specify accessibilities to subsystem for new user and save it in the database.|  
+|Input Data: |Numeric  and alphabetic userName and password|  
+|Test Procedure: |Expected Result:|  
+|Step 1. Type in an incorrect
+userName and a valid password	|prompts the user to try again |  
+|Step 2. Type in the correct userName and password | System accepts the new username and password.|
+|Step 3. Identify the accessibilities in system and tick them |User can access to specified subsystem if save and accept by system|  
+
 
 | UC-0.2: removeUser       |                                                                    |  
 |:-------------------------|:--------------------------------------------------------------------------------|  
-| Test-case Identifier:      |TC-0.2                                                  |  
-|
+| Test-case Identifier:    |TC-0.2                                                  |  
+|Use Case Tested: | UC-0.2, main success scenario |  
+|Pass/fail Criteria: |The test passes if the user selects a username and password that is contained in the database and want to remove it from system or limit its accessibilities.|  
+|Input Data: |Numeric  and alphabetic userName and password|  
+|Test Procedure:	|Expected Result:|   
+|Step 1. Select just name to remove	|prompts the user to select the password which is primary key in database|
+|Step 2. Select the name and password to remove	|Press the delete button, system show a warning message (are you sure?), if click ok button, it will remove from system and database|  
+|Step 3. Limit the accessibilities	|The user can access to some subsystem which admin identified |   
+
 
 | UC-1: CheckIdentityLogin |                                                                    |  
 |:-------------------------|:--------------------------------------------------------------------------------|  
