@@ -88,22 +88,6 @@ Step 3. The record does not exist in database.	Data doesn’t exist in database.
 |Step6. Check in database.	|If the field is changed, the test is passed else the test fails.|  
 
 
-| Test Case UC-6           |                                                                    |  
-|:-------------------------|:--------------------------------------------------------------------------------|  
-| Test-case Identifier:    |TC-6                                                    |  
-|  
-
-
-| Test Case UC-7           |                                                                    |  
-|:-------------------------|:--------------------------------------------------------------------------------|  
-| Test-case Identifier:      |TC-7                                                    |  
-|
-
-
-| Test Case UC-8           |                                                                                 |  
-|:-------------------------|:--------------------------------------------------------------------------------|  
-| Test-case Identifier:      |                                                                           |  
-|
 
 | Use Case UC-9: Personals |                                                                                 |  
 |:-------------------------|:--------------------------------------------------------------------------------|  
@@ -124,54 +108,23 @@ Step 3. The record does not exist in database.	Data doesn’t exist in database.
 | UC-10: Test Info & Result Sheet |                                                                          |  
 |:-------------------------|:--------------------------------------------------------------------------------|  
 | Test-case Identifier:      |TC-0.10                                                                          |  
-|Use Case Tested:	UC-0.10, main success scenario
-Pass/fail Criteri a:	A-The test passes if the user fill the field with correct numeric and alphabetic user name and password and specify accessibilities to subsystem for new user and save it in the database.
-
-B-The test passes if the admin enter the valid value that we define it
-In the program. Else the test fail .
-
-The test pass 
-
-Input Data:	Numeric and alphabetic user Name and password, photo ,Numeric and Alphabetic and for name ,family…
-Test Procedure:	Expected Result:
-Step 1. A-Type in an incorrect
-User Name and a valid password 
-
-B-Type invalid value in the form.
-	A-prompts the user to try again
-
-
-B- prompts the user to try again
-
-Step 2. A-Type in the correct
-User Name and password
-
-B-Type the correct value in the form.	A-System accepts the new username and password.
-
-B-System accepts new personal.
-Step 3. Identify the accessibilities in system and tick them	User can access to specified subsystem if save and accept by system
+|Use Case Tested: |UC-0.10, main success scenario|
+|Pass/fail Criteri a: |A-The test passes if the user fill the field with correct numeric and alphabetic user name and password and specify accessibilities to subsystem for new user and save it in the database. B-The test passes if the admin enter the valid value that we define it
+In the program. Else the test fail .|  
+|Input Data: |Numeric and alphabetic user Name and password, photo ,Numeric and Alphabetic and for name ,family…|  
+|Test Procedure:|Expected Result:|  
+|Step 1. A-Type in an incorrect User Name and a valid password B-Type invalid value in the form.| A-prompts the user to try again B- prompts the user to try again|  
+|Step 2. A-Type in the correct User Name and password B-Type the correct value in the form.	|A-System accepts the new username and password.B-System accepts new personal.|  
+|Step 3. Identify the accessibilities in system and tick them	|User can access to specified subsystem if save and accept by system|  
 
 | Use Case UC-11: Ambulance  Reservation |                                                                   |  
 |:-------------------------|:--------------------------------------------------------------------------------|  
-| Test-case Identifier:      |TC-12                                                                            |  
-|Use Case Tested:	UC-0.11, main success scenario
-Pass/fail Criteria:	A-The test passes if the user fill the field with correct numeric and alphabetic user name and password and specify accessibilities to subsystem for new user and save it in the database.
-
-B-The test passes if the admin enter the valid value that we define it
-In the program. Else the test fail .
-
-The test pass 
-
-Input Data:	Numeric and alphabetic user Name and password, photo ,Numeric and Alphabetic for name ,family…
-Test Procedure:	Expected Result:
-Step 1. A-Type in an incorrect
-User Name and a valid password 
-
-B-Type invalid value in the form.
-	A-prompts the user to try again
-
-
-B- prompts the user to try again
+| Test-case Identifier:      |TC-12                                                                          |  
+|Use Case Tested: |UC-0.11, main success scenario|  
+|Pass/fail Criteria: |A-The test passes if the user fill the field with correct numeric and alphabetic user name and password and specify accessibilities to subsystem for new user and save it in the database.B-The test passes if the admin enter the valid value that we define it In the program. Else the test fail .The test pass |   
+|Input Data: |Numeric and alphabetic user Name and password, photo ,Numeric and Alphabetic for name ,family…|  
+|Test Procedure:	|Expected Result:|  
+|Step 1. A-Type in an incorrect User Name and a valid password B-Type invalid value in the form.|A-prompts the user to try again B- prompts the user to try again|  
 
 
 
@@ -179,78 +132,69 @@ B- prompts the user to try again
 |:-------------------------|:--------------------------------------------------------------------------------|  
 | Test-case Identifier:      |TC-13                                                                            |  
 |Use Case Tested:	UC-12, main success scenario
-Pass/fail Criteria:	The test passes if the user fill the operation form with valid values and save the operation form in database and system show the successfully massage for user.
-Input Data:	Numeric  and alphabetic userName and password
-Test Procedure:	Expected Result:
-Step 1. Type invalid values in the form 
-	prompts the user to try again
-Step 2. Type in the  form with correct
-Value  	System accepts the new registration form 
-
-Step 3. Reserve the operation room when the operation room is not ready	System show the error massage.
-Step 4.delete the operation room form 	System show the massage that form successfully deleted
-Step 5. Save the form of OperationRoom	System show the massage that form successfully saved
-Step6.edit the form of OperationRoom  form	System open new window for editing
+|Pass/fail Criteria: |The test passes if the user fill the operation form with valid values and save the operation form in database and system show the successfully massage for user.|  
+|Input Data: |Numeric  and alphabetic userName and password|  
+|Test Procedure: |Expected Result: |
+|Step 1. Type invalid values in the form prompts the user to try again|  
+|Step 2. Type in the  form with correct Value |System accepts the new registration form |  
+|Step 3. Reserve the operation room when the operation room is not ready |System show the error massage.|  
+|Step 4.delete the operation room form | System show the massage that form successfully deleted|  
+|Step 5. Save the form of OperationRoom	|System show the massage that form successfully saved|  
+|Step6.edit the form of OperationRoom  form	|System open new window for editing|  
 
 
 | UC-13: Parturition Department |                                                                            |  
 |:-------------------------|:--------------------------------------------------------------------------------|  
-| Test-case Identifier:      |St-1, 6, 7, 11,15, 18, 19, 20                                                    |  
-|Use Case Tested:	UC-13 main success scenario
-Pass/fail Criteria:	The test passes   if system show the Parturition list window when the userClick on  Parturition list button.  And The test passes if the user fill the operation form with valid values,and save them in database.
-Input Data:	Numeric  and alphabetic values
-Test Procedure:	Expected Result:
-Step 1. Type invalid values in the form 
-	prompts the user to try again and show that your value is invalid
-Step 2. Type in the  form with correct
-Value  	System accepts the new Parturition  form 
-
-Step 3. Reserve the Parturition room when the Parturition room is not ready	System show the error massage.
-Step 4.delete the Parturition form 	System show the massage that form successfully deleted
-Step5 .save the Parturition form 	System show the massage that form successfully saved
-Step6.edit the form of Parturition  form	System open new window for editing
+| Test-case Identifier:      |TC-13                                                                          |  
+|Use Case Tested:	|UC-13 main success scenario|  
+|Pass/fail Criteria: |The test passes if system show the Parturition list window when the user Click on  Parturition list button.  And The test passes if the user fill the operation form with valid values,and save them in database.|  
+|Input Data:	|Numeric  and alphabetic values|  
+|Test Procedure: |Expected Result:|  
+|Step 1. Type invalid values in the form |prompts the user to try again and show that your value is invalid|  
+|Step 2. Type in the  form with correct Value |System accepts the new Parturition  form |   
+|Step 3. Reserve the Parturition room when the Parturition room is not ready |System show the error massage.|  
+|Step 4.delete the Parturition form  |System show the massage that form successfully deleted|  
+|Step5 .save the Parturition form |System show the massage that form successfully saved|  
+|Step6.edit the form of Parturition form |System open new window for editing|  
 
 
 | UC-14: Bed Reservation & Receipt |                                                                         |  
 |:-------------------------|:--------------------------------------------------------------------------------|  
-| Test-case Identifier:      |TC-14                                                                             |  
+| Test-case Identifier:      |TC-14                                                                          |  
 |Use Case Tested:	UC-1, main success scenario
-Pass/fail Criteria:	The test passes if the system show the add reserving bed link when the  user click on  add reserving bed link  and the form of Bed Reservation and Receipt 
-Input Data:	Numeric  and alphabetic values
-Test Procedure:	Expected Result:
-Step 1. Type invalid values in the form 	prompts the user to try again show that your value is invalid
-Step 2. Type in the correct
-values	System accept the request of user
-Step 3. Reserve the bed when the bes is not free.	System show the error massage that the bed is not free.
-Step 4.delete the Bed Reservation form 	System show the massage that form successfully deleted
-Step 5.save the Bed Reservation	System show the massage that form successfully saved
-Step6.edit the form of  Bed Reservation form	System open new window for editing
+|Pass/fail Criteria: |The test passes if the system show the add reserving bed link when the  user click on  add reserving bed link  and the form of Bed Reservation and Receipt|    
+|Input Data: | Numeric  and alphabetic values|   
+|Test Procedure: | Expected Result:|   
+|Step 1. Type invalid values in the form |prompts the user to try again show that your value is invalid|  
+|Step 2. Type in the correct values	|System accept the request of user|   
+|Step 3. Reserve the bed when the bed is not free.	|System show the error massage that the bed is not free.|  
+|Step 4.delete the Bed Reservation form |System show the massage that form successfully deleted|  
+|Step 5.save the Bed Reservation |System show the massage that form successfully saved|  
+|Step 6.edit the form of  Bed Reservation form	| System open new window for editing|  
 
 
 | UC-15: Selling Drugs     |                                                                                 |  
 |:-------------------------|:--------------------------------------------------------------------------------|  
 | Test-case Identifier:      |TC-15                                                                            |  
-|Use Case Tested:	UC-15, main success scenario
-Pass/fail Criteria:	The test passes if the user fills the field with correct information about first sale and choose drug and number calculate the total price.
-Input Data:	Drug name and number of them and their prices.
-Test Procedure:	Expected Result:
-Step 1. Type in an invalid drug
-and valid number	prompts the user to try again
-Step 2. Type the drug name but not enter number.
-	Prompts the user to try again and fill the fields completely.
-Step 3.Type the correct drug names and numbers.	System shows a massage (Do you want to save?)user press ok and save in database
-Step4.Type a drug name in search area.	System search the request from the database and shows the result.
+|Use Case Tested:	|UC-15, main success scenario|  
+|Pass/fail Criteria: |The test passes if the user fills the field with correct information about first sale and choose drug and number calculate the total price.|  
+|Input Data: |Drug name and number of them and their prices.|  
+|Test Procedure:	|Expected Result:|  
+|Step 1. Type in an invalid drug and valid number | prompts the user to try again |  
+|Step 2. Type the drug name but not enter number. | Prompts the user to try again and fill the fields completely.|  
+|Step 3.Type the correct drug names and numbers. |System shows a massage (Do you want to save?)user press ok and save in database|  
+|Step4.Type a drug name in search area.	|System search the request from the database and shows the result.|  
 
 
 | UC-17:Accounting         |                                                                                 |  
 |:-------------------------|:--------------------------------------------------------------------------------|  
 | Test-case Identifier:    |TC-17                                                                            |  
-|Use Case Tested:	UC-17, main success scenario
-Pass/fail Criteria:	The test passes if the user fills the field with valid values for new record.
-Input Data:	Information about section and salary and so on in form.
-Test Procedure:	Expected Result:
-Step 1. Filled the fields with invalid values.	Prompts the user to enter valid values.
-Step 2. Filled with valid values and save. 	System accepts the values and save them in database.
-Step3.Press the graph button.	System shows the graph pages. user can see next or pervious graph.  
+|Use Case Tested: |UC-17, main success scenario|  
+|Pass/fail Criteria: |The test passes if the user fills the field with valid values for new record.|
+|Input Data:	|Information about section and salary and so on in form.|  
+|Test Procedure:	|Expected Result:|  
+|Step 1. Filled the fields with invalid values.	|Prompts the user to enter valid values.|  
+|Step 2. Filled with valid values and save. 	|System accepts the values and save them in database.|
+Step3.Press the graph button. |System shows the graph pages. user can see next or pervious graph. |   
 
 
