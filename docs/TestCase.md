@@ -161,7 +161,7 @@ In the program. Else the test fail .|
 | UC-14: Bed Reservation & Receipt |                                                                         |  
 |:-------------------------|:--------------------------------------------------------------------------------|  
 | Test-case Identifier:      |TC-14                                                                          |  
-|Use Case Tested:	UC-1, main success scenario
+|Use Case Tested:	|UC-1, main success scenario|  
 |Pass/fail Criteria: |The test passes if the system show the add reserving bed link when the  user click on  add reserving bed link  and the form of Bed Reservation and Receipt|    
 |Input Data: | Numeric  and alphabetic values|   
 |Test Procedure: | Expected Result:|   
