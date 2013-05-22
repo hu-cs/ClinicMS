@@ -1,0 +1,160 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/RegistartionForm.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+      
+         <script type="text/javascript">
+        $(function() {
+        
+            $("#toggle").click(function() {
+                $("#tgl").toggle("slow");
+            });
+        });
+    </script>
+    </head>
+    <body>
+            <header> <h1> QUDS CLINIC </header>
+      <nav>
+      <a href="#" > پذیرش </a>
+      <a href="#" > اداره </a>
+      <a href="#" > محا سبه </a>
+      <a href="#" > آ مبو لانس </a>
+      <a href="#" > لا براتوار </a>
+      <a href="#" > بستری   </a>
+      <a href="#" > نسا ئی ولادی </a>
+      <a href="#" > ریزرو وقت  </a>
+      <a href="#" > دوا خانه  </a>
+      <a href="#" > صفحه اصلی   </a>
+      
+      
+      </nav>
+      <div class="all">
+			<datalist id="toggle">
+			<details id="toggle">
+			
+			</details>
+			</datalist>
+			
+			
+			
+      <div class="left" id="tgl">
+      <ul>
+     <li> <a href="@routes.Assets.at("listofpersonal.scala.html")"> لیست پرسونل  </a> </li>
+      <li> <a href="#">فورم ثبت پرسونل </a> </li>
+      <li> <a href="#">راجستریشن</a> </li>
+       <li> <a href="#">سا خت کار بر</a> </li>
+      
+      </ul>
+      </div>
+      
+         <div class="right" id="tog">
+    		<form>
+    		<table cellpadding="4" cellspacing="4">
+    		<tr>
+    		<td> <label> آ ی دی  </td>
+    		<td> <input type="tel" disabled /></td>
+    		<td> شماره موبایل</td>
+    		<td> <input type="tel" value="type your number please"  /> </td>
+    		 </tr>
+    		<tr> 
+    		<td> شماره پرونده  </td>
+    		<td><input type="tel"  /> </td>
+    		<td>شما ره عا جل  </td>
+    		<td>  <input type="tel"  /></td>
+    		</tr>
+    		<tr> 
+    		<td>اسم  </td>
+    		<td> <input type="text"  /></td>
+    		<td> سن   </td>
+    		<td> <input type="number"  /></td>
+    		</tr>
+    		<tr> 
+    		<td> نام پدر  </td>
+    		<td> <input type="text"  /></td>
+    		<td> معا ش </td>
+    		<td> <input type="checkbox" id="percent" /> فیصدی </td>
+    		</tr>
+    		<tr> 
+    		<td> اسم فامیلی </td>
+    		<td> <input type="text"  /></td>
+    		<td> </td>
+    		<td> <input type="checkbox"  /> دوره ای</td>
+    		</tr>
+    		<tr> 
+    		<td> جد </td>
+    		<td> <input type="text"  /></td>
+    		<td> </td>
+    		<td> <input type="checkbox"  /> هر دو  </td>
+    		
+    		</tr>
+    		<tr>
+    		<td>شما ره تذکره  </td>
+    		<td> <input type="number"  /></td>
+    		<td> فیصد ی </td>
+    		<td> <select > 
+    		<option > یک  </option>
+    		<option> دو  </option>
+    		<option> سه  </option>
+    		<option> چها ر </option>
+    		<option> پنج  </option>
+    		
+    		</select></td>
+    		 </tr>
+    		<tr> 
+    		<td> تخصص </td>
+    		<td>  <select > 
+    		<option > یک  </option>
+    		<option> دو  </option>
+    		<option> سه  </option>
+    		<option> چهار  </option>
+    		<option> پنج  </option>
+    		
+    		</select></td>
+    		<td> معا ش    </td>
+    		<td> <input type="number" /></td>
+    		
+    		</tr>
+    		<tr> 
+    		<td> تا ریخ تولد </td>
+    		<td> <input type="date" /></td>
+    		<td> فعال </td>
+    		<td> <input type="checkbox" /></td>
+    		</tr>
+    		<tr> 
+    		<td> ایمیل آدرس </td>
+    		<td colspan ="3"> <input type="email" class="email-address" /></td>
+    		<td> </td>
+    		<td> </td>
+    		</tr>
+    		<tr> 
+    		<td> آدرس  </td>
+    		<td colspan="3"><input type="text" class="email-address"/> </td>
+    		<td> </td>
+    		<td> </td>
+    		</tr>
+    		<tr>
+    		<td> تو ضیحات  </td>
+    		<td colspan="3"> <textarea class="email-address"> </textarea> 
+    		</tr>
+    		
+    		</table>
+    		<span><button value="save" class="btn" /> ذخیره  </span>
+    		</form>
+    		
+    		
+
+      </div>
+      <div class="leftdown">
+      		Search : 
+        <input type="search" class="search" />
+        
+        </div>
+      </div>
+    </body>
+</html>
