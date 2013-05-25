@@ -1,0 +1,75 @@
+@(id: Long, userForm: Form[User])
+
+@import helper._
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Users</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/editForm.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <dl id="user">
+
+                <dd>
+                    <a href="@routes.Application.logout()">Logout</a>
+                </dd>
+            </dl>
+        </header>
+
+	<h1>edit user</h1>
+
+            <table  class="users" height="30">
+            <thead>
+                <tr>
+                        <td>
+  							<b>First Name</b>
+                        </td>
+                        <td>
+							<b>Last Name</b>
+                        </td>
+                        <td>
+							<b>Password</b>
+                        </td>
+                         <td>
+							<b>Accessibility</b>
+                        </td>
+                         <td>
+							<b>Actions</b>
+                        </td>
+                    </tr>
+            </thead>
+            <tbody>
+
+    
+    <h2>edit User</h2>
+    
+    @form(routes.Application.updateUser(id)) {
+        
+     <td>   @inputText(userForm("id"))  </td>
+      <td>   @inputText(userForm("firstName"))   </td>
+     <td>    @inputText(userForm("lastName")) </td>
+      <td>   @inputPassword(userForm("password")) </td>
+    <td>     @checkbox(userForm("accountingAccess")) </td>
+    <tr>
+	 <td>	@checkbox(userForm("bedAcces")) </td>
+	 <td>	@checkbox(userForm("labAccess")) </td>
+	 <td>	@checkbox(userForm("timeReservingAccess"))  </td>
+	 <td>	@checkbox(userForm("ambulanceAccess")) </td>
+	 <td>	@checkbox(userForm("operationAccess")) </td> </tr>
+	 <tr>
+	 <td>	@checkbox(userForm("receptionAccess")) </td>
+	 <td>	@checkbox(userForm("officeAccess")) </td>
+		 <td>@checkbox(userForm("createUserAccess")) </td>
+	 <td>	@checkbox(userForm("drugStoreAccess")) </td> </tr>
+
+		
+        <input type="submit" value="Create">
+        <a href="@routes.Application.users()" class="btn">Cancel</a> 
+    }
+    </body>
+</html>
