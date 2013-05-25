@@ -1,24 +1,39 @@
 
+table {
+	direction: rtl;
+	border-bottom: thin;
+	border-right-color: aqua;
+	table-layout: fixed;
+	border-spacing: 4px;
+}
 
- table {
- 
- background-color: graytext;
- 
- border-bottom-style: inset;
- 
- border-bottom: dotted;
- 
- }
- 
- td {
- 
- background-color: buttonhighlight;
- 	 border-bottom-style: inset;
- 
- border-bottom: dotted;
- }
- 
- input {
- 	
- 	
- }
+
+td {
+	
+	
+	
+	height: 25px;
+	width: 85px;
+}
+div {
+	margin: 5px auto;
+	height: 600px;
+	width: 1000px;
+	
+	background-color: #dedede;
+	overflow: scroll;
+	
+}
+input {
+	-webkit-border-radius: 25px;
+	z-index: 40000;
+	background-color: #fafafa;
+}
+
+#b {
+	background-color: #bebebe;
+	border-radius: 10px;
+	border-shadow: 25px;
+	height: 30px;
+	width: 45px;
+}

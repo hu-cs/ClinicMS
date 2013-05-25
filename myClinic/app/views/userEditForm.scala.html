@@ -16,60 +16,46 @@
             <dl id="user">
 
                 <dd>
-                    <a href="@routes.Application.logout()">Logout</a>
+                    <a id="b" href="@routes.Application.logout()">Logout</a>
                 </dd>
             </dl>
         </header>
 
-	<h1>edit user</h1>
+	 <div>
 
-            <table  class="users" height="30">
-            <thead>
-                <tr>
-                        <td>
-  							<b>First Name</b>
-                        </td>
-                        <td>
-							<b>Last Name</b>
-                        </td>
-                        <td>
-							<b>Password</b>
-                        </td>
-                         <td>
-							<b>Accessibility</b>
-                        </td>
-                         <td>
-							<b>Actions</b>
-                        </td>
-                    </tr>
-            </thead>
+            <table class="users" height="30">
+     
             <tbody>
 
     
-    <h2>edit User</h2>
-    
+   
+   
     @form(routes.Application.updateUser(id)) {
-        
-     <td>   @inputText(userForm("id"))  </td>
-      <td>   @inputText(userForm("firstName"))   </td>
-     <td>    @inputText(userForm("lastName")) </td>
-      <td>   @inputPassword(userForm("password")) </td>
-    <td>     @checkbox(userForm("accountingAccess")) </td>
-    <tr>
-	 <td>	@checkbox(userForm("bedAcces")) </td>
-	 <td>	@checkbox(userForm("labAccess")) </td>
-	 <td>	@checkbox(userForm("timeReservingAccess"))  </td>
-	 <td>	@checkbox(userForm("ambulanceAccess")) </td>
-	 <td>	@checkbox(userForm("operationAccess")) </td> </tr>
-	 <tr>
-	 <td>	@checkbox(userForm("receptionAccess")) </td>
-	 <td>	@checkbox(userForm("officeAccess")) </td>
-		 <td>@checkbox(userForm("createUserAccess")) </td>
-	 <td>	@checkbox(userForm("drugStoreAccess")) </td> </tr>
+        <tr>
+     <td>   @inputText(userForm("id"), '_label -> "شماره مسلسل")  </td>
+      <td>   @inputText(userForm("firstName"), '_label -> "نام کاربر")   </td>
+     <td>    @inputText(userForm("lastName"), '_label -> "تخلص کاربر") </td>
+      <td>   @inputPassword(userForm("password"), '_label -> "رمزکاربر") </td></tr>
+      <tr> 
+       <td>
+       @checkbox(userForm("accountingAccess"), '_label -> "دسترسی حسابداری") </td>
+<tr>
+	 <td>	@checkbox(userForm("bedAcces"), '_label -> "دسترسی بستر") </td>
+	<td>	@checkbox(userForm("labAccess"), '_label -> "دسترسی لابراتوار") </td>
+	<td>	@checkbox(userForm("timeReservingAccess"), '_label -> " ثبت وقت")  </td>
+	 <td>	@checkbox(userForm("ambulanceAccess"), '_label -> "کسیل کش") </td>
+	<td>	@checkbox(userForm("operationAccess"), '_label -> "لابراتوار")</td> </tr>
+	
+	<tr><td>	@checkbox(userForm("receptionAccess"), '_label -> "پذیرش")  </td>
+	<td> 	@checkbox(userForm("officeAccess"), '_label -> "اداره") </td>
+	<td>	 @checkbox(userForm("createUserAccess"), '_label -> "ایجاد کاربر")</td>
+	 <td>	@checkbox(userForm("drugStoreAccess"), '_label -> "دوا خانه") </td>  
 
-		
+		<td>
         <input type="submit" value="Create">
-        <a href="@routes.Application.users()" class="btn">Cancel</a> 
+        <a href="@routes.Application.users()" class="btn">Cancel</a> </td>
+        </tr>
     }
+    </div>
     </body>
 </html>
