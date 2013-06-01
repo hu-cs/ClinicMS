@@ -1,0 +1,65 @@
+@(users: List[User])
+
+@import helper._
+
+<html>
+
+<head>
+<title>
+
+</title>
+<link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/userListIndex.css")">
+</head>
+<body>
+
+	<table  class="users" height="30">
+		<thead>
+		<tr>
+		<td><input type="search" /></td>
+		<td><input type="search" /></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		</tr>
+		<tr>
+		<td><b>شماره</b></td>
+		<td><b> نام کاربر</b></td>
+		<td><b>رمز کاربر</b></td>
+		<td><b>اجازه دسترسي</b></td>
+		<td><b> عمل</b></td>
+		</tr>
+		</thead>
+		<tbody>
+		@for(user <- users) {
+			<tr>
+			<td>@user.id</td>
+			<td>@user.firstName</td>
+			<td>@user.lastName</td>
+			<td>@user.password.</td>
+			<td><label> بستر</label> <input disabled type="checkbox" @if(user.bedAccess){checked}/>
+			<label> لابراتوار</label> <input disabled type="checkbox" @if(user.labAccess){checked} />
+			<label>پذیرش</label> <input disabled type="checkbox" @if(user.receptionAccess){checked}/> <br /> 
+			<label>حسابداری</label> <input disabled type="checkbox" @if(user.accountingAccess){checked}/> 
+			<label> رزرو وقت</label> <input  disabled type="checkbox" @if(user.timeReservingAccess){checked} /> 
+			<label>اداره</label> <input  disabled type="checkbox" @if(user.officeAccess){checked}/> <br />
+			<label>کسیل کش</label> <input disabled type="checkbox" @if(user.ambulanceAccess){checked} />
+			<label>ایجاد کاربر</label> <input disabled type="checkbox" @if(user.createUserAccess){checked}/> <br />
+			<label>عملیات</label> <input disabled type="checkbox" @if(user.operationAccess){checked} /> 
+			<label> دوا خانه</label> <input disabled type="checkbox" @if(user.drugStoreAccess){checked}/><br /></td>
+			<td>
+			<button id="sbmit3" class="cancelsubmit" type="submit">
+				@form(routes.Application.deleteUser(user.id)) { 
+				<input id="sbmit2" type="submit" value="حذف">}
+			</button><br />
+			<button id="sbmit1" class="cancelsubmit" type="submit">
+				@form(routes.Application.editUser(user.id)) { 
+			<input id="sbmit" type="submit" value="ویرایش">}
+			</button>
+			<td>
+			</tr>
+			}
+		</tbody>
+	</table>
+			
+	</body>
+</html>

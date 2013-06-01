@@ -1,0 +1,50 @@
+        * {
+          magin: 0px;
+          padding: 0px;
+        }
+
+.bdy {
+
+background-color: green;
+margin: 200px auto;
+height: 380px;
+width: 450px;
+background-image: url("../images/login.jpg");
+direction: rtl;
+background-repeat: no-repeat;
+}
+
+
+#username {
+    margin: 140px 130px 10px 0px;
+
+}
+#input1 {
+    margin: 140px 0px 5px 3px;
+    height: 30px;
+    width: 160px;
+}
+
+#pass {
+  margin: 2px 130px 3px 0px;
+
+}
+#input2 {
+  margin: 2px 0px 2px 2px;
+  height: 30px;
+  width: 150px;
+}
+#btn1 {
+
+margin: 5px 180px 1px 2px;
+height: 30px;
+width: 60px;
+
+
+}
+   #btn2 {
+     margin: 2px 2px 2px 2px;
+     height: 30px;
+     width: 60px;
+   }
+

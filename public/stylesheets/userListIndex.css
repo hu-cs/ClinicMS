@@ -1,0 +1,210 @@
+
+* {
+  margin: 0px ;
+  padding: 0px;
+}
+
+body {
+  background-image: url(Gruber_logo_final.jpg);
+  height: 768px;
+  widht:1024px;
+}
+
+nav {
+  direction: rtl;
+  height: 51px;
+  width: 1000px;
+  margin: 2px auto 2px;
+
+}
+nav a {
+  margin: 0px 0px 0px 0px;
+  font-size: 16px;
+  font-variant: small-caps;
+  color: #FFFFFF;
+  background-image: url(../images/btn_blank.png);
+  background-color: #000;
+  display: inline-block;
+  height: 45px;
+  width: 95px;
+  align: right;
+  background-position: left top;
+  overflow: hidden;
+  padding: 0px 0px;
+}
+
+.all {
+  height: 600px;
+  width: 1000px;
+  margin: 0px auto 2px;
+  background-color: #EEEEEE;
+
+
+}
+.right {
+  float: right;
+    height: 200px;
+    width: 200px;
+    background-color: #FDFDFD;
+    margin: 5px 2px 0px 1px;
+
+}
+.left {
+  direction: rtl;
+  float: right;
+  height: 500px;
+  width: 780px;
+  margin: 5px 2px 0px 1px;
+  background-color: #FFFFFF;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  overflow-style: scrollbar;
+}
+.left table {
+  
+
+}
+#chk {
+	direction: rtl;
+	padding-right: 7px;
+	height: 10px;
+	width: 18px;
+}
+#chk1 {
+	direction: rtl;
+	padding-right: 3px;
+	height: 10px;
+	width: 12px;
+}
+#chk2 {
+	direction: ltr;
+	padding-right: 110px;
+	height: 10px;
+	width: 15px;
+}
+#chk4 {
+	padding-right: 5px;
+}
+#chk3 {
+	padding-right: 60px;
+}
+
+.left td {
+	
+	direction: rtl;
+	background-color: #fcfcfd;
+	border-bottom: 1px ridge blue;
+}
+
+.right-bottom {
+  float: right;
+  direction: rtl;
+  margin: 0px 0px 0px 1px;
+  height: 150px;
+  width: 200px;
+  background-color: navy;
+  position: fixed;
+  position: absolute; right:
+	80px; top: 390px; width: 190px; height: 195px; z-index: 2;
+background-image: url(../images/graphic.jpg);
+
+}
+
+.right a {
+  direction: rtl;
+  display: block ;
+  margin: 7px 8px 3px 2px;
+  font-style: oblique;
+  font-weight: bolder;
+  font-stretch: wider;
+}
+ #srch {
+   float: right;
+   direction: rtl;
+   margin-top: 5px;
+
+ }
+
+ #selection {
+   width: 20px;
+
+ }
+ .insertTable td{
+ 	width: 40px;
+ 	height: 25px;
+ }
+
+
+#label1 {
+	margin-left: 0px;
+	float: left;
+	height: 30px;
+	width: 30px;
+	background-image: URL("../images/label.png");
+	position: relative;
+	
+}
+
+.table1  {
+	width: 50px;
+	height: 70px;
+	
+}
+#td1 {
+	
+	width: 45px;
+}
+
+#sbmit3 {
+	
+	background-picture: url("../images/label.png");
+}
+
+
+#pic1 {
+	
+	background-image: url("../images/tick-48px.png");
+	height: 30px;
+}
+#pic2 {
+	
+	background-image: url("../images/Knob Cancel.png");
+	height: 30px;
+}
+#label000 {
+	background-image: URL("../images/resp.png");
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: top-left;
+}
+#label2 {
+	background-image: URL("../images/home.png");
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: top-left;
+}
+#label3 {
+	background-image: URL("../images/offi.gif");
+	height: 30px;
+	background-repeat: no-repeat;
+}
+#label4 {
+	height: 30px;
+	background-image: URL("../images/acu.png");
+	background-repeat: no-repeat;
+}
+#label5 {
+	background-image: URL("../images/amb.png");
+height: 30px;
+background-repeat: no-repeat;
+}
+#label6 {
+	background-image: URL("../images/lab.png");
+height: 45px;
+background-repeat: no-repeat;
+}
+#label9 {
+	background-image: URL("../images/res.png");
+height: 30px;
+background-repeat: no-repeat;
+}
