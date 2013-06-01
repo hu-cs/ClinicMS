@@ -1,0 +1,65 @@
+
+# Users
+
+users:
+
+    - !!models.User
+        id:                     1
+        firstName:              محسن
+        lastName:               پارسا
+        password:               password
+        accountingAccess:       true
+        labAccess:              true
+        timeReservingAccess:    true
+        ambulanceAccess:        true
+        operationAccess:        true
+        receptionAccess:        true
+        officeAccess:           true
+        createUserAccess:       true
+        drugStoreAccess:        true
+        
+    - !!models.User
+        id:                     2
+        firstName:              احمد
+        lastName:               راد
+        password:               secret
+        accountingAccess:       true
+        labAccess:              true
+        timeReservingAccess:    false
+        ambulanceAccess:        true
+        operationAccess:        true
+        receptionAccess:        true
+        officeAccess:           false
+        createUserAccess:       true
+        drugStoreAccess:        true
+        
+    - !!models.User
+        id:                     3
+        firstName:              احمدالله
+        lastName:               هادم
+        password:               12345
+        accountingAccess:       true
+        labAccess:              false
+        timeReservingAccess:    true
+        ambulanceAccess:        true
+        operationAccess:        false
+        receptionAccess:        true
+        officeAccess:           true
+        createUserAccess:       true
+        drugStoreAccess:        false
+        
+    - !!models.User
+        id:                     4
+        firstName:              خضرا
+        lastName:               تیم
+        password:               67890
+        accountingAccess:       false
+        labAccess:              true
+        timeReservingAccess:    true
+        ambulanceAccess:        true
+        operationAccess:        true
+        receptionAccess:        true
+        officeAccess:           false
+        createUserAccess:       false
+        drugStoreAccess:        true
+        

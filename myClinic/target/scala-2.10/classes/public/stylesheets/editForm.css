@@ -1,0 +1,24 @@
+
+
+ table {
+ 
+ background-color: graytext;
+ 
+ border-bottom-style: inset;
+ 
+ border-bottom: dotted;
+ 
+ }
+ 
+ td {
+ 
+ background-color: buttonhighlight;
+ 	 border-bottom-style: inset;
+ 
+ border-bottom: dotted;
+ }
+ 
+ input {
+ 	
+ 	
+ }
