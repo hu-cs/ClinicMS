@@ -57,17 +57,22 @@ header{
  	height: 90px;
  }
  .right{
-   float: left;
+   float: right;
    direction: rtl;
    background-color: #3399FF;
    color: #fff;
    height: auto;
    min-height: 620px;
-   width: 730px;
+   width: 520px;
    margin: 60px auto;
-   background-image: url("../images/news_bg.gif");
-   background-repeat: repeat-y;
+  
    
+ }
+ div.right table {
+ 	
+ 	height: 600px;
+ 	width: 500px;
+ 	overflow: scroll;
  }
 
  div.right a {
@@ -244,3 +249,168 @@ background-image: url("../images/graphic.jpg");
   	border-collapse: collapse;
   	width: 1600px;
   }
+  #idbtn {
+  	
+  	background-color: #fff;
+  	foreground-color: #fff;
+  }
+  
+  .mainSection {
+  	
+  	height: 600px;
+  	width: 1000px;
+  	margin: 10 auto;
+  	background-color: #DFDFD8;
+  }
+  
+  .leftSide {
+  	height: 500px;
+  	width: 800px;
+  	margin: 5px;
+  	background-color: white;
+  	overflow: scroll;
+  	float: right;
+  }
+  
+  div.leftSide table tr th input{
+  	clear: both;
+  	 border: none;
+  	 margin: 0px;
+  	 padding: 0px;
+  	 float: right;
+  	 width: 100px;
+  	 
+  	 
+  }
+  div.leftSide table th {
+  	clear: both;
+  	margin: 0px;
+  	padding: 0px;
+  	margin-top: 5px;
+  	direction: rtl;
+  	text-align: center;
+  }
+ 
+ 
+ div.leftSide table  {
+ 	direction: rtl;
+ 	text-align: center;
+ 	border-collapse: collapse;
+ }
+ div.leftSide table tr:hover {
+ 	background-color: #DFDFD8;
+ 	border-bottom: 2px ridge blue;
+ } 
+ 
+ #data {
+ 	
+ }
+ 
+ .right-top ul li:hover {
+ 	background-image: linear-gradient(120 , 1 , 10,2);
+ }
+ 
+ #sve {
+ 	-webkit-border-radius: 50px;
+ 	height: 60px;
+ 	width: 70px;
+ 	background-image: url("../images/save.png");
+ 	background-repeat: no-repeat;
+ 	border: none;
+ 	background-size: cover;
+ }
+ #sve:active {
+ 	background-color: white;
+ }
+ 
+ #prnt {
+ 	-webkit-border-radius: 50px;
+ 	height: 60px;
+ 	width: 70px;
+ 	background-image: url("../images/2c.gif");
+ 	background-repeat: no-repeat;
+ 	border: none;
+ 	background-size: contain;
+ 	
+ }
+ #prnt:active {
+ 	background-image: url("../images/3a.gif");
+ }
+ #edt {
+ 	-webkit-border-radius: 50px;
+ 	height: 60px;
+ 	width: 70px;
+ 	background-image: url("../images/edit.png");
+ 	background-repeat: no-repeat;
+ 	border: none;
+ 	background-size: contain;
+ }
+ #edt:active {
+ 	background-color: white;
+ }
+ #dlt {
+ 	border: none;
+ 	background-image: url("../images/KnobCancel.png");
+ 	background-size: cover;
+ 
+ }
+ 
+ #edt1 {
+ 	height: 30px;
+ 	width: 30px;
+ 	background-color: none;
+ 	background-image: url("../images/edit.png");
+ 	background-size: cover;
+ 	border: none;
+ }
+ 
+ #del {
+ 	
+ 	height: 30px;
+ 	width: 30px;
+ 	background-image: url("../images/KnobCancel.png");
+ 	border: none;
+ 	background-size: cover;
+ 	
+ }
+ 
+ #picture {
+ 	height: 250px;
+ 	width: 150px;
+ 	background-color: green;
+ 	float: left;
+ 	margin-top: 40px;
+ 	margin-left: 20px;
+ 	overflow: hidden;
+ }
+ 
+ #getPicture {
+ 	
+ 	float: left;
+ 	position: absolute;
+ 	margin-top: 190px;
+ 	margin-right: 30px;
+ }
+ 
+ #sveNokarval {
+ 	height: 25px;
+ 	width: 25px;
+ 	-webkit-border-radius: 25px;
+ 	border: none;
+ 	background-image: url("../images/save.png");
+ 	background-size: cover;
+ }
+ 
+ #submit {
+ 	height: 25px;
+ 	width: 25px;
+ 	border: none;
+ 	background-image: url("../images/edit.png");
+ 	background-size: cover;
+ 	
+ }
+ div.leftSide table tr td ul li {
+ 	display: block;
+ 	margin: 2px 2px;
+ 	list-style: none;
+ }

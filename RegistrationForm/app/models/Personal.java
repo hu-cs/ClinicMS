@@ -15,16 +15,16 @@ public class Personal extends Model{
 	
 	
 
-	@Id
+	@Id 
 	public Long id;
 	
-	@Required
+	@Required (message="خالی بوده نمی تواند ")
 	public Long rollNumber;
 	
-	@Required
+	@Required  (message="خالی بوده نمی تواند ")
 	public String name;
 	
-	@Required
+	@Required (message="خالی بوده نمی تواند ")
 	public String fatherName;
 	
 	public Long  nationalIdCardNumber;
@@ -110,7 +110,11 @@ public class Personal extends Model{
 		return find.where().eq("id", id).findUnique();
 	}
 	
-
+	public static List<Personal> filterByName(String name){
+		
+		return (List<Personal>) find.where().orderBy(name);
+	
+}
 	
 	
 

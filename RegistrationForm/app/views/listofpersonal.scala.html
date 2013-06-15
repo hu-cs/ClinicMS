@@ -31,13 +31,11 @@
    <ul>
      <li> <a href="@routes.PersonalController.personalList()"> لیست کارمندان </a> </li>
       <li> <a href="@routes.PersonalController.creationForm()">فورم ثبت کارمندان</a> </li>
-      <li> <a href="#">ثبت</a> </li>
+      <li> <a href="@routes.PersonalController.listNokarval()">ثبت</a> </li>
        <li> <a href="#">ساخت کارمندان</a> </li>
       
       </ul>
 </div>
-<div class="left-center"> 
-</div>		
 
 <div class="tablePersonal1">
 
@@ -68,7 +66,7 @@
 @for(personal <- personalList){
 <tr>
 
-	<td><button type="submit" >@form(routes.PersonalController.editPersonal(personal.id)){  <input type="submit" value="@personal.id" />}</button></td>
+	<td>@personal.id</td>
 	<td>@personal.rollNumber</td>
 	<td>@personal.name</td>
 	<td>@personal.fatherName</td>
@@ -85,7 +83,9 @@
 	<td>@personal.section</td>
 	<td>@personal.isready </td>
 	<td>@personal.info </td>
-	<td> <button type="submit" >  @form(routes.PersonalController.deletePersonal(personal.id)){ <input type="submit" value=" حذف " /> }  </a> </td> 
+	<td>   @form(routes.PersonalController.deletePersonal(personal.id)){ <input type="submit" value="  " id="del"/> }  </a> 
+	@form(routes.PersonalController.editPersonal(personal.id)){  <input type="submit" id="edt1" value="  " />}
+	</td> 
 	
 	
 		

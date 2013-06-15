@@ -12,14 +12,23 @@ GET     /assets/*file               controllers.Assets.at(path="/public", file)
 GET		/personal					controllers.PersonalController.personalList()
 
 
-POST    /createPersonal						controllers.PersonalController.createPersonal()
+POST    /createPersonal				controllers.PersonalController.createPersonal()
 
 
-POST   /deletePersonal              controllers.PersonalController.deletePersonal(id:Long)
+POST    /deletePersonal              controllers.PersonalController.deletePersonal(id:Long)
 
-POST    /editPersonal 						controllers.PersonalController.editPersonal(id: Long)
+POST    /editPersonal 				controllers.PersonalController.editPersonal(id: Long)
 
 
-POST   /personal/:id              controllers.PersonalController.updatePersonal(id:Long)
+POST   /personal/:id              	controllers.PersonalController.updatePersonal(id:Long)
 
 GET    /createForm                  controllers.PersonalController.creationForm()
+
+GET    /listNokarval                controllers.PersonalController.listNokarval()
+
+POST    /uplodPic					controllers.PersonalController.upload()
+
+POST    /searchById/:id             controllers.PersonalController.searchById(id: Long)
+
+POST     /loadPc                     controllers.PersonalController.pcload()
+

@@ -56,92 +56,115 @@
       </div>
       	
          <div class="right" id="tog">    		
-    		<table cellpadding="2" cellspacing="2">
+    		<table cellpadding="2" >
     		
     		@form(routes.PersonalController.createPersonal()){
+    		
     		<tr>
-    		    	
-    		<td> @inputText(personalForm("telephoneNumber"), '_label -> " شماره موبایل ") </td>
+    		 <td> <label> شماره موبایل </label> </td>   	
+    		<td> @inputText(personalForm("telephoneNumber"), '_label -> "  ") </td>
     		 </tr>
     		<tr> 
-    	
-    		<td>@inputText(personalForm("rollNumber"), '_label -> " شماره پرونده " )</td>
-    	
-    		<td>  @inputText(personalForm("emergencyNumber"), '_label -> " شماره عاجل ")</td>
-    		</tr>
-    		<tr> 
-    	
-    		<td> @inputText(personalForm("name"), '_label -> " اسم ")</td>
-    	
-    		<td> @inputText(personalForm("age"), '_label -> "  سن " )</td>
-    		</tr>
-    		<tr> 
-    	
-    		<td> @inputText(personalForm("fatherName"), '_label -> "  نام پدر  " )</td>
-    	
-    		<td>@checkbox(personalForm("isPercentage"), '_label -> " فیصدی ")</td>
-    		</tr>
-    		<tr> 
- 
-    		<td> @inputText(personalForm("familyName"), '_label -> " اسم فامیلی ")</td>
+    		<td> <label> شماره پرونده  </label> </td>
+    		<td>@inputText(personalForm("rollNumber"), '_label -> "  ", '_showConstraints -> false )</td>
     		
-    		<td> @checkbox(personalForm("notPercentage"), '_label -> "د وره ای ")</td>
+    		<td> <label> شماره عاجل  </label> </td>
+    		<td>  @inputText(personalForm("emergencyNumber"), '_label -> " " )</td>
+    		</tr>
+    		<tr> 
+    		<td> <label>  اسم  </label> </td>
+    		<td> @inputText(personalForm("name"), '_label -> "", '_showConstraints -> false )</td>
+    		
+    		<td> <label> سن </label> </td>
+    		<td> @inputText(personalForm("age"), '_label -> "   " )</td>
     		</tr>
     		<tr> 
     		
-    		<td>@inputText(personalForm("grandFatherName"), '_label -> " جد ")</td>
-    	
-    		<td> @checkbox(personalForm("both"), '_label -> " هر دو ") </td>
+    		<td> <label>  نام پدر </label> </td>
+    		<td> @inputText(personalForm("fatherName"), '_label -> "  ", '_showConstraints -> false  )</td>
+    		
+    		<td> <label>  فیصدی  </label> </td> 
+    		<td>@checkbox(personalForm("isPercentage"), '_label -> " ")</td>
+    		</tr>
+    		<tr> 
+ 			
+ 			<td> <label>  اسم فامیلی  </label> </td> 
+    		<td> @inputText(personalForm("familyName"), '_label -> "  ")</td>
+    		
+    		<td> <label>  د وره ای   </label> </td>
+    		<td> @checkbox(personalForm("notPercentage"), '_label -> " ")</td>
+    		</tr>
+    		<tr> 
+    		
+    		<td> <label> جد   </label> </td>
+    		<td>@inputText(personalForm("grandFatherName"), '_label -> "  ")</td>
+    		
+    		<td> <label> هر دو  </label> </td>
+    		<td> @checkbox(personalForm("both"), '_label -> "  ") </td>
     		
     		</tr>
     		<tr>
-    	
-    		<td>@inputText(personalForm("nationalIdCardNumber"), '_label -> " شماره تذکره ") </td>
-    	
-    		<td> @inputText(personalForm("percentage"), '_label -> " فیصدی " )</td>
+    		
+    		<td> <label> شماره تذکره  </label> </td>
+    		<td>@inputText(personalForm("nationalIdCardNumber"), '_label -> "   ") </td>
+    		
+    		<td> <label>  فیصدی  </label> </td>
+    		<td> @inputText(personalForm("percentage"), '_label -> " " )</td>
     		 </tr>
     		<tr> 
-    	
-    		<td>  @inputText(personalForm("occuption"), '_label -> " تخصص ") </td>
-    
-    		<td> @inputText(personalForm("salary"), '_label -> " معاش " )</td>
+    		
+    		<td> <label> تخصص  </label> </td>
+    		<td>  @inputText(personalForm("occuption"), '_label -> "  ") </td>
+    		
+    		<td> <label> معاش   </label> </td>
+    		<td> @inputText(personalForm("salary"), '_label -> " " )</td>
     		
     		</tr>
     		<tr> 
     		
-    		<td> @inputText(personalForm("dateOfBirth"), '_label -> " تاریخ تولد ") </td>
+    		<td> <label> تاریخ تولد    </label> </td>
+    		<td> @inputText(personalForm("dateOfBirth"), '_label -> " ") </td>
     		
-    		<td> @checkbox(personalForm("isready"), '_label -> " فعال " )</td>
+    		<td> <label>فعال   </label> </td>
+    		<td> @checkbox(personalForm("isready"), '_label -> "   " )</td>
     		</tr>
     		<tr> 
-    
-    		<td colspan ="3">@inputText(personalForm("email"), '_label -> " ایمیل آدرس " )</td>
+    		
+    		<td> <label>  ایمیل آدرس   </label> </td>
+    		<td colspan ="3">@inputText(personalForm("email"), '_label -> " " )</td>
     		<td> </td>
     		<td> </td>
     		</tr>
     		<tr> 
-    	
-    		<td colspan="3">@inputText(personalForm("address"), '_label -> " آدرس ")  </td>
+    		
+    		<td> <label>  آدرس   </label> </td>
+    		<td colspan="3">@inputText(personalForm("address"), '_label -> " ")  </td>
     		<td> </td>
     		<td> </td>
     		</tr>
     		<tr>
     		
-    		<td colspan="3"> @inputText(personalForm("info"), '_label -> " بخش " ) </td>
+    		<td> <label> بخش </label> </td>
+    		<td colspan="3"> @inputText(personalForm("info"), '_label -> "  " ) </td>
     		</tr>
-    		<td colspan="3"> @textarea(personalForm("section"), '_label -> " تو ضیحات " ) </td>
+    		
+    		<td> <label>  تو ضیحات </label> </td>
+    		<td colspan="4"> @textarea(personalForm("section"), '_label -> " " ) </td>
     		
     		</table>
     		<span><button value="save" type="submit" class="btn" /> ذخیره  </span>
     		}
     		
+    		
 
       </div>
-      <div class="leftdown" id="td">
-      		جستجو  
-        <input type="search" class="search" />
-        
-        </div>
+      <div id="picture">  
+     
+      @views.html.uploadPic(null)
+       </div>
+       
+     
+      
       </div>
     </body>
 </html>
