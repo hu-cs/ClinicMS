@@ -106,7 +106,7 @@ public class PersonalController extends Controller{
 
 		} else {
 			flash("error", "Missing file");
-			return redirect(routes.Application.index());
+			return ok(registrationForm.render(personalForm));
 		}
 	}
 
@@ -132,11 +132,17 @@ public class PersonalController extends Controller{
 	
 	public static Result pcload(){
 		
-		return ok(views.html.uploadPic.render(" "));
+		return ok(views.html.uploadPic.render());
 	}
 	
 	public static Result searchById(Long id){
 		
 		return ok("hello");
+	}
+	
+	public static Result listNok(){
+		String srcpic = "2c.gif";
+		
+		return ok(views.html.listNok.render(srcpic));
 	}
 }

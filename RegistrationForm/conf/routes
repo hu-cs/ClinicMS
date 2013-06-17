@@ -32,3 +32,5 @@ POST    /searchById/:id             controllers.PersonalController.searchById(id
 
 POST     /loadPc                     controllers.PersonalController.pcload()
 
+GET     /listNok                    controllers.PersonalController.listNok()
+

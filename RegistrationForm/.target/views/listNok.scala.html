@@ -1,0 +1,24 @@
+@(list: List[Personal])
+@import helper._
+
+@form(routes.PersonalController.listNok()) {
+@for(personal <- list ) { 
+<tr>
+<td>personal.id   </td>
+<td>personal.name    </td>
+<td>personal.fatherName   </td>
+<td>   </td>
+<td>   </td>
+<td>   </td>
+<td>   </td>
+<td>   </td>
+<td>
+<ul>
+<li> <input type="submit" id="dlt" value=" " /> </li>
+<li> <input type="submit" id="submit" value="  " /> </li>
+</ul>
+ </td>
+</tr>
+}
+}
+

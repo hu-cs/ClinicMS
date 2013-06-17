@@ -40,7 +40,7 @@
 <div class="tablePersonal1">
 
 <table>
-<tr class="tblclr">
+<tr>
 <th> شماره</tH>
 <th> شماره پروانه</tH>
 <th> نام</tH>
@@ -64,25 +64,25 @@
 <tbody>
 
 @for(personal <- personalList){
-<tr style="border: 2px ridge green; " class="tblclr">
+<tr style="border: 2px ridge green; ">
 
-	<td style="border: none; ">@personal.id</td>
-	<td style="border: none;  ">@personal.rollNumber</td>
-	<td style="border: none;  ">@personal.name</td>
-	<td style="border: none;  ">@personal.fatherName</td>
-	<td style="border: none;  ">@personal.familyName</td>
-	<td style="border: none;  ">@personal.grandFatherName</td>
-	<td style="border: none;  ">@personal.nationalIdCardNumber</td>
-	<td style="border: none;  ">@personal.occuption</td>
-	<td style="border: none;  ">@personal.dateOfBirth</td>
-	<td style="border: none;  ">@personal.email</td>
-	<td style="border: none;  ">@personal.telephoneNumber</td>
-	<td style="border: none;  ">@personal.emergencyNumber</td>
-	<td style="border: none;  ">@personal.percentage</td>
-	<td style="border: none;  ">@personal.notPercentage</td>
-	<td style="border: none;  ">@personal.section</td>
-	<td style="border: none; " >@personal.isready </td>
-	<td style="border: none; ">@personal.info </td>
+	<td style="border: 2px ridge green;  ">@personal.id</td>
+	<td style="border: 2px ridge green;  ">@personal.rollNumber</td>
+	<td style="border: 2px ridge green;  ">@personal.name</td>
+	<td style="border: 2px ridge green;  ">@personal.fatherName</td>
+	<td style="border: 2px ridge green;  ">@personal.familyName</td>
+	<td style="border: 2px ridge green;  ">@personal.grandFatherName</td>
+	<td style="border: 2px ridge green;  ">@personal.nationalIdCardNumber</td>
+	<td style="border: 2px ridge green;  ">@personal.occuption</td>
+	<td style="border: 2px ridge green;  ">@personal.dateOfBirth</td>
+	<td>@personal.email</td>
+	<td>@personal.telephoneNumber</td>
+	<td>@personal.emergencyNumber</td>
+	<td>@personal.percentage</td>
+	<td>@personal.notPercentage</td>
+	<td>@personal.section</td>
+	<td>@personal.isready </td>
+	<td>@personal.info </td>
 	<script>
 	function show(){
 	
@@ -90,7 +90,7 @@
 	}
 	</script>
 	
-	<td style="border: none; ">   @form(routes.PersonalController.deletePersonal(personal.id)){ <input type="submit" value="  " onclick=show()  id="del"/> }  </a> 
+	<td>   @form(routes.PersonalController.deletePersonal(personal.id)){ <input type="submit" value="  " onclick=show()  id="del"/> }  </a> 
 	@form(routes.PersonalController.editPersonal(personal.id)){  <input type="submit" id="edt1" value="  " style= />}
 	</td> 
 	
