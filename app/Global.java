@@ -18,12 +18,16 @@ public class Global extends GlobalSettings {
         public static void insert(Application app) {
             if(Ebean.find(User.class).findRowCount() == 0) {
                 
-                Map<String,List<Object>> all = (Map<String,List<Object>>)Yaml.load("initial-data.yml");
+                Map<String,List<Object>> all = (Map<String,List<Object>>)Yaml.load("data.yml");
 
                 // Insert users first
                 Ebean.save(all.get("users"));
                 
-                Ebean.save(all.get("personal"));
+//                Ebean.save(all.get("personal"));
+                
+//                Ebean.save(all.get("parturition"));
+//                
+//                Ebean.save(all.get("operation"));
                 
             }
         }

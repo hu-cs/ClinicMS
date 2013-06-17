@@ -1,0 +1,44 @@
+@(parturitionForm: Form[Parturition])
+
+@import helper._
+
+
+<html><head> 
+<title></title> 
+</head>
+
+<body>
+
+@form(routes.ParturitionController.createParturition()) {
+	<table  class="inserTable" >
+	<tr>
+	
+	</tr>
+		<tbody>
+			<tr>
+
+			<td><input class="lt" type="text" name="firstName"  size="10" required /> </td>
+			<td><input class="lt" type="text" name="lastName" size="10" required/></td>
+			<td><input class="lt" type="password" name="password" size="10" required  /></td>
+			<td><label id="chk"> بستری  </label><input id="chk" type="checkbox" name="bedAccess" size="10" />
+			<label id="chk" > محاسبه  </label><input id="chk" type="checkbox" name="accountingAccess" size="10" />
+			<label id="chk" > لابراتوار </label><input id="chk" type="checkbox" name="labAccess" size="10" /> <br />
+			<label id="chk1" > رزرو وقت </label><input id="chk1" type="checkbox" name="timeReservingAccess" size="10" />
+			<label id="chk1" > کسیل کش </label><input id="chk1" type="checkbox" name="ambulanceAccess" size="10" />
+			<label id="chk1" > عملیات </label><input id="chk1" type="checkbox" name="operationAccess" size="10" /> <br />
+		
+			<label id="chk2" >پذیرش</label><input id="chk2" type="checkbox" name="receptionAccess" size="10" />
+			<label id="chk4" >اداره</label><input id="chk4" type="checkbox" name="officeAccess" size="10" /> <br />
+			<label id="chk3" >ساخت کاربر</label><input id="chk3" type="checkbox" name="createUserAccess" size="10" />
+			<label id="chk5" >دوا خانه </label><input id="chk5" type="checkbox" name="drugStoreAccess" size="10" /></td>
+			
+				<td><input id="pic1" type="submit" value="Create"> <br />
+				 <a id="pic2" href="@routes.Application.users()" class="btn">Cancel</a></td>
+				</tr>
+			
+				</tbody>
+
+			</table>
+	}
+	</body>
+</html>

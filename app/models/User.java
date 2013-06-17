@@ -84,8 +84,8 @@ public class User extends Model {
 		return finder.where().eq("firstName", name).findUnique();
 	}
 
-	public static User authenticate(String first, String password) {
-		return finder.where().eq("firstName", first).eq("password", password)
+	public static User authenticate(String first, String pass) {
+		return finder.where().eq("firstName", first).eq("password", pass)
 				.findUnique();
 	}
 
@@ -114,9 +114,7 @@ public class User extends Model {
 
 	
 	public boolean bedAccess(boolean createUser, String user){
-		return finder.where().
-				eq("firstName", user).
-				eq("createUserAccess", createUser).findRowCount() >= 0;
+		return labAccess;
 	}
 	
 	public boolean labAccess(){

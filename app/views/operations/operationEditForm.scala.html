@@ -1,0 +1,64 @@
+@(id: Long, operationForm: Form[Operation], personals: List[User])
+
+@import helper._
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Operations</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/editForm.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+    </head>
+    <body>
+
+
+	 <div>
+
+    <table class="parturitions" height="30">  
+    <tbody>
+    @form(routes.OperationCon.updateOperation(id)) {
+	<table  class="inserTable" >
+	<tr>
+	
+	</tr>
+		<tbody>
+			<tr>
+      		<td>    @inputText(operationForm("firstName"),  '_label -> "نام", '_showConstraints -> false)</td>
+     		<td>    @inputText(operationForm("fatherName"), '_label -> "نام پدر", '_showConstraints -> false) </td>
+      		<td>    @inputText(operationForm("familyName"), '_label -> "نام خانوادگی", '_showConstraints -> false) </td>
+       		<td>	@inputText(operationForm("foreFather"), '_label -> "جد", '_showConstraints -> false) </td>
+	 		<td>	@inputDate(operationForm("age"), '_label -> "سن", '_showConstraints -> false) </td>
+	 		<td>	@select(operationForm("bloodType"), options("A"->"A","AB"->"AB", "O"->"O", "B"->"B"), '_showConstraints -> false) </td>
+			<td>	@inputText(operationForm("phone"), '_label -> "", '_showConstraints -> false) <label>شماره تلفن</label></td>
+			<td>	@inputDate(operationForm("operationType"), '_label -> "نوع عملیات", '_showConstraints -> false)</td> </tr>
+			<td>	@inputDate(operationForm("birthDay"), '_label -> "تاریخ تولد", '_showConstraints -> false)  </td>
+			<td>	@inputDate(operationForm("operationDate"), '_label -> "تاریخ عملیات", '_showConstraints -> false)  </td>
+			<td> 	@inputText(operationForm("address"), '_label -> "آدرس", '_showConstraints -> false) </td>
+			<td>	@textarea(operationForm("description"), '_label -> "توضیحات", '_showConstraints -> false)</td>
+	 		<td>	@inputText(operationForm("charge"), '_label -> "هزینه", '_showConstraints -> false) </td>
+	 		<td>	@inputText(operationForm("discount"), '_label -> "تخفیف", '_showConstraints -> false) </td>
+			<td>	<input type="text" list="list" name="doctor" onChange="Pluse()">
+					<datalist id="list">
+ 					@for(user <- personals) { 
+					<option value=@user.firstName,@user.lastName>
+					}
+			</datalist> </td>
+			<td>	<input type="text" list="list" name="assistant" onChange="Pluse()">
+					<datalist id="list">
+ 					@for(user <- personals) { 
+					<option value=@user.firstName,@user.lastName>
+					}
+			</datalist> </td>
+	 		<td>	@checkbox(operationForm("successfull"), '_label -> "عملیات موفقیت آمیز", '_showConstraints -> false) </td>>
+			<td><input id="pic1" type="submit" value="Create"> <br />
+				 <a id="pic2" href="@routes.OperationCon.operations()" class="btn">Cancel</a></td>
+			</tr>
+		</tbody>
+
+	</table>
+	}
+    </div>
+    </body>
+</html>

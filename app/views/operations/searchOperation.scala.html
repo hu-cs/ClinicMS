@@ -1,0 +1,88 @@
+@(operations List[Operation], t: String, k:String)
+
+@import helper._
+
+<html>
+
+<head>
+<title>
+
+</title>
+<link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/userInterface.css")">
+</head>
+<body>
+			<form id="searching" action="@routes.OperationCon.searchOperation()" method="get">
+            	<select type="search" id="type" name="type" style="float: right; height: 20px; margin: 3px;" >
+										<option value="id">شماره </option>
+										<option value="firstName">نام</option>
+										<option value="fatherName">نام پدر</option>
+				</select>
+                <input id="key" name="key" type="search" value="اینجا بنویسید" style="float: right; height:20px; margin: 3px;"/>
+                <input type="submit" />
+            </form>
+
+	<table  class="users" height="30">
+		<thead>
+		<tr>
+		<td><b>شماره مسلسل</b></td>
+		<td><b>نام</b></td>
+		<td><b>نام پدر</b></td>
+		<td><b>نام خانوادگی</b></td>
+		<td><b>جد</b></td>
+		<td><b>سن</b></td>
+		<td><b>گروپ خونی</b></td>
+		<td><b>تلفن</b></td>
+		<td><b>تاریخ تولد </b></td>
+		<td><b>تاریخ عملیات</b></td>
+		<td><b>آدرس</b></td>
+		<td><b>توضیحات</b></td>
+		<td><b> هزینه</b></td>
+		<td><b>تخفیف</b></td>
+		<td><b>داکتر عملیات</b></td>
+		<td><b>دستیار عملیات</b></td>
+		<td><b>نوع عملیات</b></td>
+		<td><b>موفقانه</b></td>	
+		<td><b>ویرایش</b></td>		
+	
+		</tr>
+		</thead>
+		<tbody>
+		@for(operation <- operations) {
+			<tr>
+			<td>@operation.id</td>
+			<td>@operation.firstName</td>
+			<td>@operation.fatherName</td>
+			<td>@operation.familyName</td>
+			<td>@operation.foreFather</td>
+			<td>@operation.age</td>
+			<td>@operation.bloodType</td>
+			<td>@operation.phone</td>
+			<td><date date="@operation.birthDay">@operation.birthDay.format("dd MMM yyyy")</date></td>
+			<td><date date="@operation.operationDate">@operation.operationDate.format("dd MMM yyyy")</date></td>
+			<td>@operation.address</td>
+			<td>@operation.description</td>
+			<td>@operation.charge</td>
+			<td>@operation.discount</td>
+			<td>@operation.doctor</td>
+			<td>@operation.assistant</td>
+			<td>@operation.operationType</td>						
+			<td><span> <input disabled type="checkbox" @if(operation.successfull){checked}/><label> عملیات موفقانه</label></span></td>
+			<td>
+			<button id="sbmit3" class="cancelsubmit" type="submit">
+				@form(routes.OperationCon.deleteOperation(operation.id)) { 
+					<input id="sbmit2" type="submit" value="حذف">
+				}
+				</button>
+				<br />
+				<button id="sbmit1" class="cancelsubmit" type="submit">
+				@form(routes.OperationCon.editOperation(operation.id)) { 
+				<input id="sbmit" type="submit" value="ویرایش">
+			}
+			</button>
+			<td>
+			</tr>
+			}
+		</tbody>
+	</table>
+	</body>
+</html>

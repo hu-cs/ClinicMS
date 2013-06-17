@@ -1,7 +1,8 @@
 @(form: Form[Application.Login])
 
+
 <html>
-<meta charset="utf-8">
+
 <head>
 <title>Clinic</title>
 <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
@@ -12,24 +13,32 @@
 	<div class="all">
 
 		<div class="bdy">
-				<center><h2>       کلنیک خصوصی قدس </h2> </center>
+				<center><h2>کلنیک خصوصی قدس</h2> </center>
 			@helper.form(routes.Application.authenticate) {
+				
 				@if(form.hasGlobalErrors) {
-			<p class="error">@form.globalError.message</p>
-			} @if(flash.contains("success")) {
-			<p class="success">@flash.get("success")</p>
-			} <label id="username"> نام کاربر</label> <input type="text"
-				name="firstName" id="input1" placeholder="firstName" value="@form("firstName").value">
-
-			<br /> <label id="pass"> رمز ورود</label> <input class="lginpass"
-				type="password" id="input2" name="password" placeholder="Password"> <br />
+					<p class="error">
+					@form.globalError.message
+					</p>
+				} 
+				
+				@if(flash.contains("success")) {
+					<p class="success">
+					@flash.get("success")
+					</p>
+				} 
+			<label id="username"> نام کاربر</label> 
+			<input type="text" name="firstName" id="input1" placeholder="نام" value="@form("firstName").value">
+			<br /> 
+			<label id="pass"> رمز ورود</label> 
+			<input type="password" id="input2" name="password" placeholder="رمز ورود" > 
+			<br />
 
 			<button id="btn1" class="lginsubmit" type="submit">ورود</button>
-			<button id="btn2" class="cancelsubmit" type="submit">خروج</button>
+			<button id="btn2" class="cancelsubmit" type="reset">خروج</button>
 
 			<br /> }
 		</div>
-		<image src="@routes.Assets.at("images/arrow.png")">
 
 
 

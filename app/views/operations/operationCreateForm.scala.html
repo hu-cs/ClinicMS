@@ -1,0 +1,62 @@
+@(operationForm: Form[Operation], personals: List[User])
+
+@import helper._
+<html><head> <title></title> 
+
+<style rel="stylesheet" type="text/css" >
+td {
+direction: ltr;
+
+}
+.lt {
+direction: rtl;
+margin-top: 0px;
+width: 150px;
+height: 50px;
+}
+</style>
+</head>
+<body>
+@form(routes.OperationCon.saveOperation()) {
+	<table  class="inserTable" >
+	<tr>
+	
+	</tr>
+		<tbody>
+			<tr>
+      		<td>    @inputText(operationForm("firstName"),  '_label -> "نام", '_showConstraints -> false)</td>
+     		<td>    @inputText(operationForm("fatherName"), '_label -> "نام پدر", '_showConstraints -> false) </td>
+      		<td>    @inputText(operationForm("familyName"), '_label -> "نام خانوادگی", '_showConstraints -> false) </td>
+       		<td>	@inputText(operationForm("foreFather"), '_label -> "جد", '_showConstraints -> false) </td>
+	 		<td>	@inputText(operationForm("age"), '_label -> "سن", '_showConstraints -> false) </td>
+	 		<td>	@select(operationForm("bloodType"), options("A"->"A","AB"->"AB", "O"->"O", "B"->"B"), '_showConstraints -> false) </td>
+			<td>	@inputText(operationForm("phone"), '_label -> "تلفن", '_showConstraints -> false) </td>
+			<td>	@inputText(operationForm("operationType"), '_label -> "نوع عملیات", '_showConstraints -> false)</td> </tr>
+			<td>	@inputDate(operationForm("birthDay"), '_label -> "تاریخ تولد", '_showConstraints -> false)  </td>
+			<td>	@inputDate(operationForm("operationDate"), '_label -> "تاریخ عملیات", '_showConstraints -> false)  </td>
+			<td> 	@inputText(operationForm("address"), '_label -> "آدرس", '_showConstraints -> false) </td>
+			<td>	@textarea(operationForm("description"), '_label -> "توضیحات", '_showConstraints -> false)</td>
+	 		<td>	@inputText(operationForm("charge"), '_label -> "هزینه", '_showConstraints -> false) </td>
+	 		<td>	@inputText(operationForm("discount"), '_label -> "تخفیف", '_showConstraints -> false) </td>
+			<td>	<input type="text" list="list" name="doctor" onChange="Pluse()">
+					<datalist id="list">
+ 					@for(user <- personals) { 
+					<option value=@user.firstName,@user.lastName>
+					}
+			</datalist> </td>
+			<td>	<input type="text" list="list" name="assistant" onChange="Pluse()">
+					<datalist id="list">
+ 					@for(user <- personals) { 
+					<option value=@user.firstName,@user.lastName>
+					}
+			</datalist> </td>
+	 		<td>	@checkbox(operationForm("successfull"), '_label -> "عملیات موفقیت آمیز", '_showConstraints -> false) </td>
+			<td><input id="pic1" type="submit" value="Create"> <br />
+				 <a id="pic2" href="@routes.OperationCon.operations()" class="btn">Cancel</a></td>
+			</tr>
+		</tbody>
+
+	</table>
+	}
+	</body>
+</html>

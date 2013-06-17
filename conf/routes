@@ -8,41 +8,36 @@
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
-
-
 ########################################
 # Login
 GET     /                  		controllers.Application.login()
 POST    /login                  controllers.Application.authenticate()
 GET     /logout                 controllers.Application.logout()
-######################################################
-# user actions
-
+#############################################################
+#users actions
 GET     /users                  controllers.Application.users()
 POST    /users                  controllers.Application.createUser()
 GET     /users/:id              controllers.Application.editUser(id:Long)
-POST     /users/:id             controllers.Application.updateUser(id:Long)
+POST    /users/:id              controllers.Application.updateUser(id:Long)
 POST    /users/:id/delete       controllers.Application.deleteUser(id: Long)
 
+#############################################################
+#parturition actions
+GET     /parturitions                  controllers.ParturitionCon.parturitions()
+GET     /parturitions/new              controllers.ParturitionCon.createParturition()
+POST	/parturition				   controllers.ParturitionCon.saveParturition()
+GET		/parturitions/search		   controllers.ParturitionCon.searchParturition()
+GET     /parturitions/:id              controllers.ParturitionCon.editParturition(id:Long)
+POST    /parturitions/:id              controllers.ParturitionCon.updateParturition(id:Long)
+POST    /parturitions/:id/delete       controllers.ParturitionCon.deleteParturition(id: Long)
+#############################################################
+#operation actions
+GET     /operations                  controllers.OperationCon.operations()
+GET		/operations/new				 controllers.OperationCon.createOperation()
+POST    /operation                   controllers.OperationCon.saveOperation()
+GET		/parturitions/search		 controllers.ParturitionCon.searchParturition()
+GET     /operations/:id              controllers.OperationCon.editOperation(id:Long)
+POST    /operations/:id              controllers.OperationCon.updateOperation(id:Long)
+POST    /operations/:id/delete       controllers.OperationCon.deleteOperation(id: Long)
 
-############################################################
-GET		/personal					controllers.PersonalController.personalList()
-
-
-POST    /createPersonal				controllers.PersonalController.createPersonal()
-
-
-POST   /deletePersonal/:id              controllers.PersonalController.deletePersonal(id:Long)
-
-POST   /editPersonal/:id 				controllers.PersonalController.editPersonal(id: Long)
-
-
-POST   /personal/:id                controllers.PersonalController.updatePersonal(id:Long)
-
-GET    /createForm                  controllers.PersonalController.creationForm()
-
-############################################################
-GET     /drugs                	controllers.Drugc.listDrug()
-POST    /drugs             		controllers.Drugc.createDrug()
-POST    /drugs/:id/delete       controllers.Drugc.deleteDrug(id: Long)
 

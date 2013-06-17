@@ -12,6 +12,45 @@ create table drugs (
   constraint pk_drugs primary key (id))
 ;
 
+create table operation (
+  id                        bigint not null,
+  first_name                varchar(255),
+  father_name               varchar(255),
+  family_name               varchar(255),
+  fore_father               varchar(255),
+  age                       bigint,
+  blood_type                varchar(255),
+  phone                     varchar(255),
+  birth_date                timestamp,
+  operation_date            timestamp,
+  address                   varchar(255),
+  description               varchar(255),
+  charge                    bigint,
+  discount                  bigint,
+  operation_type            varchar(255),
+  successfull               boolean,
+  constraint pk_operation primary key (id))
+;
+
+create table parturition (
+  id                        bigint not null,
+  first_name                varchar(255),
+  father_name               varchar(255),
+  family_name               varchar(255),
+  fore_father               varchar(255),
+  parturition_date          timestamp,
+  number_of_baby            bigint,
+  blood_type                varchar(255),
+  phone_number              varchar(255),
+  birth_day                 timestamp,
+  address                   varchar(255),
+  description               varchar(255),
+  charge                    bigint,
+  discount                  bigint,
+  caesareaned               boolean,
+  constraint pk_parturition primary key (id))
+;
+
 create table personal (
   id                        bigint not null,
   roll_number               bigint,
@@ -58,6 +97,10 @@ create table user (
 
 create sequence drugs_seq;
 
+create sequence operation_seq;
+
+create sequence parturition_seq;
+
 create sequence personal_seq;
 
 create sequence user_seq;
@@ -71,6 +114,10 @@ SET REFERENTIAL_INTEGRITY FALSE;
 
 drop table if exists drugs;
 
+drop table if exists operation;
+
+drop table if exists parturition;
+
 drop table if exists personal;
 
 drop table if exists user;
@@ -78,6 +125,10 @@ drop table if exists user;
 SET REFERENTIAL_INTEGRITY TRUE;
 
 drop sequence if exists drugs_seq;
+
+drop sequence if exists operation_seq;
+
+drop sequence if exists parturition_seq;
 
 drop sequence if exists personal_seq;
 

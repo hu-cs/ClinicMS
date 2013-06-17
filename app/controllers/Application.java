@@ -15,12 +15,10 @@ public class Application extends Controller {
 
 	static Form<User> userForm = Form.form(User.class);
 
-	@Security.Authenticated(Secured.class)
 	public static Result users() {
 		return ok(userListIndex.render(User.list(), userForm));
 	}
 
-	@Security.Authenticated(Secured.class)
 	public static Result createUser() {
 		Form<User> filledForm = userForm.bindFromRequest();
 		if (filledForm.hasErrors()) {
@@ -31,7 +29,6 @@ public class Application extends Controller {
 		}
 	}
 	
-	@Security.Authenticated(Secured.class)
     public static Result editUser(Long id) {
         Form<User> editForm = form(User.class).fill(User.finder.byId(id)
         );
@@ -50,12 +47,12 @@ public class Application extends Controller {
 			return ok(userListIndex.render(User.list(), userForm));
 		}
 	}
-	@Security.Authenticated(Secured.class)
 	public static Result deleteUser(Long id) {
 		User.finder.ref(id).delete();
 		flash("success", "User has been deleted");
 		return redirect(routes.Application.users());
 	}
+	
 	public static Result login() {
 		return ok(login.render(form(Login.class)));
 	}
@@ -88,7 +85,7 @@ public class Application extends Controller {
 		
 		public String validate() {
 		    if (User.authenticate(firstName, password) == null) {
-		      return "Invalid user or password";
+		      return "ورود به سیستم ناموفق";
 		    }
 		    return null;
 		}
