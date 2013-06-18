@@ -1,0 +1,103 @@
+@(id: Long, personalForm: Form[Personal])
+
+@import helper._
+
+<html>
+<head> <title> </title>
+ <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/edit.css")">
+</head>
+<body>
+	@form(routes.PersonalCon.editPersonal(id)) {
+		
+	}
+    
+    @form(routes.PersonalCon.updatePersonal(id)) {
+    <div> 
+    
+    <table>
+        
+      
+        
+          
+    	
+    		<td> @inputText(personalForm("telephoneNumber"), '_label -> " شماره موبایل ") </td>
+    		 </tr>
+    		<tr> 
+    	
+    		<td>@inputText(personalForm("rollNumber"), '_label -> " شماره پرونده " , '_showConstraints -> false  )</td>
+    	
+    		<td>  @inputText(personalForm("emergencyNumber"), '_label -> " شماره عاجل ")</td>
+    		</tr>
+    		<tr> 
+    	
+    		<td> @inputText(personalForm("firstName"), '_label -> " اسم ")</td>
+    	
+    		<td> @inputText(personalForm("age"), '_label -> "  سن " )</td>
+    		</tr>
+    		<tr> 
+    	
+    		<td> @inputText(personalForm("fatherName"), '_label -> "  نام پدر  " )</td>
+    	
+    		<td>@checkbox(personalForm("isPercentage"), '_label -> " فیصدی ")</td>
+    		</tr>
+    		<tr> 
+ 
+    		<td> @inputText(personalForm("familyName"), '_label -> " اسم فامیلی ")</td>
+    		
+    		<td> @checkbox(personalForm("notPercentage"), '_label -> "د وره ای ")</td>
+    		</tr>
+    		<tr> 
+    		
+    		<td>@inputText(personalForm("foreFather"), '_label -> " جد ")</td>
+    	
+    		<td> @checkbox(personalForm("both"), '_label -> " هر دو ") </td>
+    		
+    		</tr>
+    		<tr>
+    	
+    		<td> @inputText(personalForm("section"), '_label -> " بخش  " )</td>
+    	
+    		<td> @inputText(personalForm("percentage"), '_label -> " فیصدی " )</td>
+    		 </tr>
+    		<tr> 
+    	
+    		<td>  @inputText(personalForm("occupation"), '_label ->  " تخصص ") </td>
+    
+    		<td> @inputText(personalForm("salary"), '_label -> " معاش " )</td>
+    		
+    		</tr>
+    		<tr> 
+    		
+    		<td> @inputText(personalForm("dateOfBirth"), '_label -> " تاریخ تولد ") </td>
+    		
+    		<td> @checkbox(personalForm("isready"), '_label -> " فعال " )</td>
+    		</tr>
+    		<tr> 
+    
+    		<td colspan ="3">@inputText(personalForm("email"), '_label -> " ایمیل آدرس " )</td>
+    		<td> </td>
+    		<td> </td>
+    		</tr>
+    		<tr> 
+    	
+    		<td colspan="3">@inputText(personalForm("address"), '_label -> " آدرس ")  </td>
+    		<td> </td>
+    		<td> </td>
+    		</tr>
+    		<tr>
+    		
+    		<td colspan="3"> @textarea(personalForm("info"), '_label -> " تو ضیحات " ) </td>
+    		</tr>
+            
+         <input type="submit" id="change" value=" ثبت تغییر " /> <a href="@routes.PersonalCon.updatePersonal(id)"> </a>
+        
+     
+        
+        
+         </table>
+
+    </div>
+   
+}
+</body>
+</html>

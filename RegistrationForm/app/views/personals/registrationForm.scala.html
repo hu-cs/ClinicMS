@@ -1,0 +1,182 @@
+@(personalForm: Form[Personal])
+
+@import helper._
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/RegistartionForm.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+      
+         <script type="text/javascript">
+        $(function() {
+        
+            $("#toggle").click(function() {
+                $("#tgl").toggle("slow");
+            });
+        });
+    </script>
+    </head>
+    <body>
+            <header> <h1> ( نرم افزار مدیریت کلنیک و مراکز درمانی ( آبنوس </h1 ></header>
+      <nav>
+      <a href="@listofpersonal" > پذیرش </a>
+      <a href="#" > اداره </a>
+      <a href="#" > محا سبه </a>
+      <a href="#" > آ مبو لانس </a>
+      <a href="#" > لا براتوار </a>
+      <a href="#" > بستری   </a>
+      <a href="#" > نسا ئی ولادی </a>
+      <a href="#" > ریزرو وقت  </a>
+      <a href="#" > دوا خانه  </a>
+      <a href="#" > صفحه اصلی   </a>
+      
+      
+      </nav>
+      <div class="all">
+			<datalist id="toggle">
+			<details id="toggle">
+			توضیحات
+			</details>
+			</datalist>
+			
+			
+			
+      <div class="left" id="tgl">
+      <ul>
+     <li> <a href="@routes.PersonalCon.personals()"> لیست پرسونل  </a> </li>
+      <li> <a href="@routes.PersonalCon.createPersonal()">فورم ثبت پرسونل </a> </li>
+      <li> <a href="@routes.PersonalController.listNokarval()">راجستریشن</a> </li>
+       <li> <a href="#">سا خت کار بر</a> </li>
+      
+      </ul>
+      </div>
+      	
+         <div class="right" id="tog">    		
+    		<table cellpadding="2" >
+    		
+    		@form(routes.PersonalCon.savePersonal()){
+    		
+    		<tr>
+    		 <td> <label> شماره موبایل </label> </td>   	
+    		<td> @inputText(personalForm("telephoneNumber"), '_label -> "  ") </td>
+    		 </tr>
+    		<tr> 
+    		<td> <label> شماره پرونده  </label> </td>
+    		<td>@inputText(personalForm("rollNumber"), '_label -> "  ", '_showConstraints -> false )</td>
+    		
+    		<td> <label> شماره عاجل  </label> </td>
+    		<td>  @inputText(personalForm("emergencyNumber"), '_label -> " " )</td>
+    		</tr>
+    		<tr> 
+    		<td> <label>  اسم  </label> </td>
+    		<td> @inputText(personalForm("firstName"), '_label -> "", '_showConstraints -> false )</td>
+    		
+    		<td> <label> سن </label> </td>
+    		<td> @inputText(personalForm("age"), '_label -> "   " )</td>
+    		</tr>
+    		<tr> 
+    		
+    		<td> <label>  نام پدر </label> </td>
+    		<td> @inputText(personalForm("fatherName"), '_label -> "  ", '_showConstraints -> false  )</td>
+    		
+    		<td> <label>  فیصدی  </label> </td> 
+    		<td>@checkbox(personalForm("isPercentage"), '_label -> " ")</td>
+    		</tr>
+    		<tr> 
+ 			
+ 			<td> <label>  اسم فامیلی  </label> </td> 
+    		<td> @inputText(personalForm("familyName"), '_label -> "  ")</td>
+    		
+    		<td> <label>  د وره ای   </label> </td>
+    		<td> @checkbox(personalForm("notPercentage"), '_label -> " ")</td>
+    		</tr>
+    		<tr> 
+    		
+    		<td> <label> جد   </label> </td>
+    		<td>@inputText(personalForm("foreFather"), '_label -> "  ")</td>
+    		
+    		<td> <label> هر دو  </label> </td>
+    		<td> @checkbox(personalForm("both"), '_label -> "  ") </td>
+    		
+    		</tr>
+    		<tr>
+    		
+    		<td> <label> شماره تذکره  </label> </td>
+    		<td>  </td>
+    		
+    		<td> <label>  فیصدی  </label> </td>
+    		<td> @inputText(personalForm("percentage"), '_label -> " " )</td>
+    		 </tr>
+    		<tr> 
+    		
+    		<td> <label> تخصص  </label> </td>
+    		<td>  @inputText(personalForm("occupation"), '_label -> "  ") </td>
+    		
+    		<td> <label> معاش   </label> </td>
+    		<td> @inputText(personalForm("salary"), '_label -> " " )</td>
+    		
+    		</tr>
+    		<tr> 
+    		
+    		<td> <label> تاریخ تولد    </label> </td>
+    		<td> @inputDate(personalForm("dateOfBirth"), '_label -> " ") </td>
+    		
+    		<td> <label>فعال   </label> </td>
+    		<td> @checkbox(personalForm("isready"), '_label -> "   " )</td>
+    		</tr>
+    		<tr> 
+    		
+    		<td> <label>  ایمیل آدرس   </label> </td>
+    		<td colspan ="3">@inputText(personalForm("email"), '_label -> " " )</td>
+    		<td> </td>
+    		<td> </td>
+    		</tr>
+    		<tr> 
+    		
+    		<td> <label>  آدرس   </label> </td>
+    		<td colspan="3">@inputText(personalForm("address"), '_label -> " ")  </td>
+    		<td> </td>
+    		<td> </td>
+    		</tr>
+    		<tr>
+    		
+    		<td> <label> بخش </label> </td>
+    		<td colspan="3"> @inputText(personalForm("info"), '_label -> "  " ) </td>
+    		</tr>
+    		
+    		<td> <label>  تو ضیحات </label> </td>
+    		<td colspan="4"> @textarea(personalForm("section"), '_label -> " " ) </td>
+    		
+    		</table>
+    		<span><button value="save" type="submit" class="btn" /> ذخیره  </span>
+    		
+    		
+    		
+    		
+    		
+
+      </div>
+      <div id="picture">  
+     
+        <div style="  width:200px; height:260px">
+    <div style="  width:150px; height:200px" id="photo">
+    	<img src='@routes.Assets.at("images/"  )' width='190' height='200'/>
+    </div>
+    
+	@helper.form(action = routes.PersonalController.upload, 'enctype -> "multipart/form-data") {    
+		<input type="file" name="picture"/>
+		<input type="submit" value="Upload"/>
+	
+	</div>
+	}
+       </div>
+       
+     }
+      
+      </div>
+    </body>
+</html>

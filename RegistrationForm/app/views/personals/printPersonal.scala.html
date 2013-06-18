@@ -1,0 +1,74 @@
+@(list:  List[Personal])
+@import helper._
+
+<!DOCTYPE HTML>
+<html>
+<head> <title> </title> 
+  <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/RegistartionForm.css")">
+</head> 
+<body id="printbody"> 
+<table class="printTable">
+<tr>   
+<th> شماره پرونده </th>
+<th> اسم</th>
+<th> سم فامیلی</th>
+<th> اسم پدر</th>
+<th> جد </th>
+<th> شغل </th>
+<th> تاریخ تولد</th>
+<th> آدرس </th>
+<th> ایمییل </th>
+<th> شماره تیلیفون</th>
+<th> سن </th>
+<th> شماره عاجل </th>
+<th> معاش </th>
+<th> فیصدی </th>
+<th> دوره ای</th>
+<th> هر دو</th>
+<th> مقدار فیصدی </th>
+<th> بخش </th>
+<th> آغاز فعالیت </th>
+<th> توضیحات </th>
+
+</tr>
+
+@for(show  <- list ){
+
+
+<tr>
+<td>  	@show.rollNumber </td>
+<td>  	@show.firstName </td>
+<td> 	@show.familyName  </td>
+<td> 	@show.fatherName </td>
+<td> 	@show.foreFather </td>
+<td>  	@show.occupation </td>
+<td>  	@show.dateOfBirth.format("dd MMM yyyy")</td>
+<td>  	@show.address</td>
+<td>  	@show.email</td>
+<td>  	@show.telephoneNumber</td>
+<td>  	@show.age</td>
+<td>  	@show.emergencyNumber</td>
+<td> 	@show.salary</td>
+<td> 	@show.isPercentage</td>
+<td> 	@show.notPercentage</td>
+<td> 	@show.both</td>
+<td> 	@show.percentage</td>
+<td> 	@show.section</td>
+<td> 	@show.isready</td>
+<td> 	@show.info</td>
+
+</tr>
+
+ }
+  <div>
+           <SCRIPT LANGUAGE="JavaScript">
+                if (window.print) {
+                document.write('<form> '
+                + '<input style="width: 50px; height: 30px; color: maroon;" type=button name=print value="چاپ" '
+                + 'onClick="javascript:window.print()"></form>');
+                }// End -->
+                </script>
+ </div>
+
+</body>
+</html>
