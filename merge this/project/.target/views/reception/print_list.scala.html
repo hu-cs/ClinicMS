@@ -1,0 +1,88 @@
+@(patients: List[Patient])
+@import helper._
+@import helper.twitterBootstrap._
+
+@main("Print List of Regestered Patient"){
+<div style="width:50px; height:30px; ">
+     <SCRIPT LANGUAGE="JavaScript">
+                if (window.print) {
+                document.write('<form> '
+                + '<input style="width: 50px; height: 30px; color: white; background-color: orange; float: left;" type=button name=print value="جاپ" '
+                + 'onClick="javascript:window.print()"></form>');
+                }// End -->
+      </script>
+</div>
+
+ <div id="form" style="width: 100%; margin-top: 20px;  padding: 10px;">
+        <h1 align="center"> کلینیک خصوصی قدس </h1>
+        <h3 align="center"> لیست بیماران راجستر شده</h3>
+        <table class="table-condensed"  border="2" style="width: 950px; border: 2px solid #00FF40;  text-align: right; padding-left:20px; margin:auto; overflow:scroll; ">
+
+
+                
+<!-- List of regestered patients -->
+                <!-- heading of list or table -->
+                <tr>
+                      
+                      <th style="text-align:center;width:55px">وضعیت پرداخت</th>
+                      <th style="text-align:center;width:55px">ویریت داکتر</th>
+                      <th style="text-align:center">ای دی داکتر</th>
+                      <th style="text-align:center">داکتر معالج</th>
+                      <th style="text-align:center">بخش</th>
+                      <th style="text-align:center">تاریخ مراجعه</th>
+                      <th style="text-align:center;">نام پدر </th>
+                       <th style="text-align:center;">مشخصات بیمار </th>
+                       <th style="text-align:center;">ای دی بیمار </th>
+                      <th style="text-align:center;">شماره</th>
+                </tr>
+                <!-- body of List or table-->
+                
+                <script>
+              	var counter=1;
+              	</script>
+              	
+                @for(patient <- patients){
+	                
+	                <tr @if(patient.payment == "پرداخت نشده") {
+		                    	bgcolor="red"
+		                    }
+		                    >
+	                   
+	                    <td>
+	                        @patient.payment
+	                    </td>
+	                    <td>
+	                       	@patient.visit
+	                    </td>
+	                    <td>
+	                        @patient.doctorId
+	                    </td>
+	                    <td>
+	                      	@patient.doctorName
+	                    </td>
+	                    <td>
+	                        @patient.department
+	                    </td>
+	                    <td>
+	                      	@patient.date.format("MM/dd/yyyy")
+	                    </td>
+	                    <td>
+	                      	@patient.fatherName
+	                    </td>
+	                    <td>
+	                      	@patient.firstName
+	                    </td>
+	                     <td>
+	                      	@patient.id
+	                    </td>
+	                    <td>
+	                       <script>
+	                       document.write(counter++)
+	                       </script>
+	                    </td>
+	                </tr>  
+            }
+                </table>
+           
+        </div>
+}

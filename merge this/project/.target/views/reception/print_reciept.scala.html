@@ -1,0 +1,109 @@
+@(patient: Patient)
+
+@import helper._
+@import helper.twitterBootstrap._
+
+@main("Print Reciept of Patient"){
+ <div>
+           <SCRIPT LANGUAGE="JavaScript">
+                if (window.print) {
+                document.write('<form> '
+                + '<input style="width: 50px; height: 30px; background-color:orange; color: white;" type=button name=print value="چاپ" '
+                + 'onClick="javascript:window.print()"></form>');
+                }// End -->
+                </script>
+ </div>
+ <div id="list" style="width:950px; height:850px; padding:10px; margin:10px" >
+      <table   padding"15px" >
+      		<tr>
+      			<td colspan="2">
+      				<h1 style="text-align:center;">کلينيک خصوصي قدس </h1>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td colspan="2">
+      				<h3 style="text-align:center;">www.QodsClinic.com</h3>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td colspan="2">
+      				<h3 style="text-align:center;">قبض راجستر بیمار برای وزیت داکتر</h3>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;">
+      				@patient.id
+      			</td>
+      			<td style="text-align:right;">
+      				<b>ای دی ثبت</b>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;">
+      				@patient.firstName
+      			</td>
+      			<td style="text-align:right;">
+      				<b>مشخصات بیمار</b>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;">
+      				@patient.fatherName
+      			</td>
+      			<td style="text-align:right;">
+      				<b>نام پدر</b>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;"> 
+      				@patient.doctorName
+      			</td>
+      			<td style="text-align:right;">
+      				<b>داکتر معالج</b>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;"> 
+      				@patient.doctorId
+      			</td>
+      			<td style="text-align:right;">
+      				<b>ای دی داکتر</b>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;">
+      				@patient.department
+      			</td >
+      			<td style="text-align:right;">
+      				<b>بخش</b>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;">
+      				@patient.date.format("MM/dd/yyyy")
+      			</td>
+      			<td style="text-align:right;">
+      				<b> تاریخ وزیت</b>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;">
+      				@patient.visit
+      			</td>
+      			<td style="text-align:right;">
+      				<b>وزیت داکتر</b>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;">
+      				@patient.payment
+      			</td>
+      			<td style="text-align:right;">
+      				<b>وضعیت پرداخت</b>
+      			</td>
+      		</tr>
+      	
+      </table
+ </div>
+
+}

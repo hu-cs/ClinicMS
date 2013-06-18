@@ -1,0 +1,56 @@
+@(parturitionForm: Form[Parturition], users: List[User])
+
+@import helper._
+<html><head> <title></title> 
+
+<style rel="stylesheet" type="text/css" >
+td {
+direction: ltr;
+
+}
+.lt {
+direction: rtl;
+margin-top: 0px;
+width: 150px;
+height: 50px;
+}
+</style>
+</head>
+<body>
+@form(routes.ParturitionCon.saveParturition()) {
+	<table  class="inserTable" >
+	<tr>
+	
+	</tr>
+		<tbody>
+			<tr>
+      		<td>    @inputText(parturitionForm("firstName"),  '_label -> "نام", '_showConstraints -> false)</td>
+     		<td>    @inputText(parturitionForm("fatherName"), '_label -> "نام پدر", '_showConstraints -> false) </td>
+      		<td>    @inputText(parturitionForm("familyName"), '_label -> "نام خانوادگی", '_showConstraints -> false) </td>
+       		<td>	@inputText(parturitionForm("foreFather"), '_label -> "جد", '_showConstraints -> false) </td>
+	 		<td>	@inputDate(parturitionForm("parturitionDate"), '_label -> "تاریخ حمل", '_showConstraints -> false) </td>
+			<td>	@inputText(parturitionForm("numberOfBaby"), '_label -> "", '_showConstraints -> false) <label>تعداد طفل</label></td>
+			<td>	<input type="text" list="list" name="doctor" onChange="Pluse()">
+					<datalist id="list">
+ 					@for(user <- users) { 
+					<option value=@user.firstName,@user.lastName>
+					}
+			</datalist> </td>
+	 		<td>	@select(parturitionForm("bloodType"), options("A"->"A","AB"->"AB", "O"->"O", "B"->"B"), '_showConstraints -> false) </td>
+			<td>	@inputText(parturitionForm("phoneNumber"), '_label -> "تلفن", '_showConstraints -> false)</td> </tr>
+			<td>	@inputDate(parturitionForm("birthDay"), '_label -> "تاریخ تولد", '_showConstraints -> false)  </td>
+			<td> 	@inputText(parturitionForm("address"), '_label -> "آدرس", '_showConstraints -> false) </td>
+			<td>	@textarea(parturitionForm("description"), '_label -> "توضیحات", '_showConstraints -> false)</td>
+	 		<td>	@inputText(parturitionForm("charge"), '_label -> "هزینه", '_showConstraints -> false) </td>
+	 		<td>	@inputText(parturitionForm("discount"), '_label -> "تخفیف", '_showConstraints -> false) </td>
+	 		<td>	@checkbox(parturitionForm("caesareaned"), '_label -> "عملیات شده", '_showConstraints -> false) </td>
+			<td> <input type="submit" value="Create"></br>
+        	<a href="@routes.ParturitionCon.parturitions()" class="btn">Cancel</a> </td>
+        </tr>
+			
+		</tbody>
+
+	</table>
+	}
+	</body>
+</html>

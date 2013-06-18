@@ -1,0 +1,117 @@
+@(registerDrugs: List[ListSellDrug])
+@import helper._
+
+@import helper.twitterBootstrap._
+
+
+<style>
+<link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/shape.css")">
+</style>
+@RegisterationForm("List of Sell") {								
+																
+							
+        	<div id="searching" style="width:920px; height:50px">
+		        	<table style="width: 400px; height: 30px; ">
+					 	<form action="@routes.ListSellContoroll.search()" method="get">
+					 		<tr>
+					 			<td width="5%">
+							 		<select id="type" name="type">
+										<option value="id">قیمت  </option>
+										<option value="name">تاریخ </option>
+										<option value="price"> شماره</option>
+									</select>
+								</td>
+								<td width="90%">
+									<input id="key" name="key" type="text" style="width:100%"/>
+								</td>
+								<td width="5%" valign="top" align="right">
+									<input class="btn btn-success" type="submit" value="Search" />
+								</td>
+									</tr>
+								</form>
+								
+								
+				<div id="print" style="width:50px; height:30px">
+						<form action="@routes.ListSellContoroll.printList()" method="get">
+						<input class="btn btn-success" type="submit" value="Print List" />
+						</form>
+		</div>
+    
+ <!--------------------------------------------------------Table------------------------------------------!>
+ <center>
+   <div id="form_table" style="width: 950px; padding: 10px;">
+                
+        <table class="table-condensed" border="2" style="width: 950px; border: 2px solid #00FF40; text-align: right; padding-left:20px; margin:10px; overflow:scroll; ">
+  
+            
+            <thead>
+                <tr>
+                		<td>
+  							<b>حذف</b>
+                        </td>
+                        <td width="30%">
+							<b>مفاد از فروش</b>
+                        </td>
+                          
+                        <td width="30%">
+							<b>قیمت کل فروش</b>
+                        </td>
+                        
+                         <td width="30%">
+							<b>تاریخ فروش </b>
+                        </td>
+                         <td width="30%">
+							<b>شماره نسخه</b>
+                        </td>
+                         <td>
+							<b>ردیف </b>
+                        </td>
+                    </tr>
+            </thead>
+            <tbody>
+             <script>
+              	var counter=1;
+              	</script>
+                @for(re_Drug <- registerDrugs) {
+                    <tr>
+                        <td>
+                      
+                        <a href="@routes.ListSellContoroll.deleteListSell(re_Drug.id)" class="btn1">
+					       <input type="image" src="@routes.Assets.at("images/icontexto-webdev-cancel-032x032.png")" width="24" height="24"/>
+                        </td>
+ 
+                        <td>
+                        	@re_Drug.benfit
+							
+                        </td>
+                        
+                         <td>
+								@re_Drug.totalSell
+                        </td>
+                         
+                         <td>
+								@re_Drug.sellDate
+                        </td>
+                         <td>
+								 @re_Drug.number 
+                        </td>
+                         <td>
+								  <script>
+	                       document.write(counter++)
+	                       
+	                       </script>
+                        </td>
+                    </tr>
+                    
+}
+            </tbody>
+        </table>
+        
+     </div>  
+     
+</center>     
+     
+<!-------------------------------------------------------------------------------------------------------!>      
+        
+        }
+     

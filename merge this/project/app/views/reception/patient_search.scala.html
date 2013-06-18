@@ -1,0 +1,258 @@
+@(patients: List[Patient], t: String, k:String)
+
+@import helper._
+@import helper.twitterBootstrap._
+
+@main("Searching Patients List"){
+
+<div id="mainDive">
+
+    <header id="main_header">
+    
+    
+            <div id="logo" >
+                <img src="@routes.Assets.at("images/LogoFirst.jpg")" alt="Logo" width="120"  height="30"/>
+            </div>
+            
+            <div id="title" >
+                <h1 align="center">(نرم افزار مدیریت کلینیک و مراکز درمانی (آبنوس</h1>
+            </div>
+        
+         
+         
+        <div id="menu"  align="center">
+        
+                    <ul style="list-style-type: none;">
+                            <a href="">
+                   	 	      <li><img src="@routes.Assets.at("images/home.png")" width="30" height="30"/>صفحه اصلی</li>
+                           	</a>
+                            
+							<a href="########">
+                                <li><img src="@routes.Assets.at("images/DefineControls.png")" width="30" height="30" /> دارو خانه</li>
+                            </a>
+        
+                            <a style="width: 140px;" href="############">
+                                <li><img src="@routes.Assets.at("images/11700135-nurse-uses-thermometer-with-patient.jpg")" width="25" height="25" />نسای و عملیات</li>
+                            </a>
+        
+                            <a href="############">
+                                <li><img src="@routes.Assets.at("images/LK2009-5E.jpg")" width="25" height="25" />بستر</li>
+                            </a>
+        
+                            <a href="###########">
+                                <li><img src="@routes.Assets.at("images/lab.png")" width="30" height="30" />آزمایشگاه</li>
+                            </a>
+        
+                            <a href="############">
+                                <li><img src="@routes.Assets.at("images/amb.png")" width="30" height="30" />آمبولانس</li>
+                            </a>
+            
+                            <a href="#############">
+                                <li><img src="@routes.Assets.at("images/acu.png")" width="30" height="30" />حسابداری</li>
+                            </a>
+        
+                            <a href="############">
+                                <li><img src="@routes.Assets.at("images/offi.gif")" width="30" height="30" />اداره</li>
+                            </a>
+         
+                            <a href="################">
+                                <li><img src="@routes.Assets.at("images/res.png")" width="30" height="30" />پذیرش</li>
+                            </a>
+                                                        
+                        </ul>    
+    </header>
+   
+   <div id="main_container"  >
+   
+   <!---------------------------------------------------------------------------------------------------------------------------------  -->
+      
+            <div id="form"  >
+            
+  <!----------------------------------------------------------- table or form (950px) ------------------------------------------------  -->
+            
+<!-- searching and printing the list -->
+
+        	<div id="print list" style="width: 920px; height: 30px; padding-left:20px; ">
+	            <form id="printList" action="@routes.Application.printListPatient()" method="get" >
+	                <input  type="image" src="@routes.Assets.at("images/icontexto-webdev-print-048x048.png")" style="float: left;" width="50" height="50"/>
+	            </form>
+	            
+	            <form class="form-search" id="searching" action="@routes.Application.searchPatient()" method="get">
+	            	<select class="input-medium search-query" id="type" name="type" style="float: right; margin: 3px;" >
+											<option value="id">شماره بستر</option>
+											<option value="firstName">اسم بيمار</option>
+											<option value="fatherName">نام پدر</option>
+											<option value="department">بخش</option>
+											<option value="doctorName">داکترمعالج</option>
+											<option value="doctorId">ای دی داکتر</option>
+					</select>
+	                <input id="key" name="key" type="text" style="float: right;  margin: 3px;"/>
+	                <input  type="image" src="@routes.Assets.at("images/icontexto-webdev-search-032x032.png")" width="40" height="40" style="float: right;" />
+	            </form>
+          </div>
+          
+      	<div id="form_table" style="width: 950px;   padding: 10px;">
+                
+        <table class="table-condensed" border="2" style="width: 950px; border: 2px solid #00FF40; text-align: right; padding-left:20px; margin:10px; overflow:scroll; ">
+
+
+                
+<!-- List of regestered patients -->
+                <!-- heading of list or table -->
+                <tr>
+                      <th style="text-align:center">اکشن</th>
+                      <th style="text-align:center;width:55px">وضعیت تصویه</th>
+                      <th style="text-align:center;width:55px">ویریت داکتر</th>
+                      <th style="text-align:center">ای دی داکتر</th>
+                      <th style="text-align:center">داکتر معالج</th>
+                      <th style="text-align:center">بخش</th>
+                      <th style="text-align:center">تاریخ مراجعه</th>
+                      <th style="text-align:center;">نام پدر </th>
+                       <th style="text-align:center;">مشخصات بیمار </th>
+                       <th style="text-align:center;">ای دی بیمار </th>
+                      <th style="text-align:center;">شماره</th>
+                </tr>
+                <!-- body of List or table-->
+                
+                <script>
+              	var counter=1;
+              	</script>
+              	
+                @for(patient <- patients){
+	                
+	                <tr @if(patient.payment == "پرداخت نشده") {
+		                    	bgcolor="red"
+		                    }
+		                    >
+	                    <td style="width:75px">
+	                    	<form id="delete" action="@routes.Application.deletePatient(patient.id)" method="post" style="float: left;">
+				                <input type="image" src="@routes.Assets.at("images/icontexto-webdev-cancel-032x032.png")" width="24" height="24" onClick="return confirm('Are you sure to delete it?');"/>
+							</form>
+				            <form id="edit" action="@routes.Application.updatePatient(patient.id)" method="post" style="float: left;">
+				            	<input type="image" src="@routes.Assets.at("images/icontexto-webdev-file-032x032.png")" width="24" height="24" />
+							</form>
+				            <form id="printReciept" action="@routes.Application.printRecieptPatient(patient.id)" method="post" style="float: left;">
+				            	<input type="image" src="@routes.Assets.at("images/icontexto-webdev-print-032x032.png")" width="24" height="24" />
+							</form>
+	                    </td>
+	                    <td>
+	                       @patient.payment
+	                    </td>
+	                    <td>
+	                       	@patient.visit
+	                    </td>
+	                    <td>
+	                        @patient.doctorId
+	                    </td>
+	                    <td>
+	                      	@patient.doctorName
+	                    </td>
+	                    <td>
+	                        @patient.department
+	                    </td>
+	                    <td>
+	                      	@patient.date.format("MM/dd/yyyy")
+	                    </td>
+	                    <td>
+	                      	@patient.fatherName
+	                    </td>
+	                    <td>
+	                      	@patient.firstName
+	                    </td>
+	                    <td>
+	                      	@patient.id
+	                    </td>
+	                    <td>
+	                       <script>
+	                       document.write(counter++)
+	                       </script>
+	                    </td>
+	                </tr>  
+                }
+                </table>
+            
+        </div>
+       
+     <!-------------------------------------------------------------table or form-------------------------------------------------------  -->  
+       
+      </div>
+      
+      <!---------------------------------------------------------------------------------------------------------------------------------  -->
+      
+        
+            <div id="rightAside_container" >
+                    
+                       
+                    <div id="links" >
+      <!-----------------------------------------------------------------------links ------------------------------>
+                                  <ul style="list-style-type: none; text-align: right; text-decoration:none;">
+                    
+                                    <li><a class="link" href="@routes.Application.createPatient()"><b>فرم راجستر بیمار</b></a></li> 
+                                    <li><a class="link" href="@routes.Application.index()"><b>لیست بیماران راجستر شده</b></a></li>
+                    
+                                </ul>
+      <!-----------------------------------------------------------------------links ------------------------------>                          
+                    </div>
+                
+                          
+                    <div id="clock_search" ">
+                        
+                        <div id="clock" style=" top: 40px; text-align: center;">
+                            <!-- CLOCK AND AND SEARCHING -->
+                		    <!-- CLOCK AND AND SEARCHING -->
+                            <!-- CLOCK AND AND SEARCHING -->
+                             <!-- CLOCK AND AND SEARCHING -->
+                              <!-- CLOCK AND AND SEARCHING -->
+                               <!-- CLOCK AND AND SEARCHING -->
+                               
+                               <div id="digital" >	
+								<!--<html>-->
+								<!--<head>-->
+								<!--<html>-->
+								<!--<head>-->
+								<script language="JavaScript" link="www.freehtmlcodes.com">
+								var clockID = 0;
+								function UpdateClock() {
+								   if(clockID) {
+								      clearTimeout(clockID);
+								      clockID  = 0;
+								   }
+								   var tDate = new Date();
+								
+								   document.theClock.theTime.value = "" 
+								                                   + tDate.getHours() + ":" 
+								                                   + tDate.getMinutes() + ":" 
+								                                   + tDate.getSeconds();
+								   clockID = setTimeout("UpdateClock()", 1000);
+								}
+								function StartClock() {
+								   clockID = setTimeout("UpdateClock()", 500);
+								}
+								function KillClock() {
+								   if(clockID) {
+								      clearTimeout(clockID);
+								      clockID  = 0;
+								   }
+								}
+								</script>
+								<!--</head>-->
+								<body onload="StartClock()" onunload="KillClock()">
+								<form name="theClock">
+								   <input type=text name="theTime" size=8 style="text-align: center">
+								</form>
+							</div
+                               
+                        </div>
+                
+                    </div>
+            
+        </div>
+   </div>
+  <div id="footer"  align="center">
+  
+    <footer>
+       <p align="center"> 2013 Clinic Management System. &copy;All Rights Reserved. | <a href="http://www.Khadhra.copy$gmail.com">www.Khadhra.copy$gmail.com</a></p>
+    </footer>
+  </div>
+  </div>
+}

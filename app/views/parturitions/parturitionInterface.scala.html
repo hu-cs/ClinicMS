@@ -1,0 +1,60 @@
+@(parturitions: List[Parturition])
+
+@import helper._
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>parturitions</title>
+<link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/parturitionInterface.css")">
+<link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+<script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+</head>
+<body>
+
+	
+	<nav>
+		<a href="#" > صفحه اصلی <div id="label2"> </div> </a>
+		<a href="#"> پذیرش <div id="label000"> </div> </a> 
+		<a href="#"> اداره  <div id="label3"> </div></a>
+		<a href="#"> حسابداری  <div id="label4"> </div></a>
+		<a href="#"> کسیل کش <div id="label5"> </div></a>
+		<a href="#"> آزمایشگاه <div id="label6"></div></a>
+		<a href="#"> بستر <div id="label7"></div></a>
+		<a href="#"> نسایی و عملیات <div id="label8"></div></a>
+		<a href="#"> ثبت وقت <div id="label9"></div></a>
+		<a href="#"> دواخانه <div id="label10"></div></a>
+	</nav>
+
+	<div class="all">
+		<div class="right">
+			<a href=""> ليست کارمندان </a> 
+			<a href="#"> فورم راجستر کارمندان
+			</a> <a href="#"> راجستر نوکريوالي </a>
+			<a href="#"> ايجاد کاربر </a>
+
+
+		</div>
+		<div class="left">
+	@views.html.parturitions.parturitionList(parturitions: List[Parturition])
+	</div>
+
+	
+	<div class="right-bottom">
+
+</div>
+
+
+</div>
+
+
+		
+<footer>
+
+</footer>	
+</body>
+</html>
+
+
+

@@ -1,0 +1,38 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+
+
+# This is for Registeration of drug         
+GET     /rgister                  controllers.RegisterControll.rgister()
+POST    /rgister                  controllers.RegisterControll.newRgister()
+GET    /rgister/:id/delete       controllers.RegisterControll.deleteRgisterDrug(id: Long)
+GET    /rgister/:id/edit       controllers.RegisterControll.editeRgisterDrug(id: Long)
+POST     /rgister/:id              controllers.RegisterControll.updatereg(id:Long)
+GET		/rgister/search				controllers.RegisterControll.search()
+GET		/rgister/List			controllers.RegisterControll.printList()
+GET		/rgister/Listing			controllers.RegisterControll.createDrug()
+
+
+
+#This is for sell drug
+GET    /selling										controllers.SellControll.sell()
+POST   /selling                                     controllers.SellControll.newsell()
+GET    /selling/:number/delete       controllers.SellControll.deletesell(number: Integer)
+GET    /selling/show      controllers.SellControll.createSell()
+
+
+#This is for listing
+GET     /list                  controllers.ListSellContoroll.index()
+GET     /list                  controllers.ListSellContoroll.listing()
+GET		/list/search				controllers.ListSellContoroll.search()
+GET		/list/printList			controllers.ListSellContoroll.printList()
+GET     /list/delete			controllers.ListSellContoroll.deleteListSell(id: Integer)
+GET     /list/show			controllers.ListSellContoroll.createListSell()

@@ -1,0 +1,20 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index()
+
+##############tasks
+
+GET		/bed/create					controllers.Application.createBed()
+GET 	/bed/saveCreateBed			controllers.Application.saveCreateBed()
+GET		/bed/printListBed			controllers.Application.printListBed()
+POST	/bed/saveUpdateBed			controllers.Application.saveUpdateBed()
+GET	    /bed/searchBed				controllers.Application.searchBed()
+POST	/bed/:id/printRecieptBed	controllers.Application.printRecieptBed(id: Integer)
+POST	/bed/:id/updateBed			controllers.Application.updateBed(id: Integer)	
+POST	/bed/:id/deleteBed			controllers.Application.deleteBed(id: Integer)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

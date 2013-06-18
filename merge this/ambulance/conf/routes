@@ -1,0 +1,20 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index()
+
+#tasks
+GET		/AmbulanceInfo/create				controllers.Application.createAmbulance() 
+POST	/AmbulanceInfo/saveCreate			controllers.Application.saveCreateAmbulance()
+POST	/AmbulanceInfo/saveUpdate			controllers.Application.saveUpdateAmbulance()
+GET		/AmbulanceInfo/printList			controllers.Application.printListAmbulance()
+GET		/AmbulanceInfo/search				controllers.Application.searchAmbulance()
+POST	/AmbulanceInfo/:id/delete			controllers.Application.deleteAmbulance(id : Integer)
+POST	/AmbulanceInfo/:id/update			controllers.Application.updateAmbulance(id :Integer)
+POST	/AmbulanceInfo/:id/printReciept		controllers.Application.printRecieptAmbulance(id: Integer)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+

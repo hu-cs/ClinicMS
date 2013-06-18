@@ -1,0 +1,92 @@
+@(parturitions: List[Parturition], t: String, k:String)
+
+@import helper._
+<html>
+    <head>
+        <title>Parturition</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/editForm.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+    </head>
+    <body>
+
+	<div>
+            <form id="searching" action="@routes.ParturitionCon.searchParturition()" method="get">
+            	<select type="search" id="type" name="type" style="float: right; height: 20px; margin: 3px;" >
+										<option value="id">شماره </option>
+										<option value="firstName">نام</option>
+										<option value="fatherName">نام پدر</option>
+				</select>
+                <input id="key" name="key" type="search" value="اینجا بنویسید" style="float: right; height:20px; margin: 3px;"/>
+                <input type="submit" />
+            </form>
+
+	<table  class="users" height="30">
+		<thead>
+		<tr>
+		<td><b>شماره مسلسل</b></td>
+		<td><b>نام</b></td>
+		<td><b>نام پدر</b></td>
+		<td><b>نام خانوادگی</b></td>
+		<td><b>جد</b></td>
+		<td><b>تاریخ حمل</b></td>
+		<td><b>تعداد حمل</b></td>
+		<td><b>قابله</b></td>
+		<td><b>گروپ خونی</b></td>
+		<td><b>تلفن</b></td>
+		<td><b>تاریخ تولد مادر</b></td>
+		<td><b>آدرس</b></td>
+		<td><b>توضیحات</b></td>
+		<td><b> هزینه</b></td>
+		<td><b>تخفیف</b></td>
+		<td><b>عملیات شده</b></td>
+		<td><b>ویرایش</b></td>
+		</tr>
+		<tr>
+
+		</tr>
+		</thead>
+		<tbody>
+		@for(parturition <- parturitions) {
+		
+			<tr>
+			<td></td>
+			<td>@parturition.firstName</td>
+			<td>@parturition.fatherName</td>
+			<td>@parturition.familyName</td>
+			<td>@parturition.foreFather</td>
+			<td><time date="@parturition.parturitionDate">@parturition.parturitionDate.format("MMM dd yyyy")</time></td>
+			<td>@parturition.numberOfBaby</td>
+			<td>@parturition.doctor</td>
+			<td>@parturition.bloodType</td>
+			<td>@parturition.phoneNumber</td>
+			<td><time date="@parturition.birthDay">@parturition.birthDay.format("MMM dd yyyy")</time></td>
+			<td>@parturition.address</td>
+			<td>@parturition.description</td>
+			<td>@parturition.charge</td>
+			<td>@parturition.discount</td>
+			<td><span> <input disabled type="checkbox" @if(parturition.caesareaned){checked}/><label> عملیات شده</label></span></td>
+			<td>
+			<button id="sbmit3" class="cancelsubmit" type="submit">
+				@form(routes.ParturitionCon.deleteParturition(parturition.id)) { 
+					<input id="sbmit2" type="submit" value="حذف">
+				}
+				</button>
+				<br />
+				<button id="sbmit1" class="cancelsubmit" type="submit">
+				@form(routes.ParturitionCon.editParturition(parturition.id)) { 
+				<input id="sbmit" type="submit" value="ویرایش">
+			}
+			</button>
+			<td>
+			</tr>
+			}
+		</tbody>
+	</table>
+	</body>
+</html>
+            
+	 </div>
+    </body>
+</html>
+            

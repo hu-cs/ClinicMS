@@ -1,0 +1,94 @@
+@(ambulance: AmbulanceInfo)
+@import helper._
+@import helper.twitterBootstrap._
+
+@main("Print Reciept of ambulance"){
+
+ <div>
+           <SCRIPT LANGUAGE="JavaScript">
+                if (window.print) {
+                document.write('<form> '
+                + '<input style="width: 50px; height: 30px; background-color:orange; color: white;" type=button name=print value="چاپ" '
+                + 'onClick="javascript:window.print()"></form>');
+                }// End -->
+                </script>
+ </div>
+ <div id="list" style="width:950px; height:850px; padding:10px; margin:10px" >
+      <table   padding"15px" >
+      		<tr>
+      			<td colspan="2">
+      				<h1 style="text-align:center;">کلينيک خصوصي قدس </h1>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td colspan="2">
+      				<h3 style="text-align:center;">www.QodsClinic.com</h3>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td colspan="2">
+      				<h3 style="text-align:center;">قبض امبولانس درخواستی</h3>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;">
+      				@ambulance.ambulancenumber 
+      			</td>
+      			<td style="text-align:right;">
+      				<b>شماره امبولانس</b>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;">
+	                      	@ambulance.firstName 
+      			</td>
+      			<td style="text-align:right;">
+      				<b>نام تماس گیرنده</b>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;"> 
+      			    @ambulance.phone 
+      			</td>
+      			<td style="text-align:right;">
+      				<b>شماره تماس گیرنده</b>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;">
+      		     	@ambulance.date.format("MM/dd/yyyy") 
+      			</td >
+      			<td style="text-align:right;">
+      				<b>تاریخ تماس</b>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;">
+      			    @ambulance.address
+      			</td>
+      			<td style="text-align:right;">
+      				<b>ادرس</b>
+      			</td>
+      		</tr>
+      		
+      		<tr>
+      			<td style="text-align:right;">
+      		             @ambulance.cost
+      			</td>
+      			<td style="text-align:right;">
+      				<b>هرینه</b>
+      			</td>
+      		</tr>
+      	
+      		<tr>
+      			<td style="text-align:right;">
+                     	@ambulance.payment
+      			</td>
+      			<td style="text-align:right;">
+      				<b>وضعیت پرداخت</b>
+      			</td>
+      		
+      </table
+ </div>
+ </div>
+}

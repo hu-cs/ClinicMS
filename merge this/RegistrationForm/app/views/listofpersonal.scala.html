@@ -1,0 +1,127 @@
+@(personalList: List[Personal] )
+@import helper._
+<!DOCTYPE HTML>  
+<html> <head> <title> </title> 
+
+		 <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/RegistartionForm.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+
+</head> 
+
+<body>
+<header> <h1> کلنیک قدس </header>
+<nav> 
+	  <a href="#" > پذیرش  </a>
+      <a href="#" > اداره </a>
+      <a href="#" > حسابدار </a>
+      <a href="#" > کسیل کش </a>
+      <a href="#" > لابراتوار </a>
+      <a href="#" > بستری  </a>
+      <a href="#" > نسائی ولادی </a>
+      <a href="#" > رزرو وقت </a>
+      <a href="#" > دوا خانه  </a>
+      <a href="#" > صفحه اصلی  </a>
+      
+</nav>
+
+<div class="all"> 
+		
+<div class="right-top"> 
+   <ul>
+     <li> <a href="@routes.PersonalController.personalList()"> لیست کارمندان </a> </li>
+      <li> <a href="@routes.PersonalController.creationForm()">فورم ثبت کارمندان</a> </li>
+      <li> <a href="@routes.PersonalController.listNokarval()">ثبت</a> </li>
+       <li> <a href="#">ساخت کارمندان</a> </li>
+      
+      </ul>
+</div>
+
+<div class="tablePersonal1">
+
+<table>
+<tr>
+<th> شماره</tH>
+<th> شماره پروانه</tH>
+<th> نام</tH>
+<th> نام پدر</tH>
+<th> نام خانوادگی</tH>
+<th> جد</tH>
+<th> شماره تذکره</tH>
+<th> تخصص</tH>
+<th> تاریخ تولد</tH>
+<th> ایمییل آدرس</tH>
+<th> تلفن جیبی</tH>
+<th> تلفن ضروری</tH>
+<th> فیصدی</tH>
+<th> قرار دادی</tH>
+<th> بخش</tH>
+<th> آماده فعالیت</tH>
+<th> توضیحات</tH>
+<th>  </th>
+
+</tr>
+<tbody>
+
+@for(personal <- personalList){
+<tr>
+
+	<td>@personal.id</td>
+	<td>@personal.rollNumber</td>
+	<td>@personal.name</td>
+	<td>@personal.fatherName</td>
+	<td>@personal.familyName</td>
+	<td>@personal.grandFatherName</td>
+	<td>@personal.nationalIdCardNumber</td>
+	<td>@personal.occuption</td>
+	<td>@personal.dateOfBirth</td>
+	<td>@personal.email</td>
+	<td>@personal.telephoneNumber</td>
+	<td>@personal.emergencyNumber</td>
+	<td>@personal.percentage</td>
+	<td>@personal.notPercentage</td>
+	<td>@personal.section</td>
+	<td>@personal.isready </td>
+	<td>@personal.info </td>
+	<td>   @form(routes.PersonalController.deletePersonal(personal.id)){ <input type="submit" value="  " id="del"/> }  </a> 
+	@form(routes.PersonalController.editPersonal(personal.id)){  <input type="submit" id="edt1" value="  " />}
+	</td> 
+	
+	
+		
+</tr>
+</tbody>
+}
+</table>
+
+</div>
+<div class="right-bottom"> 
+	<label> بخش  <label>
+	  <select> 
+	<option> گروپ اول </option>
+	<option> گروپ دوم </option>
+	<option> گروپ سوم </option>
+	<option> گروپ چهارم  </option>
+	</select>
+	 
+	 <label> گروپ </label>
+	 <select> 
+	<option> گروپ اول </option>
+	<option> name 2 </option>
+	<option> name 3 </option>
+	<option> name 4 </option>
+	</select>
+	
+	<input type="button" id="print" value="چاپ لیست " /> 
+	<input type="button" id="edit" value="ویرایش" />
+	 </a>
+	
+</div>
+<span id="srch">
+	جستجو	
+	 <input type="search" /> 	
+		</span>
+</div>
+
+</body>
+</html>

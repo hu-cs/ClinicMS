@@ -1,0 +1,369 @@
+
+* {
+   margin: 0;
+
+}
+header{
+	text-align: center;
+  height: 50px;
+  width: 1000px;
+  margin: 0px auto 2px;
+  background-color: #3399FF;
+   background-image: url("../images/pattern.png");
+  
+}
+  header h1 {
+  	margin-top: 50px;
+  	text-align: center;
+  	
+  }
+ nav {
+ 	background-image: url("../images/navigation.png");
+   height: auto;
+   width: 1000px;
+   margin: 0px auto;
+   background-color: #3399FF;
+
+ }
+ .all{
+   height: 710px;
+   width: 1000px;
+   margin: 1px auto 2px;
+   background-color: #f7f7f7;
+   direction: rtl;
+  
+
+ }
+ .left{
+   float: right;
+   direction: rtl;
+   background-color: #dedede;
+   display: block;
+   height: auto;
+   min-height: 250px;
+   width: 200px;
+   margin: 60px 2px;
+
+
+ }
+ .left ul {
+ 	list-style: none;
+ 	padding: 3px;
+ 	
+ }
+ .left a {
+ 	color: white;
+ 	width: 80px;
+ 	height: 90px;
+ }
+ .right{
+   float: left;
+   direction: rtl;
+   background-color: #3399FF;
+   color: #fff;
+   height: auto;
+   min-height: 620px;
+   width: 730px;
+   margin: 60px auto;
+   background-image: url("../images/news_bg.gif");
+   background-repeat: repeat-y;
+   
+ }
+
+ div.right a {
+   float: right;
+   color: #FFFFFF;
+   font-size: 20px;
+   margin: 5px 15px;
+   display: block;
+ }
+ div.left form{
+   float: right;
+   direction: rtl;
+   padding-right: 5px;
+   display:table-cell;
+   margin-top: 12px;
+ }
+ div.right textarea {
+ 	height: 150px;
+ 	width: 200px;
+ }
+
+ form label{
+   width: 200px;
+ }
+.email-address{
+	width: 400px;
+}
+.leftdown {
+ width: 250px;
+ height: 80px;
+ float: left;
+ direction: rtl;
+ }
+
+ .btn {
+ 	width: 50px;
+ 	height: 50px;
+ 	-webkit-border-radius: 20px;
+ 	-moz-border-radius: 200px;
+ 	background-color: #3399FF;
+ 	float: left;
+ 	margin-left: 40px;
+ 	border-color: #3399FF;
+ 	background-image: url("../images/save.png");
+ }
+ input  {
+ 	-webkit-border-radius: 15px;
+ }
+ #toggle {
+ 	float: right;
+ 	direction: rtl;
+ 	display: inline;
+ 	background-color:  #3399FF;
+ 	-webkit-border-radius: 15px;
+ 	border-color: #3399FF;
+ }
+ 
+ nav a {
+ 	height: 30px; 
+ 	width: 80px;
+ 	margin: 5px 5px 5px 5px;
+ 	font-size:  16px;
+ 	display: inline-block;
+ 	background-color: #000;
+ 	color: white;
+ 	border-spacing: 4px;
+ 	border-radius: 15px;
+ 	text-align: center;
+ 	opacity: 1;
+ 	direction: rtl;
+ }
+ body {
+ 	background-color: #A1D1BF;
+ 	 background-image: url("../images/pattern.png");
+ }
+ .right-top {
+ 	direction: rtl;
+ 	float: right;
+ 	height: 150px;
+ 	width:  180px;
+ 	background-color: #ddd;
+ 	margin-top: 10px;
+ 	
+ }
+ .right-top a , right-top li, right-top ul {
+ 	background-color: #12345;
+ 	display: block;
+ 	margin-right: 0px;
+ 	z-index: 4000;
+ }
+ .right-top li {
+ 	margin: 5px 1px 0px 1px;
+ 	list-style: none;
+ 	direction: rtl;
+ }
+ .right-top a {
+ 	color: #FFF;
+ 	margin-right: 2px;
+ }
+  .left-center {
+  	float: left;
+  	height: 150px;
+  	width: 100px;
+  	background-color: blue;
+  	 position: absolute; right:
+110px; top: 550px; width: 190px; height: 195px; z-index: 2;
+background-image: url("../images/graphic.jpg");
+  	
+  }
+  .left-bottom {
+  	float: right;
+  	height: 50px;
+  	width: 100px;
+  	
+  	/* background-color: #453399; */
+  	background-image: url("../images/graphic.jpg");
+  	
+  }
+  .rightpersonal {
+  	height: auto;
+  	min-height: 500px;
+  	width: 800px;
+  	margin: 5px 5px;
+  	float: right;
+  	background-color:#fff;
+  	overflow: scroll;
+  	direction: rtl;
+  }
+  .right-bottom {
+  	height: auto;
+  	width: 775px;
+  	float: right;
+  	direction: rtl;
+  	margin-right: 200px;
+  }
+  #print {
+  	float: left;
+  	margin-left: 2px;
+  	-webkit-border-radius: 20px;
+ 	-moz-border-radius: 200px;
+ 	 background-image: url("../images/Print.png");
+  	
+  }
+  #edit {
+  	float: left;
+  	margin-left: 2px;
+  	-webkit-border-radius: 20px;
+ 	-moz-border-radius: 200px;
+  }
+#srch input{
+  	margin-right: 10px;
+  	 margin-top: 80px;
+  	direction: rtl;
+  	width: 150px;
+  	
+  }
+  .tablePersonal1 {
+  	height: auto;
+  	min-height: 500px;
+  	width: 800px;
+  	margin: 5px 5px;
+  	float: right;
+  	background-color:#fff;
+  	overflow: scroll;
+  	direction: rtl;
+  }
+  .tablePersonal1 th, .tablePersonal1 td {
+  	border: 1px ridge gray;
+  	border-collapse: collapse;
+  	width: 45px;
+  }
+  .tablePersonal1 table {
+  	border: 1px ridge gray;
+  	border-collapse: collapse;
+  	width: 1600px;
+  }
+  #idbtn {
+  	
+  	background-color: #fff;
+  	foreground-color: #fff;
+  }
+  
+  .mainSection {
+  	
+  	height: 600px;
+  	width: 1000px;
+  	margin: 10 auto;
+  	background-color: #DFDFD8;
+  }
+  
+  .leftSide {
+  	height: 500px;
+  	width: 800px;
+  	margin: 5px;
+  	background-color: white;
+  	overflow: scroll;
+  	float: right;
+  }
+  
+  div.leftSide table tr th input{
+  	clear: both;
+  	 border: none;
+  	 margin: 0px;
+  	 padding: 0px;
+  	 float: right;
+  	 width: 100px;
+  	 
+  	 
+  }
+  div.leftSide table th {
+  	clear: both;
+  	margin: 0px;
+  	padding: 0px;
+  	margin-top: 5px;
+  	direction: rtl;
+  	text-align: center;
+  }
+ 
+ 
+ div.leftSide table  {
+ 	direction: rtl;
+ 	text-align: center;
+ 	border-collapse: collapse;
+ }
+ div.leftSide table tr:hover {
+ 	background-color: #DFDFD8;
+ 	border-bottom: 2px ridge blue;
+ } 
+ 
+ #data {
+ 	
+ }
+ 
+ .right-top ul li:hover {
+ 	background-image: linear-gradient(120 , 1 , 10,2);
+ }
+ 
+ #sve {
+ 	-webkit-border-radius: 50px;
+ 	height: 60px;
+ 	width: 70px;
+ 	background-image: url("../images/save.png");
+ 	background-repeat: no-repeat;
+ 	border: none;
+ 	background-size: cover;
+ }
+ #sve:active {
+ 	background-color: white;
+ }
+ 
+ #prnt {
+ 	-webkit-border-radius: 50px;
+ 	height: 60px;
+ 	width: 70px;
+ 	background-image: url("../images/2c.gif");
+ 	background-repeat: no-repeat;
+ 	border: none;
+ 	background-size: contain;
+ 	
+ }
+ #prnt:active {
+ 	background-image: url("../images/3a.gif");
+ }
+ #edt {
+ 	-webkit-border-radius: 50px;
+ 	height: 60px;
+ 	width: 70px;
+ 	background-image: url("../images/edit.png");
+ 	background-repeat: no-repeat;
+ 	border: none;
+ 	background-size: contain;
+ }
+ #edt:active {
+ 	background-color: white;
+ }
+ #dlt {
+ 	border: none;
+ 	background-image: url("../images/KnobCancel.png");
+ 	background-size: cover;
+ }
+ 
+ #edt1 {
+ 	height: 30px;
+ 	width: 30px;
+ 	background-color: none;
+ 	background-image: url("../images/edit.png");
+ 	background-size: cover;
+ 	border: none;
+ }
+ 
+ #del {
+ 	
+ 	height: 30px;
+ 	width: 30px;
+ 	background-image: url("../images/KnobCancel.png");
+ 	border: none;
+ 	background-size: cover;
+ 	
+ }

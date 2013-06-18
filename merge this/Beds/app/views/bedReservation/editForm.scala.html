@@ -1,0 +1,244 @@
+@(bedForm: Form[BedReservation])
+
+@import helper._
+@import helper.twitterBootstrap._
+
+@main("Edit Bed Reservation Form"){
+ <div id="mainDive">
+
+    <header id="main_header">
+    
+    
+            <div id="logo" >
+                <img src="@routes.Assets.at("images/LogoFirst.jpg")" alt="Logo" width="120"  height="30"/>
+            </div>
+            
+            <div id="title" >
+                <h1 align="center">(نرم افزار مدیریت کلینیک و مراکز درمانی (آبنوس</h1>
+            </div>
+        
+         
+         
+        <div id="menu"  align="center">
+        
+                    <ul style="list-style-type: none;">
+                            <a href="">
+                   	 	      <li><img src="@routes.Assets.at("images/home.png")" width="30" height="30"/>صفحه اصلی</li>
+                           	</a>
+                            
+							<a href="########">
+                                <li><img src="@routes.Assets.at("images/DefineControls.png")" width="30" height="30" /> دارو خانه</li>
+                            </a>
+        
+                            <a style="width: 140px;" href="############">
+                                <li><img src="@routes.Assets.at("images/11700135-nurse-uses-thermometer-with-patient.jpg")" width="25" height="25" />نسای و عملیات</li>
+                            </a>
+        
+                            <a href="############">
+                                <li><img src="@routes.Assets.at("images/LK2009-5E.jpg")" width="25" height="25" />بستر</li>
+                            </a>
+        
+                            <a href="###########">
+                                <li><img src="@routes.Assets.at("images/lab.png")" width="30" height="30" />آزمایشگاه</li>
+                            </a>
+        
+                            <a href="############">
+                                <li><img src="@routes.Assets.at("images/amb.png")" width="30" height="30" />آمبولانس</li>
+                            </a>
+            
+                            <a href="#############">
+                                <li><img src="@routes.Assets.at("images/acu.png")" width="30" height="30" />حسابداری</li>
+                            </a>
+        
+                            <a href="############">
+                                <li><img src="@routes.Assets.at("images/offi.gif")" width="30" height="30" />اداره</li>
+                            </a>
+         
+                            <a href="################">
+                                <li><img src="@routes.Assets.at("images/res.png")" width="30" height="30" />پذیرش</li>
+                            </a>
+                                                        
+                        </ul>    
+    </header>
+   
+   <div id="main_container"  >
+   
+   <!---------------------------------------------------------------------------------------------------------------------------------  -->
+      
+            <div id="form"  >
+            
+  <!----------------------------------------------------------- table or form (950px) ------------------------------------------------  -->
+            
+
+        <div id="form_table" style="width: 700px;  margin-top: 40px; margin-right:30px;">
+        
+            <form id="form" action="@routes.Application.saveUpdateBed()" method="post">
+        
+                <table border="0" style="width: 500px; float: right; text-align:right; ">
+
+<!-- form to reserve bed-->
+						 <tr>
+						 	<td >
+			                    @helper.inputText(bedForm("bedNumber"), '_label->"",'_showConstraints -> false)
+			                </td>
+			                <td>
+			              	راجستر شماره
+			                </td>
+			              </tr>
+			              <tr>
+			                <td>
+			                    @select(field = bedForm("bedNum"),  options = options(("1","1"),("2","2"),("3","3"),("4","4"),("5","5"),("6","6"),("7","7"),("8","8"),("9","9"),("10","10"),("11","11"),("12","12")),'_label->"",'_showConstraints -> false)
+			                </td>
+			                <td>
+			                شماره بستر
+			                </td>
+		                </tr>
+		                <tr>
+			                <td>
+			                	@select(field = bedForm("bedDepartment"),  options = options(("Parturition","Parturition"),("urgent","urgent"),("Operation","Operation")),'_label->"",'_showConstraints -> false)
+			                    
+			                </td>
+			                 <td>
+			                بخش
+			                </td>
+			            </tr>
+			              <tr>
+			                <td>
+			                    @helper.inputText(bedForm("fatherName"), '_label->"",'_showConstraints -> false)
+			                </td>
+			                 <td>
+			                مشخصات شخص
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    @helper.inputText(bedForm("name"), '_label->"",'_showConstraints -> false)
+			                </td>
+			                 <td>
+			               نام پدر
+			                </td>
+			            </tr>
+		              
+			          	<tr>
+			                <td>
+			                    @helper.inputText(bedForm("cost"), '_label->"",'_showConstraints -> false)
+			                </td>
+			                 <td>
+			                هزییه
+			                </td>
+			            </tr>
+		                <tr>
+			                <td>
+			                    @helper.inputDate(bedForm("startDate"), '_label->"",'_showConstraints -> false)
+			                </td>
+			                 <td>
+			               		تاریخ شروع
+			                </td>
+			            </tr>
+			             <tr>
+			                <td >
+			                    @helper.inputDate(bedForm("finishDate"), '_label->"",'_showConstraints -> false)
+			                </td>
+			                 <td>
+			                تاریخ ختم
+			                </td>
+		                </tr>
+		                  <tr>
+			                <td >
+			                    
+			                    <input id="field" type="image" src="@routes.Assets.at("images/icontexto-webdev-ok-048x048.png")" width="50" height="50" />
+			                    
+			                </td>
+			                 <td>
+			                
+			                </td>
+		                </tr>
+			          
+		         </table>     
+            </form>
+    </div>
+   
+       
+     <!-------------------------------------------------------------table or form-------------------------------------------------------  -->  
+       
+      </div>
+      
+      <!---------------------------------------------------------------------------------------------------------------------------------  -->
+      
+        
+            <div id="rightAside_container" >
+                    
+                       
+                    <div id="links" >
+      <!-----------------------------------------------------------------------links ------------------------------>
+                                <ul style="list-style-type: none; text-align: right; text-decoration:none;">
+                    
+                                    <li><a class="link" href="@routes.Application.createBed()"><b>فرم راجستر بستر</b></a></li> 
+                                    <li><a class="link" href="@routes.Application.index()"><b>لیست بستر های راجستر شده</b></a></li>
+                    
+                                </ul>
+      <!-----------------------------------------------------------------------links ------------------------------>                          
+                    </div>
+                
+                          
+                    <div id="clock_search" ">
+                        
+                        <div id="clock" style=" top: 40px; text-align: center;">
+                            <!-- CLOCK AND AND SEARCHING -->
+                		    <!-- CLOCK AND AND SEARCHING -->
+                            <!-- CLOCK AND AND SEARCHING -->
+                            <!-- CLOCK AND AND SEARCHING -->
+                            <!-- CLOCK AND AND SEARCHING -->
+                            
+                            <div id="digital" >	
+								<!--<html>-->
+								<!--<head>-->
+								<!--<html>-->
+								<!--<head>-->
+								<script language="JavaScript" link="www.freehtmlcodes.com">
+								var clockID = 0;
+								function UpdateClock() {
+								   if(clockID) {
+								      clearTimeout(clockID);
+								      clockID  = 0;
+								   }
+								   var tDate = new Date();
+								
+								   document.theClock.theTime.value = "" 
+								                                   + tDate.getHours() + ":" 
+								                                   + tDate.getMinutes() + ":" 
+								                                   + tDate.getSeconds();
+								   clockID = setTimeout("UpdateClock()", 1000);
+								}
+								function StartClock() {
+								   clockID = setTimeout("UpdateClock()", 500);
+								}
+								function KillClock() {
+								   if(clockID) {
+								      clearTimeout(clockID);
+								      clockID  = 0;
+								   }
+								}
+								</script>
+								<!--</head>-->
+								<body onload="StartClock()" onunload="KillClock()">
+								<form name="theClock">
+								   <input type=text name="theTime" size=8 style="text-align: center">
+								</form>
+							</div
+                              
+                        </div>
+                
+                    </div>
+            
+        </div>
+   </div>
+  <div id="footer"  align="center">
+  
+    <footer>
+       <p align="center"> 2013 Clinic Management System. &copy;All Rights Reserved. | <a href="http://www.Khadhra.copy$gmail.com">www.Khadhra.copy$gmail.com</a></p>
+    </footer>
+  </div>
+  </div>
+}
+
