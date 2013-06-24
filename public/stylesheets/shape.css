@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*body { margin:0; padding:0; width:100%; background:#fff url(images/main_bg.jpg) top center repeat-x; color:#5f5f5f; font:normal 12px/1.8em Arial, Helvetica, sans-serif;}*/
+body{ background-picture: url("../images/bg.png"); text="#000000" vlink="#0000FF" alink="#000000" leftmargin="150" topmargin="160" marginheight="150" tracingsrc="Image/u0_normal.png" tracingopacity="100"}
+
+html, .main { padding:0; margin:0; background-image:url(images/bg.png);}
+.midel{background-image:url(images/u34_normal.jpg);width="1000" height="1000" align="middle" }
+html, main, .logo{padding:0; margin:0;font-family:Arial, Helvetica, sans-serif; font-size:24px}
+.header, .hbg, .content, .fbg, .footer { margin:0; padding:0;}
+.content_resize, .fbg_resize { margin:0 auto; padding:24px 40px; width:890px; background-color:#fff; border:1px solid #d7d7d7;}
+
+/* header */
+.header { background-image:url(@routes.Assets.at(images/u0_normal.png)) repeat-x top; padding-top:33px}
+.header_resize { margin:0 auto; padding:0; width:970px; background:#fff url(images/header_bgres.gif) repeat-x top; border-left:1px solid #d7d7d7; border-right:1px solid #d7d7d7;}
+.header .logo { width:auto; float:left;}
+.header .menu ul {padding:0; float:right; width:auto; list-style:none; font-size:10px}
+.header .menu ul li {background-image:url(images/u0_normal.png); margin:0 ; float:left; text-align:left}
+.header .menu ul li a { display:block; margin:0; padding:6px 16px; color:#000; text-decoration:none}
+.header .menu ul li a:hover, .header .menu ul li.active a { border-color:#dedede;}
+.list{float:right; padding:60px 0px 0px 0px}
+.table{float:right; padding:0px 0px 0px 0px}
+.midel{background-image:url(Image/u1_normal.jpg); padding=50px,50px,50px,50px; border:#999}
+
+.all {
+	background-picture: url("../images/ad.");
+}

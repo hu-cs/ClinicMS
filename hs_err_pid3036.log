@@ -1,0 +1,367 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6a311fd1, pid=3036, tid=2748
+#
+# JRE version: 7.0_05-b06
+# Java VM: Java HotSpot(TM) Client VM (23.1-b03 mixed mode windows-x86 )
+# Problematic frame:
+# V  [jvm.dll+0x71fd1]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00a97800):  VMThread [stack: 0x55c80000,0x55cd0000] [id=2748]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x00000000
+
+Registers:
+EAX=0x0d6b0000, EBX=0x55ccf304, ECX=0x00000000, EDX=0x00000000
+ESP=0x55ccf254, EBP=0x55ccf260, ESI=0x00000000, EDI=0x0010ecb8
+EIP=0x6a311fd1, EFLAGS=0x00010287
+
+Top of Stack: (sp=0x55ccf254)
+0x55ccf254:   55ccf28c 0010ea60 0d6b0000 55ccf268
+0x55ccf264:   6a30b2ad 55ccf27c 6a303418 0010ecb8
+0x55ccf274:   0010e930 00000000 55ccf290 6a30b728
+0x55ccf284:   55ccf28c 00000001 6a5225d4 55ccf298
+0x55ccf294:   6a30c730 55ccf2b4 6a308cfb 0010ea60
+0x55ccf2a4:   009b6858 0010e8d8 00000000 0010e8d8
+0x55ccf2b4:   55ccf308 6a30ca27 55ccf304 00000001
+0x55ccf2c4:   00000001 0010e8d8 6a010100 00000001 
+
+Instructions: (pc=0x6a311fd1)
+0x6a311fb1:   8b 37 80 3d fd a1 58 6a 00 74 0e 8b ce 83 e1 07
+0x6a311fc1:   80 f9 05 75 04 33 f6 eb 03 83 e6 fc 3b f0 73 41
+0x6a311fd1:   8b 16 83 e2 03 80 fa 03 75 17 8b 4e 04 8b 41 08
+0x6a311fe1:   8b 50 68 83 c1 08 56 ff d2 8d 34 86 8b 45 fc eb 
+
+
+Register to memory mapping:
+
+EAX=0x0d6b0000 is an unallocated location in the heap
+EBX=0x55ccf304 is an unknown value
+ECX=0x00000000 is an unknown value
+EDX=0x00000000 is an unknown value
+ESP=0x55ccf254 is an unknown value
+EBP=0x55ccf260 is an unknown value
+ESI=0x00000000 is an unknown value
+EDI=0x0010ecb8 is an unknown value
+
+
+Stack: [0x55c80000,0x55cd0000],  sp=0x55ccf254,  free space=316k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x71fd1]
+V  [jvm.dll+0x6b2ad]
+V  [jvm.dll+0x63418]
+V  [jvm.dll+0x6b728]
+V  [jvm.dll+0x6c730]
+V  [jvm.dll+0x68cfb]
+V  [jvm.dll+0x6ca27]
+V  [jvm.dll+0x6cc9b]
+V  [jvm.dll+0x6b807]
+V  [jvm.dll+0x72ff3]
+V  [jvm.dll+0x6a3e2]
+V  [jvm.dll+0x6a7ce]
+V  [jvm.dll+0x176698]
+V  [jvm.dll+0x14e795]
+V  [jvm.dll+0x14d91e]
+V  [jvm.dll+0x14dca7]
+V  [jvm.dll+0x14e172]
+V  [jvm.dll+0x17e049]
+C  [msvcr100.dll+0x5c6de]  endthreadex+0x3a
+C  [msvcr100.dll+0x5c788]  endthreadex+0xe4
+C  [kernel32.dll+0x4ed6c]  BaseThreadInitThunk+0x12
+C  [ntdll.dll+0x637f5]  RtlInitializeExceptionChain+0xef
+C  [ntdll.dll+0x637c8]  RtlInitializeExceptionChain+0xc2
+
+VM_Operation (0x5b20d6e8): GenCollectForPermanentAllocation, mode: safepoint, requested by thread 0x5bbbb800
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x5bbbc800 JavaThread "Unknown thread" daemon [_thread_blocked, id=3484, stack(0x5cb70000,0x5cc70000)]
+  0x5bbbc400 JavaThread "À€$À€á±å›¹é›€ä˜‡ï§ˆä˜á® äï§ ä˜À€À€À€À€À€À€À€À€À€À€À€À€èƒá«›á® äÀ€À€ï€ä˜À€1 À€À€À€À€À€À€À€À€À€À€À€À€â†«À€À€À€À€ïä˜á„¨äï€ä˜ï§ˆä˜ï˜ä˜ï‡€ä˜ä©˜á¥¬î‘¨á¥­À€À€À€À€á„˜äÀ€À€À€À€ï­ä˜À€À€À€À€À€À€À€À€æ­¨å›¸À€À€ç„˜åŸ±À€À€À€À€À€À€À€Ä€ÄÀ€2à €å §À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€á«€äá—°äï ä˜á•˜äá™¸äÀ€À€é›€ä˜‡Å˜À€À€À€À€À€ï’ˆä˜ï—ˆä˜ï”°ä˜À€À€À€À€À€Ş äÀ€Ä€à¬€Ä€à°€sÀ€à»€äÀ€À€é¸ä˜‡À€à»€äÀ€ï‡€ä˜ë–´èƒá«›À€ç€€ë–´èƒá«›À€À€ç €ë–´èƒá«›À€ç€€%À€À€À€À€À€À€À€+À€À€À€À€À€À€À€1À€À€À€À€À€À€À€3À€À€À€À€À€À€À€7À€À€À€À€À€À€À€;À€À€À€À€À€À€À€AÀ€À€À€À€À€À€À€BÀ€À€À€À€À€À€À€FÂ·áˆäÀ€À€è‚€LÂ¸ïµˆä˜À€À€è‚€À€à¹€äï³€ä˜ï»¨ä˜ï¶˜ä˜À€À€À€À€À€À€À€À€À€À€ì±å›»ì±å›»å›Â›å›Â›å¾±å›¸å°¹å—»áº‘å›¹ìŸ¡å˜‚à¬‰å›¸æ—±Â›æ†™Âæ…±Âï¬¡ë®¡å˜‚À€À€À€Ş äÀ€Ä€Å¤Å¤ÄÄÄÄÀ€À€À€à£¨äÀ€À€À€À€À€à¿€äÀ€ïµˆä˜À€àµ€äÀ€À€À€è€€À€ïµˆä˜À€À€á„¨äÀ€×¿À€À€ï¾±á°€À€À€À€À€	À€À€À€à³€äï´€ä˜ï±˜ä˜À€À€À€À€	À€ï¿¾ï¿¿À€À€À€À€À€à²À€À€é´°Çä½€Â©â’€ÈâˆÈâ€ÇÀ€À€À€Æ€ää¡Œæ©’	À€$À€ì°å›»À€À€á„¸äá® äï¶˜ä˜À€À€À€À€À€À€À€À€À€À€À€À€è‡˜á«›á® äÀ€À€ï§ ä˜ĞÀ€Ğ¡ À€À€À€À€À€À€À€À€À€À€À€À€â†¬À€À€À€À€ï³°ä˜á„¨äá„¸äá„¸äï³ ä˜ï±˜ä˜ä©˜á¥¬î‘¨á¥­À€À€À€À€á„˜äÀ€À€À€À€À€À€À€À€À€À€À€À€À€À€å¾°å›¸À€À€À€À€À€À€À€À€À€À€À€À€À€À€Ä€Ä€À€2à €å §À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€á«€äá—°äáœ°äá•˜äá™¸äÀ€À€À€À€À€À€À€à»€äÀ€À€ï±˜ä˜À€à¹€äÆ˜ä˜áˆä˜à¤¸ä˜À€À€À€À€ÂÀ€À€À€À€À€À€ê¼‰å›³à¤¸ä˜å›Â›á® äì£‘å›³â¸‰å—­ë«©å›³ïµè¶™Âï´¡
+	à¼¹å—¥é©‰å—®ç‘Â›ç‘Â›æ½¡Â
+à»¡å—°á¹Â¨ê´‰Âæš™Â›ì‰‰å—±è¡‰å—®åš™Â›å¨ä‘è¹±Âå‰Â›å‰Â›"íŸå˜‚è¿±Âà£¡å›·á¶¡Â§Ü¡Â§Ü¡Â§ã‘Â§*')+ã ‘Â§ïŸ‰å›·â­©å›¸â®˜ä˜0ì¸¡å›¸â¯±å›¤ã”¡å›¤î­¨ä—¼æ­¡å›´657á‘±å›¸á¹°ä˜—á•‘å›¸;:<ã±Â§ë§‘Â¦>?@á»¡åŸ¨áˆä˜â¬¹å›¸ï–¹åŸ­DECFá¼¡åŸ¨ä €ä˜—Ü¡å›·ê¯‰ÂJKILé¹å—®ï›¨ä—¾ë—¡å˜‚è´©å—®PQORéŒ¡å›µí¸°ä—¼âº‰å—­å®‘å›¤VWUXã•™å›¤æ—˜ä˜‘á¾¹å—¥ë³‘å›ºá–‰å›¸á–‰å›¸á—å›¸`_aV]_cá®±å—²ï§‘å—¯Üå›·á±å—­åœ¹Â›åœ¹Â›ç™¡Â§è¸‘Âkljmç¡Â§é±Â§opjqæ¼‰å—®æ¼‰ [_thread_blocked, id=1984, stack(0x5a930000,0x5aa30000)]
+  0x5bbbbc00 JavaThread "Unknown thread" [_thread_blocked, id=3636, stack(0x5c9f0000,0x5caf0000)]
+  0x5bbbb800 JavaThread "À€$À€åœÂ›â·ˆäâœ€äá® äç€äÀ€À€À€À€À€À€À€À€À€À€À€À€ì’á¤¥á® äÀ€À€â·ˆäÀ€1À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€è¬°ä˜â¾ˆäá„¨äâœ€äâœ€äâ¼˜äá³°äÀ€À€À€À€À€À€À€À€ç”€äÀ€À€À€À€À€À€À€À€ã˜ˆäÀ€À€À€À€À€À€À€À€à¯˜Â¦ë€¨ÂÀ€À€À€Ä€À€3ë€À€À€À€À€À€À€ã¦ å—£À€À€æ¡˜å¢ŠÀ€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€Yá«€ääŸˆäæ¦°äå‚°äá™¸äÀ€À€â§äÅ À€â·ˆäÅ¤À€À€À€À€À€çŠ˜äæ¦°äã¿¸äã»€äå® äÀ€À€À€À€À€à£¨äÀ€Ã£Ã¢À€á€ˆÃ¤Ã¢Ç¶
+À€À€À€à¹€äè“€äáŠ¸ä˜î†°äÀ€À€À€À€ÏÀ€À€À€À€À€À€ë±‰Â¥î®Â¥ë±¡Â¥î®€á¤¥î±˜á¤¥ë³™Â¥î¾ˆá¤¥ï™°áµ ï€˜á¤¥ìµ©Â×‘Â¦à´™Â¦îœ¹Â¥î¯¹Â¥ë¦±Âëµ‘Â¥è á³à©‘Â¦ë¯‘Â¥îšá¤¦ë±‰Â¥î®Â¥ë±¡Â¥ë²‘Â¥è¸‘Âê°™ÂÕ‘Â¦è¶™Âè¶±Âéƒ¡ÂÕ±Â¦ë²©Â¥ë­±Â¥èº‰Âì‘Âè¹±Âè»‘Âî€™Â¥ë›±Âæ»‘Âæ¼±Âì‰Âæ¾‘ÂëŠ±Âë‹±Âæ½¡Âî‰Â¥ê–¡Â¦æ¿Âé©Âë±Âë³Â¥ë³™Â¥ë³±Â¥Ö‘Â¦ë´‰Â¥ïµï´¡î®©Â¥Ö±Â¦ìµ©Â×‘Â¦æ—±Â›æ…‰Âë´¡Â¥à´™Â¦îœ¹Â¥×±Â¦ï­¡î©Â¥î¯‘Â¥è¿±Âï­é€‰Âê³¡Âê²¹Âê´‰Âî¯¹Â¥ë¦±ÂØ‘Â¦ï¯æ‡Âé€¹Âîƒ™Â¥ê²‘Âî°¡Â¥àµ‘Â¦î™Â¥ê˜‘Â¦ê™Â¦à¶‰Â¦ë´¹Â¥ëµ‘Â¥Ø±Â¦Ù‘Â¦Ù±Â¦æš±Â›Ú‘Â¦î±‰Â¥î±±Â¥î²™Â¥ï´è©Âê™±Â¦î³Â¥Ú±Â¦î³©Â¥î´‘Â¥î´¹Â¥ëµ©Â¥î†™ÂÛ‘Â¦îµ¡Â¥è˜±Âî¶‰Â¥Û±Â¦î¶±Â¥ê»©Âî·™Â¥à·Â¦è’‰Âî¸Â¥îŠ¹Âî¸©Â¥î¹‘Â¥Ü‘Â¦Ü±Â¦İ‘Â¦İ±Â¦î¹¹Â¥îº¡Â¥î»‰Â¥î»±Â¥î¼™Â¥êš¡Â¦ê›‘Â¦êœÂ¦Ş‘Â¦î½Â¥Ş±Â¦êœ±Â¦î½©Â¥è…‰Âß‘Â¦î¾‘Â¥è©Âè‚‰Âß±Â¦æ›¡Â›ê¸‘Â¦ê¸¹Â¦ê¹¡Â¦à ‘Â¦è¦¡Âêº‰Â¦êº±Â¦è‘©Âê»™Â¦ê¼Â¦à ±Â¦è¥‘Âê¼©Â¦ê½‘Â¦ê½¹Â¦ê¾¡Â¦ê¡Â¦ê¿‰Â¦ê¿±Â¦ê‘Â¦êŸÂ¦êŸ±Â¦ë€™Â¦ëÂ¦ë©Â¦ë‚‘Â¦ë‚¹Â¦ëƒ¡Â¦ë„‰Â¦ë„±Â¦ë…™Â¦ê ¡Â¦ë†Â¦ë†©Â¦ê¡‘Â¦ë‡‘Â¦ê¢Â¦à¡‘Â¦à¡±Â¦à¢‘Â¦à¢±Â¦ê¢±Â¦ë‡¹Â¦ëˆ¡Â¦ë‰‰Â¦ë‰±Â¦à£‘Â¦ëŠ™Â¦à£±Â¦à¤‘Â¦à¤±Â¦à¥‘Â¦ê†‘Âíº¹Âà¥±Â¦à¦‘Â¦ë‹Â¦ë‹©Â¦ëŒ‘Â¦ëŒ¹Â¦ë¡Â¦ë‰Â¦à¦±Â¦ë±Â¦ë™Â¦ëÂ¦à§‘Â¦ë©Â¦ë‘‘Â¦ë‘¹Â¦è¤©Âë’¡Â¦ê£¡Â¦ë“‰Â¦ë“±Â¦à§±Â¦î¹Âà¨‘Â¦ê¤‘Â¦à¨±Â¦à©‘Â¦î‘™Âï²à©±Â¦àª‘Â¦àª±Â¦ë”™Â¦ë•Â¦ê‡‘Âà«‘Â¦è¤Âë•©Â¦à«±Â¦à¬‘Â¦ê…±Âê†±Âà¬±Â¦ê¥Â¦ë–‘Â¦à­‘Â¦ê‡±Âà­±Â¦à®‘Â¦î„‰Â¥æ€‰Âå›©Â›ë–¹Â¦ë˜‘Â¦ë˜¹Â¦ë™¡Â¦à·¹Â¦ê¥±Â¦çÂ›æº‘Â›å¨Âëš‰Â¦à¸±Â¦ëš±Â¦å©±Âåª©Âå¬™Âå­‘Âæ¤±Âå°±Âå±©Âå²¡Âå›Â›ë›™Â¦æ¨¡Âê¦¡Â¦åœ‘Â›ç„±Â›åš™Â›å‰Â›à¹©Â¦æ¾±Â›àº¡Â¦çƒ‘Â›å ‰Âç‚¡Â›à»™Â¦à¼‘Â¦æŸ™Âç±Â›ê§‘Â¦ê¨Â¦à½‰Â¦à¾Â¦ê¨±Â¦å¡¹Âî¤©Â¥ëœÂ¦æƒ‘Âëœ [_thread_blocked, id=3856, stack(0x5b110000,0x5b210000)]
+  0x5907fc00 JavaThread "" daemon [_thread_blocked, id=1052, stack(0x5c840000,0x5c940000)]
+  0x59080400 JavaThread "Unknown thread" daemon [_thread_blocked, id=3396, stack(0x5ab60000,0x5ac60000)]
+  0x59080c00 JavaThread "À€$À€á±å›¹é›€ä˜‡ï§ˆä˜á® äï§ ä˜À€À€À€À€À€À€À€À€À€À€À€À€èƒá«›á® äÀ€À€ï€ä˜À€1 À€À€À€À€À€À€À€À€À€À€À€À€â†«À€À€À€À€ïä˜á„¨äï€ä˜ï§ˆä˜ï˜ä˜ï‡€ä˜ä©˜á¥¬î‘¨á¥­À€À€À€À€á„˜äÀ€À€À€À€ï­ä˜À€À€À€À€À€À€À€À€æ­¨å›¸À€À€ç„˜åŸ±À€À€À€À€À€À€À€Ä€ÄÀ€2à €å §À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€á«€äá—°äï ä˜á•˜äá™¸äÀ€À€é›€ä˜‡Å˜À€À€À€À€À€ï’ˆä˜ï—ˆä˜ï”°ä˜À€À€À€À€À€Ş äÀ€Ä€à¬€Ä€à°€sÀ€à»€äÀ€À€é¸ä˜‡À€à»€äÀ€ï‡€ä˜ë–´èƒá«›À€ç€€ë–´èƒá«›À€À€ç €ë–´èƒá«›À€ç€€%À€À€À€À€À€À€À€+À€À€À€À€À€À€À€1À€À€À€À€À€À€À€3À€À€À€À€À€À€À€7À€À€À€À€À€À€À€;À€À€À€À€À€À€À€AÀ€À€À€À€À€À€À€BÀ€À€À€À€À€À€À€FÂ·áˆäÀ€À€è‚€LÂ¸ïµˆä˜À€À€è‚€À€à¹€äï³€ä˜ï»¨ä˜ï¶˜ä˜À€À€À€À€À€À€À€À€À€À€ì±å›»ì±å›»å›Â›å›Â›å¾±å›¸å°¹å—»áº‘å›¹ìŸ¡å˜‚à¬‰å›¸æ—±Â›æ†™Âæ…±Âï¬¡ë®¡å˜‚À€À€À€Ş äÀ€Ä€Å¤Å¤ÄÄÄÄÀ€À€À€à£¨äÀ€À€À€À€À€à¿€äÀ€ïµˆä˜À€àµ€äÀ€À€À€è€€À€ïµˆä˜À€À€á„¨äÀ€×¿À€À€ï¾±á°€À€À€À€À€	À€À€À€à³€äï´€ä˜ï±˜ä˜À€À€À€À€	À€ï¿¾ï¿¿À€À€À€À€À€à²À€À€é´°Çä½€Â©â’€ÈâˆÈâ€ÇÀ€À€À€Æ€ää¡Œæ©’	À€$À€ì°å›»À€À€á„¸äá® äï¶˜ä˜À€À€À€À€À€À€À€À€À€À€À€À€è‡˜á«›á® äÀ€À€ï§ ä˜ĞÀ€Ğ¡ À€À€À€À€À€À€À€À€À€À€À€À€â†¬À€À€À€À€ï³°ä˜á„¨äá„¸äá„¸äï³ ä˜ï±˜ä˜ä©˜á¥¬î‘¨á¥­À€À€À€À€á„˜äÀ€À€À€À€À€À€À€À€À€À€À€À€À€À€å¾°å›¸À€À€À€À€À€À€À€À€À€À€À€À€À€À€Ä€Ä€À€2à €å §À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€á«€äá—°äáœ°äá•˜äá™¸äÀ€À€À€À€À€À€À€à»€äÀ€À€ï±˜ä˜À€à¹€äÆ˜ä˜áˆä˜à¤¸ä˜À€À€À€À€ÂÀ€À€À€À€À€À€ê¼‰å›³à¤¸ä˜å›Â›á® äì£‘å›³â¸‰å—­ë«©å›³ïµè¶™Âï´¡
+	à¼¹å—¥é©‰å—®ç‘Â›ç‘Â›æ½¡Â
+à»¡å—°á¹Â¨ê´‰Âæš™Â›ì‰‰å—±è¡‰å—®åš™Â›å¨ä‘è¹±Âå‰Â›å‰Â›"íŸå˜‚è¿±Âà£¡å›·á¶¡Â§Ü¡Â§Ü¡Â§ã‘Â§*')+ã ‘Â§ïŸ‰å›·â­©å›¸â®˜ä˜0ì¸¡å›¸â¯±å›¤ã”¡å›¤î­¨ä—¼æ­¡å›´657á‘±å›¸á¹°ä˜—á•‘å›¸;:<ã±Â§ë§‘Â¦>?@á»¡åŸ¨áˆä˜â¬¹å›¸ï–¹åŸ­DECFá¼¡åŸ¨ä €ä˜—Ü¡å›·ê¯‰ÂJKILé¹å—®ï›¨ä—¾ë—¡å˜‚è´©å—®PQORéŒ¡å›µí¸°ä—¼âº‰å—­å®‘å›¤VWUXã•™å›¤æ—˜ä˜‘á¾¹å—¥ë³‘å›ºá–‰å›¸á–‰å›¸á—å›¸`_aV]_cá®±å—²ï§‘å—¯Üå›·á±å—­åœ¹Â›åœ¹Â›ç™¡Â§è¸‘Âkljmç¡Â§é±Â§opjqæ¼‰å—®æ¼‰ [_thread_blocked, id=3640, stack(0x5b010000,0x5b110000)]
+  0x5907f800 JavaThread "Unknown thread" [_thread_blocked, id=3316, stack(0x5ac80000,0x5ad80000)]
+  0x58ea4c00 JavaThread "Unknown thread" [_thread_blocked, id=2680, stack(0x5aea0000,0x5afa0000)]
+  0x58ea7000 JavaThread "Unknown thread" [_thread_blocked, id=1764, stack(0x5a100000,0x5a200000)]
+  0x58ea5000 JavaThread "À€À€,À€À€À€À€å¸ä§à †äƒ›À€À€ï£ªï¨ŒÀ€À€Ö”À€À€À€Ö”À€À€À€À€À€À€À€ä‡˜á¸©À€À€À€À€À€À€À€ç€äæ•€á¸·À€"À€á”·ëµ€À€ã³¨ä™£À€À€À€À€À€À€À€À€äˆ°á¸©æ–¸á¸·æ€ˆá«›æ—¸á½Œæ—¸á½Œãƒˆá½Œæ—á¸·À€À€À€Ïˆä7À€javax/swing/text/StyledEditorKit$StyledTextAction.classÀ€À€À€À€ç€ääŠ€á¸©À€À€7À€À€À€À€å¸ä§İ·äƒ›À€À€ã­™ä™¼À€À€İ—À€À€À€İ—À€À€À€À€À€À€À€äŒ€á¸©À€À€À€À€À€À€À€Ïˆä'À€javax/swing/text/JTextComponent$5.classÀ€À€À€À€ç€ää˜á¸©À€À€'À€À€À€À€å¸ä§İ°äƒ›À€À€ë¸˜á§¿À€À€ÉƒÀ€À€À€ÉƒÀ€À€À€À€À€À€À€ä¸á¸©À€À€À€À€À€À€À€Ïˆä$À€javax/swing/text/ComponentView.classÀ€À€À€ç€ääá¸©À€À€$À€À€À€À€å¸ä§à …äƒ›À€À€ê¸å…‹À€À€à¼¨À€À€À€à¼¨À€À€À€À€À€À€À€ä‘¨á¸©À€À€À€À€À€À€À€ç€äæ˜á¸·À€À€á±§ä¿¤À€ã³¨ä™£À€À€À€À€À€À€À€À€ä“€á¸©æ™¸á¸·æ€ˆá«›æ—¸á½Œæ—¸á½Œãƒˆá½Œæšá¸·À€À€À€Ïˆä%À€javax/swing/text/SegmentCache$1.classÀ€À€ç€ää”á¸©À€À€%À€À€À€À€å¸ä§à †äƒ›À€À€çœºâ‰‹À€À€Â±À€À€À€Â±À€À€À€À€À€À€À€ä•¨á¸©À€À€À€À€À€À€À€Ïˆä À€javax/swing/text/EditorKit.classÀ€À€À€ç€ää—€á¸©À€À€ À€À€À€À€å¸ä§İ°äƒ›À€À€â•¿æ«±À€À€Ñ¦À€À€À€Ñ¦À€À€À€À€À€À€À€ä˜á¸©À€À€À€À€À€À€À€Ïˆä3À€javax/swing/text/StringContent$StickyPosition.classÀ€À€À€À€ç€ää™¨á¸©À€À€3À€À€À€À€å¸ä§à¡¸äƒ›À€À€á„§ì²£À€À€Ï’À€À€À€Ï’À€À€À€À€À€À€À€ä› á¸©À€À€À€À€À€À€À€Ïˆä1À€javax/swing/text/DefaultEditorKit$EndAction.classÀ€À€ç€ääœ¸á¸©À€À€1À€À€À€À€å¸ä§İ´äƒ›À€À€é‚é‡±À€À€Ì¥À€À€À€Ì¥À€À€À€À€À€À€À€ä¨á¸©À€À€À€À€À€À€À€Ïˆä'À€javax/swing/text/JTextComponent$2.classÀ€À€À€À€ç€ää €á¸©À€À€'À€À€À€À€å¸ä§İ°äƒ›À€À€è…ê¨·À€À€ÔªÀ€À€À€ÔªÀ€À€À€À€À€À€À€ä¡ á¸©À€À€À€À€À€À€À€Ïˆä)À€javax/swing/text/JTextComponent$3$1.classÀ€À€ç€ää¢¸á¸©À€À€)À€À€À€À€å¸ä§İ°äƒ›À€À€ç®ˆæ‘¿À€À€Ï„À€À€À€Ï„À€À€À€À€À€À€À€ä¤˜á¸©À€À€À€À€À€À€À€ç€äæ›á¸·À€À€ê¨«ì®À€ã³¨ä™£À€À€À€À€À€À€À€À€ä¥°á¸©æ€á¸·æ€ˆá«›æ—¸á½Œæ—¸á½Œãƒˆá½Œæ˜á¸·À€À€À€ÏˆäFÀ€javax/swing/text/DefaultStyledDocument$ElementBuffer$ElemChanges.classÀ€ç€ää§€á¸©À€À€FÀ€À€À€À€å¸ä§İ¸äƒ›À€À€æ­è–¸À€À€Ò’À€À€À€Ò’À€À€À€À€À€À€À€ä©˜á¸©À€À€À€À€À€À€À€Ïˆä5À€javax/swing/text/JTextComponent$Keymap daemon [_thread_blocked, id=2736, stack(0x5a7f0000,0x5a8f0000)]
+  0x58547c00 JavaThread "À€À€ä¤ªÀ€À€À€è±ˆá±œè± á±œè²€á±œè²°á±œç°«á±ï® ä¥á˜å›¦À€À€ÅÀ€À€À€è³ˆá±œè³ á±œè´€á±œè´°á±œç±“á±ï® ä¥â¯˜å¡ŠÀ€À€QÀ€À€À€èµˆá±œà²¸á°€à³˜á°€à´ˆá°€ç±»á±ï® ä¥é¥°Â¨À€À€Ç¶À€À€À€èµ á±œà´ á°€àµ€á°€àµ°á°€ç²£á±ï® ä¥é¬¨åŸƒÀ€À€áŒºÀ€À€À€èµ¸á±œè¶á±œè¶°á±œè· á±œç³‹á±ï® ä¥ãå´À€À€À€À€À€è·¸á±œè¸á±œè¸°á±œè¹ á±œç³³á±ï® ä¥â¥˜åŸ¢À€À€à³¸À€À€À€è¹¸á±œèºá±œèº°á±œè» á±œç´›á±ï® ä¥ã¢€å´À€À€	À€À€À€è»¸á±œè¼á±œè¼°á±œè½ á±œçµƒá±ï® ä¥ã ˆå´À€À€ÆÀ€À€À€è½¸á±œè¾á±œè¾°á±œè¿ á±œçµ«á±ï® ä¥â¬¸åŸ¢À€À€Ä¿À€À€À€è¿¸á±œà½ˆá°€à½¨á°€à¾˜á°€ç¶“á±ï® ä¥â©ˆåŸ¢À€À€)À€À€À€é€á±œé€¨á±œéˆá±œé¸á±œç¶»á±ï® ä¥â«€åŸ¢À€À€?À€À€À€é‚á±œé‚¨á±œéƒˆá±œéƒ¸á±œç·£á±ï® ä¥â°¨åŸ¢À€À€Í†À€À€À€é„á±œé„¨á±œé…ˆá±œé…¸á±œç¸‹á±ï® ä¥ï¸å›¥À€À€Ó¶À€À€À€é†á±œé†¨á±œé‡ˆá±œé‡¸á±œç¸³á±ï® ä¥ï”¨å›¥À€À€"À€À€À€éˆá±œá†¸á°€á‡˜á°€áˆˆá°€ç¹›á±ï® ä¥ïœˆå›¥À€À€Â³À€À€À€éˆ¨á±œé‰€á±œé‰ á±œéŠá±œçºƒá±ï® ä¥ïŸ¸å›¥À€À€3À€À€À€éŠ¨á±œá¸á°€á˜á°€á‘ˆá°€çº«á±ï® ä¥ï®¸å›¥À€À€À€À€À€é‹€á±œà¾°á°€à¿á°€á€€á°€ç»“á±ï® ä¥ï²¨å›¥À€À€\À€À€À€é‹˜á±œé‹°á±œéŒá±œé€á±œç»»á±ï® ä¥ï¸å›¥À€À€ZÀ€À€À€é˜á±œá€˜á°€á€¸á°€á¨á°€ç¼£á±ï® ä¥Ã å›¦À€À€]À€À€À€é°á±œáˆ á°€á‰€á°€á‰°á°€ç½‹á±ï® ä¥Éˆå›¦À€À€^À€À€À€éˆá±œáƒ¨á°€á„ˆá°€á„¸á°€ç½³á±ï® ä¥Çå›¦À€À€FÀ€À€À€é á±œá‚€á°€á‚ á°€áƒá°€ç¾›á±ï® ä¥Ë€å›¦À€À€À€À€À€é¸á±œéá±œé°á±œé á±œç¿ƒá±ï® ä¥â¸°åŸ†À€À€Ç¤À€À€À€é¸á±œáŠˆá°€áŠ¨á°€á‹˜á°€ç¿«á±ï® ä¥Î°å›¦À€À€;À€À€À€é‘á±œé‘¨á±œé’ˆá±œé’¸á±œè€“á±ç€äé“á±œáƒ¢À€XÀ€ã°¿ã²Ÿè€«á±ï® ä¥Ğ¨å›¦À€À€Â´À€À€À€ëª á±œëª¸á±œë«˜á±œë¬ˆá±œè“á±ï® ä¥Ô˜å›¦À€À€Â¾À€À€À€ë¬ á±œá…á°€á…°á°€á† á°€è»á±êµ ä§À€À€À€À€À€À€ë¬¸á±œæƒ€á¤§À€À€è‚›á±êµ ä§À€À€À€À€À€À€ë­ˆá±œæƒ€á¤§À€À€è‚»á±êµ ä§À€À€À€À€À€À€ë­˜á±œæƒ€á¤§À€À€èƒ›á±êµ ä§À€À€À€À€À€À€ë­¨á±œæƒ€á¤§À€À€èƒ»á±êµ ä§À€À€À€À€À€À€ë­¸á±œæƒ€á¤§À€À€ä’¸á½ŒÀ€æ²ˆá½Œà¨¨À€À€À€À€À€ã†˜á½œã†°á½œçŒˆá½Œãˆ°á½œì§˜á«šÀ€À€îœ¨á«¥À€ã€€ÄˆÀ€çŒˆá½Œã†˜á½œÀ€ç–¨ä™‚æ²ˆá½Œà¨§À€@à¡€À€À€À€À€ã‰ˆá½œã†°á½œçŒˆá½Œã‰ á½œì§˜á«šÀ€À€îœ¨á«¥À€ã€€ÄˆÀ€çŒˆá½Œã‰ˆá½œÀ€À€À€À€À€À€À€À€À€í¤˜ä™ˆæ²ˆá½Œà¨¤À€À€À€À€À€À€À€ã‰¸á½œã†°á½œçŒˆá½ŒãŠá½œì§˜á«šÀ€À€îœ¨á«¥À€À€À€À€ã daemon [_thread_blocked, id=3404, stack(0x5a200000,0x5a300000)]
+  0x58548c00 JavaThread "À€À€À€Ø€Ä€Ø€Ä€Ô€À€À€À€À€PÀ€æˆ€Ã§È€ä€€á€€À€À€á€€À€À€À€á€€À€À€À€À€À€À€À€À€À€À€ì°€0À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€â¸€ç²æ²À€À€@À€À€2À€À€À€À€À€À€À€ä€€À€@À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€Ğ€À€È€Ì€é €ã¢€À€ì‚€å‚€À€Ú€À€æ €À€à®€À€ë€€À€á‚€À€ì €À€Â€À€À€À€Ğ€À€Ä€À€ê €î‚€À€Â€À€À€À€Ğ€À€À€Ä€Ä€À€ï €À€Â€À€À€À€Ğ€À€À€Ü€Ü€À€á€€ã¾€À€â €ä‚€À€ä€€çº€À€å €ç¾€À€ç€€è‚€À€è €ë†€ê€€Â€À€À€À€Ğ€À€À€Ä€Ä€À€ë €Â€À€À€À€Ğ€À€À€Ä€Ä€À€í€€Â€À€À€À€Ğ€À€À€Ä€à¤€î €À€À€À€À€Ğ€À€À€Ä€à¤€ï €À€À€À€À€Ğ€À€À€Ä€à¤€à €À€À€À€À€Ğ€À€À€Ä€à¤€á €À€À€À€À€Ğ€À€À€Ä€à¤€â €À€À€À€À€Ğ€À€À€Ä€à¤€ã €À€À€À€À€Ğ€À€À€Ä€à¤€ä €À€À€À€À€Ğ€À€À€Ä€à¤€å €À€À€À€À€Ğ€À€À€Ä€à¤€æ €À€À€À€À€Ğ€À€À€Ä€à¤€ç €À€À€À€À€Ğ€À€À€Ä€à¤€è €ì €ãˆ€î€À€À€ï°€ì €À€î€À€À€ì€Ğ€î€À€À€ì €è°€î€À€À€å€ä€€À€î€À€À€é€æ¸€î€À€À€Ğ€#êˆ€î€À€À€ê €&â¸€î€À€À€í €+ä€î€À€À€á°€-à°€î€À€À€â €=ê€î€À€À€Ü€ä´€ä¼€ä˜€ä€ä„€å€ä„€à¬€ä´€ä¼€ä˜€åˆ€ä”€åŒ€ä¼€å”€åˆ€äŒ€ä”€Ì€ä´€å”€ä¤€ä˜€äµÅ‚À€âˆ€ë°€,ä€Sá¨í©½á¡”é—†Ä€á †á‚á€Ÿä¼ŠÉ¢è“…å±é˜à ƒè‰‰à®â˜¦à¡€â’„ã€Šä€¯Â·Ëƒà­¬â´°ã‡€ïªèŸ·á¬¨â‰„ê¤ à Œá‘¹áµ é‰è¢Å»ÖšäŒ¸ã¦í˜ê è˜Ä´í‚¶íˆ„ë¸²á©áƒæ•áˆ¨ä¢‡ê‹€è˜”ë  å„ï£ê–†ì’±à¶ªï™„ä„‡èº°ãŒ…è¼¨æ¾§ä…œã¤†Ò‰â¦¶ê§€ë¤€á‹¸âªí¢Œì¥â”¨ç±¡á¸„ë¸»ï´„ä€Šåƒ¨ä²€Øè—pîŒâ˜ä¨î£“äˆ™âµ³è•è§²â™¨æˆ§â‘è¥€Ä™ï¨Šìˆ„è¢·ê„¯é¨¨é‘„èœ„ê„”à ®é´©á‚â‰ê½ŠãŠä¹ä‡„Ó€ã–ä ¦å„šá§ˆê³ åŒç£ íƒì¸æ–ì¦£ì¨œîˆ©âˆˆã»•à´ºç“°áï¿³ï€§ë ˆÕ€ê™£éœƒá ¤í£”å±½Ø€Ö§ì‘ƒï´‰ï‚œî‚Ë£ç£‡\ï§§çœ€ã€œê§â¹´ï¡€Òˆå©ºÏ¯î–§á©¹íˆ¥ä›¹í ¹ã—£ã§†í”Ÿáœç¹½ë„€ä†”Ï“ì¾ï€Ï‡ï£·í°€ç†§é ¼ï¿¿Ç±âœœï î£âµ¡ë‚€á‚€ŞŠãªƒè€í‘‡å„˜à¹’æ —îŸœæ„é¿±âŸ†Î‡è‹„ã£‚æ€°á¦ì°«ì–±å¡¸æ¬€ï—¼í¨‰é™²ç £ç ¾ì€è¼³ç¹¾ì§á°ˆäˆï–»ï„è·ï”³ä½¤é£¥ã±¼î¥¸áƒ°ëœ½ì‚£í°Œï£ê‹”ìä‚“é¸èŒ‡î™»à¬†ã›²å ä¾„æœâ„“ï¸ îˆˆï€¡îŠ‘á¿èíˆšï˜„â„æí‚ï¿¿æ‰¨ï£€à¼á¶€ã°‰âà»€î£µï®é©¤ã½èˆé…‡ìƒà¢œë£ˆí²¡å¸Ÿâˆƒì¼œé¶¹á¬·ë ·ã¾ãœã‡ è¨è²œç”›ã…–á´å‡‹è±„á±°î›§Ù³ç’êƒ¶Ü£é§‡à¾Œî¸’îŒ‘ì„ ï¿°âŸà¯¼â¾’ë¸ˆë´ã´—é‚©ê‰îˆ‡è­³âµ¯áŠ¾ãƒ¸æ¿€ê¼³ì™„î ºÓƒí§›à¾…ï “ç [_thread_blocked, id=2588, stack(0x59fc0000,0x5a0c0000)]
+  0x58548800 JavaThread "Unknown thread" [_thread_blocked, id=3408, stack(0x59d20000,0x59e20000)]
+  0x58548000 
+[error occurred during error reporting (printing all threads), id 0xc0000005]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00109340] Threads_lock - owner thread: 0x00a97800
+[0x00109750] Heap_lock - owner thread: 0x5bbbb800
+
+Heap
+ def new generation   total 157376K, used 105393K [0x03d00000, 0x0e7c0000, 0x19250000)
+  eden space 139904K,  62% used [0x03d00000, 0x092dc7c0, 0x0c5a0000)
+  from space 17472K, 100% used [0x0c5a0000, 0x0d6b0000, 0x0d6b0000)
+  to   space 17472K,   0% used [0x0d6b0000, 0x0d6b0000, 0x0e7c0000)
+ tenured generation   total 349568K, used 133365K [0x19250000, 0x2e7b0000, 0x43d00000)
+   the space 349568K,  38% used [0x19250000, 0x2148d520, 0x1f24f800, 0x2e7b0000)
+ compacting perm gen  total 65536K, used 65535K [0x43d00000, 0x47d00000, 0x53d00000)
+   the space 65536K,  99% used [0x43d00000, 0x47cfff28, 0x47d00000, 0x47d00000)
+No shared spaces configured.
+
+Code Cache  [0x01d00000, 0x025b0000, 0x03d00000)
+ total_blobs=6425 nmethods=6203 adapters=153 free_code_cache=23903Kb largest_free_block=24471040
+
+Compilation events (10 events):
+Event: 245.431 Thread 0x55e9d000 6259             scala.Array$::copy (56 bytes)
+Event: 245.431 Thread 0x55e9d000 nmethod 6259 0x025a7408 code [0x025a7530, 0x025a76f0]
+Event: 245.434 Thread 0x55e9d000 6260             sun.nio.cs.US_ASCII$Encoder::encode (107 bytes)
+Event: 245.435 Thread 0x55e9d000 nmethod 6260 0x025a78c8 code [0x025a79d0, 0x025a7bf0]
+Event: 245.440 Thread 0x55e9d000 6261             org.jboss.netty.handler.codec.http.HttpMessageDecoder::readLine (110 bytes)
+Event: 245.441 Thread 0x55e9d000 nmethod 6261 0x025a7dc8 code [0x025a7f70, 0x025a84d8]
+Event: 245.444 Thread 0x55e9d000 6262             scala.collection.immutable.RedBlackTree$::scala$collection$immutable$RedBlackTree$$balanceRight (306 bytes)
+Event: 245.445 Thread 0x55e9d000 nmethod 6262 0x025a8a48 code [0x025a8bc0, 0x025a90f4]
+Event: 245.450 Thread 0x55e9d000 6263             java.util.concurrent.locks.AbstractQueuedSynchronizer::compareAndSetWaitStatus (13 bytes)
+Event: 245.450 Thread 0x55e9d000 nmethod 6263 0x025a9848 code [0x025a9940, 0x025a99d0]
+
+GC Heap History (10 events):
+Event: 16.086 GC heap after
+Heap after GC invocations=11 (full 10):
+ def new generation   total 157376K, used 0K [0x03d00000, 0x0e7c0000, 0x19250000)
+  eden space 139904K,   0% used [0x03d00000, 0x03d00000, 0x0c5a0000)
+  from space 17472K,   0% used [0x0c5a0000, 0x0c5a0000, 0x0d6b0000)
+  to   space 17472K,   0% used [0x0d6b0000, 0x0d6b0000, 0x0e7c0000)
+ tenured generation   total 349568K, used 86135K [0x19250000, 0x2e7b0000, 0x43d00000)
+   the space 349568K,  24% used [0x19250000, 0x1e66de80, 0x1e66e000, 0x2e7b0000)
+ compacting perm gen  total 53248K, used 53247K [0x43d00000, 0x47100000, 0x53d00000)
+   the space 53248K,  99% used [0x43d00000, 0x470fffc0, 0x47100000, 0x47100000)
+No shared spaces configured.
+}
+Event: 17.250 GC heap before
+{Heap before GC invocations=11 (full 10):
+ def new generation   total 157376K, used 41198K [0x03d00000, 0x0e7c0000, 0x19250000)
+  eden space 139904K,  29% used [0x03d00000, 0x0653b818, 0x0c5a0000)
+  from space 17472K,   0% used [0x0c5a0000, 0x0c5a0000, 0x0d6b0000)
+  to   space 17472K,   0% used [0x0d6b0000, 0x0d6b0000, 0x0e7c0000)
+ tenured generation   total 349568K, used 86135K [0x19250000, 0x2e7b0000, 0x43d00000)
+   the space 349568K,  24% used [0x19250000, 0x1e66de80, 0x1e66e000, 0x2e7b0000)
+ compacting perm gen  total 57344K, used 57344K [0x43d00000, 0x47500000, 0x53d00000)
+   the space 57344K, 100% used [0x43d00000, 0x47500000, 0x47500000, 0x47500000)
+No shared spaces configured.
+Event: 17.617 GC heap after
+Heap after GC invocations=12 (full 11):
+ def new generation   total 157376K, used 0K [0x03d00000, 0x0e7c0000, 0x19250000)
+  eden space 139904K,   0% used [0x03d00000, 0x03d00000, 0x0c5a0000)
+  from space 17472K,   0% used [0x0c5a0000, 0x0c5a0000, 0x0d6b0000)
+  to   space 17472K,   0% used [0x0d6b0000, 0x0d6b0000, 0x0e7c0000)
+ tenured generation   total 349568K, used 91027K [0x19250000, 0x2e7b0000, 0x43d00000)
+   the space 349568K,  26% used [0x19250000, 0x1eb34d90, 0x1eb34e00, 0x2e7b0000)
+ compacting perm gen  total 57344K, used 57344K [0x43d00000, 0x47500000, 0x53d00000)
+   the space 57344K, 100% used [0x43d00000, 0x47500000, 0x47500000, 0x47500000)
+No shared spaces configured.
+}
+Event: 18.274 GC heap before
+{Heap before GC invocations=12 (full 11):
+ def new generation   total 157376K, used 42891K [0x03d00000, 0x0e7c0000, 0x19250000)
+  eden space 139904K,  30% used [0x03d00000, 0x066e2f68, 0x0c5a0000)
+  from space 17472K,   0% used [0x0c5a0000, 0x0c5a0000, 0x0d6b0000)
+  to   space 17472K,   0% used [0x0d6b0000, 0x0d6b0000, 0x0e7c0000)
+ tenured generation   total 349568K, used 91027K [0x19250000, 0x2e7b0000, 0x43d00000)
+   the space 349568K,  26% used [0x19250000, 0x1eb34d90, 0x1eb34e00, 0x2e7b0000)
+ compacting perm gen  total 61440K, used 61439K [0x43d00000, 0x47900000, 0x53d00000)
+   the space 61440K,  99% used [0x43d00000, 0x478fffc8, 0x47900000, 0x47900000)
+No shared spaces configured.
+Event: 18.765 GC heap after
+Heap after GC invocations=13 (full 12):
+ def new generation   total 157376K, used 0K [0x03d00000, 0x0e7c0000, 0x19250000)
+  eden space 139904K,   0% used [0x03d00000, 0x03d00000, 0x0c5a0000)
+  from space 17472K,   0% used [0x0c5a0000, 0x0c5a0000, 0x0d6b0000)
+  to   space 17472K,   0% used [0x0d6b0000, 0x0d6b0000, 0x0e7c0000)
+ tenured generation   total 349568K, used 74847K [0x19250000, 0x2e7b0000, 0x43d00000)
+   the space 349568K,  21% used [0x19250000, 0x1db67f18, 0x1db68000, 0x2e7b0000)
+ compacting perm gen  total 61440K, used 61427K [0x43d00000, 0x47900000, 0x53d00000)
+   the space 61440K,  99% used [0x43d00000, 0x478fcd58, 0x478fce00, 0x47900000)
+No shared spaces configured.
+}
+Event: 129.563 GC heap before
+{Heap before GC invocations=13 (full 12):
+ def new generation   total 157376K, used 139904K [0x03d00000, 0x0e7c0000, 0x19250000)
+  eden space 139904K, 100% used [0x03d00000, 0x0c5a0000, 0x0c5a0000)
+  from space 17472K,   0% used [0x0c5a0000, 0x0c5a0000, 0x0d6b0000)
+  to   space 17472K,   0% used [0x0d6b0000, 0x0d6b0000, 0x0e7c0000)
+ tenured generation   total 349568K, used 74847K [0x19250000, 0x2e7b0000, 0x43d00000)
+   the space 349568K,  21% used [0x19250000, 0x1db67f18, 0x1db68000, 0x2e7b0000)
+ compacting perm gen  total 65024K, used 64965K [0x43d00000, 0x47c80000, 0x53d00000)
+   the space 65024K,  99% used [0x43d00000, 0x47c717f0, 0x47c71800, 0x47c80000)
+No shared spaces configured.
+Event: 129.739 GC heap after
+Heap after GC invocations=14 (full 12):
+ def new generation   total 157376K, used 17472K [0x03d00000, 0x0e7c0000, 0x19250000)
+  eden space 139904K,   0% used [0x03d00000, 0x03d00000, 0x0c5a0000)
+  from space 17472K, 100% used [0x0d6b0000, 0x0e7c0000, 0x0e7c0000)
+  to   space 17472K,   0% used [0x0c5a0000, 0x0c5a0000, 0x0d6b0000)
+ tenured generation   total 349568K, used 100673K [0x19250000, 0x2e7b0000, 0x43d00000)
+   the space 349568K,  28% used [0x19250000, 0x1f4a04b8, 0x1f4a0600, 0x2e7b0000)
+ compacting perm gen  total 65024K, used 64965K [0x43d00000, 0x47c80000, 0x53d00000)
+   the space 65024K,  99% used [0x43d00000, 0x47c717f0, 0x47c71800, 0x47c80000)
+No shared spaces configured.
+}
+Event: 242.577 GC heap before
+{Heap before GC invocations=14 (full 12):
+ def new generation   total 157376K, used 157376K [0x03d00000, 0x0e7c0000, 0x19250000)
+  eden space 139904K, 100% used [0x03d00000, 0x0c5a0000, 0x0c5a0000)
+  from space 17472K, 100% used [0x0d6b0000, 0x0e7c0000, 0x0e7c0000)
+  to   space 17472K,   0% used [0x0c5a0000, 0x0c5a0000, 0x0d6b0000)
+ tenured generation   total 349568K, used 100673K [0x19250000, 0x2e7b0000, 0x43d00000)
+   the space 349568K,  28% used [0x19250000, 0x1f4a04b8, 0x1f4a0600, 0x2e7b0000)
+ compacting perm gen  total 65280K, used 65270K [0x43d00000, 0x47cc0000, 0x53d00000)
+   the space 65280K,  99% used [0x43d00000, 0x47cbd8c8, 0x47cbda00, 0x47cc0000)
+No shared spaces configured.
+Event: 242.823 GC heap after
+Heap after GC invocations=15 (full 12):
+ def new generation   total 157376K, used 17472K [0x03d00000, 0x0e7c0000, 0x19250000)
+  eden space 139904K,   0% used [0x03d00000, 0x03d00000, 0x0c5a0000)
+  from space 17472K, 100% used [0x0c5a0000, 0x0d6b0000, 0x0d6b0000)
+  to   space 17472K,   0% used [0x0d6b0000, 0x0d6b0000, 0x0e7c0000)
+ tenured generation   total 349568K, used 133365K [0x19250000, 0x2e7b0000, 0x43d00000)
+   the space 349568K,  38% used [0x19250000, 0x2148d520, 0x2148d600, 0x2e7b0000)
+ compacting perm gen  total 65280K, used 65270K [0x43d00000, 0x47cc0000, 0x53d00000)
+   the space 65280K,  99% used [0x43d00000, 0x47cbd8c8, 0x47cbda00, 0x47cc0000)
+No shared spaces configured.
+}
+Event: 245.463 GC heap before
+{Heap before GC invocations=15 (full 12):
+ def new generation   total 157376K, used 105393K [0x03d00000, 0x0e7c0000, 0x19250000)
+  eden space 139904K,  62% used [0x03d00000, 0x092dc7c0, 0x0c5a0000)
+  from space 17472K, 100% used [0x0c5a0000, 0x0d6b0000, 0x0d6b0000)
+  to   space 17472K,   0% used [0x0d6b0000, 0x0d6b0000, 0x0e7c0000)
+ tenured generation   total 349568K, used 133365K [0x19250000, 0x2e7b0000, 0x43d00000)
+   the space 349568K,  38% used [0x19250000, 0x2148d520, 0x2148d600, 0x2e7b0000)
+ compacting perm gen  total 65536K, used 65535K [0x43d00000, 0x47d00000, 0x53d00000)
+   the space 65536K,  99% used [0x43d00000, 0x47cfff28, 0x47d00000, 0x47d00000)
+No shared spaces configured.
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 245.372 Thread 0x581a2c00 Threw 0x03d823a0 at C:\jdk7u5_32P\jdk7u5\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 245.373 Thread 0x581a2c00 Threw 0x03d84820 at C:\jdk7u5_32P\jdk7u5\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 245.373 Thread 0x581a2c00 Threw 0x03d8b6a8 at C:\jdk7u5_32P\jdk7u5\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 245.444 Thread 0x5bbbb800 Threw 0x09155898 at C:\jdk7u5_32P\jdk7u5\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 245.446 Thread 0x5bbbb800 Threw 0x091591c0 at C:\jdk7u5_32P\jdk7u5\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 245.446 Thread 0x5bbbb800 Threw 0x0915d2c8 at C:\jdk7u5_32P\jdk7u5\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 245.447 Thread 0x5bbbb800 Threw 0x091614c0 at C:\jdk7u5_32P\jdk7u5\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 245.448 Thread 0x5bbbb800 Threw 0x0916a0f0 at C:\jdk7u5_32P\jdk7u5\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 245.458 Thread 0x5bbbb800 Threw 0x09174830 at C:\jdk7u5_32P\jdk7u5\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 245.463 Thread 0x5bbbb800 Threw 0x092bdcc0 at C:\jdk7u5_32P\jdk7u5\hotspot\src\share\vm\prims\jvm.cpp:1166
+
+Events (10 events):
+Event: 245.447 loading class 0x5b886550 done
+Event: 245.448 loading class 0x58d03cc8
+Event: 245.448 loading class 0x58d03cc8 done
+Event: 245.450 Executing VM operation: RevokeBias
+Event: 245.450 Executing VM operation: RevokeBias done
+Event: 245.457 loading class 0x5bcbfed0
+Event: 245.458 loading class 0x5bcbfed0 done
+Event: 245.463 loading class 0x5bb0a428
+Event: 245.463 loading class 0x5bb0a428 done
+Event: 245.463 Executing VM operation: GenCollectForPermanentAllocation
+
+
+Dynamic libraries:
+0x010d0000 - 0x010ff000 	C:\Windows\system32\java.exe
+0x77880000 - 0x779bc000 	C:\Windows\SYSTEM32\ntdll.dll
+0x763f0000 - 0x764c4000 	C:\Windows\system32\kernel32.dll
+0x75ba0000 - 0x75beb000 	C:\Windows\system32\KERNELBASE.dll
+0x777e0000 - 0x77880000 	C:\Windows\system32\ADVAPI32.dll
+0x76330000 - 0x763dc000 	C:\Windows\system32\msvcrt.dll
+0x76170000 - 0x76189000 	C:\Windows\SYSTEM32\sechost.dll
+0x75f20000 - 0x75fc1000 	C:\Windows\system32\RPCRT4.dll
+0x764d0000 - 0x76599000 	C:\Windows\system32\USER32.dll
+0x765a0000 - 0x765ee000 	C:\Windows\system32\GDI32.dll
+0x76650000 - 0x7665a000 	C:\Windows\system32\LPK.dll
+0x76290000 - 0x7632d000 	C:\Windows\system32\USP10.dll
+0x746d0000 - 0x7486e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+0x765f0000 - 0x76647000 	C:\Windows\system32\SHLWAPI.dll
+0x77a90000 - 0x77aaf000 	C:\Windows\system32\IMM32.DLL
+0x75e50000 - 0x75f1c000 	C:\Windows\system32\MSCTF.dll
+0x6a880000 - 0x6a93e000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x6a2a0000 - 0x6a5ea000 	C:\Program Files\Java\jre7\bin\client\jvm.dll
+0x715c0000 - 0x715c7000 	C:\Windows\system32\WSOCK32.dll
+0x77a50000 - 0x77a85000 	C:\Windows\system32\WS2_32.dll
+0x763e0000 - 0x763e6000 	C:\Windows\system32\NSI.dll
+0x73ac0000 - 0x73af2000 	C:\Windows\system32\WINMM.dll
+0x77a40000 - 0x77a45000 	C:\Windows\system32\PSAPI.DLL
+0x6cbc0000 - 0x6cbcc000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x6aa20000 - 0x6aa40000 	C:\Program Files\Java\jre7\bin\java.dll
+0x6aa40000 - 0x6aa53000 	C:\Program Files\Java\jre7\bin\zip.dll
+0x6a9e0000 - 0x6a9f4000 	C:\Program Files\Java\jre7\bin\net.dll
+0x607b0000 - 0x607d2000 	C:\Program Files\Common Files\NSL\nslsp.dll
+0x74ef0000 - 0x74ef9000 	C:\Windows\system32\VERSION.dll
+0x75410000 - 0x7544c000 	C:\Windows\system32\mswsock.dll
+0x75400000 - 0x75406000 	C:\Windows\System32\wship6.dll
+0x6cc60000 - 0x6cc6f000 	C:\Program Files\Java\jre7\bin\nio.dll
+0x002d0000 - 0x002d8000 	C:\Users\Norozi\AppData\Local\Temp\jline_0_12_2.dll
+0x75450000 - 0x75466000 	C:\Windows\system32\CRYPTSP.dll
+0x751f0000 - 0x7522b000 	C:\Windows\system32\rsaenh.dll
+0x75030000 - 0x75047000 	C:\Windows\system32\USERENV.dll
+0x759d0000 - 0x759db000 	C:\Windows\system32\profapi.dll
+0x75950000 - 0x7595c000 	C:\Windows\system32\CRYPTBASE.dll
+0x739d0000 - 0x739e0000 	C:\Windows\system32\NLAapi.dll
+0x74f70000 - 0x74f80000 	C:\Windows\system32\napinsp.dll
+0x70240000 - 0x70252000 	C:\Windows\system32\pnrpnsp.dll
+0x752d0000 - 0x75314000 	C:\Windows\system32\DNSAPI.dll
+0x71310000 - 0x71318000 	C:\Windows\System32\winrnr.dll
+0x00aa0000 - 0x00adb000 	C:\Windows\system32\nlsp.dll
+0x774b0000 - 0x774b3000 	C:\Windows\system32\Normaliz.dll
+0x74ee0000 - 0x74ee5000 	C:\Windows\System32\wshtcpip.dll
+0x73260000 - 0x7327c000 	C:\Windows\system32\IPHLPAPI.DLL
+0x73250000 - 0x73257000 	C:\Windows\system32\WINNSI.DLL
+0x70230000 - 0x70236000 	C:\Windows\system32\rasadhlp.dll
+0x73150000 - 0x73188000 	C:\Windows\System32\fwpuclnt.dll
+0x67540000 - 0x67610000 	C:\lastVerison\target\native_libraries\32bits\jnotify.dll
+0x73d20000 - 0x73e0b000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M -Dfile.encoding=UTF-8 -Dplay.version=2.1.0 -Dsbt.ivy.home=C:\play\framework\..\repository -Dplay.home=C:\play\framework\. -Dsbt.boot.properties=file:///C:/play/framework/sbt/sbt.boot.properties 
+java_command: C:\play\framework\sbt\sbt-launch.jar run
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.7.0_05\bin;C:\Program Files\Git\cmd;C:\play;
+USERNAME=Norozi
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 15 Stepping 11, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7601 Service Pack 1
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 15 stepping 11, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, tsc
+
+Memory: 4k page, physical 2086884k(457564k free), swap 4173768k(2097712k free)
+
+vm_info: Java HotSpot(TM) Client VM (23.1-b03) for windows-x86 JRE (1.7.0_05-b06), built on Jun 27 2012 00:51:27 by "java_re" with unknown MS VC++:1600
+
+time: Sun Jun 23 18:14:30 2013
+elapsed time: 246 seconds
+

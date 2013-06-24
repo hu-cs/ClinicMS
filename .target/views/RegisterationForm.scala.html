@@ -1,0 +1,107 @@
+@(title: String)(content: Html)
+ 
+<!DOCTYPE html>
+ 
+<html>
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/shape.css")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+        
+        
+        <!--------------------------------------------------------------------------------------------->
+        
+    <style>
+   
+    </style>
+        <!------------------------------------------------------------------------------------------>
+        
+    </head>
+    <body>
+   
+   
+    
+    
+   <!--
+   -------------------------------->
+    
+    
+   <div class="main">
+   	<p id="title">
+ 	<div class="midel">
+	  <div class="header" align="left">
+    		<div class="header_resize">
+    			<div class="logo">   
+					<p id="title">
+					<image src=@routes.Assets.at("images/logo.jpg") width="50" height="50"  >
+کلینیک خصوصی قدس </p>
+				</div>
+					<div class="menu">
+					  <ul>
+						  <li><a href="Home page">
+                       	 	<image src=@routes.Assets.at("images/home.png") width="20" height="20">
+					    صحفه اصلی</a></li>
+    
+						
+							<li><a href="Drug Stroe">
+							<image src=@routes.Assets.at("images/tb.jpg") width="30" height="20" dir="rtl">
+                            
+                            دارو خانه</a></li>
+        
+                            <li><a href="Reserved Time">
+                            <image src=@routes.Assets.at("images/res.png") width="20" height="20" >رزرو وقت</a></li>
+        
+                            <li><a href="Operation"><image src=@routes.Assets.at("images/logo.jpg") width="20" height="20" >
+                            نسای ولادی و عملیات</a></li>
+        
+                            <li><a href="Bed">
+                            <image src=@routes.Assets.at("images/logo.jpg") width="20" height="20" >
+                            بستر</a></li>
+        
+                            <li><a href="lab">
+                            <image src=@routes.Assets.at("images/lab.png") width="20" height="20" >
+                            آزمایشگاه</a></li>
+        
+                            <li><a href="Ambualance">
+                            <image src=@routes.Assets.at("images/amb.png") width="20" height="20" >
+                            آمبولانس</a></li>
+            
+                            <li><a href="Acounting">
+                            <image src=@routes.Assets.at("images/acu.png") width="20" height="20" >
+                            حسابداری</a></li>
+        
+                            <li><a href="Office"><images src=@routes.Assets.at("images/offi.gif") width="20" height="20" >
+                            اداره</a></li>
+         
+                            <li><a href="Recp">
+                            <image src=@routes.Assets.at("images/resp.png") width="20" height="20" >
+                            پذیرش</a></li>
+					  </ul>
+    		  </div>
+    		  
+            
+ 		
+	<div class="list">
+		<ul>
+			<li><a href="Selles.html"><image src=@routes.Assets.at("images/u67_normal.png") >فروش </a></li>
+            <li><a href="seles"><image src=@routes.Assets.at("images/u67_normal.png") >ثبت دارو </a></li>
+            <li><a href="seles"><image src=@routes.Assets.at("images/u67_normal.png") >لیست فروشات </a></li>
+		</ul>
+	</div>
+    
+<div class="table">
+   @content 		  
+ </div>
+ 
+ </div>
+ </div>   
+  </div> 
+</div>
+
+<!---------------------------------------------------------------------------------------------------->
+          
+    </body>
+</html>
+

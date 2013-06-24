@@ -1,0 +1,129 @@
+
+@(registerDrugs: List[RegisterDrug], rgisterForm: Form[RegisterDrug], ob: RegisterDrug)
+@import helper._
+
+
+@RegisterationForm("List of registeration") {
+    
+  <section>
+    <center>
+    <table border="1">
+   
+            <table border="2" class="registerDrugs">
+            <thead>
+                <tr>
+                <td>
+  							<b>ابزار</b>
+                        </td>
+                
+                        
+                        <td>
+							<b>قیمت فروش</b>
+                        </td>
+                          
+                        <td>
+							<b>قیمت خرید</b>
+                        </td>
+                         <td>
+							<b>ساخت</b>
+                        </td>
+                         <td>
+							<b>نام داروه</b>
+                        </td>
+                         <td>
+							<b>شماره</b>
+                        </td>
+                    </tr>
+            </thead>
+            <tbody>
+                @for(re_Drug <- registerDrugs) {
+                    <tr>
+                        <td>
+                        <a href="@routes.Application.deleteRgisterDrug(re_Drug.id)" class="btn1"><image src=@routes.Assets.at("images/exit.png") width="20" height="20" ></a>
+  						</br>
+  						<a href="@routes.Application.editeRgisterDrug(re_Drug.id)" class="btn"><image src=@routes.Assets.at("images/exit.png") width="20" height="20" ></a>
+                        @if(re_Drug.isDone){
+                        ob="re_Drug"
+                        }	
+                        </td>
+ 
+                        <td>
+                        	@re_Drug.sellPrice
+							
+                        </td>
+                        
+                         <td>
+								@re_Drug.price
+                        </td>
+                         <td>
+								@re_Drug.build
+                        </td>
+                         <td>
+								@re_Drug.name
+                        </td>
+                         <td>
+								 @re_Drug.id 
+                        </td>
+                    </tr>
+                    
+}
+            </tbody>
+        </table>
+      @if(ob.isDone){
+        	@form(routes.Application.editeRgisterDrug(ob.id)){
+        	 <table border="1">
+                     <tr>
+                        
+                        <td>
+                        	 <input type="text" name="sellPrice" size="10" value="ob.sellPrice" />
+							
+                        </td>                        
+                         <td>
+							 <input type="text" name="price" size="10" value="ob.price" />
+                        </td>
+                         <td>
+								<input type="text" name="build" size="10" value="ob." value="ob.build" />
+                        </td>
+                         <td>
+								  <input type="text" name="name" size="10" value="ob.name" />
+                        </td>
+                         <td>
+								<input type="text" name="id" size="8" value="ob.id"/>
+                        </td>
+                    </tr>
+                    </table>
+                    <input type="submit" value="edit">
+                    }
+                    }
+                 
+          @form(routes.Application.newRgister()) {
+          <table border="1">
+                     <tr>
+                        
+                        <td>
+                        	 <input type="text" name="sellPrice" size="10" />
+							
+                        </td>                        
+                         <td>
+							 <input type="text" name="price" size="10" />
+                        </td>
+                         <td>
+								<input type="text" name="build" size="10" />
+                        </td>
+                         <td>
+								  <input type="text" name="name" size="10" />
+                        </td>
+                         <td>
+								<input type="text" name="id" size="8" />
+                        </td>
+                    </tr>
+                    </table>
+                     <input type="submit" value="save">
+        <a href="@routes.Application.rgister()" class="btn">Cancel</a>   
+    }
+        </table>   
+           
+    </center>
+  </section>
+  
+}
