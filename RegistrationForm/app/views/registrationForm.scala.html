@@ -1,0 +1,147 @@
+@(personalForm: Form[Personal])
+
+@import helper._
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/RegistartionForm.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+      
+         <script type="text/javascript">
+        $(function() {
+        
+            $("#toggle").click(function() {
+                $("#tgl").toggle("slow");
+            });
+        });
+    </script>
+    </head>
+    <body>
+            <header> <h1> کلنیک قدس </header>
+      <nav>
+      <a href="@listofpersonal" > پذیرش </a>
+      <a href="#" > اداره </a>
+      <a href="#" > محا سبه </a>
+      <a href="#" > آ مبو لانس </a>
+      <a href="#" > لا براتوار </a>
+      <a href="#" > بستری   </a>
+      <a href="#" > نسا ئی ولادی </a>
+      <a href="#" > ریزرو وقت  </a>
+      <a href="#" > دوا خانه  </a>
+      <a href="#" > صفحه اصلی   </a>
+      
+      
+      </nav>
+      <div class="all">
+			<datalist id="toggle">
+			<details id="toggle">
+			توضیحات
+			</details>
+			</datalist>
+			
+			
+			
+      <div class="left" id="tgl">
+      <ul>
+     <li> <a href="@routes.PersonalController.personalList()"> لیست پرسونل  </a> </li>
+      <li> <a href="@routes.PersonalController.creationForm()">فورم ثبت پرسونل </a> </li>
+      <li> <a href="#">راجستریشن</a> </li>
+       <li> <a href="#">سا خت کار بر</a> </li>
+      
+      </ul>
+      </div>
+      	
+         <div class="right" id="tog">    		
+    		<table cellpadding="2" cellspacing="2">
+    		
+    		@form(routes.PersonalController.createPersonal()){
+    		<tr>
+    		    	
+    		<td> @inputText(personalForm("telephoneNumber"), '_label -> " شماره موبایل ") </td>
+    		 </tr>
+    		<tr> 
+    	
+    		<td>@inputText(personalForm("rollNumber"), '_label -> " شماره پرونده " )</td>
+    	
+    		<td>  @inputText(personalForm("emergencyNumber"), '_label -> " شماره عاجل ")</td>
+    		</tr>
+    		<tr> 
+    	
+    		<td> @inputText(personalForm("name"), '_label -> " اسم ")</td>
+    	
+    		<td> @inputText(personalForm("age"), '_label -> "  سن " )</td>
+    		</tr>
+    		<tr> 
+    	
+    		<td> @inputText(personalForm("fatherName"), '_label -> "  نام پدر  " )</td>
+    	
+    		<td>@checkbox(personalForm("isPercentage"), '_label -> " فیصدی ")</td>
+    		</tr>
+    		<tr> 
+ 
+    		<td> @inputText(personalForm("familyName"), '_label -> " اسم فامیلی ")</td>
+    		
+    		<td> @checkbox(personalForm("notPercentage"), '_label -> "د وره ای ")</td>
+    		</tr>
+    		<tr> 
+    		
+    		<td>@inputText(personalForm("grandFatherName"), '_label -> " جد ")</td>
+    	
+    		<td> @checkbox(personalForm("both"), '_label -> " هر دو ") </td>
+    		
+    		</tr>
+    		<tr>
+    	
+    		<td>@inputText(personalForm("nationalIdCardNumber"), '_label -> " شماره تذکره ") </td>
+    	
+    		<td> @inputText(personalForm("percentage"), '_label -> " فیصدی " )</td>
+    		 </tr>
+    		<tr> 
+    	
+    		<td>  @inputText(personalForm("occuption"), '_label -> " تخصص ") </td>
+    
+    		<td> @inputText(personalForm("salary"), '_label -> " معاش " )</td>
+    		
+    		</tr>
+    		<tr> 
+    		
+    		<td> @inputText(personalForm("dateOfBirth"), '_label -> " تاریخ تولد ") </td>
+    		
+    		<td> @checkbox(personalForm("isready"), '_label -> " فعال " )</td>
+    		</tr>
+    		<tr> 
+    
+    		<td colspan ="3">@inputText(personalForm("email"), '_label -> " ایمیل آدرس " )</td>
+    		<td> </td>
+    		<td> </td>
+    		</tr>
+    		<tr> 
+    	
+    		<td colspan="3">@inputText(personalForm("address"), '_label -> " آدرس ")  </td>
+    		<td> </td>
+    		<td> </td>
+    		</tr>
+    		<tr>
+    		
+    		<td colspan="3"> @inputText(personalForm("info"), '_label -> " بخش " ) </td>
+    		</tr>
+    		<td colspan="3"> @textarea(personalForm("section"), '_label -> " تو ضیحات " ) </td>
+    		
+    		</table>
+    		<span><button value="save" type="submit" class="btn" /> ذخیره  </span>
+    		}
+    		
+
+      </div>
+      <div class="leftdown" id="td">
+      		جستجو  
+        <input type="search" class="search" />
+        
+        </div>
+      </div>
+    </body>
+</html>

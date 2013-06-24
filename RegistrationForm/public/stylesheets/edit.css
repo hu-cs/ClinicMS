@@ -1,0 +1,48 @@
+
+
+div {
+	align: center;
+	direction: rtl;
+	
+	margin: 5px auto;
+	background-color: #3399FF;
+	height: auto;
+	width: 1000px;
+}
+
+div table {
+	direction: rtl;
+	border-bottom: dashed;
+	border-color: blue;
+	
+}
+
+table td {
+	
+	border-bottom: ridge 1px blue;
+}
+
+input {
+	
+	height: 25px;
+	width: 150px;
+	-webkit-border-radius: 20px;
+	direction: rtl;
+	
+	
+}
+
+#change {
+	
+	-webkit-border-radius: 50px;
+	z-index: 16px;
+	background-color:#3399FF;
+	border: 1px ridge blue;
+	
+	align: right;
+}
+
+body {
+	
+	background-color: #ebebeb;
+}
