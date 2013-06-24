@@ -1,0 +1,246 @@
+@(personalForm: Form[Personal], bundle: ResourceBundle)
+
+@import helper._
+@import helper.twitterBootstrap._
+
+@main("Edit Personal Form"){
+ <div id="mainDive">
+
+    <header id="main_header">
+    
+    
+            <div id="logo" >
+                <img src="@routes.Assets.at("images/LogoFirst.jpg")" alt="Logo" width="120"  height="30"/>
+            </div>
+            
+            <div id="title" >
+                <h1 align="center">@bundle.getString("clinicManagementSystem")</h1>
+            </div>
+        
+         
+         
+        <div id="menu"  align="center">
+        
+                    <ul style="list-style-type: none;">
+                            <a href="">
+                   	 	      <li><img src="@routes.Assets.at("images/home.png")" width="30" height="30"/>@bundle.getString("mainPage")</li>
+                           	</a>
+                            
+							<a href="@routes.RegisterControll.rgister()">
+                                <li><img src="@routes.Assets.at("images/DefineControls.png")" width="30" height="30" /> @bundle.getString("drugStore")</li>
+                            </a>
+        
+                            <a style="width: 140px;" href="@routes.ParturitionCon.parturitions()">
+                                <li><img src="@routes.Assets.at("images/11700135-nurse-uses-thermometer-with-patient.jpg")" width="25" height="25" />@bundle.getString("parturition&operation")</li>
+                            </a>
+        
+                            <a href="@routes.BedController.bedIndex()">
+                                <li><img src="@routes.Assets.at("images/LK2009-5E.jpg")" width="25" height="25" />@bundle.getString("bed")</li>
+                            </a>
+        
+                            <a href="###########">
+                                <li><img src="@routes.Assets.at("images/lab.png")" width="30" height="30" />@bundle.getString("lab")</li>
+                            </a>
+        
+                            <a href="@routes.AmbulanceCon.ambulanceIndex()">
+                                <li><img src="@routes.Assets.at("images/amb.png")" width="30" height="30" />@bundle.getString("ambulance")</li>
+                            </a>
+            
+                            <a href="@routes.SellControll.sell()">
+                                <li><img src="@routes.Assets.at("images/acu.png")" width="30" height="30" />@bundle.getString("accounting")</li>
+                            </a>
+        
+                            <a href="@routes.Application.users()">
+                                <li><img src="@routes.Assets.at("images/offi.gif")" width="30" height="30" />@bundle.getString("office")</li>
+                            </a>
+         
+                            <a href="@routes.ReceptionCon.index()">
+                                <li><img src="@routes.Assets.at("images/res.png")" width="30" height="30" />@bundle.getString("reception")</li>
+                            </a>
+                                                        
+                        </ul>    
+    </header>
+   
+   <div id="main_container"  >
+   
+   <!---------------------------------------------------------------------------------------------------------------------------------  -->
+      
+            <div id="form"  >
+            
+  <!----------------------------------------------------------- table or form (950px) ------------------------------------------------  -->
+            
+
+       <div id="form_table" style="width: 700px;  margin-top: 20px; margin-left:120px;;">
+        	@form(routes.PersonalController.saveUpdatePersonal(), 'enctype -> "multipart/form-data"){
+        
+				<table style="width: 700px;" >
+					<tr>
+						<td  colspan="2" rowspan="5" style="clear: both;"> 
+							<div id="photo" style="width: 180px; height:240px; margin-left: 80px;margin-top: 50px;border: red 2px solid;">
+								<img src="@routes.Assets.at("images/4562519-nice-doctor-with-stethoscope-auscultating-the-focus-is-on-the-stethoscope.jpg")" width="180" height="230"  />
+							</div>
+						</td>
+						
+						<td class="align-right" > 
+							@helper.inputText(personalForm("id"), '_label->"",'_showConstraints -> false, 'dir->"rtl")
+						<td class="align-right">@bundle.getString("id")</td>
+					</tr>
+					<tr>
+						<td class="align-right"> 
+							@helper.inputText(personalForm("name"), '_label->"",'_showConstraints -> false,'dir->"rtl")
+						</td>
+						<td class="align-right">@bundle.getString("identitiesPerson")</td>
+					</tr>
+					<tr>
+						<td class="align-right">
+							@helper.inputText(personalForm("fatherName"), '_label->"",'_showConstraints -> false,'dir->"rtl")
+						</td>
+						<td class="align-right">@bundle.getString("nameFather")</td>
+					</tr>
+					<tr>
+						<td class="align-right">
+							@helper.inputText(personalForm("nic"), '_label->"",'_showConstraints -> false,'dir->"rtl")
+						</td>
+						<td class="align-right">@bundle.getString("nic")</td>
+					</tr>
+					<tr>
+						<td class="align-right">
+							@helper.inputText(personalForm("proficiency"), '_label->"",'_showConstraints -> false,'dir->"rtl")
+						</td>
+						<td class="align-right">@bundle.getString("proficiency")</td>
+					</tr>
+					<tr>
+						<td class="align-right" >
+<!------------------uploat button---------------- -->
+						
+								  		<input  class="align-right" type="file" name="picture" style="width: 175px"/>
+							
+						<td class="align-right">@bundle.getString("photo")</td>
+						
+						<td class="align-right">
+							@helper.inputText(personalForm("job"), '_label->"",'_showConstraints -> false,'dir->"rtl")
+						</td>
+						<td class=" align-right">@bundle.getString("job")</td>
+					</tr>
+					<tr>
+						<td class="align-right">
+							@helper.inputText(personalForm("salaryPercentage"), '_label->"",'_showConstraints -> false,'dir->"rtl")
+						</td>
+						<td class="align-right">@bundle.getString("salaryPercentage")</td>
+						
+						<td class="align-right">
+							@helper.inputText(personalForm("phone"), '_label->"",'_showConstraints -> false,'dir->"rtl")
+						</td>
+						<td class="align-right">@bundle.getString("phone") </td>
+					</tr>
+					<tr>
+						<td class="align-right">
+							@helper.inputText(personalForm("salaryContracted"), '_label->"",'_showConstraints -> false,'dir->"rtl")
+						</td>
+						<td class="align-right">@bundle.getString("salaryContracted")</td>
+						
+						<td class="align-right">
+							@checkbox(personalForm("active"), '_label -> "",'_showConstraints -> false,'dir->"rtl")
+						</td>
+						<td class="align-right"> @bundle.getString("readyActivity")</td>
+					</tr>
+					<tr >
+					    <td >
+					   	 	<input id="field" type="image" src="@routes.Assets.at("images/icontexto-webdev-ok-048x048.png")" width="50" height="50" />
+					    </td>
+						<td colspan="2" class="align-right">
+							@helper.inputText(personalForm("address"), '_label->"",'_showConstraints -> false,'dir->"rtl")
+						</td>
+						<td class="align-right">@bundle.getString("address")</td>
+					</tr >
+					</table>
+					}
+            </form>
+    </div>
+   
+       
+     <!-------------------------------------------------------------table or form-------------------------------------------------------  -->  
+       
+      </div>
+      
+      <!---------------------------------------------------------------------------------------------------------------------------------  -->
+      
+        
+            <div id="rightAside_container" >
+                    
+                       
+                    <div id="links" >
+      <!-----------------------------------------------------------------------links ------------------------------>
+                                <ul style="list-style-type: none; text-align: right; text-decoration:none;">
+                    
+                                    <li><a class="link" href="@routes.Application.createUser()"><b>@bundle.getString("formCreateUser")</b></a></li> 
+                                    <li><a class="link" href="@routes.Application.users()"><b>@bundle.getString("usersList")</b></a></li>
+                    				<li><a class="link" href="@routes.PersonalController.createPersonal()"><b>@bundle.getString("formRegistrationPersonal")</b></a></li> 
+                                    <li><a class="link" href="@routes.PersonalController.personalList()"><b>@bundle.getString("listPersonal")</b></a></li>
+                                    
+                                </ul>
+      <!-----------------------------------------------------------------------links ------------------------------>                          
+                    </div>
+                
+                          
+                    <div id="clock_search">
+                        
+                        <div id="clock" style=" top: 40px; text-align: center;">
+                            <!-- CLOCK AND AND SEARCHING -->
+                		    <!-- CLOCK AND AND SEARCHING -->
+                            <!-- CLOCK AND AND SEARCHING -->
+                            <!-- CLOCK AND AND SEARCHING -->
+                            <!-- CLOCK AND AND SEARCHING -->
+                            
+                            <div id="digital" >	
+								<!--<html>-->
+								<!--<head>-->
+								<!--<html>-->
+								<!--<head>-->
+								<script language="JavaScript" link="www.freehtmlcodes.com">
+								var clockID = 0;
+								function UpdateClock() {
+								   if(clockID) {
+								      clearTimeout(clockID);
+								      clockID  = 0;
+								   }
+								   var tDate = new Date();
+								
+								   document.theClock.theTime.value = "" 
+								                                   + tDate.getHours() + ":" 
+								                                   + tDate.getMinutes() + ":" 
+								                                   + tDate.getSeconds();
+								   clockID = setTimeout("UpdateClock()", 1000);
+								}
+								function StartClock() {
+								   clockID = setTimeout("UpdateClock()", 500);
+								}
+								function KillClock() {
+								   if(clockID) {
+								      clearTimeout(clockID);
+								      clockID  = 0;
+								   }
+								}
+								</script>
+								<!--</head>-->
+								<body onload="StartClock()" onunload="KillClock()">
+								<form name="theClock">
+								   <input type=text name="theTime" size=8 style="text-align: center">
+								</form>
+							</div
+                              
+                        </div>
+                
+                    </div>
+            
+        </div>
+   </div>
+  <div id="footer"  align="center">
+  
+    <footer>
+       <p align="center"> 2013 Clinic Management System. &copy;All Rights Reserved. | <a href="http://www.Khadhra.copy$gmail.com">www.Khadhra.copy$gmail.com</a></p>
+    </footer>
+  </div>
+  </div>
+}
+

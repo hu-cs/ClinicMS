@@ -1,0 +1,67 @@
+@(registerDrugs: List[RegisterDrug])
+@import helper._
+@import helper.twitterBootstrap._
+
+@RegisterationForm("Print List of drug"){
+<div style="width:50px; height:30px; ">
+     <SCRIPT LANGUAGE="JavaScript">
+                if (window.print) {
+                document.write('<form> '
+                + '<input style="width: 50px; height: 30px; color: maroon;" type=button name=print value="چاپ" '
+                + 'onClick="javascript:window.print()"></form>');
+                }// End -->
+      </script>
+</div>
+ <div id="form" style="height:950px; width:950px">
+  <table border="1">
+   
+            <table border="2" class="registerDrugs" width: 400px;>
+            <thead>
+                <tr>
+                        <td>
+							<b>قیمت فروش</b>
+                        </td>
+                          
+                        <td>
+							<b>قیمت خرید</b>
+                        </td>
+                         <td>
+							<b>ساخت</b>
+                        </td>
+                         <td>
+							<b>نام داروه</b>
+                        </td>
+                         <td>
+							<b>شماره</b>
+                        </td>
+                    </tr>
+            </thead>
+            <tbody>
+                @for(re_Drug <- registerDrugs) {
+                    <tr>
+                       
+ 
+                        <td>
+                        	@re_Drug.sellPrice
+							
+                        </td>
+                        
+                         <td>
+								@re_Drug.price
+                        </td>
+                         <td>
+								@re_Drug.build
+                        </td>
+                         <td>
+								@re_Drug.name
+                        </td>
+                         <td>
+								 @re_Drug.id 
+                        </td>
+                    </tr>
+                    
+}
+            </tbody>
+        </table>
+     
+   }              

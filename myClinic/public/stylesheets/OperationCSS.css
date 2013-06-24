@@ -1,0 +1,219 @@
+
+    body{
+        background-image: url(../images/bg.png);
+        background-repeat: repeat;
+        background-attachment: fixed
+    }
+    
+     div#main_header{
+        float:left;
+        width: 100%; 
+        height: 150px; 
+        position: absolute;
+    }
+    
+    div#title{
+            position: relative;
+            color: #0000A0;
+            float: left;
+            top:20px; 
+            height:50px;
+            width: 1000px;
+    }
+    div#logo{
+        position: relative;
+        left: 50px;
+        width: 150px;
+        height: 80px; 
+        float: left;
+    }
+     div#menu{
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+    
+     div#menu a{
+        margin: 0px 3px 20px 3px;
+        background: url(../images/bg-mid.png);
+        width:107px;
+        height:30px;
+        float:left;
+        padding:10px;
+        color:#fff;
+        text-decoration:none;
+        text-align: center;
+        
+        
+    }
+    div#menu a:hover{
+        color: black;
+        background-image: url(../images/pic_02.jpg);
+    }
+    
+    div#menu a:active { 
+        color: yellow;
+}
+    
+    div#mainDive{
+        margin: auto;
+        width: 1320px;
+        
+    }
+    
+    div#main_container{
+        float: left;
+        width: 100%;    
+        height: 720px;
+    }
+    
+     div#form{
+        background-image: url(../images/u8_normal.gif);
+        background-repeat:repeat;
+        float:left;
+        width: 75%; 
+        height:720px ; 
+        position: relative;
+        margin-left: 10px;
+        direction: rtl;
+    }
+    div#form.insertTable td {
+    
+    }
+
+    
+    div#rightAside_container{
+        
+        background-image: url(../images/templatemo_wrapper.png);
+        padding: 5px;
+        margin-right: 22px;
+        float:right;
+        width: 280px; 
+        height: 710px; 
+    }
+    
+    div#links{
+        position: relative;
+        top: 10px;
+        left: 35px;
+        width: 200px;
+        height: 300px;
+    }
+    
+       div#links a{
+        margin: 0px 3px 20px 3px;
+        background: url(../images/logo_012233.jpg);
+        width:150px;
+        height:17px;
+        float:left;
+        padding:10px;
+        color:black;
+        text-decoration:none;
+        text-align: center;
+        
+        
+    }
+    
+     div#links a:hover{
+        color: #fff;
+        background-image: url(../images/t22.jpg);
+    }
+    
+    div#links a:active { 
+        color: red;
+}
+    
+     div#clock_search{
+        position: relative;
+        background-repeat: repeat-y;
+        width: 250px;
+        height: 360px;
+        margin-top: 20px;
+        margin-left: 10px;
+
+    }
+    .link{
+        text-decoration: none;
+    }
+
+     .align-right{
+    	text-align:right;
+    } 
+    
+    div#footer{
+         float: left;
+         width: 100%; 
+         height: 40px;   
+         text-align: center;      
+    }
+
+#text-area textArea{
+	width: 510px;
+
+}
+
+#clickme {
+	
+	border: none;
+	background-color: none;
+}
+table.table-condensed td label{
+	display:block;
+	width:130px;
+	padding:0 10px;
+	float:right;
+	
+}
+table.table-condensed td span{
+	display:block;
+	width:170px;
+	float:right;
+	
+}
+table.table-condensed td input[type=checkbox]{
+	float:right;
+	
+}
+table.table-condensed td  {
+height: 50px;
+}
+table.table-condensed td input[type=text]{
+	width: 150px;
+	
+}
+table.table-condensed1 td input[type=password]{
+	width: 150px;
+}
+table.table-condensed1 td input[type=text]{
+	width: 150px;
+	
+}
+table.table-condensed1 td input[type=checkbox]{
+	float:right;
+	
+}
+table.table-condensed1 td  {
+height: 50px;
+}
+table.table-condensed1 td span{
+	display:block;
+	width:170px;
+	float:right;
+	
+}
+table.table-condensed1 td label{
+	display:block;
+	width:130px;
+	padding:0 10px;
+	float:right;
+	
+}
+
+
+#pic2 {
+	
+	background-image: url("../images/icontexto-webdev-cancel-032x032.png");
+	background-size: cover;
+}
+
+

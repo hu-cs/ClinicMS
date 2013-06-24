@@ -1,0 +1,79 @@
+@(ambulances: List[AmbulanceInfo], bundle: ResourceBundle)
+@import helper._
+@import helper.twitterBootstrap._
+
+@main("Print List of Patients"){
+<div style="width:50px; height:30px; ">
+     <SCRIPT LANGUAGE="JavaScript">
+                if (window.print) {
+                document.write('<form> '
+                + '<input style="width: 50px; height: 30px; color: white; background-color: orange; float: left;" type=button name=print value="جاپ" '
+                + 'onClick="javascript:window.print()"></form>');
+                }// End -->
+      </script>
+</div>
+
+ <div id="form" style="width: 100%; margin-top: 20px; padding: 10px;">
+        <h1 align="center"> @bundle.getString("QodcPrivateClinic") </h1>
+        <h3 align="center"> @bundle.getString("listCallingRequestAmbulance")  </h3>
+        <table class="table-condensed" border="2" style="width: 950px; border: 2px solid #00FF40; text-align: right; margin: auto; overflow:scroll; ">
+      
+<!-- List of reserved bed -->
+                <!-- heading of list or table -->
+                <tr>
+                      
+                      <th style="text-align:center;width:55px">@bundle.getString("situationPayment") </th>
+                      <th style="text-align:center;width:55px">@bundle.getString("cost")</th>
+                      <th style="text-align:center width:100px;">@bundle.getString("address")</th>
+                      <th style="text-align:center">@bundle.getString("dateCalled")</th>
+                      <th style="text-align:center">@bundle.getString("phoneCaller")</th>
+                      <th style="text-align:center;">@bundle.getString("nameCaller")</th>
+                      <th style="text-align:center;"> @bundle.getString("numberAmbulance")</th>
+                      <th style="text-align:center;">@bundle.getString("numberOrder") </th>
+                </tr>
+                <!-- body of List or table-->
+                
+                <script>
+              	var counter=1;
+              	</script>
+              	
+                @for(ambulance <- ambulances){
+                
+	                <tr @if(ambulance.payment == bundle.getString("unpaid")) {
+		                    	bgcolor="yellow"
+		                    }
+		                    >
+	                    
+	                    <td>
+	                        @ambulance.payment
+	                    </td>
+	                    <td>
+	                       	@ambulance.cost
+	                    </td>
+	                    <td>
+	                        @ambulance.address
+	                    </td>
+	                    <td>
+	                      	@ambulance.date.format("MM/dd/yyyy")
+	                    </td>
+	                    <td>
+	                        @ambulance.phone
+	                    </td>
+	                    <td>
+	                      	@ambulance.firstName
+	                    </td>
+	                    <td>
+	                      	@ambulance.ambulancenumber
+	                    </td>
+	                    <td>
+	                       <script>
+	                       document.write(counter++)
+	                       </script>
+	                    </td>
+	                </tr>  
+                }
+                </table>
+            
+        </div>
+
+}

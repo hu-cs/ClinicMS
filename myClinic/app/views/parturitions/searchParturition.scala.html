@@ -1,0 +1,261 @@
+@(parturitions: List[Parturition], t: String, k:String, bundle: ResourceBundle)
+
+@import helper._
+@import helper.twitterBootstrap._
+
+<html>
+    <head>
+        <title>title</title>
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+        
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/operationCSS.css")">
+        
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.min.css")">
+        <script src="@routes.Assets.at("javascripts/bootstrap.min.js")" type="text/javascript"></script>
+    </head>
+    <body>
+
+
+
+   <div id="mainDive">
+
+    <header id="main_header">
+    
+    
+            <div id="logo" >
+                <img src="@routes.Assets.at("images/LogoFirst.jpg")" alt="Logo" width="120"  height="30"/>
+            </div>
+            
+            <div id="title" >
+                <h1 align="center">@bundle.getString("clinicManagementSystem")</h1>
+            </div>
+        
+         
+         
+        <div id="menu"  align="center">
+        
+                    <ul style="list-style-type: none;">
+                            <a href="">
+                   	 	      <li><img src="@routes.Assets.at("images/home.png")" width="30" height="30"/>@bundle.getString("mainPage")</li>
+                           	</a>
+                            
+							<a href="@routes.RegisterControll.rgister()">
+                                <li><img src="@routes.Assets.at("images/DefineControls.png")" width="30" height="30" /> @bundle.getString("drugStore")</li>
+                            </a>
+        
+                            <a style="width: 140px;" href="@routes.ParturitionCon.parturitions()">
+                                <li><img src="@routes.Assets.at("images/11700135-nurse-uses-thermometer-with-patient.jpg")" width="25" height="25" />@bundle.getString("parturition&operation")</li>
+                            </a>
+        
+                            <a href="@routes.BedController.bedIndex()">
+                                <li><img src="@routes.Assets.at("images/LK2009-5E.jpg")" width="25" height="25" />@bundle.getString("bed")</li>
+                            </a>
+        
+                            <a href="###########">
+                                <li><img src="@routes.Assets.at("images/lab.png")" width="30" height="30" />@bundle.getString("lab")</li>
+                            </a>
+        
+                            <a href="@routes.AmbulanceCon.ambulanceIndex()">
+                                <li><img src="@routes.Assets.at("images/amb.png")" width="30" height="30" />@bundle.getString("ambulance")</li>
+                            </a>
+            
+                            <a href="@routes.SellControll.sell()">
+                                <li><img src="@routes.Assets.at("images/acu.png")" width="30" height="30" />@bundle.getString("accounting")</li>
+                            </a>
+        
+                            <a href="@routes.Application.users()">
+                                <li><img src="@routes.Assets.at("images/offi.gif")" width="30" height="30" />@bundle.getString("office")</li>
+                            </a>
+         
+                            <a href="@routes.ReceptionCon.index()">
+                                <li><img src="@routes.Assets.at("images/res.png")" width="30" height="30" />@bundle.getString("reception")</li>
+                            </a>
+                                                        
+                        </ul>    
+    </header>
+   
+   <div id="main_container"  >
+   
+   <!---------------------------------------------------------------------------------------------------------------------------------  -->
+      
+            <div id="form"  >
+            
+  <!----------------------------------------------------------- table or form (950px) ------------------------------------------------  -->
+            
+<!-- searching and printing the list -->
+
+        	<div id="print list" style="width: 920px; height: 30px; padding-left:20px; ">
+
+	            
+	            <form class="form-search" id="searching" action="@routes.ParturitionCon.searchParturition()" method="get">
+	            	<select class="input-medium search-query" id="type" name="type" style="float: right; margin: 3px;" >
+											<option value="id">@bundle.getString("id")</option>
+											<option value="firstName">@bundle.getString("name")</option>
+											<option value="fatherName">@bundle.getString("nameFather")</option>
+					</select>
+	                <input id="key" name="key" type="search" placeholder="لطفا اینجا بنویسید" style="float: right;  margin: 3px;"/>
+	                <input  type="image" src="@routes.Assets.at("images/icontexto-webdev-search-032x032.png")" width="40" height="40" style="float: right;" />
+	            </form>
+          </div>
+          
+      	<div id="form_table" style="width: 950px;   padding: 10px;">
+                
+        <table class="table-condensed" border="2" style="width: 950px; border: 2px solid #00FF40; text-align: center; padding-left:20px; margin:10px;  ">
+
+
+                
+<!-- List of reserved parturition -->
+                <!-- heading of list or table -->
+                <tr>
+                
+
+				      <th style="text-align:center; width: 4px;">#</th>
+				      <th style="text-align:center; width: 20px;">@bundle.getString("name")</th>
+				      <th style="text-align:center; width: 20px;">@bundle.getString("lastName")</th>
+				      <th style="text-align:center; width: 20px;">@bundle.getString("nameFather")</th>
+				      <th style="text-align:center; width: 20px;">@bundle.getString("foreFather")</th>
+				      <th style="text-align:center; width: 80px;">@bundle.getString("dateBirth")</th>
+				      <th style="text-align:center; width: 10px;">@bundle.getString("numberBirth")</th>
+				      <th style="text-align:center; width: 100px;">@bundle.getString("doctor")</th>
+				      <th style="text-align:center; width: 10px">@bundle.getString("groupBlood")</th>
+				      <th style="text-align:center; width: 80px;">@bundle.getString("phone")</th>
+				      <th style="text-align:center; width: 100px;">@bundle.getString("address")</th>
+				      <th style="text-align:center; width: 100px;">@bundle.getString("explanation")</th>		      
+				      <th style="text-align:center; width: 10px;">@bundle.getString("cost")</th>
+				      <th style="text-align:center; width: 10px;">@bundle.getString("discount")</th>
+				      <th style="text-align:center; width: 10px;">@bundle.getString("sezarian")</th>
+				      <th style="text-align:center; width: 100px;">@bundle.getString("action")</th>
+                </tr>
+                <!-- body of List or table-->
+                <script>
+              	var counter=1;
+              	</script>
+                @for(parturition <- parturitions){
+	                <tr >
+	                    <td>
+	                       <script>
+	                       document.write(counter++)
+	                       </script>
+	                    </td>
+	        <td>@parturition.firstName</td>
+			<td>@parturition.fatherName</td>
+			<td>@parturition.familyName</td>
+			<td>@parturition.foreFather</td>
+			<td><time date="@parturition.parturitionDate">@parturition.parturitionDate.format("MMM dd yyyy")</time></td>
+			<td>@parturition.numberOfBaby</td>
+			<td>@parturition.doctor</td>
+			<td>@parturition.bloodType</td>
+			<td>@parturition.phoneNumber</td>
+			<td>@parturition.address</td>
+			<td>@parturition.description</td>
+			<td>@parturition.charge</td>
+			<td>@parturition.discount</td>
+			<td><span> <input disabled type="checkbox" @if(parturition.caesareaned){checked}/></span></td>
+
+			<td style="width:75px">
+	                    	<form id="delete" action="@routes.ParturitionCon.deleteParturition(parturition.id)" method="post" style="float: left;">
+				                <input type="image" src="@routes.Assets.at("images/icontexto-webdev-cancel-032x032.png")" width="24" height="24" onClick="return confirm('Are you sure to delete it?');"/>
+							</form>
+				            <form id="edit" action="@routes.ParturitionCon.editParturition(parturition.id)" method="post" style="float: left;">
+				            	<input type="image" src="@routes.Assets.at("images/icontexto-webdev-file-032x032.png")" width="24" height="24" />
+							</form>
+				            <form id="printReciept" action="@routes.ParturitionCon.editParturition(parturition.id)" method="post" style="float: left;">
+				            	<input type="image" src="@routes.Assets.at("images/icontexto-webdev-print-032x032.png")" width="24" height="24" />
+							</form>
+			</td> 
+	                    </tr>
+                }
+                </table>
+            
+        </div>
+       
+     <!-------------------------------------------------------------table or form-------------------------------------------------------  -->  
+       
+      </div>
+      
+      <!---------------------------------------------------------------------------------------------------------------------------------  -->
+      
+        
+            <div id="rightAside_container"  >
+                    
+                       
+                    <div id="links" >
+      <!-----------------------------------------------------------------------links ------------------------------>
+                                <ul style="list-style-type: none; text-align: right; text-decoration:none;">
+                    
+                                    <li><a class="link" href="@routes.ParturitionCon.createParturition()"><b>@bundle.getString("formParturition")</b></a></li> 
+                                    <li><a class="link" href="@routes.ParturitionCon.parturitions()"><b> @bundle.getString("listDepartmentParturition") </b></a></li>
+									<li><a class="link" href="@routes.OperationCon.createOperation()"><b> @bundle.getString("formRegistrationOperation")</b></a></li> 
+                                    <li><a class="link" href="@routes.OperationCon.operations()"><b>@bundle.getString("listDepartmentOperation")</b></a></li>
+                                    
+                                </ul>
+      <!-----------------------------------------------------------------------links ------------------------------>                          
+                    </div>
+                
+                          
+                    <div id="clock_search" >
+                        
+                        <div id="clock" >
+                            <!-- CLOCK AND AND SEARCHING -->
+                		    <!-- CLOCK AND AND SEARCHING -->
+                            <!-- CLOCK AND AND SEARCHING -->
+                            <!-- CLOCK AND AND SEARCHING -->
+                            <!-- CLOCK AND AND SEARCHING -->
+								
+								
+							<div id="digital" >	
+								<!--<html>-->
+								<!--<head>-->
+								<!--<html>-->
+								<!--<head>-->
+								<script language="JavaScript" link="www.freehtmlcodes.com">
+								var clockID = 0;
+								function UpdateClock() {
+								   if(clockID) {
+								      clearTimeout(clockID);
+								      clockID  = 0;
+								   }
+								   var tDate = new Date();
+								
+								   document.theClock.theTime.value = "" 
+								                                   + tDate.getHours() + ":" 
+								                                   + tDate.getMinutes() + ":" 
+								                                   + tDate.getSeconds();
+								   clockID = setTimeout("UpdateClock()", 1000);
+								}
+								function StartClock() {
+								   clockID = setTimeout("UpdateClock()", 500);
+								}
+								function KillClock() {
+								   if(clockID) {
+								      clearTimeout(clockID);
+								      clockID  = 0;
+								   }
+								}
+								</script>
+								<!--</head>-->
+								<body onload="StartClock()" onunload="KillClock()">
+								<form name="theClock">
+								   <input type=text name="theTime" size=8 style="text-align: center">
+								</form>
+							</div
+							
+							
+                              
+                        </div>
+                
+                    </div>
+            
+        </div>
+   </div>
+  <div id="footer"  align="center">
+  
+    <footer>
+       <p align="center"> 2013 Clinic Management System. &copy;All Rights Reserved. | <a href="http://www.Khadhra.copy$gmail.com">www.Khadhra.copy$gmail.com</a></p>
+    </footer>
+  </div>
+  </div>
+
+</body>
+</html>

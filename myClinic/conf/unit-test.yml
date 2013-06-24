@@ -1,0 +1,427 @@
+#users data 
+users:
+
+    - !!models.User
+        id:                     1
+        firstName:              mohsen
+        lastName:               parsa
+        password:               123456
+        accountingAccess:       true
+        bedAccess:              true
+        labAccess:              true
+        timeReservingAccess:    true
+        ambulanceAccess:        true
+        operationAccess:        true
+        receptionAccess:        true
+        officeAccess:           true
+        createUserAccess:       true
+        drugStoreAccess:        true
+
+    - !!models.User
+        id:                     2
+        firstName:              ali
+        lastName:               rezayee
+        password:               1234567
+        accountingAccess:       true
+        bedAccess:              false
+        labAccess:              true
+        timeReservingAccess:    false
+        ambulanceAccess:        true
+        operationAccess:        true
+        receptionAccess:        false
+        officeAccess:           true
+        createUserAccess:       true
+        drugStoreAccess:        true
+        
+    - !!models.User
+        id:                     3
+        firstName:              mujtaba
+        lastName:               naderi
+        password:               123456789
+        accountingAccess:       true
+        bedAccess:              true
+        labAccess:              false
+        timeReservingAccess:    true
+        ambulanceAccess:        false
+        operationAccess:        true
+        receptionAccess:        true
+        officeAccess:           false
+        createUserAccess:       true
+        drugStoreAccess:        true
+        
+    - !!models.User
+        id:                     4
+        firstName:              mohammad
+        lastName:               razavi
+        password:               123450
+        accountingAccess:       true
+        bedAccess:              true
+        labAccess:              true
+        timeReservingAccess:    true
+        ambulanceAccess:        true
+        operationAccess:        true
+        receptionAccess:        true
+        officeAccess:           true
+        createUserAccess:       true
+        drugStoreAccess:        true
+        
+    - !!models.User
+        id:                     5
+        firstName:              nader
+        lastName:               alawi
+        password:               12345
+        accountingAccess:       false
+        bedAccess:              true
+        labAccess:              true
+        timeReservingAccess:    true
+        ambulanceAccess:        true
+        operationAccess:        false
+        receptionAccess:        true
+        officeAccess:           true
+        createUserAccess:       true
+        drugStoreAccess:        true
+        
+    - !!models.User
+        id:                     6
+        firstName:              mustafa
+        lastName:               jawid
+        password:               12345
+        accountingAccess:       true
+        bedAccess:              true
+        labAccess:              true
+        timeReservingAccess:    true
+        ambulanceAccess:        true
+        operationAccess:        true
+        receptionAccess:        true
+        officeAccess:           true
+        createUserAccess:       false
+        drugStoreAccess:        true
+# ambulance information        
+ambulanceInfo: 
+
+    - !!models.AmbulanceInfo
+        rgcod:                  1
+        firstName:              mohsen
+        ambulancenumber:        1
+        phone:                  078464565
+        date:                   2009-3-7
+        address:                herat-almahdi town
+        cost:                   1000
+        payment:                payed
+        
+    - !!models.AmbulanceInfo
+        rgcod:                  2
+        firstName:              ahmad
+        ambulancenumber:        1
+        phone:                  078465646
+        date:                   2009-3-7
+        address:                herat-almahdi town
+        cost:                   1000
+        payment:                payed
+        
+    - !!models.AmbulanceInfo
+        rgcod:                  3
+        firstName:              ahmad
+        ambulancenumber:        1
+        phone:                  078464562
+        date:                   2009-3-7
+        address:                herat-ranginKaman town
+        cost:                   1000
+        payment:                payed
+        
+    - !!models.AmbulanceInfo
+        rgcod:                  4
+        firstName:              jawad
+        ambulancenumber:        4
+        phone:                  071211332
+        date:                   2009-3-7
+        address:                herat-almahdi town
+        cost:                   1000
+        payment:                payed
+        
+    - !!models.AmbulanceInfo
+        rgcod:                  5
+        firstName:              ahmad
+        ambulancenumber:        5
+        phone:                  078544658
+        date:                   2009-3-7
+        address:                herat-saadat town
+        cost:                   1000
+        payment:                payed
+        
+    - !!models.AmbulanceInfo
+        rgcod:                  6
+        firstName:              nader
+        ambulancenumber:        6
+        phone:                  078456466
+        date:                   2009-3-7
+        address:                herat-sabz town
+        cost:                   1000
+        payment:                payed
+       
+# bed reservation       
+bedReservation:  
+
+    - !!models.BedReservation
+        bedNumber:              1
+        bedNum:                 2
+        bedDepartment:          parturition
+        name:                   reza
+        fatherName:             ali
+        cost:                   1000
+        startDate:              2008-3-8
+        finishDate:             2007-7-10
+        
+    - !!models.BedReservation
+        bedNumber:              2
+        bedNum:                 4
+        bedDepartment:          operation
+        name:                   reza
+        fatherName:             ali
+        cost:                   1000
+        startDate:              2008-3-8
+        finishDate:             2007-7-10
+        
+    - !!models.BedReservation
+        bedNumber:              3
+        bedNum:                 6
+        bedDepartment:          parturition
+        name:                   reza
+        fatherName:             ali
+        cost:                   1000
+        startDate:              2008-3-8
+        finishDate:             2007-7-10
+        
+    - !!models.BedReservation
+        bedNumber:              4
+        bedNum:                 8
+        bedDepartment:          operation
+        name:                   reza
+        fatherName:             ali
+        cost:                   1000
+        startDate:              2008-3-8
+        finishDate:             2007-7-10
+        
+    - !!models.BedReservation
+        bedNumber:              5
+        bedNum:                 10
+        bedDepartment:          operation
+        name:                   reza
+        fatherName:             ali
+        cost:                   1000
+        startDate:              2008-3-8
+        finishDate:             2007-7-10
+        
+    - !!models.BedReservation
+        bedNumber:              6
+        bedNum:                 12
+        bedDepartment:          parturition
+        name:                   reza
+        fatherName:             ali
+        cost:                   1000
+        startDate:              2008-3-8
+        finishDate:             2007-7-10
+        
+    - !!models.BedReservation
+        bedNumber:              7
+        bedNum:                 14
+        bedDepartment:          parturition
+        name:                   reza
+        fatherName:             ali
+        cost:                   1000
+        startDate:              2008-3-8
+        finishDate:             2007-7-10
+# drug sells list       
+listSellDrug:
+
+    - !!models.ListSellDrug             
+        id:                     1
+        number:                 32
+        sellDate:               2001-8-4
+        totalSell:              2000
+        benfit:                 100
+        
+    - !!models.ListSellDrug             
+        id:                     2
+        number:                 33
+        sellDate:               2001-8-4
+        totalSell:              2000
+        benfit:                 100
+        
+    - !!models.ListSellDrug             
+        id:                     3
+        number:                 34
+        sellDate:               2001-8-4
+        totalSell:              2000
+        benfit:                 100
+        
+    - !!models.ListSellDrug             
+        id:                     4
+        number:                 35
+        sellDate:               2001-8-4
+        totalSell:              2000
+        benfit:                 100
+        
+    - !!models.ListSellDrug             
+        id:                     5
+        number:                 55
+        sellDate:               2001-8-4
+        totalSell:              2000
+        benfit:                 100
+
+# operations list
+operation: 
+
+    - !!models.Operation
+        id:                     1
+        firstName:              hamid
+        fatherName:             ali
+        familyName:             rezayee
+        foreFather:             jawad
+        age:                    34
+        bloodType:              A
+        phone:                  08745666
+        operationDate:          2009-4-3
+        address:                herat-almahdi town
+        charge:                 2000
+        discount:               100
+        doctor:                 mohsen
+        assistant:              nader
+        operationType:          kidney
+        successfull:            true
+
+    - !!models.Operation
+        id:                     2
+        firstName:              hashem
+        fatherName:             ali
+        familyName:             rezayee
+        foreFather:             jawad
+        age:                    34
+        bloodType:              A
+        phone:                  08745666
+        operationDate:          2009-4-3
+        address:                herat-almahdi town
+        charge:                 2000
+        discount:               100
+        doctor:                 hashem
+        assistant:              nader
+        operationType:          kidney
+        successfull:            true
+        
+    - !!models.Operation
+        id:                     3
+        firstName:              ehsan
+        fatherName:             ali
+        familyName:             rezayee
+        foreFather:             jawad
+        age:                    34
+        bloodType:              A
+        phone:                  08745666
+        operationDate:          2009-4-3
+        address:                herat-almahdi town
+        charge:                 2000
+        discount:               100
+        doctor:                 mohsen
+        assistant:              nader
+        operationType:          heart
+        successfull:            true
+        
+    - !!models.Operation
+        id:                     4
+        firstName:              erfan
+        fatherName:             ali
+        familyName:             rezayee
+        foreFather:             jawad
+        age:                    34
+        bloodType:              A
+        phone:                  08745666
+        operationDate:          2009-4-3
+        address:                herat-almahdi town
+        charge:                 2000
+        discount:               100
+        doctor:                 mohsen
+        assistant:              nader
+        operationType:          hand
+        successfull:            true
+        
+    - !!models.Operation
+        id:                     5
+        firstName:              hassan
+        fatherName:             ali
+        familyName:             rezayee
+        foreFather:             jawad
+        age:                    34
+        bloodType:              A
+        phone:                  08745666
+        operationDate:          2009-4-3
+        address:                herat-almahdi town
+        charge:                 2000
+        discount:               100
+        doctor:                 hashem
+        assistant:              nader
+        operationType:          nose
+        successfull:            true
+        
+    - !!models.Operation
+        id:                     6
+        firstName:              akbar
+        fatherName:             ali
+        familyName:             rezayee
+        foreFather:             jawad
+        age:                    34
+        bloodType:              A
+        phone:                  08745666
+        operationDate:          2009-4-3
+        address:                herat-almahdi town
+        charge:                 2000
+        discount:               100
+        doctor:                 hashem
+        assistant:              nader
+        operationType:          heart
+        successfull:            true
+        
+    - !!models.Operation
+        id:                     7
+        firstName:              habib
+        fatherName:             ali
+        familyName:             rezayee
+        foreFather:             jawad
+        age:                    34
+        bloodType:              A
+        phone:                  08745666
+        operationDate:          2009-4-3
+        address:                herat-almahdi town
+        charge:                 2000
+        discount:               100
+        doctor:                 ahmad
+        assistant:              nader
+        operationType:          kidney
+        successfull:            true
+        
+
+    - !!models.Operation
+        id:                     8
+        firstName:              mujtaba
+        fatherName:             ali
+        familyName:             rezayee
+        foreFather:             jawad
+        age:                    34
+        bloodType:              A
+        phone:                  08745666
+        operationDate:          2009-4-3
+        address:                herat-almahdi town
+        charge:                 2000
+        discount:               100
+        doctor:                 mohsen
+        assistant:              nader
+        operationType:          heart
+        successfull:            true
+        
+      
+        
+        
+        
+        
+        
+        
+             

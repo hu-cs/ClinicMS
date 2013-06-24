@@ -1,0 +1,26 @@
+
+div {
+	
+	min-height: 300px;
+	width: 950;
+	margin: 3px auto;
+	text-align: center;
+	
+}
+
+div table {
+	margin-top: 50px;
+	float: right;
+	direction: rtl;
+	border: 1px thin blue;
+	text-align: center;
+	border-collapse: collapse;
+	border: 2px ridge black;
+}
+
+div table tr td {
+	
+	width: 70px;
+	
+	border: 1px solid black;
+}

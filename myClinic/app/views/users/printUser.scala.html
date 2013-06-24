@@ -1,0 +1,59 @@
+@(users: List[User], bundle: ResourceBundle)
+
+@import helper._
+<html>
+<head> 
+ <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/printCSS.css")">
+</head>
+<body>
+<div style="width:50px; height:30px; ">
+     <SCRIPT LANGUAGE="JavaScript">
+                if (window.print) {
+                document.write('<form> '
+                + '<input style="width: 50px; height: 30px; color: white; background-color: orange; float: left; direction: rtl;" type=button name=print value="@bundle.getString("print")" '
+                + 'onClick="javascript:window.print()"></form>');
+                }// End -->
+      </script>
+</div>
+	<div>
+	        <table class="table-condensed" border="2" style="width: 960px; border: 2px solid #00FF40; text-align: center; padding-left:10px; margin:10px;  ">
+
+
+		<thead>
+
+		<tr>
+		<td><b>#</b></td>
+		<td><b> نام کاربر</b></td>
+		<td><b> تخلص کاربر</b></td>
+		<td><b>اجازه دسترسي</b></td>
+		</tr>
+		</thead>
+		                <script>
+              	var counter=1;
+              	</script>
+		<tbody>
+		@for(user <- users) {
+			<tr>
+			<td>	                       <script>
+	                       document.write(counter++)
+	                       </script></td>
+			<td>@user.firstName</td>
+			<td>@user.lastName</td>
+			<td><span> <input disabled type="checkbox" @if(user.bedAccess){checked}/><label>@bundle.getString("bedAccess")</label></span>
+			<span> <input disabled type="checkbox" @if(user.labAccess){checked} /><label> @bundle.getString("labAccess")</label></span>
+			<span> <input disabled type="checkbox" @if(user.receptionAccess){checked}/> <label>@bundle.getString("receptionAccess")</label></span>
+			<span> <input disabled type="checkbox" @if(user.accountingAccess){checked}/><label>@bundle.getString("accountingAccess")</label></span> 
+			<span> <input  disabled type="checkbox" @if(user.timeReservingAccess){checked} /> <label>@bundle.getString("timeReservingAccess")</label></span>
+			<span> <input  disabled type="checkbox" @if(user.officeAccess){checked}/><label>@bundle.getString("officeAccess")</label> </span>
+			<span> <input disabled type="checkbox" @if(user.ambulanceAccess){checked} /><label>@bundle.getString("ambulanceAccess")</label></span>
+			<span> <input disabled type="checkbox" @if(user.createUserAccess){checked}/> <label>@bundle.getString("createUserAccess")</label></span>
+			<span><input disabled type="checkbox" @if(user.operationAccess){checked} /> <label>@bundle.getString("operationAccess")</label> </span>
+			<span> <input disabled type="checkbox" @if(user.drugStoreAccess){checked}/><label>@bundle.getString("drugStoreAccess")</label></span></td>
+			<td>
+
+			</tr>
+			}
+		</tbody>
+	</table>
+	</body>
+</html>

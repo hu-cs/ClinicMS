@@ -1,0 +1,23 @@
+            body{
+                background-image: url(../images/pattern.png);
+            }
+            
+            div#mainLog{
+                background-image: url(../images/LoginPage12.png);
+                width: 300px;
+                height: 150px;
+                padding-left: 35px;
+                padding-top: 30px;
+                border: red 2px dashed;
+            }
+            div#green{
+                background-image: url(../images/log2.jpg);
+                width: 241px;
+                height: 120px;
+                padding-left: 10px;
+                padding-top: 10px;
+                border: red 2px dashed;
+            }
+            .align-righta{
+                text-align: right;
+            }

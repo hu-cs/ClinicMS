@@ -1,0 +1,20 @@
+#users data 
+users:
+
+    - !!models.User
+        id:                     0
+        firstName:              محسن
+        lastName:               پارسا
+        password:               12345
+        accountingAccess:       true
+        bedAccess:              true
+        labAccess:              true
+        timeReservingAccess:    true
+        ambulanceAccess:        true
+        operationAccess:        true
+        receptionAccess:        true
+        officeAccess:           true
+        createUserAccess:       true
+        drugStoreAccess:        true
+        
+           

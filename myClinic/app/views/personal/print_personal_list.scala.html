@@ -1,0 +1,103 @@
+@(personals: List[Personal], bundle: ResourceBundle)
+@import helper._
+@import helper.twitterBootstrap._
+
+@main("Print List of Personals"){
+<div style="width:50px; height:30px; ">
+     <SCRIPT LANGUAGE="JavaScript">
+                if (window.print) {
+                document.write('<form> '
+                + '<input style="width: 50px; height: 30px; color: white; background-color: orange; float: left;" type=button name=print value="جاپ" '
+                + 'onClick="javascript:window.print()"></form>');
+                }// End -->
+      </script>
+</div>
+
+ <div id="form" style="width: 100%; margin-top: 20px; padding: 10px;">
+        <h1 align="center"> @bundle.getString("QodcPrivateClinic")</h1>
+        <h3 align="center"> @bundle.getString("listPersonal")</h3>
+        <table class="table-condensed" border="2" style="width: 950px; border: 2px solid #00FF40; text-align: right; margin: auto; overflow:scroll; ">
+
+
+                
+<!-- List of reserved bed -->
+                <!-- heading of list or table -->
+                <tr>
+                      
+                      <th style="text-align:center;width:55px;">@bundle.getString("photo")</th>
+                      <th style="text-align:center;width:30px;">@bundle.getString("salaryContracted")</th>
+                      <th style="text-align:center;width:30px;">@bundle.getString("salaryPercentage")</th>
+                      <th style="text-align:center;">@bundle.getString("address")</th>
+                      <th style="text-align:center;width:40px;">@bundle.getString("readyActivity")  </th>
+                      <th style="text-align:center;width:50px;">@bundle.getString("phone")</th>
+                      <th style="text-align:center;width:40px;">@bundle.getString("job")</th>
+                      <th style="text-align:center;width:40px;">@bundle.getString("proficiency")</th>
+                      <th style="text-align:center;width:40px;">@bundle.getString("nic")</th>
+                      <th style="text-align:center;width:40px;">@bundle.getString("nameFather")  </th>
+                      <th style="text-align:center;width:40px;"> @bundle.getString("identitiesPerson") </th>
+                      <th style="text-align:center;width:30px;"> @bundle.getString("id")</th>
+                      <th style="text-align:center;width:30px;">@bundle.getString("numberOrder")</th>
+                </tr>
+                <!-- body of List or table-->
+                
+                <script>
+              	var counter=1;
+              	</script>
+              	
+                @for(personal <- personals){
+                
+	                <tr>
+	                    
+	                    <td>
+	                        <img src='@routes.Assets.at("images/upload/" + personal.image)' width='50' height='60'/>
+	                    </td>
+	                    <td>
+	                       	@personal.salaryContracted
+	                    </td>
+	                    <td>
+	                        @personal.salaryPercentage
+	                    </td>
+	                    <td>
+	                      	@personal.address
+	                    </td>
+	                    <td>
+	                       	 @if(personal.active == true){
+	                        	@bundle.getString("yes")
+	                        }else{
+	                        	@bundle.getString("no")
+	                        }
+	                    </td>
+	                    <td>
+	                      	@personal.phone
+	                    </td>
+	                     <td>
+	                      	@personal.job
+	                    </td>
+	                    <td>
+	                      	@personal.proficiency
+	                    </td>
+	                    <td>
+	                      	@personal.nic
+	                    </td>
+	                    <td>
+	                      	@personal.fatherName
+	                    </td>
+	                    <td>
+	                      	@personal.name
+	                    </td>
+	                    <td>
+	                      	@personal.id
+	                    </td>
+	                    <td>
+	                    
+	                       <script>
+	                       document.write(counter++)
+	                       </script>
+	                       
+	                    </td>
+	                </tr>  
+                }
+                </table>
+           
+        </div>
+}

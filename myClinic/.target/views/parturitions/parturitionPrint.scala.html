@@ -1,0 +1,51 @@
+@(parturitions: List[Parturition], bundle: ResourceBundle)
+
+@import helper._
+<html>
+<head> 
+ <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/printCSS.css")">
+</head>
+<body>
+<div style="width:50px; height:30px; ">
+     <SCRIPT LANGUAGE="JavaScript">
+                if (window.print) {
+                document.write('<form> '
+                + '<input style="width: 50px; height: 30px; color: white; background-color: orange; float: left; direction: rtl;" type=button name=print value="ÌÇ" '
+                + 'onClick="javascript:window.print()"></form>');
+                }// End -->
+      </script>
+</div>
+	<div>
+	<table>
+                <script>
+              	var counter=1;
+              	</script>
+             @for(parturition <- parturitions){
+	                <tr >
+	                    <td>
+	                       <script>
+	                       document.write(counter++)
+	                       </script>
+	                    </td>
+	        <td>@parturition.firstName</td>
+			<td>@parturition.fatherName</td>
+			<td>@parturition.familyName</td>
+			<td>@parturition.foreFather</td>
+			<td><time date="@parturition.parturitionDate">@parturition.parturitionDate.format("MMM dd yyyy")</time></td>
+			<td>@parturition.numberOfBaby</td>
+			<td>@parturition.doctor</td>
+			<td>@parturition.bloodType</td>
+			<td>@parturition.phoneNumber</td>
+			<td>@parturition.address</td>
+			<td>@parturition.description</td>
+			<td>@parturition.charge</td>
+			<td>@parturition.discount</td>
+			<td><span> <input disabled type="checkbox" @if(parturition.caesareaned){checked}/></span></td>
+
+ 
+	                    </tr>
+                }
+                </table>
+                </div>
+</body>         
+</html>

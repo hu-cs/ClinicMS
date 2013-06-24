@@ -1,0 +1,85 @@
+@(bed: BedReservation, bundle: ResourceBundle)
+@import helper._
+@import helper.twitterBootstrap._
+
+@main("Print Reciept of Beds"){
+ <div>
+           <SCRIPT LANGUAGE="JavaScript">
+                if (window.print) {
+                document.write('<form> '
+                + '<input style="width: 50px; height: 30px; background-color:orange; color: white;" type=button name=print value="چاپ" '
+                + 'onClick="javascript:window.print()"></form>');
+                }// End -->
+                </script>
+ </div>
+ <div id="list" style="width:950px; height:850px; padding:10px; margin:10px" >
+      <table   padding"15px" >
+      		<tr>
+      			<td colspan="2">
+      				<h1 style="text-align:center;">@bundle.getString("QodcPrivateClinic") </h1>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td colspan="2">
+      				<h3 style="text-align:center;">www.QodsClinic.com</h3>
+      			</td>
+      		</tr>
+      		      		<tr>
+      			<td colspan="2">
+      				<h3 style="text-align:center;">@bundle.getString("reservedCheck")</h3>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;">
+      				@bed.name
+      			</td>
+      			<td style="text-align:right;">
+      				<b> @bundle.getString("identitiesPerson")</b>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;">
+      				@bed.fatherName
+      			</td>
+      			<td style="text-align:right;">
+      				<b>  @bundle.getString("nameFather")</b>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;"> 
+      				@bed.bedNum
+      			</td>
+      			<td style="text-align:right;">
+      				<b>@bundle.getString("numberBed")</b>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;">
+      				@bed.bedDepartment
+      			</td >
+      			<td style="text-align:right;">
+      				<b>@bundle.getString("department")</b>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;">
+      				@bed.startDate.format("MM dd yyyy")
+      			</td>
+      			<td style="text-align:right;">
+      				<b> @bundle.getString("dateStart")</b>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td style="text-align:right;">
+      				@bed.finishDate.format("MM dd yyyy")
+      			</td>
+      			<td style="text-align:right;">
+      				<b>@bundle.getString("dateFinish") </b>
+      			</td>
+      		</tr>
+      	
+     
+      </table>
+ </div>
+
+}

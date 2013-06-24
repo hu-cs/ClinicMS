@@ -1,0 +1,46 @@
+@(id: Long, editForm: Form[RegisterDrug])
+
+@import helper._
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Users</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/editForm.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <dl id="user">
+
+                <dd>
+                  
+                </dd>
+            </dl>
+        </header>
+
+	 <div>
+
+            <table class="users" height="30">
+     
+            <tbody>
+
+    
+   
+   
+    @form(routes.RegisterControll.updatereg(id)) {
+        <tr>
+        <td>   @inputText(editForm("id"), '_label -> "آی دی ")  </td>
+     <td>   @inputText(editForm("sellPrice"), '_label -> "قیمت فروش")  </td>
+      <td>   @inputText(editForm("price"), '_label -> "قیمت خرید ")   </td>
+      <td>   @inputText(editForm("build"), '_label -> "ساخت") </td></tr>  
+	 <td>	@inputText(editForm("name"), '_label -> "نام ") </td>
+		<td> <input type="submit" value="save">
+        <a href="@routes.RegisterControll.rgister()" class="btn">Cancel</a> </td>
+        </tr>
+    }
+    </div>
+    </body>
+</html>

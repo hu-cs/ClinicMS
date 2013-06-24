@@ -1,0 +1,119 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+#GET     /                           controllers.Application.index()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+########################################
+# Login
+GET     /                  		controllers.Application.login()
+POST    /login                  controllers.Application.authenticate()
+GET     /logout                 controllers.Application.logout()
+#GET		/homePage				controllers.Application.home()
+#############################################################
+#users actions
+GET     /users                  controllers.Application.users()
+GET    /users/new               controllers.Application.createUser()
+POST	/user					controllers.Application.saveUser()
+GET		/users/search			controllers.Application.searchUser()
+GET     /users/:id              controllers.Application.editUser(id:Long)
+POST    /users/:id              controllers.Application.updateUser(id:Long)
+POST    /users/:id/delete       controllers.Application.deleteUser(id: Long)
+GET		/usersPrint				controllers.Application.printUser()
+#############################################################
+#parturition actions
+GET     /parturitions                  controllers.ParturitionCon.parturitions()
+GET     /parturitions/new              controllers.ParturitionCon.createParturition()
+POST	/parturition				   controllers.ParturitionCon.saveParturition()
+GET		/parturitions/search		   controllers.ParturitionCon.searchParturition()
+GET     /parturitions/:id              controllers.ParturitionCon.editParturition(id:Long)
+POST    /parturitions/:id              controllers.ParturitionCon.updateParturition(id:Long)
+POST    /parturitions/:id/delete       controllers.ParturitionCon.deleteParturition(id: Long)
+GET		/parturitionPrint			   controllers.ParturitionCon.parturitionPrint()
+#############################################################
+#operation actions
+GET     /operations                  controllers.OperationCon.operations()
+GET		/operations/new				 controllers.OperationCon.createOperation()
+POST    /operation                   controllers.OperationCon.saveOperation()
+GET		/operations/search		 	 controllers.OperationCon.searchOperation()
+GET     /operations/:id              controllers.OperationCon.editOperation(id:Long)
+POST    /operations/:id              controllers.OperationCon.updateOperation(id:Long)
+POST    /operations/:id/delete       controllers.OperationCon.deleteOperation(id: Long)
+GET		/operationPrint				 controllers.OperationCon.printOperation()
+
+###########################################################
+
+#############################################################
+#operation actions
+GET		/personal								controllers.PersonalController.personalList()
+GET		/personal/createPersonal		      	controllers.PersonalController.createPersonal()
+POST	/personal/saveCreatePersonal			controllers.PersonalController.saveCreatePersonal()
+GET		/personal/printListPersonal				controllers.PersonalController.printListPersonal()
+GET		/personal/searchPersonal				controllers.PersonalController.searchPersonal()
+POST	/personal/:id/updatePersonal			controllers.PersonalController.updatePersonal(id: Integer)	
+POST	/personal/saveUpdatePersonal			controllers.PersonalController.saveUpdatePersonal()
+POST	/personal/:id/deletePersonal			controllers.PersonalController.deletePersonal(id: Integer)
+###############################################################
+GET		/AmbulanceInfoList					controllers.AmbulanceCon.ambulanceIndex()
+GET		/AmbulanceInfo/create				controllers.AmbulanceCon.createAmbulance() 
+POST	/AmbulanceInfo/saveCreate			controllers.AmbulanceCon.saveCreateAmbulance()
+POST	/AmbulanceInfo/saveUpdate			controllers.AmbulanceCon.saveUpdateAmbulance()
+GET		/AmbulanceInfo/printList			controllers.AmbulanceCon.printListAmbulance()
+GET		/AmbulanceInfo/search				controllers.AmbulanceCon.searchAmbulance()
+POST	/AmbulanceInfo/:id/delete			controllers.AmbulanceCon.deleteAmbulance(id : Integer)
+POST	/AmbulanceInfo/:id/update			controllers.AmbulanceCon.updateAmbulance(id :Integer)
+POST	/AmbulanceInfo/:id/printReciept		controllers.AmbulanceCon.printRecieptAmbulance(id: Integer)
+
+########################################################
+#reception
+GET		/bedList					controllers.BedController.bedIndex()
+GET		/bed/create					controllers.BedController.createBed()
+GET 	/bed/saveCreateBed			controllers.BedController.saveCreateBed()
+GET		/bed/searchBed				controllers.BedController.searchBed()
+POST	/bed/:id/deleteBed			controllers.BedController.deleteBed(id: Integer)
+GET		/bed/printListBed			controllers.BedController.printListBed()
+POST	/bed/:id/printRecieptBed	controllers.BedController.printRecieptBed(id: Integer)
+POST	/bed/saveUpdateBed			controllers.BedController.saveUpdateBed()
+POST	/bed/:id/updateBed			controllers.BedController.updateBed(id: Integer)	
+
+#####################################################################
+GET     /rgister                  controllers.RegisterControll.rgister()
+POST    /rgister                  controllers.RegisterControll.newRgister()
+GET     /rgister/:id/delete       controllers.RegisterControll.deleteRgisterDrug(id: Long)
+GET     /rgister/:id/edit       controllers.RegisterControll.editeRgisterDrug(id: Long)
+POST    /rgister/:id              controllers.RegisterControll.updatereg(id:Long)
+GET		/rgister/search				controllers.RegisterControll.search()
+GET		/rgister/List			controllers.RegisterControll.printList()
+GET		/rgister/Listing			controllers.RegisterControll.createDrug()
+
+
+#This is for sell drug
+GET    /selling										controllers.SellControll.sell()
+POST   /selling                                     controllers.SellControll.newsell()
+GET    /selling/:number/delete       controllers.SellControll.deletesell(number: Integer)
+GET    /selling/show      controllers.SellControll.createSell()
+
+
+#This is for listing
+GET     /list                  controllers.ListSellContoroll.index()
+GET     /list                  controllers.ListSellContoroll.listing()
+GET		/list/search				controllers.ListSellContoroll.search()
+GET		/list/printList			controllers.ListSellContoroll.printList()
+GET     /list/delete			controllers.ListSellContoroll.deleteListSell(id: Integer)
+GET     /list/show			controllers.ListSellContoroll.createListSell()
+
+#######################################################################
+
+GET		/receptionPatientList						controllers.ReceptionCon.index()
+GET		/receptionPatient/create					controllers.ReceptionCon.createPatient()
+GET 	/receptionPatient/saveCreatePatient			controllers.ReceptionCon.saveCreatePatient()
+GET		/receptionPatient/printListPatient			controllers.ReceptionCon.printListPatient()
+POST	/receptionPatient/saveUpdatePatient			controllers.ReceptionCon.saveUpdatePatient()
+GET	    /receptionPatient/searchPatient				controllers.ReceptionCon.searchPatient()
+POST	/receptionPatient/:id/printRecieptPatient	controllers.ReceptionCon.printRecieptPatient(id: Integer)
+POST	/receptionPatient/:id/updatePatient			controllers.ReceptionCon.updatePatient(id: Integer)	
+POST	/receptionPatient/:id/deletePatient			controllers.ReceptionCon.deletePatient(id: Integer)

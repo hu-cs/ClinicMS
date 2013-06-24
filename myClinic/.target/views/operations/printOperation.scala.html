@@ -1,0 +1,49 @@
+@(operations: List[Operation], bundle: ResourceBundle)
+
+@import helper._
+<html>
+<head> 
+ <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/printCSS.css")">
+</head>
+<body>
+<div style="width:50px; height:30px; ">
+     <SCRIPT LANGUAGE="JavaScript">
+                if (window.print) {
+                document.write('<form> '
+                + '<input style="width: 50px; height: 30px; color: white; background-color: orange; float: left; direction: rtl;" type=button name=print value="جاپ" '
+                + 'onClick="javascript:window.print()"></form>');
+                }// End -->
+      </script>
+</div>
+	<div>
+	<table>
+                <script>
+              	var counter=1;
+              	</script>
+              	
+              		@for(operation <- operations) {
+			<tr>
+			<td>	                       <script>
+	                       document.write(counter++)
+	                       </script></td>
+			<td>@operation.firstName</td>
+			<td>@operation.fatherName</td>
+			<td>@operation.familyName</td>
+			<td>@operation.foreFather</td>
+			<td>@operation.age</td>
+			<td>@operation.bloodType</td>
+			<td>@operation.phone</td>
+			<td><date date="@operation.operationDate">@operation.operationDate.format("dd MMM yyyy")</date></td>
+			<td>@operation.address</td>
+			<td>@operation.description</td>
+			<td>@operation.charge</td>
+			<td>@operation.discount</td>
+			<td>@operation.doctor</td>
+			<td>@operation.assistant</td>
+			<td>@operation.operationType</td>						
+			<td><span> <input disabled type="checkbox" @if(operation.successfull){checked}/><label> عملیات موفقانه</label></span></td>
+
+			</tr>
+			}
+		</tbody>
+	</table>
